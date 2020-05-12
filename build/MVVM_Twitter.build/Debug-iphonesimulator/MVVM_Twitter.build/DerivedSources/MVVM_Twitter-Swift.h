@@ -242,6 +242,7 @@ SWIFT_CLASS("_TtC12MVVM_Twitter14FeedController")
 SWIFT_CLASS("_TtC12MVVM_Twitter20MainTabBarController")
 @interface MainTabBarController : UITabBarController
 - (void)viewDidLoad;
+- (void)actionButtonTapped;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -268,6 +269,10 @@ SWIFT_CLASS("_TtC12MVVM_Twitter13SceneDelegate")
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

@@ -10,9 +10,16 @@ import UIKit
 
 class ExploreController: UIViewController {
     
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        configureUI()
     }
+    
+    fileprivate func configureUI() {
+        view.backgroundColor = .white
+        navigationItem.title = "Explore"
+    }
+
     
 }

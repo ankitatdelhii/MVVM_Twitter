@@ -10,9 +10,21 @@ import UIKit
 
 class FeedController: UIViewController {
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        configureUI()
+        
     }
+    
+    
+    fileprivate func configureUI() {
+        view.backgroundColor = .white
+        let image = UIImageView(image: UIImage(named: "twitter_logo_blue"))
+        image.contentMode = .scaleAspectFit
+        navigationItem.titleView = image
+    }
+    
     
 }
