@@ -1,11 +1,11 @@
 version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
 options: "6478bcf521cc03f9c383f0deb7c3cf83"
-build_time: [1589285838, 117868000]
+build_time: [1589286482, 331485000]
 inputs:
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/View/NotificationsController.swift": [1589281630, 132678167]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/View/ConversationsController.swift": [1589281605, 414225079]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/AppDelegate.swift": [1589279156, 804023872]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/View/ExploreController.swift": [1589281647, 448465101]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/SceneDelegate.swift": [1589280123, 325465732]
-  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/View/MainTabBarController.swift": [1589282413, 939201893]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/View/MainTabBarController.swift": [1589286480, 432900496]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/View/FeedController.swift": [1589281669, 589578836]
