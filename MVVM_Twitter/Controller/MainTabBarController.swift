@@ -33,6 +33,13 @@ class MainTabBarController: UITabBarController {
     //MARK: Selectors
     @objc func actionButtonTapped() {
         print("Tapped!")
+        
+//        var countView = 0
+//        view.depthFirstSearch { (view) in
+//            countView += 1
+//            print("Got view \(view)")
+//            print("count is \(countView)")
+//        }
     }
     
     //MARK: HELPER
@@ -59,6 +66,24 @@ class MainTabBarController: UITabBarController {
         nav.navigationBar.barTintColor = .white
         
         return nav
+        
+    }
+    
+    
+    
+}
+
+
+extension UIView {
+    
+    
+    func depthFirstSearch(currentView: (UIView) -> Void) {
+        
+        currentView(self)
+        
+        self.subviews.forEach {
+            $0.depthFirstSearch(currentView: currentView)
+        }
         
     }
     

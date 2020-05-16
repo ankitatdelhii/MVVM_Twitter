@@ -5,6 +5,8 @@ provides-nominal:
 - "12MVVM_Twitter20MainTabBarControllerC"
 provides-member:
 - ["12MVVM_Twitter20MainTabBarControllerC", ""]
+- ["So6UIViewC", ""]
+- ["So6UIViewC", "depthFirstSearch"]
 provides-dynamic-lookup:
 - "actionButtonTapped"
 - "viewDidLoad"
@@ -23,19 +25,25 @@ depends-top-level:
 - "UIImage"
 - "UINavigationController"
 - "UITabBarController"
+- "UIView"
 - "UIViewController"
+- "Void"
 - !private "print"
 depends-member:
+- !private ["Sa", "forEach"]
+- !private ["SK", "forEach"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "anchor"]
 - ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "barTintColor"]
+- !private ["So15CALayerDelegateP", "depthFirstSearch"]
 - ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "safeAreaLayoutGuide"]
 - ["So15CALayerDelegateP", "setImage"]
+- !private ["So15CALayerDelegateP", "subviews"]
 - ["So15CALayerDelegateP", "tintColor"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["s7CVarArgP", "ConversationsController"]
@@ -57,6 +65,8 @@ depends-member:
 - !private ["s7CVarArgP", "configureUI"]
 - !private ["s7CVarArgP", "configureViewControllers"]
 - !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "depthFirstSearch"]
+- !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "image"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layer"]
@@ -66,6 +76,7 @@ depends-member:
 - !private ["s7CVarArgP", "safeAreaLayoutGuide"]
 - ["s7CVarArgP", "self"]
 - ["s7CVarArgP", "setImage"]
+- !private ["s7CVarArgP", "subviews"]
 - !private ["s7CVarArgP", "tabBarItem"]
 - !private ["s7CVarArgP", "templateNavigationController"]
 - ["s7CVarArgP", "tintColor"]
@@ -74,6 +85,8 @@ depends-member:
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "white"]
+- !private ["Sl", "forEach"]
+- !private ["10Foundation15ContiguousBytesP", "forEach"]
 - !private ["12MVVM_Twitter23ConversationsControllerC", "deinit"]
 - !private ["12MVVM_Twitter23ConversationsControllerC", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "ConversationsController"]
@@ -95,6 +108,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "configureUI"]
 - !private ["s28CustomDebugStringConvertibleP", "configureViewControllers"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "depthFirstSearch"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
@@ -104,6 +119,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "safeAreaLayoutGuide"]
 - ["s28CustomDebugStringConvertibleP", "self"]
 - ["s28CustomDebugStringConvertibleP", "setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "subviews"]
 - !private ["s28CustomDebugStringConvertibleP", "tabBarItem"]
 - !private ["s28CustomDebugStringConvertibleP", "templateNavigationController"]
 - ["s28CustomDebugStringConvertibleP", "tintColor"]
@@ -113,6 +129,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s17CustomReflectableP", "addSubview"]
+- !private ["s17CustomReflectableP", "forEach"]
 - !private ["s17CustomReflectableP", "image"]
 - !private ["s17CustomReflectableP", "safeAreaLayoutGuide"]
 - ["s17CustomReflectableP", "twitterBlue"]
@@ -136,6 +153,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "configureUI"]
 - !private ["s23CustomStringConvertibleP", "configureViewControllers"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "depthFirstSearch"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layer"]
@@ -145,6 +164,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "safeAreaLayoutGuide"]
 - ["s23CustomStringConvertibleP", "self"]
 - ["s23CustomStringConvertibleP", "setImage"]
+- !private ["s23CustomStringConvertibleP", "subviews"]
 - !private ["s23CustomStringConvertibleP", "tabBarItem"]
 - !private ["s23CustomStringConvertibleP", "templateNavigationController"]
 - ["s23CustomStringConvertibleP", "tintColor"]
@@ -153,12 +173,15 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "white"]
+- !private ["10Foundation12DataProtocolP", "forEach"]
 - !private ["Se", "addSubview"]
+- !private ["Se", "forEach"]
 - !private ["Se", "image"]
 - !private ["Se", "safeAreaLayoutGuide"]
 - ["Se", "twitterBlue"]
 - ["Se", "white"]
 - !private ["SE", "addSubview"]
+- !private ["SE", "forEach"]
 - !private ["SE", "image"]
 - !private ["SE", "safeAreaLayoutGuide"]
 - ["SE", "twitterBlue"]
@@ -182,6 +205,8 @@ depends-member:
 - !private ["SQ", "configureUI"]
 - !private ["SQ", "configureViewControllers"]
 - !private ["SQ", "cornerRadius"]
+- !private ["SQ", "depthFirstSearch"]
+- !private ["SQ", "forEach"]
 - !private ["SQ", "image"]
 - ["SQ", "init"]
 - !private ["SQ", "layer"]
@@ -192,6 +217,7 @@ depends-member:
 - !private ["SQ", "safeAreaLayoutGuide"]
 - ["SQ", "self"]
 - ["SQ", "setImage"]
+- !private ["SQ", "subviews"]
 - !private ["SQ", "tabBarItem"]
 - !private ["SQ", "templateNavigationController"]
 - ["SQ", "tintColor"]
@@ -204,6 +230,7 @@ depends-member:
 - ["So15UIControlEventsV", "touchUpInside"]
 - !private ["12MVVM_Twitter17ExploreControllerC", "deinit"]
 - !private ["12MVVM_Twitter17ExploreControllerC", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - ["s25ExpressibleByArrayLiteralP", "normal"]
 - ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - !private ["s23ExpressibleByNilLiteralP", "addSubview"]
@@ -232,6 +259,8 @@ depends-member:
 - !private ["SH", "configureUI"]
 - !private ["SH", "configureViewControllers"]
 - !private ["SH", "cornerRadius"]
+- !private ["SH", "depthFirstSearch"]
+- !private ["SH", "forEach"]
 - !private ["SH", "image"]
 - ["SH", "init"]
 - !private ["SH", "layer"]
@@ -241,6 +270,7 @@ depends-member:
 - !private ["SH", "safeAreaLayoutGuide"]
 - ["SH", "self"]
 - ["SH", "setImage"]
+- !private ["SH", "subviews"]
 - !private ["SH", "tabBarItem"]
 - !private ["SH", "templateNavigationController"]
 - ["SH", "tintColor"]
@@ -269,6 +299,8 @@ depends-member:
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "view"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "viewControllers"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "viewDidLoad"]
+- !private ["SM", "forEach"]
+- !private ["10Foundation19MutableDataProtocolP", "forEach"]
 - !private ["So8NSCodingP", "ConversationsController"]
 - !private ["So8NSCodingP", "ExploreController"]
 - !private ["So8NSCodingP", "FeedController"]
@@ -288,6 +320,7 @@ depends-member:
 - !private ["So8NSCodingP", "configureUI"]
 - !private ["So8NSCodingP", "configureViewControllers"]
 - !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "depthFirstSearch"]
 - !private ["So8NSCodingP", "image"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
@@ -297,6 +330,7 @@ depends-member:
 - !private ["So8NSCodingP", "safeAreaLayoutGuide"]
 - ["So8NSCodingP", "self"]
 - ["So8NSCodingP", "setImage"]
+- !private ["So8NSCodingP", "subviews"]
 - !private ["So8NSCodingP", "tabBarItem"]
 - !private ["So8NSCodingP", "templateNavigationController"]
 - ["So8NSCodingP", "tintColor"]
@@ -341,7 +375,9 @@ depends-member:
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UINavigationController"]
+- ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", "Void"]
 - ["So8NSObjectC", "actionButton"]
 - ["So8NSObjectC", "actionButtonTapped"]
 - !private ["So8NSObjectC", "addSubview"]
@@ -353,6 +389,7 @@ depends-member:
 - ["So8NSObjectC", "configureUI"]
 - ["So8NSObjectC", "configureViewControllers"]
 - !private ["So8NSObjectC", "cornerRadius"]
+- ["So8NSObjectC", "depthFirstSearch"]
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
@@ -362,6 +399,7 @@ depends-member:
 - !private ["So8NSObjectC", "safeAreaLayoutGuide"]
 - ["So8NSObjectC", "self"]
 - ["So8NSObjectC", "setImage"]
+- !private ["So8NSObjectC", "subviews"]
 - !private ["So8NSObjectC", "tabBarItem"]
 - ["So8NSObjectC", "templateNavigationController"]
 - ["So8NSObjectC", "tintColor"]
@@ -389,6 +427,7 @@ depends-member:
 - !private ["So8NSObjectP", "configureUI"]
 - !private ["So8NSObjectP", "configureViewControllers"]
 - !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "depthFirstSearch"]
 - !private ["So8NSObjectP", "image"]
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "layer"]
@@ -398,6 +437,7 @@ depends-member:
 - !private ["So8NSObjectP", "safeAreaLayoutGuide"]
 - ["So8NSObjectP", "self"]
 - ["So8NSObjectP", "setImage"]
+- !private ["So8NSObjectP", "subviews"]
 - !private ["So8NSObjectP", "tabBarItem"]
 - !private ["So8NSObjectP", "templateNavigationController"]
 - ["So8NSObjectP", "tintColor"]
@@ -419,8 +459,11 @@ depends-member:
 - !private ["Sq", "safeAreaLayoutGuide"]
 - ["Sq", "twitterBlue"]
 - ["Sq", "white"]
+- !private ["Sk", "forEach"]
+- !private ["Sm", "forEach"]
 - ["SY", "normal"]
 - ["SY", "touchUpInside"]
+- !private ["ST", "forEach"]
 - ["s10SetAlgebraP", "normal"]
 - ["s10SetAlgebraP", "touchUpInside"]
 - ["So14UIControlStateV", "normal"]
@@ -436,22 +479,26 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "anchor"]
 - ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "barTintColor"]
+- !private ["So29UIAccessibilityIdentificationP", "depthFirstSearch"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
 - ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "safeAreaLayoutGuide"]
 - ["So29UIAccessibilityIdentificationP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "subviews"]
 - ["So29UIAccessibilityIdentificationP", "tintColor"]
 - !private ["So12UIAppearanceP", "addSubview"]
 - ["So12UIAppearanceP", "addTarget"]
 - !private ["So12UIAppearanceP", "anchor"]
 - ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "barTintColor"]
+- !private ["So12UIAppearanceP", "depthFirstSearch"]
 - !private ["So12UIAppearanceP", "image"]
 - ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "safeAreaLayoutGuide"]
 - ["So12UIAppearanceP", "setImage"]
+- !private ["So12UIAppearanceP", "subviews"]
 - ["So12UIAppearanceP", "tintColor"]
 - !private ["So21UIAppearanceContainerP", "ConversationsController"]
 - !private ["So21UIAppearanceContainerP", "ExploreController"]
@@ -470,6 +517,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "barTintColor"]
 - !private ["So21UIAppearanceContainerP", "configureUI"]
 - !private ["So21UIAppearanceContainerP", "configureViewControllers"]
+- !private ["So21UIAppearanceContainerP", "depthFirstSearch"]
 - ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "navigationBar"]
@@ -477,6 +525,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "safeAreaLayoutGuide"]
 - ["So21UIAppearanceContainerP", "self"]
 - ["So21UIAppearanceContainerP", "setImage"]
+- !private ["So21UIAppearanceContainerP", "subviews"]
 - !private ["So21UIAppearanceContainerP", "tabBarItem"]
 - !private ["So21UIAppearanceContainerP", "templateNavigationController"]
 - ["So21UIAppearanceContainerP", "tintColor"]
@@ -527,20 +576,24 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "anchor"]
 - ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "barTintColor"]
+- !private ["So17UICoordinateSpaceP", "depthFirstSearch"]
 - ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "safeAreaLayoutGuide"]
 - ["So17UICoordinateSpaceP", "setImage"]
+- !private ["So17UICoordinateSpaceP", "subviews"]
 - ["So17UICoordinateSpaceP", "tintColor"]
 - !private ["So13UIDynamicItemP", "addSubview"]
 - ["So13UIDynamicItemP", "addTarget"]
 - !private ["So13UIDynamicItemP", "anchor"]
 - ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "barTintColor"]
+- !private ["So13UIDynamicItemP", "depthFirstSearch"]
 - ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "safeAreaLayoutGuide"]
 - ["So13UIDynamicItemP", "setImage"]
+- !private ["So13UIDynamicItemP", "subviews"]
 - ["So13UIDynamicItemP", "tintColor"]
 - !private ["So18UIFocusEnvironmentP", "ConversationsController"]
 - !private ["So18UIFocusEnvironmentP", "ExploreController"]
@@ -559,6 +612,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "barTintColor"]
 - !private ["So18UIFocusEnvironmentP", "configureUI"]
 - !private ["So18UIFocusEnvironmentP", "configureViewControllers"]
+- !private ["So18UIFocusEnvironmentP", "depthFirstSearch"]
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "navigationBar"]
@@ -566,6 +620,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "safeAreaLayoutGuide"]
 - ["So18UIFocusEnvironmentP", "self"]
 - ["So18UIFocusEnvironmentP", "setImage"]
+- !private ["So18UIFocusEnvironmentP", "subviews"]
 - !private ["So18UIFocusEnvironmentP", "tabBarItem"]
 - !private ["So18UIFocusEnvironmentP", "templateNavigationController"]
 - ["So18UIFocusEnvironmentP", "tintColor"]
@@ -577,20 +632,24 @@ depends-member:
 - !private ["So11UIFocusItemP", "anchor"]
 - ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "barTintColor"]
+- !private ["So11UIFocusItemP", "depthFirstSearch"]
 - ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "safeAreaLayoutGuide"]
 - ["So11UIFocusItemP", "setImage"]
+- !private ["So11UIFocusItemP", "subviews"]
 - ["So11UIFocusItemP", "tintColor"]
 - !private ["So20UIFocusItemContainerP", "addSubview"]
 - ["So20UIFocusItemContainerP", "addTarget"]
 - !private ["So20UIFocusItemContainerP", "anchor"]
 - ["So20UIFocusItemContainerP", "backgroundColor"]
 - !private ["So20UIFocusItemContainerP", "barTintColor"]
+- !private ["So20UIFocusItemContainerP", "depthFirstSearch"]
 - ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "layer"]
 - !private ["So20UIFocusItemContainerP", "safeAreaLayoutGuide"]
 - ["So20UIFocusItemContainerP", "setImage"]
+- !private ["So20UIFocusItemContainerP", "subviews"]
 - ["So20UIFocusItemContainerP", "tintColor"]
 - ["So7UIImageC", "init"]
 - ["So39UIItemProviderPresentationSizeProvidingP", "init"]
@@ -599,10 +658,12 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "anchor"]
 - ["So24UILargeContentViewerItemP", "backgroundColor"]
 - !private ["So24UILargeContentViewerItemP", "barTintColor"]
+- !private ["So24UILargeContentViewerItemP", "depthFirstSearch"]
 - ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "layer"]
 - !private ["So24UILargeContentViewerItemP", "safeAreaLayoutGuide"]
 - ["So24UILargeContentViewerItemP", "setImage"]
+- !private ["So24UILargeContentViewerItemP", "subviews"]
 - ["So24UILargeContentViewerItemP", "tintColor"]
 - !private ["So13UILayoutGuideC", "bottomAnchor"]
 - !private ["So13UILayoutGuideC", "rightAnchor"]
@@ -627,6 +688,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "barTintColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureUI"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureViewControllers"]
+- !private ["So30UIPasteConfigurationSupportingP", "depthFirstSearch"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
@@ -634,6 +696,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "safeAreaLayoutGuide"]
 - ["So30UIPasteConfigurationSupportingP", "self"]
 - ["So30UIPasteConfigurationSupportingP", "setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "subviews"]
 - !private ["So30UIPasteConfigurationSupportingP", "tabBarItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "templateNavigationController"]
 - ["So30UIPasteConfigurationSupportingP", "tintColor"]
@@ -647,7 +710,9 @@ depends-member:
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UINavigationController"]
+- ["So11UIResponderC", "UIView"]
 - ["So11UIResponderC", "UIViewController"]
+- ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", "actionButton"]
 - ["So11UIResponderC", "actionButtonTapped"]
 - !private ["So11UIResponderC", "addSubview"]
@@ -657,6 +722,7 @@ depends-member:
 - !private ["So11UIResponderC", "barTintColor"]
 - ["So11UIResponderC", "configureUI"]
 - ["So11UIResponderC", "configureViewControllers"]
+- ["So11UIResponderC", "depthFirstSearch"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "navigationBar"]
@@ -664,6 +730,7 @@ depends-member:
 - !private ["So11UIResponderC", "safeAreaLayoutGuide"]
 - ["So11UIResponderC", "self"]
 - ["So11UIResponderC", "setImage"]
+- !private ["So11UIResponderC", "subviews"]
 - !private ["So11UIResponderC", "tabBarItem"]
 - ["So11UIResponderC", "templateNavigationController"]
 - ["So11UIResponderC", "tintColor"]
@@ -687,6 +754,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "barTintColor"]
 - !private ["So30UIResponderStandardEditActionsP", "configureUI"]
 - !private ["So30UIResponderStandardEditActionsP", "configureViewControllers"]
+- !private ["So30UIResponderStandardEditActionsP", "depthFirstSearch"]
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
@@ -694,6 +762,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "safeAreaLayoutGuide"]
 - ["So30UIResponderStandardEditActionsP", "self"]
 - ["So30UIResponderStandardEditActionsP", "setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "subviews"]
 - !private ["So30UIResponderStandardEditActionsP", "tabBarItem"]
 - !private ["So30UIResponderStandardEditActionsP", "templateNavigationController"]
 - ["So30UIResponderStandardEditActionsP", "tintColor"]
@@ -786,6 +855,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "barTintColor"]
 - !private ["So18UITraitEnvironmentP", "configureUI"]
 - !private ["So18UITraitEnvironmentP", "configureViewControllers"]
+- !private ["So18UITraitEnvironmentP", "depthFirstSearch"]
 - ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "navigationBar"]
@@ -793,6 +863,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "safeAreaLayoutGuide"]
 - ["So18UITraitEnvironmentP", "self"]
 - ["So18UITraitEnvironmentP", "setImage"]
+- !private ["So18UITraitEnvironmentP", "subviews"]
 - !private ["So18UITraitEnvironmentP", "tabBarItem"]
 - !private ["So18UITraitEnvironmentP", "templateNavigationController"]
 - ["So18UITraitEnvironmentP", "tintColor"]
@@ -816,6 +887,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "barTintColor"]
 - !private ["So23UIUserActivityRestoringP", "configureUI"]
 - !private ["So23UIUserActivityRestoringP", "configureViewControllers"]
+- !private ["So23UIUserActivityRestoringP", "depthFirstSearch"]
 - ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "navigationBar"]
@@ -823,21 +895,26 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "safeAreaLayoutGuide"]
 - ["So23UIUserActivityRestoringP", "self"]
 - ["So23UIUserActivityRestoringP", "setImage"]
+- !private ["So23UIUserActivityRestoringP", "subviews"]
 - !private ["So23UIUserActivityRestoringP", "tabBarItem"]
 - !private ["So23UIUserActivityRestoringP", "templateNavigationController"]
 - ["So23UIUserActivityRestoringP", "tintColor"]
 - !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So23UIUserActivityRestoringP", "viewControllers"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- ["So6UIViewC", "UIView"]
+- ["So6UIViewC", "Void"]
 - !private ["So6UIViewC", "addSubview"]
 - ["So6UIViewC", "addTarget"]
 - !private ["So6UIViewC", "anchor"]
 - ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "barTintColor"]
+- ["So6UIViewC", "depthFirstSearch"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "safeAreaLayoutGuide"]
 - ["So6UIViewC", "setImage"]
+- !private ["So6UIViewC", "subviews"]
 - ["So6UIViewC", "tintColor"]
 - !private ["So16UIViewControllerC", "ConversationsController"]
 - !private ["So16UIViewControllerC", "ExploreController"]
@@ -860,9 +937,13 @@ depends-member:
 - !private ["So16UIViewControllerC", "view"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
 - ["s26_ExpressibleByColorLiteralP", "twitterBlue"]
 - ["s26_ExpressibleByColorLiteralP", "white"]
 - ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ConversationsController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ExploreController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FeedController"]
@@ -882,6 +963,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configureUI"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configureViewControllers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "depthFirstSearch"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
@@ -891,6 +973,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "safeAreaLayoutGuide"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "self"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subviews"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBarItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "templateNavigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
@@ -918,6 +1001,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureUI"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureViewControllers"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "depthFirstSearch"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
@@ -927,6 +1011,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "safeAreaLayoutGuide"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "self"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subviews"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tabBarItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "templateNavigationController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
@@ -936,6 +1021,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "addSubview"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "image"]
 - !private ["s21_ObjectiveCBridgeableP", "safeAreaLayoutGuide"]
 - ["s21_ObjectiveCBridgeableP", "twitterBlue"]
@@ -945,20 +1031,27 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "anchor"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "barTintColor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "depthFirstSearch"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "safeAreaLayoutGuide"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "setImage"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "subviews"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "tintColor"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
 - !private "So7CALayerC"
 - "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
 - !private "12MVVM_Twitter23ConversationsControllerC"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - "Se"
 - "SE"
 - "SQ"
@@ -969,6 +1062,8 @@ depends-nominal:
 - !private "12MVVM_Twitter14FeedControllerC"
 - "SH"
 - "12MVVM_Twitter20MainTabBarControllerC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -980,7 +1075,10 @@ depends-nominal:
 - !private "12MVVM_Twitter23NotificationsControllerC"
 - "s9OptionSetP"
 - "Sq"
+- !private "Sk"
+- !private "Sm"
 - "SY"
+- !private "ST"
 - "s10SetAlgebraP"
 - "So14UIControlStateV"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -1016,8 +1114,12 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
 - "s26_ExpressibleByColorLiteralP"
 - "s26_ExpressibleByImageLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - "s21_ObjectiveCBridgeableP"
@@ -1063,4 +1165,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8a85af875130a7a7a2cb997499566a09"
+interface-hash: "f3be3ba27ffe57e0e8857143da390fa9"
