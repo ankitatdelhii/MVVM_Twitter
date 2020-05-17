@@ -20,33 +20,42 @@ class LoginController: UIViewController {
     }()
     
     private lazy var emailContainerView: UIView = {
-       let view = UIView()
-        view.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
-        view.backgroundColor = .blue
-        let iv = UIImageView()
-        iv.contentMode = .scaleAspectFit
-        iv.image = UIImage(named: "ic_mail_outline_white_2x-1")
-        
-        view.addSubview(iv)
-        iv.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8.0, paddingRight: 8.0)
-        iv.setDimensions(width: 24.0, height: 24.0)
-        
+        let view = Utilities().inputContainerView(withImage: UIImage(named: "ic_mail_outline_white_2x-1")!, textfield: emailTextField)
         return view
     }()
     
     private lazy var passwordContainerView: UIView = {
-       let view = UIView()
-        view.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
-        view.backgroundColor = .red
-        let iv = UIImageView()
-        iv.contentMode = .scaleAspectFit
-        iv.image = UIImage(named: "ic_lock_outline_white_2x")
-        
-        view.addSubview(iv)
-        iv.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8.0, paddingRight: 8.0)
-        iv.setDimensions(width: 24.0, height: 24.0)
-        
+        let view = Utilities().inputContainerView(withImage: UIImage(named: "ic_lock_outline_white_2x")!, textfield: passwordTextField)
         return view
+    }()
+    
+    private let emailTextField: UITextField = {
+        let tf = Utilities().textfield(with: "Email")
+        return tf
+    }()
+    
+    private let passwordTextField: UITextField = {
+        let tf = Utilities().textfield(with: "Password")
+        tf.isSecureTextEntry = true
+        return tf
+    }()
+    
+    private let loginButton: UIButton = {
+       let button = UIButton()
+        button.setTitle("Log In", for: .normal)
+        button.setTitleColor(.twitterBlue, for: .normal)
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 5.0
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        return button
+    }()
+    
+    private let signUpBtn: UIButton = {
+        let button = Utilities().buttonAttributes(textOne: "Don't have an account? ", textTwo: "Sign Up")
+        button.addTarget(self, action: #selector(handleShowSignup), for: .touchUpInside)
+        return button
     }()
     
     //MARK: LifeCylcle
@@ -58,20 +67,35 @@ class LoginController: UIViewController {
     
     //MARK: Selectors
     
+    @objc func handleLogin() {
+        print("Login Button Tapped!")
+    }
+    
+    @objc func handleShowSignup() {
+        print("Sign UP Called!")
+    }
+    
     //MARK: Helper
     
     fileprivate func configureUI() {
         view.backgroundColor = .twitterBlue
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
+        
         view.addSubview(logoImageView)
         logoImageView.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor)
         logoImageView.setDimensions(width: 150.0, height: 150.0)
         
-        let stackView = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView])
+        let stackView = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView, loginButton])
         stackView.axis = .vertical
-        stackView.spacing = 8.0
+        stackView.spacing = 20.0
+        stackView.distribution = .fillEqually
+        
         view.addSubview(stackView)
-        stackView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 100.0)
+        stackView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
+        
+        view.addSubview(signUpBtn)
+        signUpBtn.anchor(bottom: view.bottomAnchor, paddingBottom: 8.0)
+        signUpBtn.centerX(inView: view)
     }
 }
