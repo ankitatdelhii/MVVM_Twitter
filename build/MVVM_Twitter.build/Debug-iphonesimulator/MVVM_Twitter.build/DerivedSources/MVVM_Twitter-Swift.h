@@ -265,6 +265,23 @@ SWIFT_CLASS("_TtC12MVVM_Twitter23NotificationsController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12MVVM_Twitter22RegistrationController")
+@interface RegistrationController : UIViewController
+- (void)viewDidLoad;
+- (void)handleLogIn;
+- (void)handleSignUp;
+- (void)profilePicTapped;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImagePickerController;
+
+@interface RegistrationController (SWIFT_EXTENSION(MVVM_Twitter)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
 @class UIWindow;
 @class UIScene;
 

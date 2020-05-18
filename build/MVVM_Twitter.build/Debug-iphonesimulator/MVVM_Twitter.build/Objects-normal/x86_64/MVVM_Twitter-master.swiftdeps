@@ -1,15 +1,15 @@
 version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
 options: "6478bcf521cc03f9c383f0deb7c3cf83"
-build_time: [1589744151, 665307000]
+build_time: [1589832552, 691351000]
 inputs:
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/NotificationsController.swift": [1589291730, 177896257]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/ConversationsController.swift": [1589291765, 14274836]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Utilities.swift": [1589744103, 569003242]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/AppDelegate.swift": [1589279156, 804023872]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Extensions.swift": [1589657647, 193189993]
-  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/LoginController.swift": [1589744150, 762911685]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/LoginController.swift": [1589829730, 635972446]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/ExploreController.swift": [1589291694, 349588457]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/SceneDelegate.swift": [1589657942, 772746546]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/MainTabBarController.swift": [1589657649, 241973853]
-  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/RegistrationController.swift": [1589657735, 111273354]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/RegistrationController.swift": [1589832549, 432759181]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/FeedController.swift": [1589306973, 269399020]
