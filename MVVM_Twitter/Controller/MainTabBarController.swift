@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MainTabBarController: UITabBarController {
     
@@ -25,14 +26,40 @@ class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureViewControllers()
-        configureUI()
-        
+        view.backgroundColor = .twitterBlue
+//        logout()
+        authenticateUserAndConfigureUI()
     }
     
     //MARK: Selectors
     @objc func actionButtonTapped() {
     }
+    
+    //MARK: API
+    func authenticateUserAndConfigureUI() {
+        if Auth.auth().currentUser == nil {
+            print("User NOT logged IN")
+            DispatchQueue.main.async {
+                let destinationVC = UINavigationController(rootViewController: LoginController())
+                destinationVC.modalPresentationStyle = .fullScreen
+                self.present(destinationVC, animated: true)
+            }
+        } else {
+            print("USER LOGGED IN")
+            configureViewControllers()
+            configureUI()
+        }
+    }
+    
+    fileprivate func logout() {
+        do{
+            try Auth.auth().signOut()
+        }
+        catch let error {
+            print("Error Logging Out \(error.localizedDescription)")
+        }
+    }
+    
     
     //MARK: HELPER
     
@@ -42,6 +69,7 @@ class MainTabBarController: UITabBarController {
         actionButton.layer.cornerRadius = 56 / 2
         
     }
+    
     
     fileprivate func configureViewControllers() {
         let feed = templateNavigationController(image: UIImage(named: "home_unselected"), controller: FeedController())

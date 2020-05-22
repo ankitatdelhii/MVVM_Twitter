@@ -1,11 +1,79 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "STORAGE_REF"
+- "STORAGE_PROFILE_IMAGES"
+- "DB_REF"
+- "REF_USERS"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "DB_REF"
+- "Database"
+- "REF_USERS"
+- "STORAGE_PROFILE_IMAGES"
+- "STORAGE_REF"
+- "Storage"
+- "StringLiteralType"
 depends-member:
+- ["s7CVarArgP", "child"]
+- ["s7CVarArgP", "database"]
+- ["s7CVarArgP", "reference"]
+- ["s7CVarArgP", "storage"]
+- ["s28CustomDebugStringConvertibleP", "child"]
+- ["s28CustomDebugStringConvertibleP", "database"]
+- ["s28CustomDebugStringConvertibleP", "reference"]
+- ["s28CustomDebugStringConvertibleP", "storage"]
+- ["s23CustomStringConvertibleP", "child"]
+- ["s23CustomStringConvertibleP", "database"]
+- ["s23CustomStringConvertibleP", "reference"]
+- ["s23CustomStringConvertibleP", "storage"]
+- ["So11FIRDatabaseC", "database"]
+- ["So11FIRDatabaseC", "reference"]
+- ["So16FIRDatabaseQueryC", "child"]
+- ["So20FIRDatabaseReferenceC", "child"]
+- ["SQ", "child"]
+- ["SQ", "database"]
+- ["SQ", "reference"]
+- ["SQ", "storage"]
+- ["SH", "child"]
+- ["SH", "database"]
+- ["SH", "reference"]
+- ["SH", "storage"]
+- ["So8NSObjectC", "child"]
+- ["So8NSObjectC", "database"]
+- ["So8NSObjectC", "reference"]
+- ["So8NSObjectC", "storage"]
+- ["So8NSObjectP", "child"]
+- ["So8NSObjectP", "database"]
+- ["So8NSObjectP", "reference"]
+- ["So8NSObjectP", "storage"]
+- ["So10FIRStorageC", "reference"]
+- ["So10FIRStorageC", "storage"]
+- ["So19FIRStorageReferenceC", "child"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "child"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "database"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "storage"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "database"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reference"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "storage"]
 depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "So11FIRDatabaseC"
+- "So16FIRDatabaseQueryC"
+- "So20FIRDatabaseReferenceC"
+- "SQ"
+- "SH"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So10FIRStorageC"
+- "So19FIRStorageReferenceC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -119,4 +187,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "18855020905641a0c6056d5fbc755c21"

@@ -1,40 +1,40 @@
 dependencies: \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/FIRStorage.m \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseStorage.build/module.modulemap \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorage.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageConstants.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageComponent.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageConstants_Private.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStoragePath.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageReference_Private.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageReference.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageDownloadTask.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageObservableTask.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageTask.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageMetadata.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageListResult.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageUploadTask.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageTokenAuthorizer.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageUtils.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorage_Private.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/FIRStorage.m \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseStorage.build/module.modulemap \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorage.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageConstants.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageComponent.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageConstants_Private.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStoragePath.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageReference_Private.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageReference.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageDownloadTask.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageObservableTask.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageTask.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageMetadata.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageListResult.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageUploadTask.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageTokenAuthorizer.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageUtils.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorage_Private.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h

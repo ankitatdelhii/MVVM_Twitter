@@ -14,15 +14,13 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "/"
 - "AssignmentPrecedence"
-- !private "Auth"
+- !private "AuthCredectials"
+- !private "AuthService"
 - "BooleanLiteralType"
 - "CastingPrecedence"
 - "FloatLiteralType"
 - "IntegerLiteralType"
-- !private "NSUUID"
-- !private "REF_USERS"
 - "RegistrationController"
-- !private "STORAGE_PROFILE_IMAGES"
 - "StringLiteralType"
 - "UIButton"
 - !private "UIColor"
@@ -38,9 +36,9 @@ depends-top-level:
 - "Utilities"
 - !private "print"
 depends-member:
-- !private ["So7FIRAuthC", "auth"]
-- !private ["So7FIRAuthC", "createUser"]
-- !private ["So17FIRAuthDataResultC", "user"]
+- !private ["12MVVM_Twitter15AuthCredectialsV", "init"]
+- !private ["12MVVM_Twitter11AuthServiceV", "registerUser"]
+- !private ["12MVVM_Twitter11AuthServiceV", "shared"]
 - !private ["So22UILayoutConstraintAxisV", "vertical"]
 - !private ["SK", "editedImage"]
 - !private ["So7CALayerC", "borderColor"]
@@ -78,11 +76,9 @@ depends-member:
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["So13CAMediaTimingP", "masksToBounds"]
-- !private ["s7CVarArgP", "Auth"]
+- !private ["s7CVarArgP", "AuthCredectials"]
+- !private ["s7CVarArgP", "AuthService"]
 - ["s7CVarArgP", "InfoKey"]
-- !private ["s7CVarArgP", "NSUUID"]
-- !private ["s7CVarArgP", "REF_USERS"]
-- !private ["s7CVarArgP", "STORAGE_PROFILE_IMAGES"]
 - ["s7CVarArgP", "UIButton"]
 - !private ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", "UIFont"]
@@ -95,7 +91,6 @@ depends-member:
 - ["s7CVarArgP", "addTarget"]
 - ["s7CVarArgP", "allowsEditing"]
 - !private ["s7CVarArgP", "anchor"]
-- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "axis"]
 - ["s7CVarArgP", "backgroundColor"]
 - ["s7CVarArgP", "boldSystemFont"]
@@ -104,17 +99,14 @@ depends-member:
 - !private ["s7CVarArgP", "bottomAnchor"]
 - !private ["s7CVarArgP", "centerX"]
 - !private ["s7CVarArgP", "cgColor"]
-- !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "clipsToBounds"]
 - !private ["s7CVarArgP", "configureUI"]
 - ["s7CVarArgP", "constraint"]
 - !private ["s7CVarArgP", "contentMode"]
 - ["s7CVarArgP", "cornerRadius"]
-- !private ["s7CVarArgP", "createUser"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "distribution"]
-- !private ["s7CVarArgP", "downloadURL"]
 - !private ["s7CVarArgP", "emailContainerView"]
 - ["s7CVarArgP", "emailTextField"]
 - ["s7CVarArgP", "font"]
@@ -128,7 +120,6 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "isActive"]
 - ["s7CVarArgP", "isSecureTextEntry"]
-- !private ["s7CVarArgP", "jpegData"]
 - ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "leftAnchor"]
 - !private ["s7CVarArgP", "logInBtn"]
@@ -145,7 +136,6 @@ depends-member:
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "profileImage"]
 - ["s7CVarArgP", "profilePicTapped"]
-- !private ["s7CVarArgP", "putData"]
 - !private ["s7CVarArgP", "rightAnchor"]
 - !private ["s7CVarArgP", "safeAreaLayoutGuide"]
 - ["s7CVarArgP", "self"]
@@ -161,13 +151,9 @@ depends-member:
 - ["s7CVarArgP", "titleLabel"]
 - !private ["s7CVarArgP", "topAnchor"]
 - ["s7CVarArgP", "twitterBlue"]
-- !private ["s7CVarArgP", "uid"]
-- !private ["s7CVarArgP", "updateChildValues"]
 - !private ["s7CVarArgP", "uploadImageBtn"]
-- !private ["s7CVarArgP", "user"]
 - !private ["s7CVarArgP", "usernameContainerView"]
 - ["s7CVarArgP", "usernameTextField"]
-- !private ["s7CVarArgP", "uuidString"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "white"]
@@ -176,11 +162,9 @@ depends-member:
 - !private ["Sl", "subscript"]
 - !private ["SL", "editedImage"]
 - !private ["So17UIViewContentModeV", "scaleAspectFit"]
-- !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- !private ["s28CustomDebugStringConvertibleP", "AuthCredectials"]
+- !private ["s28CustomDebugStringConvertibleP", "AuthService"]
 - ["s28CustomDebugStringConvertibleP", "InfoKey"]
-- !private ["s28CustomDebugStringConvertibleP", "NSUUID"]
-- !private ["s28CustomDebugStringConvertibleP", "REF_USERS"]
-- !private ["s28CustomDebugStringConvertibleP", "STORAGE_PROFILE_IMAGES"]
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", "UIFont"]
@@ -189,12 +173,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIStackView"]
 - ["s28CustomDebugStringConvertibleP", "Utilities"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "absoluteString"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - ["s28CustomDebugStringConvertibleP", "addTarget"]
 - ["s28CustomDebugStringConvertibleP", "allowsEditing"]
 - !private ["s28CustomDebugStringConvertibleP", "anchor"]
-- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "axis"]
 - ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - ["s28CustomDebugStringConvertibleP", "boldSystemFont"]
@@ -203,17 +185,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "bottomAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "centerX"]
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
-- !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "clipsToBounds"]
 - !private ["s28CustomDebugStringConvertibleP", "configureUI"]
 - ["s28CustomDebugStringConvertibleP", "constraint"]
 - !private ["s28CustomDebugStringConvertibleP", "contentMode"]
 - ["s28CustomDebugStringConvertibleP", "cornerRadius"]
-- !private ["s28CustomDebugStringConvertibleP", "createUser"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "distribution"]
-- !private ["s28CustomDebugStringConvertibleP", "downloadURL"]
 - !private ["s28CustomDebugStringConvertibleP", "editedImage"]
 - !private ["s28CustomDebugStringConvertibleP", "emailContainerView"]
 - ["s28CustomDebugStringConvertibleP", "emailTextField"]
@@ -228,7 +207,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "isActive"]
 - ["s28CustomDebugStringConvertibleP", "isSecureTextEntry"]
-- !private ["s28CustomDebugStringConvertibleP", "jpegData"]
 - ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "leftAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "logInBtn"]
@@ -245,7 +223,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "profileImage"]
 - ["s28CustomDebugStringConvertibleP", "profilePicTapped"]
-- !private ["s28CustomDebugStringConvertibleP", "putData"]
 - !private ["s28CustomDebugStringConvertibleP", "rightAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "safeAreaLayoutGuide"]
 - ["s28CustomDebugStringConvertibleP", "self"]
@@ -261,13 +238,9 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "titleLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "topAnchor"]
 - ["s28CustomDebugStringConvertibleP", "twitterBlue"]
-- !private ["s28CustomDebugStringConvertibleP", "uid"]
-- !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
 - !private ["s28CustomDebugStringConvertibleP", "uploadImageBtn"]
-- !private ["s28CustomDebugStringConvertibleP", "user"]
 - !private ["s28CustomDebugStringConvertibleP", "usernameContainerView"]
 - ["s28CustomDebugStringConvertibleP", "usernameTextField"]
-- !private ["s28CustomDebugStringConvertibleP", "uuidString"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "white"]
@@ -282,11 +255,9 @@ depends-member:
 - !private ["s17CustomReflectableP", "subscript"]
 - ["s17CustomReflectableP", "twitterBlue"]
 - ["s17CustomReflectableP", "white"]
-- !private ["s23CustomStringConvertibleP", "Auth"]
+- !private ["s23CustomStringConvertibleP", "AuthCredectials"]
+- !private ["s23CustomStringConvertibleP", "AuthService"]
 - ["s23CustomStringConvertibleP", "InfoKey"]
-- !private ["s23CustomStringConvertibleP", "NSUUID"]
-- !private ["s23CustomStringConvertibleP", "REF_USERS"]
-- !private ["s23CustomStringConvertibleP", "STORAGE_PROFILE_IMAGES"]
 - ["s23CustomStringConvertibleP", "UIButton"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", "UIFont"]
@@ -295,14 +266,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIStackView"]
 - ["s23CustomStringConvertibleP", "Utilities"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "absoluteString"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - ["s23CustomStringConvertibleP", "addTarget"]
 - ["s23CustomStringConvertibleP", "allowsEditing"]
 - !private ["s23CustomStringConvertibleP", "anchor"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
-- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "axis"]
 - ["s23CustomStringConvertibleP", "backgroundColor"]
 - ["s23CustomStringConvertibleP", "boldSystemFont"]
@@ -311,17 +280,14 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "bottomAnchor"]
 - !private ["s23CustomStringConvertibleP", "centerX"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
-- !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "clipsToBounds"]
 - !private ["s23CustomStringConvertibleP", "configureUI"]
 - ["s23CustomStringConvertibleP", "constraint"]
 - !private ["s23CustomStringConvertibleP", "contentMode"]
 - ["s23CustomStringConvertibleP", "cornerRadius"]
-- !private ["s23CustomStringConvertibleP", "createUser"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "distribution"]
-- !private ["s23CustomStringConvertibleP", "downloadURL"]
 - !private ["s23CustomStringConvertibleP", "editedImage"]
 - !private ["s23CustomStringConvertibleP", "emailContainerView"]
 - ["s23CustomStringConvertibleP", "emailTextField"]
@@ -336,7 +302,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "isActive"]
 - ["s23CustomStringConvertibleP", "isSecureTextEntry"]
-- !private ["s23CustomStringConvertibleP", "jpegData"]
 - ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "leftAnchor"]
 - !private ["s23CustomStringConvertibleP", "logInBtn"]
@@ -353,7 +318,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "profileImage"]
 - ["s23CustomStringConvertibleP", "profilePicTapped"]
-- !private ["s23CustomStringConvertibleP", "putData"]
 - !private ["s23CustomStringConvertibleP", "rightAnchor"]
 - !private ["s23CustomStringConvertibleP", "safeAreaLayoutGuide"]
 - ["s23CustomStringConvertibleP", "self"]
@@ -369,22 +333,13 @@ depends-member:
 - ["s23CustomStringConvertibleP", "titleLabel"]
 - !private ["s23CustomStringConvertibleP", "topAnchor"]
 - ["s23CustomStringConvertibleP", "twitterBlue"]
-- !private ["s23CustomStringConvertibleP", "uid"]
-- !private ["s23CustomStringConvertibleP", "updateChildValues"]
 - !private ["s23CustomStringConvertibleP", "uploadImageBtn"]
-- !private ["s23CustomStringConvertibleP", "user"]
 - !private ["s23CustomStringConvertibleP", "usernameContainerView"]
 - ["s23CustomStringConvertibleP", "usernameTextField"]
-- !private ["s23CustomStringConvertibleP", "uuidString"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "white"]
 - !private ["s23CustomStringConvertibleP", "withRenderingMode"]
-- !private ["So16FIRDatabaseQueryC", "child"]
-- !private ["So16FIRDatabaseQueryC", "updateChildValues"]
-- !private ["So20FIRDatabaseReferenceC", "child"]
-- !private ["So20FIRDatabaseReferenceC", "updateChildValues"]
-- !private ["Se", "absoluteString"]
 - !private ["Se", "addSubview"]
 - !private ["Se", "backgroundColor"]
 - !private ["Se", "bottomAnchor"]
@@ -399,7 +354,6 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SD", "subscript"]
 - !private ["So23UIStackViewDistributionV", "fillEqually"]
-- !private ["SE", "absoluteString"]
 - !private ["SE", "addSubview"]
 - !private ["SE", "backgroundColor"]
 - !private ["SE", "bottomAnchor"]
@@ -410,11 +364,9 @@ depends-member:
 - !private ["SE", "subscript"]
 - ["SE", "twitterBlue"]
 - ["SE", "white"]
-- !private ["SQ", "Auth"]
+- !private ["SQ", "AuthCredectials"]
+- !private ["SQ", "AuthService"]
 - ["SQ", "InfoKey"]
-- !private ["SQ", "NSUUID"]
-- !private ["SQ", "REF_USERS"]
-- !private ["SQ", "STORAGE_PROFILE_IMAGES"]
 - ["SQ", "UIButton"]
 - !private ["SQ", "UIColor"]
 - ["SQ", "UIFont"]
@@ -423,13 +375,11 @@ depends-member:
 - !private ["SQ", "UIStackView"]
 - ["SQ", "Utilities"]
 - ["SQ", ""]
-- !private ["SQ", "absoluteString"]
 - !private ["SQ", "addSubview"]
 - ["SQ", "addTarget"]
 - ["SQ", "allowsEditing"]
 - !private ["SQ", "alwaysOriginal"]
 - !private ["SQ", "anchor"]
-- !private ["SQ", "auth"]
 - !private ["SQ", "axis"]
 - ["SQ", "backgroundColor"]
 - ["SQ", "boldSystemFont"]
@@ -438,17 +388,14 @@ depends-member:
 - !private ["SQ", "bottomAnchor"]
 - !private ["SQ", "centerX"]
 - !private ["SQ", "cgColor"]
-- !private ["SQ", "child"]
 - !private ["SQ", "clipsToBounds"]
 - !private ["SQ", "configureUI"]
 - ["SQ", "constraint"]
 - !private ["SQ", "contentMode"]
 - ["SQ", "cornerRadius"]
-- !private ["SQ", "createUser"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dismiss"]
 - !private ["SQ", "distribution"]
-- !private ["SQ", "downloadURL"]
 - !private ["SQ", "editedImage"]
 - !private ["SQ", "emailContainerView"]
 - ["SQ", "emailTextField"]
@@ -464,7 +411,6 @@ depends-member:
 - ["SQ", "init"]
 - ["SQ", "isActive"]
 - ["SQ", "isSecureTextEntry"]
-- !private ["SQ", "jpegData"]
 - ["SQ", "layer"]
 - !private ["SQ", "leftAnchor"]
 - !private ["SQ", "logInBtn"]
@@ -482,7 +428,6 @@ depends-member:
 - !private ["SQ", "print"]
 - !private ["SQ", "profileImage"]
 - ["SQ", "profilePicTapped"]
-- !private ["SQ", "putData"]
 - !private ["SQ", "rightAnchor"]
 - !private ["SQ", "safeAreaLayoutGuide"]
 - !private ["SQ", "scaleAspectFit"]
@@ -500,13 +445,9 @@ depends-member:
 - !private ["SQ", "topAnchor"]
 - ["SQ", "touchUpInside"]
 - ["SQ", "twitterBlue"]
-- !private ["SQ", "uid"]
-- !private ["SQ", "updateChildValues"]
 - !private ["SQ", "uploadImageBtn"]
-- !private ["SQ", "user"]
 - !private ["SQ", "usernameContainerView"]
 - ["SQ", "usernameTextField"]
-- !private ["SQ", "uuidString"]
 - !private ["SQ", "vertical"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewDidLoad"]
@@ -525,11 +466,9 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "safeAreaLayoutGuide"]
 - ["s23ExpressibleByNilLiteralP", "twitterBlue"]
 - ["s23ExpressibleByNilLiteralP", "white"]
-- !private ["SH", "Auth"]
+- !private ["SH", "AuthCredectials"]
+- !private ["SH", "AuthService"]
 - ["SH", "InfoKey"]
-- !private ["SH", "NSUUID"]
-- !private ["SH", "REF_USERS"]
-- !private ["SH", "STORAGE_PROFILE_IMAGES"]
 - ["SH", "UIButton"]
 - !private ["SH", "UIColor"]
 - ["SH", "UIFont"]
@@ -538,13 +477,11 @@ depends-member:
 - !private ["SH", "UIStackView"]
 - ["SH", "Utilities"]
 - ["SH", ""]
-- !private ["SH", "absoluteString"]
 - !private ["SH", "addSubview"]
 - ["SH", "addTarget"]
 - ["SH", "allowsEditing"]
 - !private ["SH", "alwaysOriginal"]
 - !private ["SH", "anchor"]
-- !private ["SH", "auth"]
 - !private ["SH", "axis"]
 - ["SH", "backgroundColor"]
 - ["SH", "boldSystemFont"]
@@ -553,17 +490,14 @@ depends-member:
 - !private ["SH", "bottomAnchor"]
 - !private ["SH", "centerX"]
 - !private ["SH", "cgColor"]
-- !private ["SH", "child"]
 - !private ["SH", "clipsToBounds"]
 - !private ["SH", "configureUI"]
 - ["SH", "constraint"]
 - !private ["SH", "contentMode"]
 - ["SH", "cornerRadius"]
-- !private ["SH", "createUser"]
 - !private ["SH", "delegate"]
 - !private ["SH", "dismiss"]
 - !private ["SH", "distribution"]
-- !private ["SH", "downloadURL"]
 - !private ["SH", "editedImage"]
 - !private ["SH", "emailContainerView"]
 - ["SH", "emailTextField"]
@@ -579,7 +513,6 @@ depends-member:
 - ["SH", "init"]
 - ["SH", "isActive"]
 - ["SH", "isSecureTextEntry"]
-- !private ["SH", "jpegData"]
 - ["SH", "layer"]
 - !private ["SH", "leftAnchor"]
 - !private ["SH", "logInBtn"]
@@ -596,7 +529,6 @@ depends-member:
 - !private ["SH", "print"]
 - !private ["SH", "profileImage"]
 - ["SH", "profilePicTapped"]
-- !private ["SH", "putData"]
 - !private ["SH", "rightAnchor"]
 - !private ["SH", "safeAreaLayoutGuide"]
 - !private ["SH", "scaleAspectFit"]
@@ -613,13 +545,9 @@ depends-member:
 - ["SH", "titleLabel"]
 - !private ["SH", "topAnchor"]
 - ["SH", "twitterBlue"]
-- !private ["SH", "uid"]
-- !private ["SH", "updateChildValues"]
 - !private ["SH", "uploadImageBtn"]
-- !private ["SH", "user"]
 - !private ["SH", "usernameContainerView"]
 - ["SH", "usernameTextField"]
-- !private ["SH", "uuidString"]
 - !private ["SH", "vertical"]
 - !private ["SH", "view"]
 - !private ["SH", "viewDidLoad"]
@@ -627,11 +555,9 @@ depends-member:
 - !private ["SH", "withRenderingMode"]
 - !private ["SD5IndexV", "editedImage"]
 - !private ["So30UIImagePickerControllerInfoKeya", "editedImage"]
-- !private ["So8NSCodingP", "Auth"]
+- !private ["So8NSCodingP", "AuthCredectials"]
+- !private ["So8NSCodingP", "AuthService"]
 - ["So8NSCodingP", "InfoKey"]
-- !private ["So8NSCodingP", "NSUUID"]
-- !private ["So8NSCodingP", "REF_USERS"]
-- !private ["So8NSCodingP", "STORAGE_PROFILE_IMAGES"]
 - ["So8NSCodingP", "UIButton"]
 - !private ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", "UIFont"]
@@ -671,7 +597,6 @@ depends-member:
 - !private ["So8NSCodingP", "imageView"]
 - ["So8NSCodingP", "init"]
 - ["So8NSCodingP", "isSecureTextEntry"]
-- !private ["So8NSCodingP", "jpegData"]
 - ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "leftAnchor"]
 - !private ["So8NSCodingP", "logInBtn"]
@@ -705,7 +630,6 @@ depends-member:
 - !private ["So8NSCodingP", "uploadImageBtn"]
 - !private ["So8NSCodingP", "usernameContainerView"]
 - ["So8NSCodingP", "usernameTextField"]
-- !private ["So8NSCodingP", "uuidString"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "white"]
@@ -713,15 +637,11 @@ depends-member:
 - ["So9NSCopyingP", "boldSystemFont"]
 - !private ["So9NSCopyingP", "cgColor"]
 - ["So9NSCopyingP", "constraint"]
-- !private ["So9NSCopyingP", "init"]
 - ["So9NSCopyingP", "twitterBlue"]
-- !private ["So9NSCopyingP", "uuidString"]
 - ["So9NSCopyingP", "white"]
-- !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- !private ["So26NSExtensionRequestHandlingP", "AuthCredectials"]
+- !private ["So26NSExtensionRequestHandlingP", "AuthService"]
 - ["So26NSExtensionRequestHandlingP", "InfoKey"]
-- !private ["So26NSExtensionRequestHandlingP", "NSUUID"]
-- !private ["So26NSExtensionRequestHandlingP", "REF_USERS"]
-- !private ["So26NSExtensionRequestHandlingP", "STORAGE_PROFILE_IMAGES"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - ["So26NSExtensionRequestHandlingP", "UIFont"]
@@ -764,13 +684,11 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
 - ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderReadingP", "jpegData"]
 - ["So21NSItemProviderReadingP", "twitterBlue"]
 - ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderReadingP", "withRenderingMode"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
 - ["So21NSItemProviderWritingP", "init"]
-- !private ["So21NSItemProviderWritingP", "jpegData"]
 - ["So21NSItemProviderWritingP", "twitterBlue"]
 - ["So21NSItemProviderWritingP", "white"]
 - !private ["So21NSItemProviderWritingP", "withRenderingMode"]
@@ -783,11 +701,9 @@ depends-member:
 - ["So8NSObjectC", "$__lazy_storage_$_passwordContainerView"]
 - ["So8NSObjectC", "$__lazy_storage_$_uploadImageBtn"]
 - ["So8NSObjectC", "$__lazy_storage_$_usernameContainerView"]
-- !private ["So8NSObjectC", "Auth"]
+- !private ["So8NSObjectC", "AuthCredectials"]
+- !private ["So8NSObjectC", "AuthService"]
 - ["So8NSObjectC", "InfoKey"]
-- !private ["So8NSObjectC", "NSUUID"]
-- !private ["So8NSObjectC", "REF_USERS"]
-- !private ["So8NSObjectC", "STORAGE_PROFILE_IMAGES"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIFont"]
@@ -801,7 +717,6 @@ depends-member:
 - ["So8NSObjectC", "addTarget"]
 - ["So8NSObjectC", "allowsEditing"]
 - !private ["So8NSObjectC", "anchor"]
-- !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "axis"]
 - ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "boldSystemFont"]
@@ -810,17 +725,14 @@ depends-member:
 - !private ["So8NSObjectC", "bottomAnchor"]
 - !private ["So8NSObjectC", "centerX"]
 - !private ["So8NSObjectC", "cgColor"]
-- !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "clipsToBounds"]
 - ["So8NSObjectC", "configureUI"]
 - ["So8NSObjectC", "constraint"]
 - !private ["So8NSObjectC", "contentMode"]
 - ["So8NSObjectC", "cornerRadius"]
-- !private ["So8NSObjectC", "createUser"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "distribution"]
-- !private ["So8NSObjectC", "downloadURL"]
 - ["So8NSObjectC", "emailContainerView"]
 - ["So8NSObjectC", "emailTextField"]
 - ["So8NSObjectC", "font"]
@@ -834,7 +746,6 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "isActive"]
 - ["So8NSObjectC", "isSecureTextEntry"]
-- !private ["So8NSObjectC", "jpegData"]
 - ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "leftAnchor"]
 - ["So8NSObjectC", "logInBtn"]
@@ -851,7 +762,6 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "profileImage"]
 - ["So8NSObjectC", "profilePicTapped"]
-- !private ["So8NSObjectC", "putData"]
 - !private ["So8NSObjectC", "rightAnchor"]
 - !private ["So8NSObjectC", "safeAreaLayoutGuide"]
 - ["So8NSObjectC", "self"]
@@ -866,22 +776,16 @@ depends-member:
 - ["So8NSObjectC", "titleLabel"]
 - !private ["So8NSObjectC", "topAnchor"]
 - ["So8NSObjectC", "twitterBlue"]
-- !private ["So8NSObjectC", "uid"]
-- !private ["So8NSObjectC", "updateChildValues"]
 - ["So8NSObjectC", "uploadImageBtn"]
-- !private ["So8NSObjectC", "user"]
 - ["So8NSObjectC", "usernameContainerView"]
 - ["So8NSObjectC", "usernameTextField"]
-- !private ["So8NSObjectC", "uuidString"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "white"]
 - !private ["So8NSObjectC", "withRenderingMode"]
-- !private ["So8NSObjectP", "Auth"]
+- !private ["So8NSObjectP", "AuthCredectials"]
+- !private ["So8NSObjectP", "AuthService"]
 - ["So8NSObjectP", "InfoKey"]
-- !private ["So8NSObjectP", "NSUUID"]
-- !private ["So8NSObjectP", "REF_USERS"]
-- !private ["So8NSObjectP", "STORAGE_PROFILE_IMAGES"]
 - ["So8NSObjectP", "UIButton"]
 - !private ["So8NSObjectP", "UIColor"]
 - ["So8NSObjectP", "UIFont"]
@@ -894,7 +798,6 @@ depends-member:
 - ["So8NSObjectP", "addTarget"]
 - ["So8NSObjectP", "allowsEditing"]
 - !private ["So8NSObjectP", "anchor"]
-- !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "axis"]
 - ["So8NSObjectP", "backgroundColor"]
 - ["So8NSObjectP", "boldSystemFont"]
@@ -903,17 +806,14 @@ depends-member:
 - !private ["So8NSObjectP", "bottomAnchor"]
 - !private ["So8NSObjectP", "centerX"]
 - !private ["So8NSObjectP", "cgColor"]
-- !private ["So8NSObjectP", "child"]
 - !private ["So8NSObjectP", "clipsToBounds"]
 - !private ["So8NSObjectP", "configureUI"]
 - ["So8NSObjectP", "constraint"]
 - !private ["So8NSObjectP", "contentMode"]
 - ["So8NSObjectP", "cornerRadius"]
-- !private ["So8NSObjectP", "createUser"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "distribution"]
-- !private ["So8NSObjectP", "downloadURL"]
 - !private ["So8NSObjectP", "emailContainerView"]
 - ["So8NSObjectP", "emailTextField"]
 - ["So8NSObjectP", "font"]
@@ -927,7 +827,6 @@ depends-member:
 - ["So8NSObjectP", "init"]
 - ["So8NSObjectP", "isActive"]
 - ["So8NSObjectP", "isSecureTextEntry"]
-- !private ["So8NSObjectP", "jpegData"]
 - ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "leftAnchor"]
 - !private ["So8NSObjectP", "logInBtn"]
@@ -944,7 +843,6 @@ depends-member:
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "profileImage"]
 - ["So8NSObjectP", "profilePicTapped"]
-- !private ["So8NSObjectP", "putData"]
 - !private ["So8NSObjectP", "rightAnchor"]
 - !private ["So8NSObjectP", "safeAreaLayoutGuide"]
 - ["So8NSObjectP", "self"]
@@ -959,13 +857,9 @@ depends-member:
 - ["So8NSObjectP", "titleLabel"]
 - !private ["So8NSObjectP", "topAnchor"]
 - ["So8NSObjectP", "twitterBlue"]
-- !private ["So8NSObjectP", "uid"]
-- !private ["So8NSObjectP", "updateChildValues"]
 - !private ["So8NSObjectP", "uploadImageBtn"]
-- !private ["So8NSObjectP", "user"]
 - !private ["So8NSObjectP", "usernameContainerView"]
 - ["So8NSObjectP", "usernameTextField"]
-- !private ["So8NSObjectP", "uuidString"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - ["So8NSObjectP", "white"]
@@ -975,14 +869,10 @@ depends-member:
 - !private ["So14NSSecureCodingP", "cgColor"]
 - ["So14NSSecureCodingP", "cornerRadius"]
 - ["So14NSSecureCodingP", "init"]
-- !private ["So14NSSecureCodingP", "jpegData"]
 - !private ["So14NSSecureCodingP", "masksToBounds"]
 - ["So14NSSecureCodingP", "twitterBlue"]
-- !private ["So14NSSecureCodingP", "uuidString"]
 - ["So14NSSecureCodingP", "white"]
 - !private ["So14NSSecureCodingP", "withRenderingMode"]
-- !private ["So6NSUUIDC", "init"]
-- !private ["So6NSUUIDC", "uuidString"]
 - ["s9OptionSetP", "normal"]
 - ["s9OptionSetP", "touchUpInside"]
 - !private ["Sq", "addSubview"]
@@ -1003,17 +893,14 @@ depends-member:
 - !private ["SY", "scaleAspectFit"]
 - ["SY", "touchUpInside"]
 - !private ["SY", "vertical"]
-- !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_emailContainerView"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_imagePicker"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_nameContainerView"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_passwordContainerView"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_uploadImageBtn"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_usernameContainerView"]
-- !private ["12MVVM_Twitter22RegistrationControllerC", "Auth"]
-- !private ["12MVVM_Twitter22RegistrationControllerC", "NSUUID"]
-- !private ["12MVVM_Twitter22RegistrationControllerC", "REF_USERS"]
-- !private ["12MVVM_Twitter22RegistrationControllerC", "STORAGE_PROFILE_IMAGES"]
+- !private ["12MVVM_Twitter22RegistrationControllerC", "AuthCredectials"]
+- !private ["12MVVM_Twitter22RegistrationControllerC", "AuthService"]
 - ["12MVVM_Twitter22RegistrationControllerC", "UIButton"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "UIColor"]
 - ["12MVVM_Twitter22RegistrationControllerC", "UIFont"]
@@ -1059,9 +946,6 @@ depends-member:
 - ["s10SetAlgebraP", "normal"]
 - ["s10SetAlgebraP", "touchUpInside"]
 - ["So14UIControlStateV", "normal"]
-- !private ["So19FIRStorageReferenceC", "child"]
-- !private ["So19FIRStorageReferenceC", "downloadURL"]
-- !private ["So19FIRStorageReferenceC", "putData"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
@@ -1098,7 +982,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "imageView"]
 - ["So29UIAccessibilityIdentificationP", "init"]
 - ["So29UIAccessibilityIdentificationP", "isSecureTextEntry"]
-- !private ["So29UIAccessibilityIdentificationP", "jpegData"]
 - ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "leftAnchor"]
 - !private ["So29UIAccessibilityIdentificationP", "rightAnchor"]
@@ -1139,11 +1022,9 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - ["So12UIAppearanceP", "tintColor"]
 - ["So12UIAppearanceP", "titleLabel"]
-- !private ["So21UIAppearanceContainerP", "Auth"]
+- !private ["So21UIAppearanceContainerP", "AuthCredectials"]
+- !private ["So21UIAppearanceContainerP", "AuthService"]
 - ["So21UIAppearanceContainerP", "InfoKey"]
-- !private ["So21UIAppearanceContainerP", "NSUUID"]
-- !private ["So21UIAppearanceContainerP", "REF_USERS"]
-- !private ["So21UIAppearanceContainerP", "STORAGE_PROFILE_IMAGES"]
 - ["So21UIAppearanceContainerP", "UIButton"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", "UIFont"]
@@ -1229,11 +1110,9 @@ depends-member:
 - !private ["So7UIColorC", "cgColor"]
 - ["So7UIColorC", "twitterBlue"]
 - ["So7UIColorC", "white"]
-- !private ["So18UIContentContainerP", "Auth"]
+- !private ["So18UIContentContainerP", "AuthCredectials"]
+- !private ["So18UIContentContainerP", "AuthService"]
 - ["So18UIContentContainerP", "InfoKey"]
-- !private ["So18UIContentContainerP", "NSUUID"]
-- !private ["So18UIContentContainerP", "REF_USERS"]
-- !private ["So18UIContentContainerP", "STORAGE_PROFILE_IMAGES"]
 - ["So18UIContentContainerP", "UIButton"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - ["So18UIContentContainerP", "UIFont"]
@@ -1349,11 +1228,9 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - ["So13UIDynamicItemP", "tintColor"]
 - ["So13UIDynamicItemP", "titleLabel"]
-- !private ["So18UIFocusEnvironmentP", "Auth"]
+- !private ["So18UIFocusEnvironmentP", "AuthCredectials"]
+- !private ["So18UIFocusEnvironmentP", "AuthService"]
 - ["So18UIFocusEnvironmentP", "InfoKey"]
-- !private ["So18UIFocusEnvironmentP", "NSUUID"]
-- !private ["So18UIFocusEnvironmentP", "REF_USERS"]
-- !private ["So18UIFocusEnvironmentP", "STORAGE_PROFILE_IMAGES"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", "UIFont"]
@@ -1476,16 +1353,13 @@ depends-member:
 - ["So20UIFocusItemContainerP", "titleLabel"]
 - ["So6UIFontC", "boldSystemFont"]
 - ["So7UIImageC", "init"]
-- !private ["So7UIImageC", "jpegData"]
 - !private ["So7UIImageC", "withRenderingMode"]
 - ["So23UIImagePickerControllerC", "InfoKey"]
 - ["So23UIImagePickerControllerC", "allowsEditing"]
 - !private ["So23UIImagePickerControllerC", "delegate"]
 - ["So23UIImagePickerControllerC", "init"]
-- !private ["So31UIImagePickerControllerDelegateP", "Auth"]
-- !private ["So31UIImagePickerControllerDelegateP", "NSUUID"]
-- !private ["So31UIImagePickerControllerDelegateP", "REF_USERS"]
-- !private ["So31UIImagePickerControllerDelegateP", "STORAGE_PROFILE_IMAGES"]
+- !private ["So31UIImagePickerControllerDelegateP", "AuthCredectials"]
+- !private ["So31UIImagePickerControllerDelegateP", "AuthService"]
 - ["So31UIImagePickerControllerDelegateP", "UIButton"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIColor"]
 - ["So31UIImagePickerControllerDelegateP", "UIFont"]
@@ -1523,7 +1397,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "view"]
 - !private ["So11UIImageViewC", "contentMode"]
 - ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "jpegData"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "withRenderingMode"]
 - ["So10UIKeyInputP", "isSecureTextEntry"]
 - !private ["So10UIKeyInputP", "text"]
@@ -1561,10 +1434,8 @@ depends-member:
 - !private ["So22UINavigationControllerC", "delegate"]
 - ["So22UINavigationControllerC", "init"]
 - !private ["So22UINavigationControllerC", "popViewController"]
-- !private ["So30UINavigationControllerDelegateP", "Auth"]
-- !private ["So30UINavigationControllerDelegateP", "NSUUID"]
-- !private ["So30UINavigationControllerDelegateP", "REF_USERS"]
-- !private ["So30UINavigationControllerDelegateP", "STORAGE_PROFILE_IMAGES"]
+- !private ["So30UINavigationControllerDelegateP", "AuthCredectials"]
+- !private ["So30UINavigationControllerDelegateP", "AuthService"]
 - ["So30UINavigationControllerDelegateP", "UIButton"]
 - !private ["So30UINavigationControllerDelegateP", "UIColor"]
 - ["So30UINavigationControllerDelegateP", "UIFont"]
@@ -1600,11 +1471,9 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "usernameContainerView"]
 - ["So30UINavigationControllerDelegateP", "usernameTextField"]
 - !private ["So30UINavigationControllerDelegateP", "view"]
-- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- !private ["So30UIPasteConfigurationSupportingP", "AuthCredectials"]
+- !private ["So30UIPasteConfigurationSupportingP", "AuthService"]
 - ["So30UIPasteConfigurationSupportingP", "InfoKey"]
-- !private ["So30UIPasteConfigurationSupportingP", "NSUUID"]
-- !private ["So30UIPasteConfigurationSupportingP", "REF_USERS"]
-- !private ["So30UIPasteConfigurationSupportingP", "STORAGE_PROFILE_IMAGES"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", "UIFont"]
@@ -1677,11 +1546,9 @@ depends-member:
 - ["So11UIResponderC", "$__lazy_storage_$_passwordContainerView"]
 - ["So11UIResponderC", "$__lazy_storage_$_uploadImageBtn"]
 - ["So11UIResponderC", "$__lazy_storage_$_usernameContainerView"]
-- !private ["So11UIResponderC", "Auth"]
+- !private ["So11UIResponderC", "AuthCredectials"]
+- !private ["So11UIResponderC", "AuthService"]
 - ["So11UIResponderC", "InfoKey"]
-- !private ["So11UIResponderC", "NSUUID"]
-- !private ["So11UIResponderC", "REF_USERS"]
-- !private ["So11UIResponderC", "STORAGE_PROFILE_IMAGES"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIFont"]
@@ -1749,11 +1616,9 @@ depends-member:
 - ["So11UIResponderC", "usernameTextField"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
-- !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- !private ["So30UIResponderStandardEditActionsP", "AuthCredectials"]
+- !private ["So30UIResponderStandardEditActionsP", "AuthService"]
 - ["So30UIResponderStandardEditActionsP", "InfoKey"]
-- !private ["So30UIResponderStandardEditActionsP", "NSUUID"]
-- !private ["So30UIResponderStandardEditActionsP", "REF_USERS"]
-- !private ["So30UIResponderStandardEditActionsP", "STORAGE_PROFILE_IMAGES"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", "UIFont"]
@@ -1841,11 +1706,9 @@ depends-member:
 - !private ["So11UIStackViewC", "distribution"]
 - !private ["So11UIStackViewC", "init"]
 - !private ["So11UIStackViewC", "spacing"]
-- !private ["So16UIStateRestoringP", "Auth"]
+- !private ["So16UIStateRestoringP", "AuthCredectials"]
+- !private ["So16UIStateRestoringP", "AuthService"]
 - ["So16UIStateRestoringP", "InfoKey"]
-- !private ["So16UIStateRestoringP", "NSUUID"]
-- !private ["So16UIStateRestoringP", "REF_USERS"]
-- !private ["So16UIStateRestoringP", "STORAGE_PROFILE_IMAGES"]
 - ["So16UIStateRestoringP", "UIButton"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - ["So16UIStateRestoringP", "UIFont"]
@@ -1898,11 +1761,9 @@ depends-member:
 - !private ["So17UITextInputTraitsP", "text"]
 - ["So34UITextPasteConfigurationSupportingP", "isSecureTextEntry"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
-- !private ["So18UITraitEnvironmentP", "Auth"]
+- !private ["So18UITraitEnvironmentP", "AuthCredectials"]
+- !private ["So18UITraitEnvironmentP", "AuthService"]
 - ["So18UITraitEnvironmentP", "InfoKey"]
-- !private ["So18UITraitEnvironmentP", "NSUUID"]
-- !private ["So18UITraitEnvironmentP", "REF_USERS"]
-- !private ["So18UITraitEnvironmentP", "STORAGE_PROFILE_IMAGES"]
 - ["So18UITraitEnvironmentP", "UIButton"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", "UIFont"]
@@ -1969,11 +1830,9 @@ depends-member:
 - ["So18UITraitEnvironmentP", "usernameTextField"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
-- !private ["So23UIUserActivityRestoringP", "Auth"]
+- !private ["So23UIUserActivityRestoringP", "AuthCredectials"]
+- !private ["So23UIUserActivityRestoringP", "AuthService"]
 - ["So23UIUserActivityRestoringP", "InfoKey"]
-- !private ["So23UIUserActivityRestoringP", "NSUUID"]
-- !private ["So23UIUserActivityRestoringP", "REF_USERS"]
-- !private ["So23UIUserActivityRestoringP", "STORAGE_PROFILE_IMAGES"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
 - ["So23UIUserActivityRestoringP", "UIFont"]
@@ -2073,11 +1932,9 @@ depends-member:
 - ["So16UIViewControllerC", "$__lazy_storage_$_passwordContainerView"]
 - ["So16UIViewControllerC", "$__lazy_storage_$_uploadImageBtn"]
 - ["So16UIViewControllerC", "$__lazy_storage_$_usernameContainerView"]
-- !private ["So16UIViewControllerC", "Auth"]
+- !private ["So16UIViewControllerC", "AuthCredectials"]
+- !private ["So16UIViewControllerC", "AuthService"]
 - ["So16UIViewControllerC", "InfoKey"]
-- !private ["So16UIViewControllerC", "NSUUID"]
-- !private ["So16UIViewControllerC", "REF_USERS"]
-- !private ["So16UIViewControllerC", "STORAGE_PROFILE_IMAGES"]
 - ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIColor"]
 - ["So16UIViewControllerC", "UIFont"]
@@ -2120,30 +1977,20 @@ depends-member:
 - ["So16UIViewControllerC", "usernameTextField"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- !private ["10Foundation3URLV", "absoluteString"]
-- !private ["So7FIRUserC", "uid"]
-- !private ["So11FIRUserInfoP", "uid"]
 - ["12MVVM_Twitter9UtilitiesC", "buttonAttributes"]
 - ["12MVVM_Twitter9UtilitiesC", "init"]
 - ["12MVVM_Twitter9UtilitiesC", "inputContainerView"]
 - ["12MVVM_Twitter9UtilitiesC", "textfield"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "absoluteString"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - ["s26_ExpressibleByColorLiteralP", "twitterBlue"]
 - ["s26_ExpressibleByColorLiteralP", "white"]
-- !private ["s34_ExpressibleByFileReferenceLiteralP", "absoluteString"]
 - ["s26_ExpressibleByImageLiteralP", "init"]
-- !private ["s26_ExpressibleByImageLiteralP", "jpegData"]
 - !private ["s26_ExpressibleByImageLiteralP", "withRenderingMode"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "editedImage"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "uuidString"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AuthCredectials"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AuthService"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "InfoKey"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSUUID"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "REF_USERS"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "STORAGE_PROFILE_IMAGES"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
@@ -2156,7 +2003,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "allowsEditing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "anchor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "axis"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "boldSystemFont"]
@@ -2165,17 +2011,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bottomAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "centerX"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clipsToBounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configureUI"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "constraint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "createUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "distribution"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "downloadURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "emailContainerView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "emailTextField"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "font"]
@@ -2189,7 +2032,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "isActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "isSecureTextEntry"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "jpegData"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "leftAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "logInBtn"]
@@ -2206,7 +2048,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "profileImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "profilePicTapped"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "putData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "safeAreaLayoutGuide"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "self"]
@@ -2221,22 +2062,16 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "topAnchor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "twitterBlue"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uploadImageBtn"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "usernameContainerView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "usernameTextField"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "uuidString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "withRenderingMode"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Auth"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AuthCredectials"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AuthService"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "InfoKey"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSUUID"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "REF_USERS"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "STORAGE_PROFILE_IMAGES"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIFont"]
@@ -2249,7 +2084,6 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addTarget"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "allowsEditing"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "anchor"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "axis"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "boldSystemFont"]
@@ -2258,17 +2092,14 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bottomAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "centerX"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cgColor"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "clipsToBounds"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureUI"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "constraint"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentMode"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "createUser"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "distribution"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "downloadURL"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "emailContainerView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "emailTextField"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "font"]
@@ -2282,7 +2113,6 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isActive"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isSecureTextEntry"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "jpegData"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "leftAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "logInBtn"]
@@ -2299,7 +2129,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "profileImage"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "profilePicTapped"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "putData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "safeAreaLayoutGuide"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "self"]
@@ -2314,18 +2143,13 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "topAnchor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "twitterBlue"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "updateChildValues"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uploadImageBtn"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "user"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "usernameContainerView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "usernameTextField"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uuidString"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "withRenderingMode"]
-- !private ["s21_ObjectiveCBridgeableP", "absoluteString"]
 - !private ["s21_ObjectiveCBridgeableP", "addSubview"]
 - !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
 - !private ["s21_ObjectiveCBridgeableP", "bottomAnchor"]
@@ -2365,8 +2189,8 @@ depends-member:
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "tintColor"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
 depends-nominal:
-- !private "So7FIRAuthC"
-- !private "So17FIRAuthDataResultC"
+- !private "12MVVM_Twitter15AuthCredectialsV"
+- !private "12MVVM_Twitter11AuthServiceV"
 - !private "So22UILayoutConstraintAxisV"
 - !private "SK"
 - "So7CALayerC"
@@ -2379,8 +2203,6 @@ depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "So16FIRDatabaseQueryC"
-- !private "So20FIRDatabaseReferenceC"
 - "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "SD"
@@ -2406,20 +2228,17 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
-- !private "So6NSUUIDC"
 - "s9OptionSetP"
 - "Sq"
 - !private "Sk"
 - !private "Sn"
 - !private "SX"
 - "SY"
-- !private "10Foundation20ReferenceConvertibleP"
 - "12MVVM_Twitter22RegistrationControllerC"
 - !private "So20UIImageRenderingModeV"
 - !private "ST"
 - "s10SetAlgebraP"
 - "So14UIControlStateV"
-- !private "So19FIRStorageReferenceC"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -2464,13 +2283,8 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
-- !private "10Foundation3URLV"
-- !private "So7FIRUserC"
-- !private "So11FIRUserInfoP"
 - "12MVVM_Twitter9UtilitiesC"
-- !private "s30_CustomPlaygroundQuickLookableP"
 - "s26_ExpressibleByColorLiteralP"
-- !private "s34_ExpressibleByFileReferenceLiteralP"
 - "s26_ExpressibleByImageLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -2506,78 +2320,78 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/Firebase.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

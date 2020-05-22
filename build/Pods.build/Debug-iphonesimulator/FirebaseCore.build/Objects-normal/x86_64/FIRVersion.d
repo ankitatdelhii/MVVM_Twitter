@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/FIRVersion.m
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/FIRVersion.m

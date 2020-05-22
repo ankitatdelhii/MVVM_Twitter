@@ -118,6 +118,10 @@ class RegistrationController: UIViewController {
                 print("Error Registering User with \(error.localizedDescription)")
             } else {
                 print("Registration complete")
+                guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
+                guard let rootVCRef = window.rootViewController as? MainTabBarController else { return }
+                rootVCRef.authenticateUserAndConfigureUI()
+                self.dismiss(animated: true, completion: nil)
             }
         }
         

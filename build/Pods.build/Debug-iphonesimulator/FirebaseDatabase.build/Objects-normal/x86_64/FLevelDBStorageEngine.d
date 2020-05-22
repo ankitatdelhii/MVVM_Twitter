@@ -1,30 +1,30 @@
 dependencies: \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FLevelDBStorageEngine.m \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FLevelDBStorageEngine.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FCompoundWrite.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FNode.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FTypedefs_Private.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FQuerySpec.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FStorageEngine.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/third_party/Wrap-leveldb/APLevelDB.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FEmptyNode.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FPendingPut.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FPruneForest.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FSnapshotUtilities.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FTrackedQuery.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
-  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FWriteRecord.h
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FLevelDBStorageEngine.m \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FLevelDBStorageEngine.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FCompoundWrite.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FNode.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FTypedefs_Private.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FQuerySpec.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FStorageEngine.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/third_party/Wrap-leveldb/APLevelDB.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FEmptyNode.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FPendingPut.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FPruneForest.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FSnapshotUtilities.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Persistence/FTrackedQuery.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
+  /Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseDatabase/Firebase/Database/Core/FWriteRecord.h
