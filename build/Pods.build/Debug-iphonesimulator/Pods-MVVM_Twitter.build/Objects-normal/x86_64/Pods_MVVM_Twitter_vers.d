@@ -1,0 +1,2 @@
+dependencies: \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/Pods-MVVM_Twitter.build/DerivedSources/Pods_MVVM_Twitter_vers.c

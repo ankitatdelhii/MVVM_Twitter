@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationController: UIViewController {
     
     
     //MARK: Properties
+    
+    private var profileImage: UIImage?
     
     private lazy var imagePicker: UIImagePickerController = {
         let ip = UIImagePickerController()
@@ -55,6 +58,7 @@ class RegistrationController: UIViewController {
     
     private let passwordTextField: UITextField = {
         let tf = Utilities().textfield(with: "Password")
+        tf.isSecureTextEntry = true
         return tf
     }()
     
@@ -99,8 +103,24 @@ class RegistrationController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    //MARK: Signup
     @objc func handleSignUp() {
-        print("Sign Up Handle!")
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        guard let name = nameTextField.text else { return }
+        guard let userName = usernameTextField.text else{ return }
+        guard let userImage = profileImage else { return }
+        
+        let creds = AuthCredectials(email: email, password: password, fullName: name, userName: userName, profileImage: userImage)
+        
+        AuthService.shared.registerUser(credentials: creds) { (error, ref) in
+            if let error = error {
+                print("Error Registering User with \(error.localizedDescription)")
+            } else {
+                print("Registration complete")
+            }
+        }
+        
     }
     
     @objc func profilePicTapped() {
@@ -138,6 +158,7 @@ extension RegistrationController: UIImagePickerControllerDelegate, UINavigationC
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else { return }
+        profileImage = image
         dismiss(animated: true, completion: nil)
         uploadImageBtn.clipsToBounds = true
         uploadImageBtn.layer.cornerRadius = 128/2

@@ -28,7 +28,6 @@ depends-top-level:
 - "UIView"
 - "UIViewController"
 - "Void"
-- !private "print"
 depends-member:
 - !private ["Sa", "forEach"]
 - !private ["SK", "forEach"]
@@ -71,7 +70,6 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "navigationBar"]
-- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "rightAnchor"]
 - !private ["s7CVarArgP", "safeAreaLayoutGuide"]
 - ["s7CVarArgP", "self"]
@@ -114,7 +112,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
-- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "rightAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "safeAreaLayoutGuide"]
 - ["s28CustomDebugStringConvertibleP", "self"]
@@ -159,7 +156,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "navigationBar"]
-- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "rightAnchor"]
 - !private ["s23CustomStringConvertibleP", "safeAreaLayoutGuide"]
 - ["s23CustomStringConvertibleP", "self"]
@@ -212,7 +208,6 @@ depends-member:
 - !private ["SQ", "layer"]
 - !private ["SQ", "navigationBar"]
 - ["SQ", "normal"]
-- !private ["SQ", "print"]
 - !private ["SQ", "rightAnchor"]
 - !private ["SQ", "safeAreaLayoutGuide"]
 - ["SQ", "self"]
@@ -265,7 +260,6 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "layer"]
 - !private ["SH", "navigationBar"]
-- !private ["SH", "print"]
 - !private ["SH", "rightAnchor"]
 - !private ["SH", "safeAreaLayoutGuide"]
 - ["SH", "self"]
@@ -293,7 +287,6 @@ depends-member:
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "configureViewControllers"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "deinit"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "init"]
-- !private ["12MVVM_Twitter20MainTabBarControllerC", "print"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "self"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "templateNavigationController"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "view"]
@@ -325,7 +318,6 @@ depends-member:
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "navigationBar"]
-- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "rightAnchor"]
 - !private ["So8NSCodingP", "safeAreaLayoutGuide"]
 - ["So8NSCodingP", "self"]
@@ -355,7 +347,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "configureViewControllers"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
-- !private ["So26NSExtensionRequestHandlingP", "print"]
 - ["So26NSExtensionRequestHandlingP", "self"]
 - !private ["So26NSExtensionRequestHandlingP", "tabBarItem"]
 - !private ["So26NSExtensionRequestHandlingP", "templateNavigationController"]
@@ -394,7 +385,6 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "navigationBar"]
-- !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "rightAnchor"]
 - !private ["So8NSObjectC", "safeAreaLayoutGuide"]
 - ["So8NSObjectC", "self"]
@@ -432,7 +422,6 @@ depends-member:
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "navigationBar"]
-- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "rightAnchor"]
 - !private ["So8NSObjectP", "safeAreaLayoutGuide"]
 - ["So8NSObjectP", "self"]
@@ -521,7 +510,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "navigationBar"]
-- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "safeAreaLayoutGuide"]
 - ["So21UIAppearanceContainerP", "self"]
 - ["So21UIAppearanceContainerP", "setImage"]
@@ -557,7 +545,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "configureViewControllers"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "navigationBar"]
-- !private ["So18UIContentContainerP", "print"]
 - ["So18UIContentContainerP", "self"]
 - !private ["So18UIContentContainerP", "tabBarItem"]
 - !private ["So18UIContentContainerP", "templateNavigationController"]
@@ -616,7 +603,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "navigationBar"]
-- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "safeAreaLayoutGuide"]
 - ["So18UIFocusEnvironmentP", "self"]
 - ["So18UIFocusEnvironmentP", "setImage"]
@@ -692,7 +678,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
-- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "safeAreaLayoutGuide"]
 - ["So30UIPasteConfigurationSupportingP", "self"]
 - ["So30UIPasteConfigurationSupportingP", "setImage"]
@@ -726,7 +711,6 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "navigationBar"]
-- !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "safeAreaLayoutGuide"]
 - ["So11UIResponderC", "self"]
 - ["So11UIResponderC", "setImage"]
@@ -758,7 +742,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
-- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "safeAreaLayoutGuide"]
 - ["So30UIResponderStandardEditActionsP", "self"]
 - ["So30UIResponderStandardEditActionsP", "setImage"]
@@ -791,7 +774,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "configureViewControllers"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "navigationBar"]
-- !private ["So16UIStateRestoringP", "print"]
 - ["So16UIStateRestoringP", "self"]
 - !private ["So16UIStateRestoringP", "tabBarItem"]
 - !private ["So16UIStateRestoringP", "templateNavigationController"]
@@ -812,7 +794,6 @@ depends-member:
 - ["So18UITabBarControllerC", "configureUI"]
 - ["So18UITabBarControllerC", "configureViewControllers"]
 - ["So18UITabBarControllerC", "init"]
-- !private ["So18UITabBarControllerC", "print"]
 - ["So18UITabBarControllerC", "self"]
 - ["So18UITabBarControllerC", "templateNavigationController"]
 - !private ["So18UITabBarControllerC", "view"]
@@ -831,7 +812,6 @@ depends-member:
 - !private ["So16UITabBarDelegateP", "configureUI"]
 - !private ["So16UITabBarDelegateP", "configureViewControllers"]
 - !private ["So16UITabBarDelegateP", "init"]
-- !private ["So16UITabBarDelegateP", "print"]
 - ["So16UITabBarDelegateP", "self"]
 - !private ["So16UITabBarDelegateP", "templateNavigationController"]
 - !private ["So16UITabBarDelegateP", "view"]
@@ -859,7 +839,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "navigationBar"]
-- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "safeAreaLayoutGuide"]
 - ["So18UITraitEnvironmentP", "self"]
 - ["So18UITraitEnvironmentP", "setImage"]
@@ -891,7 +870,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "navigationBar"]
-- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "safeAreaLayoutGuide"]
 - ["So23UIUserActivityRestoringP", "self"]
 - ["So23UIUserActivityRestoringP", "setImage"]
@@ -930,7 +908,6 @@ depends-member:
 - ["So16UIViewControllerC", "configureViewControllers"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "navigationBar"]
-- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "self"]
 - !private ["So16UIViewControllerC", "tabBarItem"]
 - ["So16UIViewControllerC", "templateNavigationController"]
@@ -968,7 +945,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "safeAreaLayoutGuide"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "self"]
@@ -1006,7 +982,6 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationBar"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "safeAreaLayoutGuide"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "self"]
@@ -1152,6 +1127,78 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

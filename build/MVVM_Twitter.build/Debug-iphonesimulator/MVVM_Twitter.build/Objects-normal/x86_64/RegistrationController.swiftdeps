@@ -14,6 +14,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "/"
 - "AssignmentPrecedence"
+- !private "AuthCredectials"
+- !private "AuthService"
 - "BooleanLiteralType"
 - "CastingPrecedence"
 - "FloatLiteralType"
@@ -34,6 +36,9 @@ depends-top-level:
 - "Utilities"
 - !private "print"
 depends-member:
+- !private ["12MVVM_Twitter15AuthCredectialsV", "init"]
+- !private ["12MVVM_Twitter11AuthServiceV", "registerUser"]
+- !private ["12MVVM_Twitter11AuthServiceV", "shared"]
 - !private ["So22UILayoutConstraintAxisV", "vertical"]
 - !private ["SK", "editedImage"]
 - !private ["So7CALayerC", "borderColor"]
@@ -54,6 +59,7 @@ depends-member:
 - ["So15CALayerDelegateP", "heightAnchor"]
 - !private ["So15CALayerDelegateP", "imageView"]
 - ["So15CALayerDelegateP", "init"]
+- ["So15CALayerDelegateP", "isSecureTextEntry"]
 - ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "leftAnchor"]
 - !private ["So15CALayerDelegateP", "rightAnchor"]
@@ -63,12 +69,15 @@ depends-member:
 - ["So15CALayerDelegateP", "setTitle"]
 - ["So15CALayerDelegateP", "setTitleColor"]
 - !private ["So15CALayerDelegateP", "spacing"]
+- !private ["So15CALayerDelegateP", "text"]
 - ["So15CALayerDelegateP", "tintColor"]
 - ["So15CALayerDelegateP", "titleLabel"]
 - !private ["So13CAMediaTimingP", "borderColor"]
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["So13CAMediaTimingP", "masksToBounds"]
+- !private ["s7CVarArgP", "AuthCredectials"]
+- !private ["s7CVarArgP", "AuthService"]
 - ["s7CVarArgP", "InfoKey"]
 - ["s7CVarArgP", "UIButton"]
 - !private ["s7CVarArgP", "UIColor"]
@@ -110,6 +119,7 @@ depends-member:
 - !private ["s7CVarArgP", "imageView"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "isActive"]
+- ["s7CVarArgP", "isSecureTextEntry"]
 - ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "leftAnchor"]
 - !private ["s7CVarArgP", "logInBtn"]
@@ -124,6 +134,7 @@ depends-member:
 - !private ["s7CVarArgP", "popViewController"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "profileImage"]
 - ["s7CVarArgP", "profilePicTapped"]
 - !private ["s7CVarArgP", "rightAnchor"]
 - !private ["s7CVarArgP", "safeAreaLayoutGuide"]
@@ -135,6 +146,7 @@ depends-member:
 - !private ["s7CVarArgP", "signUpBtn"]
 - !private ["s7CVarArgP", "spacing"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "text"]
 - ["s7CVarArgP", "tintColor"]
 - ["s7CVarArgP", "titleLabel"]
 - !private ["s7CVarArgP", "topAnchor"]
@@ -150,6 +162,8 @@ depends-member:
 - !private ["Sl", "subscript"]
 - !private ["SL", "editedImage"]
 - !private ["So17UIViewContentModeV", "scaleAspectFit"]
+- !private ["s28CustomDebugStringConvertibleP", "AuthCredectials"]
+- !private ["s28CustomDebugStringConvertibleP", "AuthService"]
 - ["s28CustomDebugStringConvertibleP", "InfoKey"]
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -192,6 +206,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "isActive"]
+- ["s28CustomDebugStringConvertibleP", "isSecureTextEntry"]
 - ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "leftAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "logInBtn"]
@@ -206,6 +221,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "popViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "profileImage"]
 - ["s28CustomDebugStringConvertibleP", "profilePicTapped"]
 - !private ["s28CustomDebugStringConvertibleP", "rightAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "safeAreaLayoutGuide"]
@@ -217,6 +233,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "signUpBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "spacing"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
 - ["s28CustomDebugStringConvertibleP", "tintColor"]
 - ["s28CustomDebugStringConvertibleP", "titleLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "topAnchor"]
@@ -238,6 +255,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "subscript"]
 - ["s17CustomReflectableP", "twitterBlue"]
 - ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "AuthCredectials"]
+- !private ["s23CustomStringConvertibleP", "AuthService"]
 - ["s23CustomStringConvertibleP", "InfoKey"]
 - ["s23CustomStringConvertibleP", "UIButton"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -251,6 +270,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", "addTarget"]
 - ["s23CustomStringConvertibleP", "allowsEditing"]
 - !private ["s23CustomStringConvertibleP", "anchor"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "axis"]
 - ["s23CustomStringConvertibleP", "backgroundColor"]
 - ["s23CustomStringConvertibleP", "boldSystemFont"]
@@ -280,6 +301,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "imageView"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "isActive"]
+- ["s23CustomStringConvertibleP", "isSecureTextEntry"]
 - ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "leftAnchor"]
 - !private ["s23CustomStringConvertibleP", "logInBtn"]
@@ -294,6 +316,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "profileImage"]
 - ["s23CustomStringConvertibleP", "profilePicTapped"]
 - !private ["s23CustomStringConvertibleP", "rightAnchor"]
 - !private ["s23CustomStringConvertibleP", "safeAreaLayoutGuide"]
@@ -305,6 +328,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "signUpBtn"]
 - !private ["s23CustomStringConvertibleP", "spacing"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "text"]
 - ["s23CustomStringConvertibleP", "tintColor"]
 - ["s23CustomStringConvertibleP", "titleLabel"]
 - !private ["s23CustomStringConvertibleP", "topAnchor"]
@@ -326,6 +350,8 @@ depends-member:
 - !private ["Se", "subscript"]
 - ["Se", "twitterBlue"]
 - ["Se", "white"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SD", "subscript"]
 - !private ["So23UIStackViewDistributionV", "fillEqually"]
 - !private ["SE", "addSubview"]
@@ -338,6 +364,8 @@ depends-member:
 - !private ["SE", "subscript"]
 - ["SE", "twitterBlue"]
 - ["SE", "white"]
+- !private ["SQ", "AuthCredectials"]
+- !private ["SQ", "AuthService"]
 - ["SQ", "InfoKey"]
 - ["SQ", "UIButton"]
 - !private ["SQ", "UIColor"]
@@ -382,6 +410,7 @@ depends-member:
 - !private ["SQ", "imageView"]
 - ["SQ", "init"]
 - ["SQ", "isActive"]
+- ["SQ", "isSecureTextEntry"]
 - ["SQ", "layer"]
 - !private ["SQ", "leftAnchor"]
 - !private ["SQ", "logInBtn"]
@@ -397,6 +426,7 @@ depends-member:
 - !private ["SQ", "popViewController"]
 - !private ["SQ", "present"]
 - !private ["SQ", "print"]
+- !private ["SQ", "profileImage"]
 - ["SQ", "profilePicTapped"]
 - !private ["SQ", "rightAnchor"]
 - !private ["SQ", "safeAreaLayoutGuide"]
@@ -409,6 +439,7 @@ depends-member:
 - !private ["SQ", "signUpBtn"]
 - !private ["SQ", "spacing"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "text"]
 - ["SQ", "tintColor"]
 - ["SQ", "titleLabel"]
 - !private ["SQ", "topAnchor"]
@@ -422,6 +453,7 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - ["SQ", "white"]
 - !private ["SQ", "withRenderingMode"]
+- !private ["s5ErrorP", "localizedDescription"]
 - ["So15UIControlEventsV", "touchUpInside"]
 - ["s25ExpressibleByArrayLiteralP", "normal"]
 - ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
@@ -434,6 +466,8 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "safeAreaLayoutGuide"]
 - ["s23ExpressibleByNilLiteralP", "twitterBlue"]
 - ["s23ExpressibleByNilLiteralP", "white"]
+- !private ["SH", "AuthCredectials"]
+- !private ["SH", "AuthService"]
 - ["SH", "InfoKey"]
 - ["SH", "UIButton"]
 - !private ["SH", "UIColor"]
@@ -478,6 +512,7 @@ depends-member:
 - !private ["SH", "imageView"]
 - ["SH", "init"]
 - ["SH", "isActive"]
+- ["SH", "isSecureTextEntry"]
 - ["SH", "layer"]
 - !private ["SH", "leftAnchor"]
 - !private ["SH", "logInBtn"]
@@ -492,6 +527,7 @@ depends-member:
 - !private ["SH", "popViewController"]
 - !private ["SH", "present"]
 - !private ["SH", "print"]
+- !private ["SH", "profileImage"]
 - ["SH", "profilePicTapped"]
 - !private ["SH", "rightAnchor"]
 - !private ["SH", "safeAreaLayoutGuide"]
@@ -504,6 +540,7 @@ depends-member:
 - !private ["SH", "signUpBtn"]
 - !private ["SH", "spacing"]
 - !private ["SH", "subscript"]
+- !private ["SH", "text"]
 - ["SH", "tintColor"]
 - ["SH", "titleLabel"]
 - !private ["SH", "topAnchor"]
@@ -518,6 +555,8 @@ depends-member:
 - !private ["SH", "withRenderingMode"]
 - !private ["SD5IndexV", "editedImage"]
 - !private ["So30UIImagePickerControllerInfoKeya", "editedImage"]
+- !private ["So8NSCodingP", "AuthCredectials"]
+- !private ["So8NSCodingP", "AuthService"]
 - ["So8NSCodingP", "InfoKey"]
 - ["So8NSCodingP", "UIButton"]
 - !private ["So8NSCodingP", "UIColor"]
@@ -557,6 +596,7 @@ depends-member:
 - ["So8NSCodingP", "imagePickerControllerDidCancel"]
 - !private ["So8NSCodingP", "imageView"]
 - ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "isSecureTextEntry"]
 - ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "leftAnchor"]
 - !private ["So8NSCodingP", "logInBtn"]
@@ -571,6 +611,7 @@ depends-member:
 - !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "profileImage"]
 - ["So8NSCodingP", "profilePicTapped"]
 - !private ["So8NSCodingP", "rightAnchor"]
 - !private ["So8NSCodingP", "safeAreaLayoutGuide"]
@@ -581,6 +622,7 @@ depends-member:
 - ["So8NSCodingP", "setTitleColor"]
 - !private ["So8NSCodingP", "signUpBtn"]
 - !private ["So8NSCodingP", "spacing"]
+- !private ["So8NSCodingP", "text"]
 - ["So8NSCodingP", "tintColor"]
 - ["So8NSCodingP", "titleLabel"]
 - !private ["So8NSCodingP", "topAnchor"]
@@ -597,6 +639,8 @@ depends-member:
 - ["So9NSCopyingP", "constraint"]
 - ["So9NSCopyingP", "twitterBlue"]
 - ["So9NSCopyingP", "white"]
+- !private ["So26NSExtensionRequestHandlingP", "AuthCredectials"]
+- !private ["So26NSExtensionRequestHandlingP", "AuthService"]
 - ["So26NSExtensionRequestHandlingP", "InfoKey"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
@@ -629,6 +673,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "popViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "profileImage"]
 - ["So26NSExtensionRequestHandlingP", "profilePicTapped"]
 - ["So26NSExtensionRequestHandlingP", "self"]
 - !private ["So26NSExtensionRequestHandlingP", "signUpBtn"]
@@ -656,6 +701,8 @@ depends-member:
 - ["So8NSObjectC", "$__lazy_storage_$_passwordContainerView"]
 - ["So8NSObjectC", "$__lazy_storage_$_uploadImageBtn"]
 - ["So8NSObjectC", "$__lazy_storage_$_usernameContainerView"]
+- !private ["So8NSObjectC", "AuthCredectials"]
+- !private ["So8NSObjectC", "AuthService"]
 - ["So8NSObjectC", "InfoKey"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIColor"]
@@ -698,6 +745,7 @@ depends-member:
 - !private ["So8NSObjectC", "imageView"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "isActive"]
+- ["So8NSObjectC", "isSecureTextEntry"]
 - ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "leftAnchor"]
 - ["So8NSObjectC", "logInBtn"]
@@ -712,6 +760,7 @@ depends-member:
 - !private ["So8NSObjectC", "popViewController"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "profileImage"]
 - ["So8NSObjectC", "profilePicTapped"]
 - !private ["So8NSObjectC", "rightAnchor"]
 - !private ["So8NSObjectC", "safeAreaLayoutGuide"]
@@ -722,6 +771,7 @@ depends-member:
 - ["So8NSObjectC", "setTitleColor"]
 - ["So8NSObjectC", "signUpBtn"]
 - !private ["So8NSObjectC", "spacing"]
+- !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "tintColor"]
 - ["So8NSObjectC", "titleLabel"]
 - !private ["So8NSObjectC", "topAnchor"]
@@ -733,6 +783,8 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "white"]
 - !private ["So8NSObjectC", "withRenderingMode"]
+- !private ["So8NSObjectP", "AuthCredectials"]
+- !private ["So8NSObjectP", "AuthService"]
 - ["So8NSObjectP", "InfoKey"]
 - ["So8NSObjectP", "UIButton"]
 - !private ["So8NSObjectP", "UIColor"]
@@ -774,6 +826,7 @@ depends-member:
 - !private ["So8NSObjectP", "imageView"]
 - ["So8NSObjectP", "init"]
 - ["So8NSObjectP", "isActive"]
+- ["So8NSObjectP", "isSecureTextEntry"]
 - ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "leftAnchor"]
 - !private ["So8NSObjectP", "logInBtn"]
@@ -788,6 +841,7 @@ depends-member:
 - !private ["So8NSObjectP", "popViewController"]
 - !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "profileImage"]
 - ["So8NSObjectP", "profilePicTapped"]
 - !private ["So8NSObjectP", "rightAnchor"]
 - !private ["So8NSObjectP", "safeAreaLayoutGuide"]
@@ -798,6 +852,7 @@ depends-member:
 - ["So8NSObjectP", "setTitleColor"]
 - !private ["So8NSObjectP", "signUpBtn"]
 - !private ["So8NSObjectP", "spacing"]
+- !private ["So8NSObjectP", "text"]
 - ["So8NSObjectP", "tintColor"]
 - ["So8NSObjectP", "titleLabel"]
 - !private ["So8NSObjectP", "topAnchor"]
@@ -844,6 +899,8 @@ depends-member:
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_passwordContainerView"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_uploadImageBtn"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_usernameContainerView"]
+- !private ["12MVVM_Twitter22RegistrationControllerC", "AuthCredectials"]
+- !private ["12MVVM_Twitter22RegistrationControllerC", "AuthService"]
 - ["12MVVM_Twitter22RegistrationControllerC", "UIButton"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "UIColor"]
 - ["12MVVM_Twitter22RegistrationControllerC", "UIFont"]
@@ -874,6 +931,7 @@ depends-member:
 - ["12MVVM_Twitter22RegistrationControllerC", "passwordTextField"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "present"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "print"]
+- !private ["12MVVM_Twitter22RegistrationControllerC", "profileImage"]
 - ["12MVVM_Twitter22RegistrationControllerC", "profilePicTapped"]
 - ["12MVVM_Twitter22RegistrationControllerC", "self"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "signUpBtn"]
@@ -888,6 +946,10 @@ depends-member:
 - ["s10SetAlgebraP", "normal"]
 - ["s10SetAlgebraP", "touchUpInside"]
 - ["So14UIControlStateV", "normal"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "anchor"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
@@ -919,6 +981,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "heightAnchor"]
 - !private ["So29UIAccessibilityIdentificationP", "imageView"]
 - ["So29UIAccessibilityIdentificationP", "init"]
+- ["So29UIAccessibilityIdentificationP", "isSecureTextEntry"]
 - ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "leftAnchor"]
 - !private ["So29UIAccessibilityIdentificationP", "rightAnchor"]
@@ -928,6 +991,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "setTitle"]
 - ["So29UIAccessibilityIdentificationP", "setTitleColor"]
 - !private ["So29UIAccessibilityIdentificationP", "spacing"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
 - ["So29UIAccessibilityIdentificationP", "tintColor"]
 - ["So29UIAccessibilityIdentificationP", "titleLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "withRenderingMode"]
@@ -945,6 +1009,7 @@ depends-member:
 - ["So12UIAppearanceP", "heightAnchor"]
 - !private ["So12UIAppearanceP", "imageView"]
 - ["So12UIAppearanceP", "init"]
+- ["So12UIAppearanceP", "isSecureTextEntry"]
 - ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "leftAnchor"]
 - !private ["So12UIAppearanceP", "rightAnchor"]
@@ -954,8 +1019,11 @@ depends-member:
 - ["So12UIAppearanceP", "setTitle"]
 - ["So12UIAppearanceP", "setTitleColor"]
 - !private ["So12UIAppearanceP", "spacing"]
+- !private ["So12UIAppearanceP", "text"]
 - ["So12UIAppearanceP", "tintColor"]
 - ["So12UIAppearanceP", "titleLabel"]
+- !private ["So21UIAppearanceContainerP", "AuthCredectials"]
+- !private ["So21UIAppearanceContainerP", "AuthService"]
 - ["So21UIAppearanceContainerP", "InfoKey"]
 - ["So21UIAppearanceContainerP", "UIButton"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
@@ -990,6 +1058,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "imagePickerControllerDidCancel"]
 - !private ["So21UIAppearanceContainerP", "imageView"]
 - ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "isSecureTextEntry"]
 - ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "leftAnchor"]
 - !private ["So21UIAppearanceContainerP", "logInBtn"]
@@ -1003,6 +1072,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "popViewController"]
 - !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "profileImage"]
 - ["So21UIAppearanceContainerP", "profilePicTapped"]
 - !private ["So21UIAppearanceContainerP", "rightAnchor"]
 - !private ["So21UIAppearanceContainerP", "safeAreaLayoutGuide"]
@@ -1013,6 +1083,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "setTitleColor"]
 - !private ["So21UIAppearanceContainerP", "signUpBtn"]
 - !private ["So21UIAppearanceContainerP", "spacing"]
+- !private ["So21UIAppearanceContainerP", "text"]
 - ["So21UIAppearanceContainerP", "tintColor"]
 - ["So21UIAppearanceContainerP", "titleLabel"]
 - !private ["So21UIAppearanceContainerP", "uploadImageBtn"]
@@ -1039,6 +1110,8 @@ depends-member:
 - !private ["So7UIColorC", "cgColor"]
 - ["So7UIColorC", "twitterBlue"]
 - ["So7UIColorC", "white"]
+- !private ["So18UIContentContainerP", "AuthCredectials"]
+- !private ["So18UIContentContainerP", "AuthService"]
 - ["So18UIContentContainerP", "InfoKey"]
 - ["So18UIContentContainerP", "UIButton"]
 - !private ["So18UIContentContainerP", "UIColor"]
@@ -1071,6 +1144,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "popViewController"]
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "profileImage"]
 - ["So18UIContentContainerP", "profilePicTapped"]
 - ["So18UIContentContainerP", "self"]
 - !private ["So18UIContentContainerP", "signUpBtn"]
@@ -1080,6 +1154,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So30UIContentSizeCategoryAdjustingP", "font"]
+- ["So30UIContentSizeCategoryAdjustingP", "isSecureTextEntry"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - ["So9UIControlC", "addTarget"]
 - !private ["So9UIControlC", "anchor"]
 - ["So9UIControlC", "backgroundColor"]
@@ -1089,11 +1165,13 @@ depends-member:
 - ["So9UIControlC", "heightAnchor"]
 - !private ["So9UIControlC", "imageView"]
 - ["So9UIControlC", "init"]
+- ["So9UIControlC", "isSecureTextEntry"]
 - ["So9UIControlC", "layer"]
 - !private ["So9UIControlC", "setDimensions"]
 - ["So9UIControlC", "setImage"]
 - ["So9UIControlC", "setTitle"]
 - ["So9UIControlC", "setTitleColor"]
+- !private ["So9UIControlC", "text"]
 - ["So9UIControlC", "tintColor"]
 - ["So9UIControlC", "titleLabel"]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
@@ -1110,6 +1188,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", "heightAnchor"]
 - !private ["So17UICoordinateSpaceP", "imageView"]
 - ["So17UICoordinateSpaceP", "init"]
+- ["So17UICoordinateSpaceP", "isSecureTextEntry"]
 - ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "leftAnchor"]
 - !private ["So17UICoordinateSpaceP", "rightAnchor"]
@@ -1119,6 +1198,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", "setTitle"]
 - ["So17UICoordinateSpaceP", "setTitleColor"]
 - !private ["So17UICoordinateSpaceP", "spacing"]
+- !private ["So17UICoordinateSpaceP", "text"]
 - ["So17UICoordinateSpaceP", "tintColor"]
 - ["So17UICoordinateSpaceP", "titleLabel"]
 - !private ["So13UIDynamicItemP", "addSubview"]
@@ -1135,6 +1215,7 @@ depends-member:
 - ["So13UIDynamicItemP", "heightAnchor"]
 - !private ["So13UIDynamicItemP", "imageView"]
 - ["So13UIDynamicItemP", "init"]
+- ["So13UIDynamicItemP", "isSecureTextEntry"]
 - ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "leftAnchor"]
 - !private ["So13UIDynamicItemP", "rightAnchor"]
@@ -1144,8 +1225,11 @@ depends-member:
 - ["So13UIDynamicItemP", "setTitle"]
 - ["So13UIDynamicItemP", "setTitleColor"]
 - !private ["So13UIDynamicItemP", "spacing"]
+- !private ["So13UIDynamicItemP", "text"]
 - ["So13UIDynamicItemP", "tintColor"]
 - ["So13UIDynamicItemP", "titleLabel"]
+- !private ["So18UIFocusEnvironmentP", "AuthCredectials"]
+- !private ["So18UIFocusEnvironmentP", "AuthService"]
 - ["So18UIFocusEnvironmentP", "InfoKey"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
@@ -1180,6 +1264,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "imagePickerControllerDidCancel"]
 - !private ["So18UIFocusEnvironmentP", "imageView"]
 - ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "isSecureTextEntry"]
 - ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "leftAnchor"]
 - !private ["So18UIFocusEnvironmentP", "logInBtn"]
@@ -1193,6 +1278,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "popViewController"]
 - !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "profileImage"]
 - ["So18UIFocusEnvironmentP", "profilePicTapped"]
 - !private ["So18UIFocusEnvironmentP", "rightAnchor"]
 - !private ["So18UIFocusEnvironmentP", "safeAreaLayoutGuide"]
@@ -1203,6 +1289,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "setTitleColor"]
 - !private ["So18UIFocusEnvironmentP", "signUpBtn"]
 - !private ["So18UIFocusEnvironmentP", "spacing"]
+- !private ["So18UIFocusEnvironmentP", "text"]
 - ["So18UIFocusEnvironmentP", "tintColor"]
 - ["So18UIFocusEnvironmentP", "titleLabel"]
 - !private ["So18UIFocusEnvironmentP", "uploadImageBtn"]
@@ -1224,6 +1311,7 @@ depends-member:
 - ["So11UIFocusItemP", "heightAnchor"]
 - !private ["So11UIFocusItemP", "imageView"]
 - ["So11UIFocusItemP", "init"]
+- ["So11UIFocusItemP", "isSecureTextEntry"]
 - ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "leftAnchor"]
 - !private ["So11UIFocusItemP", "rightAnchor"]
@@ -1233,6 +1321,7 @@ depends-member:
 - ["So11UIFocusItemP", "setTitle"]
 - ["So11UIFocusItemP", "setTitleColor"]
 - !private ["So11UIFocusItemP", "spacing"]
+- !private ["So11UIFocusItemP", "text"]
 - ["So11UIFocusItemP", "tintColor"]
 - ["So11UIFocusItemP", "titleLabel"]
 - !private ["So20UIFocusItemContainerP", "addSubview"]
@@ -1249,6 +1338,7 @@ depends-member:
 - ["So20UIFocusItemContainerP", "heightAnchor"]
 - !private ["So20UIFocusItemContainerP", "imageView"]
 - ["So20UIFocusItemContainerP", "init"]
+- ["So20UIFocusItemContainerP", "isSecureTextEntry"]
 - ["So20UIFocusItemContainerP", "layer"]
 - !private ["So20UIFocusItemContainerP", "leftAnchor"]
 - !private ["So20UIFocusItemContainerP", "rightAnchor"]
@@ -1258,6 +1348,7 @@ depends-member:
 - ["So20UIFocusItemContainerP", "setTitle"]
 - ["So20UIFocusItemContainerP", "setTitleColor"]
 - !private ["So20UIFocusItemContainerP", "spacing"]
+- !private ["So20UIFocusItemContainerP", "text"]
 - ["So20UIFocusItemContainerP", "tintColor"]
 - ["So20UIFocusItemContainerP", "titleLabel"]
 - ["So6UIFontC", "boldSystemFont"]
@@ -1267,6 +1358,8 @@ depends-member:
 - ["So23UIImagePickerControllerC", "allowsEditing"]
 - !private ["So23UIImagePickerControllerC", "delegate"]
 - ["So23UIImagePickerControllerC", "init"]
+- !private ["So31UIImagePickerControllerDelegateP", "AuthCredectials"]
+- !private ["So31UIImagePickerControllerDelegateP", "AuthService"]
 - ["So31UIImagePickerControllerDelegateP", "UIButton"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIColor"]
 - ["So31UIImagePickerControllerDelegateP", "UIFont"]
@@ -1294,6 +1387,7 @@ depends-member:
 - ["So31UIImagePickerControllerDelegateP", "passwordTextField"]
 - !private ["So31UIImagePickerControllerDelegateP", "present"]
 - !private ["So31UIImagePickerControllerDelegateP", "print"]
+- !private ["So31UIImagePickerControllerDelegateP", "profileImage"]
 - ["So31UIImagePickerControllerDelegateP", "profilePicTapped"]
 - ["So31UIImagePickerControllerDelegateP", "self"]
 - !private ["So31UIImagePickerControllerDelegateP", "signUpBtn"]
@@ -1304,6 +1398,8 @@ depends-member:
 - !private ["So11UIImageViewC", "contentMode"]
 - ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "withRenderingMode"]
+- ["So10UIKeyInputP", "isSecureTextEntry"]
+- !private ["So10UIKeyInputP", "text"]
 - ["So7UILabelC", "font"]
 - !private ["So24UILargeContentViewerItemP", "addSubview"]
 - ["So24UILargeContentViewerItemP", "addTarget"]
@@ -1319,6 +1415,7 @@ depends-member:
 - ["So24UILargeContentViewerItemP", "heightAnchor"]
 - !private ["So24UILargeContentViewerItemP", "imageView"]
 - ["So24UILargeContentViewerItemP", "init"]
+- ["So24UILargeContentViewerItemP", "isSecureTextEntry"]
 - ["So24UILargeContentViewerItemP", "layer"]
 - !private ["So24UILargeContentViewerItemP", "leftAnchor"]
 - !private ["So24UILargeContentViewerItemP", "rightAnchor"]
@@ -1328,6 +1425,7 @@ depends-member:
 - ["So24UILargeContentViewerItemP", "setTitle"]
 - ["So24UILargeContentViewerItemP", "setTitleColor"]
 - !private ["So24UILargeContentViewerItemP", "spacing"]
+- !private ["So24UILargeContentViewerItemP", "text"]
 - ["So24UILargeContentViewerItemP", "tintColor"]
 - ["So24UILargeContentViewerItemP", "titleLabel"]
 - !private ["So13UILayoutGuideC", "topAnchor"]
@@ -1336,6 +1434,8 @@ depends-member:
 - !private ["So22UINavigationControllerC", "delegate"]
 - ["So22UINavigationControllerC", "init"]
 - !private ["So22UINavigationControllerC", "popViewController"]
+- !private ["So30UINavigationControllerDelegateP", "AuthCredectials"]
+- !private ["So30UINavigationControllerDelegateP", "AuthService"]
 - ["So30UINavigationControllerDelegateP", "UIButton"]
 - !private ["So30UINavigationControllerDelegateP", "UIColor"]
 - ["So30UINavigationControllerDelegateP", "UIFont"]
@@ -1363,6 +1463,7 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "passwordTextField"]
 - !private ["So30UINavigationControllerDelegateP", "present"]
 - !private ["So30UINavigationControllerDelegateP", "print"]
+- !private ["So30UINavigationControllerDelegateP", "profileImage"]
 - ["So30UINavigationControllerDelegateP", "profilePicTapped"]
 - ["So30UINavigationControllerDelegateP", "self"]
 - !private ["So30UINavigationControllerDelegateP", "signUpBtn"]
@@ -1370,6 +1471,8 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "usernameContainerView"]
 - ["So30UINavigationControllerDelegateP", "usernameTextField"]
 - !private ["So30UINavigationControllerDelegateP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "AuthCredectials"]
+- !private ["So30UIPasteConfigurationSupportingP", "AuthService"]
 - ["So30UIPasteConfigurationSupportingP", "InfoKey"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -1404,6 +1507,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "imagePickerControllerDidCancel"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageView"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "isSecureTextEntry"]
 - ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "leftAnchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "logInBtn"]
@@ -1417,6 +1521,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "profileImage"]
 - ["So30UIPasteConfigurationSupportingP", "profilePicTapped"]
 - !private ["So30UIPasteConfigurationSupportingP", "rightAnchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "safeAreaLayoutGuide"]
@@ -1427,6 +1532,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "setTitleColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "signUpBtn"]
 - !private ["So30UIPasteConfigurationSupportingP", "spacing"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
 - ["So30UIPasteConfigurationSupportingP", "tintColor"]
 - ["So30UIPasteConfigurationSupportingP", "titleLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "uploadImageBtn"]
@@ -1440,6 +1546,8 @@ depends-member:
 - ["So11UIResponderC", "$__lazy_storage_$_passwordContainerView"]
 - ["So11UIResponderC", "$__lazy_storage_$_uploadImageBtn"]
 - ["So11UIResponderC", "$__lazy_storage_$_usernameContainerView"]
+- !private ["So11UIResponderC", "AuthCredectials"]
+- !private ["So11UIResponderC", "AuthService"]
 - ["So11UIResponderC", "InfoKey"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIColor"]
@@ -1475,6 +1583,7 @@ depends-member:
 - ["So11UIResponderC", "imagePickerControllerDidCancel"]
 - !private ["So11UIResponderC", "imageView"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "isSecureTextEntry"]
 - ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "leftAnchor"]
 - ["So11UIResponderC", "logInBtn"]
@@ -1488,6 +1597,7 @@ depends-member:
 - !private ["So11UIResponderC", "popViewController"]
 - !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "profileImage"]
 - ["So11UIResponderC", "profilePicTapped"]
 - !private ["So11UIResponderC", "rightAnchor"]
 - !private ["So11UIResponderC", "safeAreaLayoutGuide"]
@@ -1498,6 +1608,7 @@ depends-member:
 - ["So11UIResponderC", "setTitleColor"]
 - ["So11UIResponderC", "signUpBtn"]
 - !private ["So11UIResponderC", "spacing"]
+- !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "tintColor"]
 - ["So11UIResponderC", "titleLabel"]
 - ["So11UIResponderC", "uploadImageBtn"]
@@ -1505,6 +1616,8 @@ depends-member:
 - ["So11UIResponderC", "usernameTextField"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "AuthCredectials"]
+- !private ["So30UIResponderStandardEditActionsP", "AuthService"]
 - ["So30UIResponderStandardEditActionsP", "InfoKey"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -1539,6 +1652,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "imagePickerControllerDidCancel"]
 - !private ["So30UIResponderStandardEditActionsP", "imageView"]
 - ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "isSecureTextEntry"]
 - ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "leftAnchor"]
 - !private ["So30UIResponderStandardEditActionsP", "logInBtn"]
@@ -1552,6 +1666,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "popViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "profileImage"]
 - ["So30UIResponderStandardEditActionsP", "profilePicTapped"]
 - !private ["So30UIResponderStandardEditActionsP", "rightAnchor"]
 - !private ["So30UIResponderStandardEditActionsP", "safeAreaLayoutGuide"]
@@ -1562,6 +1677,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "setTitleColor"]
 - !private ["So30UIResponderStandardEditActionsP", "signUpBtn"]
 - !private ["So30UIResponderStandardEditActionsP", "spacing"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
 - ["So30UIResponderStandardEditActionsP", "tintColor"]
 - ["So30UIResponderStandardEditActionsP", "titleLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "uploadImageBtn"]
@@ -1590,6 +1706,8 @@ depends-member:
 - !private ["So11UIStackViewC", "distribution"]
 - !private ["So11UIStackViewC", "init"]
 - !private ["So11UIStackViewC", "spacing"]
+- !private ["So16UIStateRestoringP", "AuthCredectials"]
+- !private ["So16UIStateRestoringP", "AuthService"]
 - ["So16UIStateRestoringP", "InfoKey"]
 - ["So16UIStateRestoringP", "UIButton"]
 - !private ["So16UIStateRestoringP", "UIColor"]
@@ -1622,6 +1740,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "popViewController"]
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "profileImage"]
 - ["So16UIStateRestoringP", "profilePicTapped"]
 - ["So16UIStateRestoringP", "self"]
 - !private ["So16UIStateRestoringP", "signUpBtn"]
@@ -1630,6 +1749,20 @@ depends-member:
 - ["So16UIStateRestoringP", "usernameTextField"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So15UITextDraggableP", "isSecureTextEntry"]
+- !private ["So15UITextDraggableP", "text"]
+- ["So15UITextDroppableP", "isSecureTextEntry"]
+- !private ["So15UITextDroppableP", "text"]
+- ["So11UITextFieldC", "isSecureTextEntry"]
+- !private ["So11UITextFieldC", "text"]
+- ["So11UITextInputP", "isSecureTextEntry"]
+- !private ["So11UITextInputP", "text"]
+- ["So17UITextInputTraitsP", "isSecureTextEntry"]
+- !private ["So17UITextInputTraitsP", "text"]
+- ["So34UITextPasteConfigurationSupportingP", "isSecureTextEntry"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "AuthCredectials"]
+- !private ["So18UITraitEnvironmentP", "AuthService"]
 - ["So18UITraitEnvironmentP", "InfoKey"]
 - ["So18UITraitEnvironmentP", "UIButton"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
@@ -1664,6 +1797,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "imagePickerControllerDidCancel"]
 - !private ["So18UITraitEnvironmentP", "imageView"]
 - ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "isSecureTextEntry"]
 - ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "leftAnchor"]
 - !private ["So18UITraitEnvironmentP", "logInBtn"]
@@ -1677,6 +1811,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "popViewController"]
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "profileImage"]
 - ["So18UITraitEnvironmentP", "profilePicTapped"]
 - !private ["So18UITraitEnvironmentP", "rightAnchor"]
 - !private ["So18UITraitEnvironmentP", "safeAreaLayoutGuide"]
@@ -1687,6 +1822,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "setTitleColor"]
 - !private ["So18UITraitEnvironmentP", "signUpBtn"]
 - !private ["So18UITraitEnvironmentP", "spacing"]
+- !private ["So18UITraitEnvironmentP", "text"]
 - ["So18UITraitEnvironmentP", "tintColor"]
 - ["So18UITraitEnvironmentP", "titleLabel"]
 - !private ["So18UITraitEnvironmentP", "uploadImageBtn"]
@@ -1694,6 +1830,8 @@ depends-member:
 - ["So18UITraitEnvironmentP", "usernameTextField"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "AuthCredectials"]
+- !private ["So23UIUserActivityRestoringP", "AuthService"]
 - ["So23UIUserActivityRestoringP", "InfoKey"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
@@ -1728,6 +1866,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "imagePickerControllerDidCancel"]
 - !private ["So23UIUserActivityRestoringP", "imageView"]
 - ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "isSecureTextEntry"]
 - ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "leftAnchor"]
 - !private ["So23UIUserActivityRestoringP", "logInBtn"]
@@ -1741,6 +1880,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "popViewController"]
 - !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "profileImage"]
 - ["So23UIUserActivityRestoringP", "profilePicTapped"]
 - !private ["So23UIUserActivityRestoringP", "rightAnchor"]
 - !private ["So23UIUserActivityRestoringP", "safeAreaLayoutGuide"]
@@ -1751,6 +1891,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "setTitleColor"]
 - !private ["So23UIUserActivityRestoringP", "signUpBtn"]
 - !private ["So23UIUserActivityRestoringP", "spacing"]
+- !private ["So23UIUserActivityRestoringP", "text"]
 - ["So23UIUserActivityRestoringP", "tintColor"]
 - ["So23UIUserActivityRestoringP", "titleLabel"]
 - !private ["So23UIUserActivityRestoringP", "uploadImageBtn"]
@@ -1772,6 +1913,7 @@ depends-member:
 - ["So6UIViewC", "heightAnchor"]
 - !private ["So6UIViewC", "imageView"]
 - ["So6UIViewC", "init"]
+- ["So6UIViewC", "isSecureTextEntry"]
 - ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "leftAnchor"]
 - !private ["So6UIViewC", "rightAnchor"]
@@ -1781,6 +1923,7 @@ depends-member:
 - ["So6UIViewC", "setTitle"]
 - ["So6UIViewC", "setTitleColor"]
 - !private ["So6UIViewC", "spacing"]
+- !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "tintColor"]
 - ["So6UIViewC", "titleLabel"]
 - ["So16UIViewControllerC", "$__lazy_storage_$_emailContainerView"]
@@ -1789,6 +1932,8 @@ depends-member:
 - ["So16UIViewControllerC", "$__lazy_storage_$_passwordContainerView"]
 - ["So16UIViewControllerC", "$__lazy_storage_$_uploadImageBtn"]
 - ["So16UIViewControllerC", "$__lazy_storage_$_usernameContainerView"]
+- !private ["So16UIViewControllerC", "AuthCredectials"]
+- !private ["So16UIViewControllerC", "AuthService"]
 - ["So16UIViewControllerC", "InfoKey"]
 - ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIColor"]
@@ -1823,6 +1968,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "popViewController"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "profileImage"]
 - ["So16UIViewControllerC", "profilePicTapped"]
 - ["So16UIViewControllerC", "self"]
 - ["So16UIViewControllerC", "signUpBtn"]
@@ -1842,6 +1988,8 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "withRenderingMode"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "editedImage"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AuthCredectials"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AuthService"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "InfoKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -1883,6 +2031,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "isActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "isSecureTextEntry"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "leftAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "logInBtn"]
@@ -1897,6 +2046,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "profileImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "profilePicTapped"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "safeAreaLayoutGuide"]
@@ -1907,6 +2057,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "setTitleColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "signUpBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "spacing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "topAnchor"]
@@ -1918,6 +2069,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "withRenderingMode"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AuthCredectials"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AuthService"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "InfoKey"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
@@ -1959,6 +2112,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imageView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isActive"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isSecureTextEntry"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "leftAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "logInBtn"]
@@ -1973,6 +2127,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "popViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "profileImage"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "profilePicTapped"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "safeAreaLayoutGuide"]
@@ -1983,6 +2138,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setTitleColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "signUpBtn"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "spacing"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "topAnchor"]
@@ -2019,6 +2175,7 @@ depends-member:
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "heightAnchor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "imageView"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "isSecureTextEntry"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "leftAnchor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rightAnchor"]
@@ -2028,9 +2185,12 @@ depends-member:
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "setTitle"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "setTitleColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "spacing"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "tintColor"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
 depends-nominal:
+- !private "12MVVM_Twitter15AuthCredectialsV"
+- !private "12MVVM_Twitter11AuthServiceV"
 - !private "So22UILayoutConstraintAxisV"
 - !private "SK"
 - "So7CALayerC"
@@ -2044,10 +2204,12 @@ depends-nominal:
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SD"
 - !private "So23UIStackViewDistributionV"
 - "SE"
 - "SQ"
+- !private "s5ErrorP"
 - "So15UIControlEventsV"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
@@ -2077,6 +2239,8 @@ depends-nominal:
 - !private "ST"
 - "s10SetAlgebraP"
 - "So14UIControlStateV"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -2097,6 +2261,7 @@ depends-nominal:
 - "So31UIImagePickerControllerDelegateP"
 - !private "So11UIImageViewC"
 - "So39UIItemProviderPresentationSizeProvidingP"
+- "So10UIKeyInputP"
 - "So7UILabelC"
 - "So24UILargeContentViewerItemP"
 - !private "So13UILayoutGuideC"
@@ -2108,6 +2273,12 @@ depends-nominal:
 - "So35UISpringLoadedInteractionSupportingP"
 - !private "So11UIStackViewC"
 - "So16UIStateRestoringP"
+- "So15UITextDraggableP"
+- "So15UITextDroppableP"
+- "So11UITextFieldC"
+- "So11UITextInputP"
+- "So17UITextInputTraitsP"
+- "So34UITextPasteConfigurationSupportingP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
@@ -2149,6 +2320,78 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -2162,4 +2405,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "720010747a6cce63822e6d36a83c91fe"
+interface-hash: "15d6fff8e60cfbc5e25ffeff9178ca70"

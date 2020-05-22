@@ -1,15 +1,17 @@
 version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "6478bcf521cc03f9c383f0deb7c3cf83"
-build_time: [1589832486, 893331000]
+options: "84d299460cd943c2e3fe8a2d3cbf790f"
+build_time: [1590091415, 962202000]
 inputs:
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/NotificationsController.swift": [1589291730, 177896257]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/ConversationsController.swift": [1589291765, 14274836]
-  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Utilities.swift": [1589744103, 569003242]
-  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/AppDelegate.swift": [1589279156, 804023872]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Utilities.swift": [1590057502, 689831661]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/AppDelegate.swift": [1590048878, 286212233]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Extensions.swift": [1589657647, 193189993]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/LoginController.swift": [1589829730, 635972446]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/API/AuthService.swift": [9223372036, 854775807]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/ExploreController.swift": [1589291694, 349588457]
-  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/SceneDelegate.swift": [1589657942, 772746546]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/SceneDelegate.swift": [1590048858, 71752076]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/MainTabBarController.swift": [1589657649, 241973853]
-  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/RegistrationController.swift": [1589832486, 173064114]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/RegistrationController.swift": [1590062731, 873471219]
   "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/FeedController.swift": [1589306973, 269399020]
+  "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Constants.swift": [1590062210, 619023279]

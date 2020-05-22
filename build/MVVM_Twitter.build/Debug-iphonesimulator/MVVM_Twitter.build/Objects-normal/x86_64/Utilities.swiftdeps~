@@ -12,7 +12,9 @@ depends-top-level:
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - !private "NSAttributedString"
+- !private "NSMutableAttributedString"
 - "String"
+- "UIButton"
 - !private "UIColor"
 - !private "UIFont"
 - "UIImage"
@@ -24,6 +26,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "anchor"]
 - !private ["So15CALayerDelegateP", "attributedPlaceholder"]
+- !private ["So15CALayerDelegateP", "autocorrectionType"]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "bottomAnchor"]
 - !private ["So15CALayerDelegateP", "contentMode"]
@@ -33,13 +36,17 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "leftAnchor"]
 - !private ["So15CALayerDelegateP", "rightAnchor"]
+- !private ["So15CALayerDelegateP", "setAttributedTitle"]
 - !private ["So15CALayerDelegateP", "setDimensions"]
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["s7CVarArgP", "Key"]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "anchor"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "attributedPlaceholder"]
+- !private ["s7CVarArgP", "autocorrectionType"]
 - !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "boldSystemFont"]
 - !private ["s7CVarArgP", "bottomAnchor"]
 - !private ["s7CVarArgP", "constraint"]
 - !private ["s7CVarArgP", "contentMode"]
@@ -50,6 +57,7 @@ depends-member:
 - !private ["s7CVarArgP", "isActive"]
 - !private ["s7CVarArgP", "leftAnchor"]
 - !private ["s7CVarArgP", "rightAnchor"]
+- !private ["s7CVarArgP", "setAttributedTitle"]
 - !private ["s7CVarArgP", "setDimensions"]
 - !private ["s7CVarArgP", "systemFont"]
 - !private ["s7CVarArgP", "textColor"]
@@ -58,8 +66,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Key"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "anchor"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "attributedPlaceholder"]
+- !private ["s28CustomDebugStringConvertibleP", "autocorrectionType"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "boldSystemFont"]
 - !private ["s28CustomDebugStringConvertibleP", "bottomAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "constraint"]
 - !private ["s28CustomDebugStringConvertibleP", "contentMode"]
@@ -70,6 +81,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "isActive"]
 - !private ["s28CustomDebugStringConvertibleP", "leftAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "rightAnchor"]
+- !private ["s28CustomDebugStringConvertibleP", "setAttributedTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "setDimensions"]
 - !private ["s28CustomDebugStringConvertibleP", "systemFont"]
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
@@ -78,8 +90,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Key"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - !private ["s23CustomStringConvertibleP", "anchor"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "attributedPlaceholder"]
+- !private ["s23CustomStringConvertibleP", "autocorrectionType"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "boldSystemFont"]
 - !private ["s23CustomStringConvertibleP", "bottomAnchor"]
 - !private ["s23CustomStringConvertibleP", "constraint"]
 - !private ["s23CustomStringConvertibleP", "contentMode"]
@@ -90,6 +105,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isActive"]
 - !private ["s23CustomStringConvertibleP", "leftAnchor"]
 - !private ["s23CustomStringConvertibleP", "rightAnchor"]
+- !private ["s23CustomStringConvertibleP", "setAttributedTitle"]
 - !private ["s23CustomStringConvertibleP", "setDimensions"]
 - !private ["s23CustomStringConvertibleP", "systemFont"]
 - !private ["s23CustomStringConvertibleP", "textColor"]
@@ -99,8 +115,11 @@ depends-member:
 - !private ["SQ", "Key"]
 - !private ["SQ", "addSubview"]
 - !private ["SQ", "anchor"]
+- !private ["SQ", "append"]
 - !private ["SQ", "attributedPlaceholder"]
+- !private ["SQ", "autocorrectionType"]
 - !private ["SQ", "backgroundColor"]
+- !private ["SQ", "boldSystemFont"]
 - !private ["SQ", "bottomAnchor"]
 - !private ["SQ", "constraint"]
 - !private ["SQ", "contentMode"]
@@ -111,18 +130,25 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "isActive"]
 - !private ["SQ", "leftAnchor"]
+- !private ["SQ", "no"]
+- !private ["SQ", "normal"]
 - !private ["SQ", "rightAnchor"]
 - !private ["SQ", "scaleAspectFit"]
+- !private ["SQ", "setAttributedTitle"]
 - !private ["SQ", "setDimensions"]
 - !private ["SQ", "systemFont"]
 - !private ["SQ", "textColor"]
 - !private ["SQ", "white"]
+- !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s23ExpressibleByNilLiteralP", "white"]
 - !private ["SH", "Key"]
 - !private ["SH", "addSubview"]
 - !private ["SH", "anchor"]
+- !private ["SH", "append"]
 - !private ["SH", "attributedPlaceholder"]
+- !private ["SH", "autocorrectionType"]
 - !private ["SH", "backgroundColor"]
+- !private ["SH", "boldSystemFont"]
 - !private ["SH", "bottomAnchor"]
 - !private ["SH", "constraint"]
 - !private ["SH", "contentMode"]
@@ -133,19 +159,25 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "isActive"]
 - !private ["SH", "leftAnchor"]
+- !private ["SH", "no"]
 - !private ["SH", "rightAnchor"]
 - !private ["SH", "scaleAspectFit"]
+- !private ["SH", "setAttributedTitle"]
 - !private ["SH", "setDimensions"]
 - !private ["SH", "systemFont"]
 - !private ["SH", "textColor"]
 - !private ["SH", "white"]
+- !private ["So21NSAttributedStringKeya", "font"]
 - !private ["So21NSAttributedStringKeya", "foregroundColor"]
 - !private ["So18NSAttributedStringC", "Key"]
+- !private ["So18NSAttributedStringC", "append"]
 - !private ["So18NSAttributedStringC", "init"]
 - !private ["So8NSCodingP", "Key"]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "anchor"]
+- !private ["So8NSCodingP", "append"]
 - !private ["So8NSCodingP", "attributedPlaceholder"]
+- !private ["So8NSCodingP", "autocorrectionType"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "bottomAnchor"]
 - !private ["So8NSCodingP", "constraint"]
@@ -156,30 +188,41 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "leftAnchor"]
 - !private ["So8NSCodingP", "rightAnchor"]
+- !private ["So8NSCodingP", "setAttributedTitle"]
 - !private ["So8NSCodingP", "setDimensions"]
 - !private ["So8NSCodingP", "textColor"]
 - !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "Key"]
+- !private ["So9NSCopyingP", "append"]
+- !private ["So9NSCopyingP", "boldSystemFont"]
 - !private ["So9NSCopyingP", "constraint"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "systemFont"]
 - !private ["So9NSCopyingP", "white"]
 - !private ["So21NSItemProviderReadingP", "Key"]
+- !private ["So21NSItemProviderReadingP", "append"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "Key"]
+- !private ["So21NSItemProviderWritingP", "append"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So14NSLayoutAnchorC", "constraint"]
 - !private ["So18NSLayoutConstraintC", "isActive"]
 - !private ["So17NSLayoutDimensionC", "constraint"]
+- !private ["So25NSMutableAttributedStringC", "append"]
+- !private ["So25NSMutableAttributedStringC", "init"]
 - !private ["So16NSMutableCopyingP", "Key"]
+- !private ["So16NSMutableCopyingP", "append"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "Key"]
 - !private ["So8NSObjectC", "addSubview"]
 - !private ["So8NSObjectC", "anchor"]
+- !private ["So8NSObjectC", "append"]
 - !private ["So8NSObjectC", "attributedPlaceholder"]
+- !private ["So8NSObjectC", "autocorrectionType"]
 - !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "boldSystemFont"]
 - !private ["So8NSObjectC", "bottomAnchor"]
 - !private ["So8NSObjectC", "constraint"]
 - !private ["So8NSObjectC", "contentMode"]
@@ -190,6 +233,7 @@ depends-member:
 - !private ["So8NSObjectC", "isActive"]
 - !private ["So8NSObjectC", "leftAnchor"]
 - !private ["So8NSObjectC", "rightAnchor"]
+- !private ["So8NSObjectC", "setAttributedTitle"]
 - !private ["So8NSObjectC", "setDimensions"]
 - !private ["So8NSObjectC", "systemFont"]
 - !private ["So8NSObjectC", "textColor"]
@@ -197,8 +241,11 @@ depends-member:
 - !private ["So8NSObjectP", "Key"]
 - !private ["So8NSObjectP", "addSubview"]
 - !private ["So8NSObjectP", "anchor"]
+- !private ["So8NSObjectP", "append"]
 - !private ["So8NSObjectP", "attributedPlaceholder"]
+- !private ["So8NSObjectP", "autocorrectionType"]
 - !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "boldSystemFont"]
 - !private ["So8NSObjectP", "bottomAnchor"]
 - !private ["So8NSObjectP", "constraint"]
 - !private ["So8NSObjectP", "contentMode"]
@@ -209,25 +256,35 @@ depends-member:
 - !private ["So8NSObjectP", "isActive"]
 - !private ["So8NSObjectP", "leftAnchor"]
 - !private ["So8NSObjectP", "rightAnchor"]
+- !private ["So8NSObjectP", "setAttributedTitle"]
 - !private ["So8NSObjectP", "setDimensions"]
 - !private ["So8NSObjectP", "systemFont"]
 - !private ["So8NSObjectP", "textColor"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "Key"]
+- !private ["So14NSSecureCodingP", "append"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "white"]
+- !private ["s9OptionSetP", "normal"]
 - !private ["Sq", "white"]
+- !private ["SY", "font"]
 - !private ["SY", "foregroundColor"]
+- !private ["SY", "no"]
+- !private ["SY", "normal"]
 - !private ["SY", "scaleAspectFit"]
+- !private ["s10SetAlgebraP", "normal"]
+- !private ["So14UIControlStateV", "normal"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "anchor"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "rightAnchor"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setAttributedTitle"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setDimensions"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "anchor"]
 - !private ["So29UIAccessibilityIdentificationP", "attributedPlaceholder"]
+- !private ["So29UIAccessibilityIdentificationP", "autocorrectionType"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "bottomAnchor"]
 - !private ["So29UIAccessibilityIdentificationP", "contentMode"]
@@ -237,11 +294,13 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "leftAnchor"]
 - !private ["So29UIAccessibilityIdentificationP", "rightAnchor"]
+- !private ["So29UIAccessibilityIdentificationP", "setAttributedTitle"]
 - !private ["So29UIAccessibilityIdentificationP", "setDimensions"]
 - !private ["So29UIAccessibilityIdentificationP", "textColor"]
 - !private ["So12UIAppearanceP", "addSubview"]
 - !private ["So12UIAppearanceP", "anchor"]
 - !private ["So12UIAppearanceP", "attributedPlaceholder"]
+- !private ["So12UIAppearanceP", "autocorrectionType"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "bottomAnchor"]
 - !private ["So12UIAppearanceP", "contentMode"]
@@ -251,11 +310,13 @@ depends-member:
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "leftAnchor"]
 - !private ["So12UIAppearanceP", "rightAnchor"]
+- !private ["So12UIAppearanceP", "setAttributedTitle"]
 - !private ["So12UIAppearanceP", "setDimensions"]
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - !private ["So21UIAppearanceContainerP", "anchor"]
 - !private ["So21UIAppearanceContainerP", "attributedPlaceholder"]
+- !private ["So21UIAppearanceContainerP", "autocorrectionType"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "bottomAnchor"]
 - !private ["So21UIAppearanceContainerP", "contentMode"]
@@ -265,22 +326,29 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "leftAnchor"]
 - !private ["So21UIAppearanceContainerP", "rightAnchor"]
+- !private ["So21UIAppearanceContainerP", "setAttributedTitle"]
 - !private ["So21UIAppearanceContainerP", "setDimensions"]
 - !private ["So21UIAppearanceContainerP", "textColor"]
+- !private ["So8UIButtonC", "init"]
+- !private ["So8UIButtonC", "setAttributedTitle"]
 - !private ["So7UIColorC", "white"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "anchor"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "attributedPlaceholder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "autocorrectionType"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "font"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "init"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
 - !private ["So9UIControlC", "anchor"]
 - !private ["So9UIControlC", "attributedPlaceholder"]
+- !private ["So9UIControlC", "autocorrectionType"]
 - !private ["So9UIControlC", "font"]
 - !private ["So9UIControlC", "init"]
+- !private ["So9UIControlC", "setAttributedTitle"]
 - !private ["So9UIControlC", "textColor"]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
 - !private ["So17UICoordinateSpaceP", "anchor"]
 - !private ["So17UICoordinateSpaceP", "attributedPlaceholder"]
+- !private ["So17UICoordinateSpaceP", "autocorrectionType"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "bottomAnchor"]
 - !private ["So17UICoordinateSpaceP", "contentMode"]
@@ -290,11 +358,13 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "leftAnchor"]
 - !private ["So17UICoordinateSpaceP", "rightAnchor"]
+- !private ["So17UICoordinateSpaceP", "setAttributedTitle"]
 - !private ["So17UICoordinateSpaceP", "setDimensions"]
 - !private ["So17UICoordinateSpaceP", "textColor"]
 - !private ["So13UIDynamicItemP", "addSubview"]
 - !private ["So13UIDynamicItemP", "anchor"]
 - !private ["So13UIDynamicItemP", "attributedPlaceholder"]
+- !private ["So13UIDynamicItemP", "autocorrectionType"]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "bottomAnchor"]
 - !private ["So13UIDynamicItemP", "contentMode"]
@@ -304,11 +374,13 @@ depends-member:
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "leftAnchor"]
 - !private ["So13UIDynamicItemP", "rightAnchor"]
+- !private ["So13UIDynamicItemP", "setAttributedTitle"]
 - !private ["So13UIDynamicItemP", "setDimensions"]
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "anchor"]
 - !private ["So18UIFocusEnvironmentP", "attributedPlaceholder"]
+- !private ["So18UIFocusEnvironmentP", "autocorrectionType"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "bottomAnchor"]
 - !private ["So18UIFocusEnvironmentP", "contentMode"]
@@ -318,11 +390,13 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "leftAnchor"]
 - !private ["So18UIFocusEnvironmentP", "rightAnchor"]
+- !private ["So18UIFocusEnvironmentP", "setAttributedTitle"]
 - !private ["So18UIFocusEnvironmentP", "setDimensions"]
 - !private ["So18UIFocusEnvironmentP", "textColor"]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "anchor"]
 - !private ["So11UIFocusItemP", "attributedPlaceholder"]
+- !private ["So11UIFocusItemP", "autocorrectionType"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "bottomAnchor"]
 - !private ["So11UIFocusItemP", "contentMode"]
@@ -332,11 +406,13 @@ depends-member:
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "leftAnchor"]
 - !private ["So11UIFocusItemP", "rightAnchor"]
+- !private ["So11UIFocusItemP", "setAttributedTitle"]
 - !private ["So11UIFocusItemP", "setDimensions"]
 - !private ["So11UIFocusItemP", "textColor"]
 - !private ["So20UIFocusItemContainerP", "addSubview"]
 - !private ["So20UIFocusItemContainerP", "anchor"]
 - !private ["So20UIFocusItemContainerP", "attributedPlaceholder"]
+- !private ["So20UIFocusItemContainerP", "autocorrectionType"]
 - !private ["So20UIFocusItemContainerP", "backgroundColor"]
 - !private ["So20UIFocusItemContainerP", "bottomAnchor"]
 - !private ["So20UIFocusItemContainerP", "contentMode"]
@@ -346,8 +422,10 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "leftAnchor"]
 - !private ["So20UIFocusItemContainerP", "rightAnchor"]
+- !private ["So20UIFocusItemContainerP", "setAttributedTitle"]
 - !private ["So20UIFocusItemContainerP", "setDimensions"]
 - !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So6UIFontC", "boldSystemFont"]
 - !private ["So6UIFontC", "systemFont"]
 - !private ["So11UIImageViewC", "anchor"]
 - !private ["So11UIImageViewC", "contentMode"]
@@ -357,12 +435,14 @@ depends-member:
 - !private ["So11UIImageViewC", "setDimensions"]
 - !private ["So10UIKeyInputP", "anchor"]
 - !private ["So10UIKeyInputP", "attributedPlaceholder"]
+- !private ["So10UIKeyInputP", "autocorrectionType"]
 - !private ["So10UIKeyInputP", "font"]
 - !private ["So10UIKeyInputP", "init"]
 - !private ["So10UIKeyInputP", "textColor"]
 - !private ["So24UILargeContentViewerItemP", "addSubview"]
 - !private ["So24UILargeContentViewerItemP", "anchor"]
 - !private ["So24UILargeContentViewerItemP", "attributedPlaceholder"]
+- !private ["So24UILargeContentViewerItemP", "autocorrectionType"]
 - !private ["So24UILargeContentViewerItemP", "backgroundColor"]
 - !private ["So24UILargeContentViewerItemP", "bottomAnchor"]
 - !private ["So24UILargeContentViewerItemP", "contentMode"]
@@ -372,11 +452,13 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "leftAnchor"]
 - !private ["So24UILargeContentViewerItemP", "rightAnchor"]
+- !private ["So24UILargeContentViewerItemP", "setAttributedTitle"]
 - !private ["So24UILargeContentViewerItemP", "setDimensions"]
 - !private ["So24UILargeContentViewerItemP", "textColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "anchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "attributedPlaceholder"]
+- !private ["So30UIPasteConfigurationSupportingP", "autocorrectionType"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "bottomAnchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
@@ -386,11 +468,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "leftAnchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "rightAnchor"]
+- !private ["So30UIPasteConfigurationSupportingP", "setAttributedTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "setDimensions"]
 - !private ["So30UIPasteConfigurationSupportingP", "textColor"]
 - !private ["So11UIResponderC", "addSubview"]
 - !private ["So11UIResponderC", "anchor"]
 - !private ["So11UIResponderC", "attributedPlaceholder"]
+- !private ["So11UIResponderC", "autocorrectionType"]
 - !private ["So11UIResponderC", "backgroundColor"]
 - !private ["So11UIResponderC", "bottomAnchor"]
 - !private ["So11UIResponderC", "contentMode"]
@@ -400,11 +484,13 @@ depends-member:
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "leftAnchor"]
 - !private ["So11UIResponderC", "rightAnchor"]
+- !private ["So11UIResponderC", "setAttributedTitle"]
 - !private ["So11UIResponderC", "setDimensions"]
 - !private ["So11UIResponderC", "textColor"]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "anchor"]
 - !private ["So30UIResponderStandardEditActionsP", "attributedPlaceholder"]
+- !private ["So30UIResponderStandardEditActionsP", "autocorrectionType"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "bottomAnchor"]
 - !private ["So30UIResponderStandardEditActionsP", "contentMode"]
@@ -414,41 +500,52 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "leftAnchor"]
 - !private ["So30UIResponderStandardEditActionsP", "rightAnchor"]
+- !private ["So30UIResponderStandardEditActionsP", "setAttributedTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "setDimensions"]
 - !private ["So30UIResponderStandardEditActionsP", "textColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setAttributedTitle"]
+- !private ["So24UITextAutocorrectionTypeV", "no"]
 - !private ["So15UITextDraggableP", "anchor"]
 - !private ["So15UITextDraggableP", "attributedPlaceholder"]
+- !private ["So15UITextDraggableP", "autocorrectionType"]
 - !private ["So15UITextDraggableP", "font"]
 - !private ["So15UITextDraggableP", "init"]
 - !private ["So15UITextDraggableP", "textColor"]
 - !private ["So15UITextDroppableP", "anchor"]
 - !private ["So15UITextDroppableP", "attributedPlaceholder"]
+- !private ["So15UITextDroppableP", "autocorrectionType"]
 - !private ["So15UITextDroppableP", "font"]
 - !private ["So15UITextDroppableP", "init"]
 - !private ["So15UITextDroppableP", "textColor"]
 - !private ["So11UITextFieldC", "anchor"]
 - !private ["So11UITextFieldC", "attributedPlaceholder"]
+- !private ["So11UITextFieldC", "autocorrectionType"]
 - !private ["So11UITextFieldC", "font"]
 - !private ["So11UITextFieldC", "init"]
 - !private ["So11UITextFieldC", "textColor"]
 - !private ["So11UITextInputP", "anchor"]
 - !private ["So11UITextInputP", "attributedPlaceholder"]
+- !private ["So11UITextInputP", "autocorrectionType"]
 - !private ["So11UITextInputP", "font"]
 - !private ["So11UITextInputP", "init"]
 - !private ["So11UITextInputP", "textColor"]
 - !private ["So17UITextInputTraitsP", "anchor"]
 - !private ["So17UITextInputTraitsP", "attributedPlaceholder"]
+- !private ["So17UITextInputTraitsP", "autocorrectionType"]
 - !private ["So17UITextInputTraitsP", "font"]
 - !private ["So17UITextInputTraitsP", "init"]
 - !private ["So17UITextInputTraitsP", "textColor"]
 - !private ["So34UITextPasteConfigurationSupportingP", "anchor"]
 - !private ["So34UITextPasteConfigurationSupportingP", "attributedPlaceholder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "autocorrectionType"]
 - !private ["So34UITextPasteConfigurationSupportingP", "font"]
 - !private ["So34UITextPasteConfigurationSupportingP", "init"]
 - !private ["So34UITextPasteConfigurationSupportingP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "anchor"]
 - !private ["So18UITraitEnvironmentP", "attributedPlaceholder"]
+- !private ["So18UITraitEnvironmentP", "autocorrectionType"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "bottomAnchor"]
 - !private ["So18UITraitEnvironmentP", "contentMode"]
@@ -458,11 +555,13 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "leftAnchor"]
 - !private ["So18UITraitEnvironmentP", "rightAnchor"]
+- !private ["So18UITraitEnvironmentP", "setAttributedTitle"]
 - !private ["So18UITraitEnvironmentP", "setDimensions"]
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So23UIUserActivityRestoringP", "addSubview"]
 - !private ["So23UIUserActivityRestoringP", "anchor"]
 - !private ["So23UIUserActivityRestoringP", "attributedPlaceholder"]
+- !private ["So23UIUserActivityRestoringP", "autocorrectionType"]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
 - !private ["So23UIUserActivityRestoringP", "bottomAnchor"]
 - !private ["So23UIUserActivityRestoringP", "contentMode"]
@@ -472,11 +571,13 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "leftAnchor"]
 - !private ["So23UIUserActivityRestoringP", "rightAnchor"]
+- !private ["So23UIUserActivityRestoringP", "setAttributedTitle"]
 - !private ["So23UIUserActivityRestoringP", "setDimensions"]
 - !private ["So23UIUserActivityRestoringP", "textColor"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "anchor"]
 - !private ["So6UIViewC", "attributedPlaceholder"]
+- !private ["So6UIViewC", "autocorrectionType"]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "bottomAnchor"]
 - !private ["So6UIViewC", "contentMode"]
@@ -486,26 +587,34 @@ depends-member:
 - !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "leftAnchor"]
 - !private ["So6UIViewC", "rightAnchor"]
+- !private ["So6UIViewC", "setAttributedTitle"]
 - !private ["So6UIViewC", "setDimensions"]
 - !private ["So6UIViewC", "textColor"]
 - !private ["12MVVM_Twitter9UtilitiesC", "NSAttributedString"]
+- !private ["12MVVM_Twitter9UtilitiesC", "NSMutableAttributedString"]
 - ["12MVVM_Twitter9UtilitiesC", "String"]
+- ["12MVVM_Twitter9UtilitiesC", "UIButton"]
 - !private ["12MVVM_Twitter9UtilitiesC", "UIColor"]
 - !private ["12MVVM_Twitter9UtilitiesC", "UIFont"]
 - ["12MVVM_Twitter9UtilitiesC", "UIImage"]
 - !private ["12MVVM_Twitter9UtilitiesC", "UIImageView"]
 - ["12MVVM_Twitter9UtilitiesC", "UITextField"]
 - ["12MVVM_Twitter9UtilitiesC", "UIView"]
+- ["12MVVM_Twitter9UtilitiesC", "buttonAttributes"]
 - ["12MVVM_Twitter9UtilitiesC", "init"]
 - ["12MVVM_Twitter9UtilitiesC", "inputContainerView"]
 - ["12MVVM_Twitter9UtilitiesC", "textfield"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "font"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Key"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "anchor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "append"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "attributedPlaceholder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "autocorrectionType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "boldSystemFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bottomAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "constraint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
@@ -516,6 +625,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isActive"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "leftAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAnchor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setAttributedTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setDimensions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
@@ -523,8 +633,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Key"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addSubview"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "anchor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "append"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "attributedPlaceholder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "autocorrectionType"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "boldSystemFont"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bottomAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "constraint"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentMode"]
@@ -535,16 +648,20 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isActive"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "leftAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightAnchor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setAttributedTitle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setDimensions"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemFont"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "textColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
+- !private ["s21_ObjectiveCBridgeableP", "font"]
 - !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
+- !private ["s20_SwiftNewtypeWrapperP", "font"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "anchor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "attributedPlaceholder"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "autocorrectionType"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "bottomAnchor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentMode"]
@@ -554,6 +671,7 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "leftAnchor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rightAnchor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setAttributedTitle"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setDimensions"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textColor"]
 depends-nominal:
@@ -566,6 +684,7 @@ depends-nominal:
 - !private "Se"
 - !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "SH"
 - !private "So21NSAttributedStringKeya"
@@ -577,16 +696,21 @@ depends-nominal:
 - !private "So14NSLayoutAnchorC"
 - !private "So18NSLayoutConstraintC"
 - !private "So17NSLayoutDimensionC"
+- !private "So25NSMutableAttributedStringC"
 - !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
 - !private "Sq"
 - !private "SY"
+- !private "s10SetAlgebraP"
+- !private "So14UIControlStateV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
 - !private "So7UIColorC"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"
@@ -602,6 +726,8 @@ depends-nominal:
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So24UITextAutocorrectionTypeV"
 - !private "So15UITextDraggableP"
 - !private "So15UITextDroppableP"
 - !private "So11UITextFieldC"
@@ -647,6 +773,78 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -660,4 +858,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "30a3fad79d8b90319f54bea050d02104"
+interface-hash: "131943f96370b9b6bd1cbdb4da03e0dc"

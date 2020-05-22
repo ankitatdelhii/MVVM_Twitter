@@ -1,0 +1,8 @@
+dependencies: \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/FIRStorageMetadata.m \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/build/Pods.build/Debug-iphonesimulator/FirebaseStorage.build/module.modulemap \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageMetadata.h \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageConstants.h \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageConstants_Private.h \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageMetadata_Private.h \
+  /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageUtils.h

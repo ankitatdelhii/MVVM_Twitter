@@ -4,8 +4,10 @@
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/AppDelegate.swift
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Extensions.swift
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/LoginController.swift
+/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/API/AuthService.swift
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/ExploreController.swift
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/SceneDelegate.swift
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/MainTabBarController.swift
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/RegistrationController.swift
 /Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Controller/FeedController.swift
+/Users/ankitatdelhii/Desktop/ios/MVVM_Twitter/MVVM_Twitter/Utils/Constants.swift
