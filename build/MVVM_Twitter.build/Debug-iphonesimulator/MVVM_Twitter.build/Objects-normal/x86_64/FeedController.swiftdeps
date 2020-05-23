@@ -8,306 +8,559 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
+- !private "/"
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - "FeedController"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - !private "StringLiteralType"
+- !private "UIBarButtonItem"
 - !private "UIImage"
 - !private "UIImageView"
 - "UIViewController"
+- "User"
+- !private "print"
 depends-member:
+- !private ["So7CALayerC", "cornerRadius"]
+- !private ["So7CALayerC", "masksToBounds"]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "contentMode"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "sd_setImage"]
+- !private ["So15CALayerDelegateP", "setDimensions"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["So13CAMediaTimingP", "masksToBounds"]
+- !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIImageView"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "configureLeftBarButton"]
 - !private ["s7CVarArgP", "configureUI"]
 - !private ["s7CVarArgP", "contentMode"]
+- !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "leftBarButtonItem"]
+- !private ["s7CVarArgP", "masksToBounds"]
 - !private ["s7CVarArgP", "navigationItem"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "sd_setImage"]
+- !private ["s7CVarArgP", "setDimensions"]
 - !private ["s7CVarArgP", "titleView"]
+- !private ["s7CVarArgP", "twitterBlue"]
+- !private ["s7CVarArgP", "user"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "white"]
 - !private ["So17UIViewContentModeV", "scaleAspectFit"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImageView"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "configureLeftBarButton"]
 - !private ["s28CustomDebugStringConvertibleP", "configureUI"]
 - !private ["s28CustomDebugStringConvertibleP", "contentMode"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "leftBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "masksToBounds"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "sd_setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "setDimensions"]
 - !private ["s28CustomDebugStringConvertibleP", "titleView"]
+- !private ["s28CustomDebugStringConvertibleP", "twitterBlue"]
+- !private ["s28CustomDebugStringConvertibleP", "user"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s17CustomReflectableP", "backgroundColor"]
+- !private ["s17CustomReflectableP", "twitterBlue"]
 - !private ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIImageView"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "configureLeftBarButton"]
 - !private ["s23CustomStringConvertibleP", "configureUI"]
 - !private ["s23CustomStringConvertibleP", "contentMode"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "leftBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "masksToBounds"]
 - !private ["s23CustomStringConvertibleP", "navigationItem"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "sd_setImage"]
+- !private ["s23CustomStringConvertibleP", "setDimensions"]
 - !private ["s23CustomStringConvertibleP", "titleView"]
+- !private ["s23CustomStringConvertibleP", "twitterBlue"]
+- !private ["s23CustomStringConvertibleP", "user"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["Se", "backgroundColor"]
+- !private ["Se", "twitterBlue"]
 - !private ["Se", "white"]
 - !private ["SE", "backgroundColor"]
+- !private ["SE", "twitterBlue"]
 - !private ["SE", "white"]
+- !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UIImage"]
 - !private ["SQ", "UIImageView"]
 - ["SQ", ""]
 - !private ["SQ", "backgroundColor"]
+- !private ["SQ", "configureLeftBarButton"]
 - !private ["SQ", "configureUI"]
 - !private ["SQ", "contentMode"]
+- !private ["SQ", "cornerRadius"]
 - !private ["SQ", "init"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "leftBarButtonItem"]
+- !private ["SQ", "masksToBounds"]
 - !private ["SQ", "navigationItem"]
+- !private ["SQ", "print"]
 - !private ["SQ", "scaleAspectFit"]
+- !private ["SQ", "sd_setImage"]
+- !private ["SQ", "setDimensions"]
 - !private ["SQ", "titleView"]
+- !private ["SQ", "twitterBlue"]
+- !private ["SQ", "user"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "white"]
 - !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
+- !private ["s23ExpressibleByNilLiteralP", "twitterBlue"]
 - !private ["s23ExpressibleByNilLiteralP", "white"]
+- !private ["12MVVM_Twitter14FeedControllerC", "UIBarButtonItem"]
 - !private ["12MVVM_Twitter14FeedControllerC", "UIImage"]
 - !private ["12MVVM_Twitter14FeedControllerC", "UIImageView"]
+- ["12MVVM_Twitter14FeedControllerC", "User"]
+- !private ["12MVVM_Twitter14FeedControllerC", "configureLeftBarButton"]
 - !private ["12MVVM_Twitter14FeedControllerC", "configureUI"]
 - ["12MVVM_Twitter14FeedControllerC", "deinit"]
 - ["12MVVM_Twitter14FeedControllerC", "init"]
 - !private ["12MVVM_Twitter14FeedControllerC", "navigationItem"]
+- !private ["12MVVM_Twitter14FeedControllerC", "print"]
+- ["12MVVM_Twitter14FeedControllerC", "user"]
 - !private ["12MVVM_Twitter14FeedControllerC", "view"]
 - ["12MVVM_Twitter14FeedControllerC", "viewDidLoad"]
+- !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UIImage"]
 - !private ["SH", "UIImageView"]
 - ["SH", ""]
 - !private ["SH", "backgroundColor"]
+- !private ["SH", "configureLeftBarButton"]
 - !private ["SH", "configureUI"]
 - !private ["SH", "contentMode"]
+- !private ["SH", "cornerRadius"]
 - !private ["SH", "init"]
+- !private ["SH", "layer"]
+- !private ["SH", "leftBarButtonItem"]
+- !private ["SH", "masksToBounds"]
 - !private ["SH", "navigationItem"]
+- !private ["SH", "print"]
 - !private ["SH", "scaleAspectFit"]
+- !private ["SH", "sd_setImage"]
+- !private ["SH", "setDimensions"]
 - !private ["SH", "titleView"]
+- !private ["SH", "twitterBlue"]
+- !private ["SH", "user"]
 - !private ["SH", "view"]
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "white"]
+- !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIImageView"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "configureLeftBarButton"]
 - !private ["So8NSCodingP", "configureUI"]
 - !private ["So8NSCodingP", "contentMode"]
+- !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "leftBarButtonItem"]
+- !private ["So8NSCodingP", "masksToBounds"]
 - !private ["So8NSCodingP", "navigationItem"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "sd_setImage"]
+- !private ["So8NSCodingP", "setDimensions"]
 - !private ["So8NSCodingP", "titleView"]
+- !private ["So8NSCodingP", "twitterBlue"]
+- !private ["So8NSCodingP", "user"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "white"]
+- !private ["So9NSCopyingP", "twitterBlue"]
 - !private ["So9NSCopyingP", "white"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImageView"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "configureLeftBarButton"]
 - !private ["So26NSExtensionRequestHandlingP", "configureUI"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "user"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "twitterBlue"]
 - !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "twitterBlue"]
 - !private ["So21NSItemProviderWritingP", "white"]
+- !private ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "User"]
 - !private ["So8NSObjectC", "backgroundColor"]
+- ["So8NSObjectC", "configureLeftBarButton"]
 - ["So8NSObjectC", "configureUI"]
 - !private ["So8NSObjectC", "contentMode"]
+- !private ["So8NSObjectC", "cornerRadius"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "leftBarButtonItem"]
+- !private ["So8NSObjectC", "masksToBounds"]
 - !private ["So8NSObjectC", "navigationItem"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "sd_setImage"]
+- !private ["So8NSObjectC", "setDimensions"]
 - !private ["So8NSObjectC", "titleView"]
+- !private ["So8NSObjectC", "twitterBlue"]
+- ["So8NSObjectC", "user"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectC", "white"]
+- !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UIImageView"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "configureLeftBarButton"]
 - !private ["So8NSObjectP", "configureUI"]
 - !private ["So8NSObjectP", "contentMode"]
+- !private ["So8NSObjectP", "cornerRadius"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "leftBarButtonItem"]
+- !private ["So8NSObjectP", "masksToBounds"]
 - !private ["So8NSObjectP", "navigationItem"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "sd_setImage"]
+- !private ["So8NSObjectP", "setDimensions"]
 - !private ["So8NSObjectP", "titleView"]
+- !private ["So8NSObjectP", "twitterBlue"]
+- !private ["So8NSObjectP", "user"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "white"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "masksToBounds"]
+- !private ["So14NSSecureCodingP", "twitterBlue"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["Sq", "backgroundColor"]
+- !private ["Sq", "twitterBlue"]
 - !private ["Sq", "white"]
 - !private ["SY", "scaleAspectFit"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "sd_setImage"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setDimensions"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "contentMode"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "sd_setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "setDimensions"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "contentMode"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "sd_setImage"]
+- !private ["So12UIAppearanceP", "setDimensions"]
+- !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UIImageView"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "configureLeftBarButton"]
 - !private ["So21UIAppearanceContainerP", "configureUI"]
 - !private ["So21UIAppearanceContainerP", "contentMode"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "navigationItem"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "sd_setImage"]
+- !private ["So21UIAppearanceContainerP", "setDimensions"]
+- !private ["So21UIAppearanceContainerP", "user"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So15UIBarButtonItemC", "init"]
+- !private ["So9UIBarItemC", "init"]
+- !private ["So7UIColorC", "twitterBlue"]
 - !private ["So7UIColorC", "white"]
+- !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UIImageView"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "configureLeftBarButton"]
 - !private ["So18UIContentContainerP", "configureUI"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "navigationItem"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "user"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "contentMode"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "sd_setImage"]
+- !private ["So17UICoordinateSpaceP", "setDimensions"]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "contentMode"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "sd_setImage"]
+- !private ["So13UIDynamicItemP", "setDimensions"]
+- !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UIImageView"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "configureLeftBarButton"]
 - !private ["So18UIFocusEnvironmentP", "configureUI"]
 - !private ["So18UIFocusEnvironmentP", "contentMode"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "navigationItem"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "sd_setImage"]
+- !private ["So18UIFocusEnvironmentP", "setDimensions"]
+- !private ["So18UIFocusEnvironmentP", "user"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "contentMode"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "sd_setImage"]
+- !private ["So11UIFocusItemP", "setDimensions"]
 - !private ["So20UIFocusItemContainerP", "backgroundColor"]
 - !private ["So20UIFocusItemContainerP", "contentMode"]
 - !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "sd_setImage"]
+- !private ["So20UIFocusItemContainerP", "setDimensions"]
 - !private ["So7UIImageC", "init"]
+- !private ["So11UIImageViewC", "backgroundColor"]
 - !private ["So11UIImageViewC", "contentMode"]
 - !private ["So11UIImageViewC", "init"]
+- !private ["So11UIImageViewC", "layer"]
+- !private ["So11UIImageViewC", "sd_setImage"]
+- !private ["So11UIImageViewC", "setDimensions"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So24UILargeContentViewerItemP", "backgroundColor"]
 - !private ["So24UILargeContentViewerItemP", "contentMode"]
 - !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "layer"]
+- !private ["So24UILargeContentViewerItemP", "sd_setImage"]
+- !private ["So24UILargeContentViewerItemP", "setDimensions"]
+- !private ["So16UINavigationItemC", "leftBarButtonItem"]
 - !private ["So16UINavigationItemC", "titleView"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImageView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "configureLeftBarButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureUI"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "sd_setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "setDimensions"]
+- !private ["So30UIPasteConfigurationSupportingP", "user"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "UIBarButtonItem"]
 - !private ["So11UIResponderC", "UIImage"]
 - !private ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "User"]
 - !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "configureLeftBarButton"]
 - ["So11UIResponderC", "configureUI"]
 - !private ["So11UIResponderC", "contentMode"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "navigationItem"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "sd_setImage"]
+- !private ["So11UIResponderC", "setDimensions"]
+- ["So11UIResponderC", "user"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImageView"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "configureLeftBarButton"]
 - !private ["So30UIResponderStandardEditActionsP", "configureUI"]
 - !private ["So30UIResponderStandardEditActionsP", "contentMode"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "sd_setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "setDimensions"]
+- !private ["So30UIResponderStandardEditActionsP", "user"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UIImageView"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "configureLeftBarButton"]
 - !private ["So16UIStateRestoringP", "configureUI"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "navigationItem"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "user"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UIImageView"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "configureLeftBarButton"]
 - !private ["So18UITraitEnvironmentP", "configureUI"]
 - !private ["So18UITraitEnvironmentP", "contentMode"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "navigationItem"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "sd_setImage"]
+- !private ["So18UITraitEnvironmentP", "setDimensions"]
+- !private ["So18UITraitEnvironmentP", "user"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UIImageView"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "configureLeftBarButton"]
 - !private ["So23UIUserActivityRestoringP", "configureUI"]
 - !private ["So23UIUserActivityRestoringP", "contentMode"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "navigationItem"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "sd_setImage"]
+- !private ["So23UIUserActivityRestoringP", "setDimensions"]
+- !private ["So23UIUserActivityRestoringP", "user"]
 - !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "contentMode"]
 - !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
+- !private ["So6UIViewC", "sd_setImage"]
+- !private ["So6UIViewC", "setDimensions"]
+- !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - !private ["So16UIViewControllerC", "UIImage"]
 - !private ["So16UIViewControllerC", "UIImageView"]
+- ["So16UIViewControllerC", "User"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "configureLeftBarButton"]
 - ["So16UIViewControllerC", "configureUI"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "navigationItem"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "user"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["12MVVM_Twitter4UserV", "profileImageUrl"]
+- !private ["s26_ExpressibleByColorLiteralP", "twitterBlue"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configureLeftBarButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configureUI"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "leftBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "masksToBounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sd_setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setDimensions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "twitterBlue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIBarButtonItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImageView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureLeftBarButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureUI"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentMode"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "leftBarButtonItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "masksToBounds"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sd_setImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setDimensions"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "twitterBlue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "user"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "twitterBlue"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentMode"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "sd_setImage"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setDimensions"]
 depends-nominal:
+- !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
 - "s7CVarArgP"
 - !private "So17UIViewContentModeV"
 - "s28CustomDebugStringConvertibleP"
@@ -333,6 +586,8 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So15UIBarButtonItemC"
+- !private "So9UIBarItemC"
 - !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
@@ -348,11 +603,13 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "12MVVM_Twitter4UserV"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -389,19 +646,38 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
@@ -410,6 +686,8 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
@@ -420,11 +698,19 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
@@ -434,7 +720,30 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageHEICCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageIOAnimatedCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderResponseModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImagePlayer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOptionsProcessor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderDecryptor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
@@ -445,15 +754,21 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
@@ -472,4 +787,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "57ddb313f10f50456b50212afa6009df"
+interface-hash: "15f5893e535576dca862cc2d42314e74"

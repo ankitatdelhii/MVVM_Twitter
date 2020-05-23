@@ -174,3 +174,4 @@ extension RegistrationController: UIImagePickerControllerDelegate, UINavigationC
     }
     
 }
+

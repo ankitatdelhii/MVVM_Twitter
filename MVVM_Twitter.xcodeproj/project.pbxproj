@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D045FA92479AB6C00313C80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D045FA82479AB6C00313C80 /* User.swift */; };
+		9D13C99F2479630A00115F2A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13C99E2479630A00115F2A /* UserService.swift */; };
 		9D186E46247077F200E55D4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D186E45247077F200E55D4E /* LoginController.swift */; };
 		9D186E482470780700E55D4E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D186E472470780700E55D4E /* RegistrationController.swift */; };
 		9D20B985246B1C3300891224 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20B984246B1C3300891224 /* Extensions.swift */; };
@@ -31,6 +33,8 @@
 		56491DA00665B3B32F701A4C /* Pods_MVVM_Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3862B7D8026E476A54F6F2 /* Pods-MVVM_Twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Twitter.release.xcconfig"; path = "Target Support Files/Pods-MVVM_Twitter/Pods-MVVM_Twitter.release.xcconfig"; sourceTree = "<group>"; };
 		7E852AF6A5E23FF4C9C330FC /* Pods-MVVM_Twitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Twitter.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_Twitter/Pods-MVVM_Twitter.debug.xcconfig"; sourceTree = "<group>"; };
+		9D045FA82479AB6C00313C80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = MVVM_Twitter/API/User.swift; sourceTree = SOURCE_ROOT; };
+		9D13C99E2479630A00115F2A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		9D186E45247077F200E55D4E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9D186E472470780700E55D4E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		9D20B984246B1C3300891224 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		9D790C37246AB17D007DEB9C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9D045FA82479AB6C00313C80 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				9D3222A92477161300B187D5 /* AuthService.swift */,
+				9D13C99E2479630A00115F2A /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D13C99F2479630A00115F2A /* UserService.swift in Sources */,
 				9D790C44246ABA9B007DEB9C /* NotificationsController.swift in Sources */,
 				9D790C46246ABAA6007DEB9C /* ConversationsController.swift in Sources */,
 				9D6139E22471B791004A5823 /* Utilities.swift in Sources */,
@@ -303,6 +310,7 @@
 				9D20B985246B1C3300891224 /* Extensions.swift in Sources */,
 				9D186E46247077F200E55D4E /* LoginController.swift in Sources */,
 				9D3222AA2477161300B187D5 /* AuthService.swift in Sources */,
+				9D045FA92479AB6C00313C80 /* User.swift in Sources */,
 				9D790C42246ABA8F007DEB9C /* ExploreController.swift in Sources */,
 				9D790C26246AB134007DEB9C /* SceneDelegate.swift in Sources */,
 				9D790C3E246AB1BC007DEB9C /* MainTabBarController.swift in Sources */,

@@ -14,7 +14,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		2ymWVXN+InVd1iHqP22DEuwJigA=
+		pCJWCo2uudVS9SDAUcJmOL4Q5PQ=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		P9lLt9WA6OM9XYHpa2Hu4dsDO/s=
+		0po7Ke1mEyPLsRQLzJfHlNZYv94=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
@@ -47,6 +47,18 @@
 		<key>Frameworks/GoogleUtilities.framework/_CodeSignature/CodeResources</key>
 		<data>
 		uDbGAayk76YgLH18BGyCKNRHC7Q=
+		</data>
+		<key>Frameworks/SDWebImage.framework/Info.plist</key>
+		<data>
+		DFLphnWJ44F4LxSSTBPshxAes/U=
+		</data>
+		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
+		<data>
+		BRVW7rfSztNQ2PznEgURFimggT8=
+		</data>
+		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<data>
+		E9O6Y2Ux4RBCMBeqYdOWb4mhbQI=
 		</data>
 		<key>Frameworks/leveldb.framework/Info.plist</key>
 		<data>
@@ -105,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qtW6GRkNu8ElAYIU7dtfUM8xc5SYKI2qSnw5iiv7Eec=
+			EFAA8DZvDzG4aQUTUcGAUc5Pj5dNKOOI9/L9itirgyU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -119,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			plAaeyonL+eGJ/Mxd9Q+hQWP02gJsFwFUdjJxNpjGJ8=
+			RcfF/O4WCIaw/iCOU/QWc/VoMtptb/2ftUFlXIrTYG0=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
@@ -162,6 +174,27 @@
 			<key>hash2</key>
 			<data>
 			LH7vnSJC6AQLCXWQSH72boYfn3Ag629QAJcgHboH/3U=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O3DJN5IXFjBMCER3j86kKhWdiSa+qTQAQbH43iM7PjE=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w5zw88qa4qHhx0w0QZNGQCPXldvrnYUSRzH3s4omOnc=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EgcXlH4Do9MDIj2Lr10VEfbDEuJRYpw5qLoChQKM5Hk=
 			</data>
 		</dict>
 		<key>Frameworks/leveldb.framework/Info.plist</key>

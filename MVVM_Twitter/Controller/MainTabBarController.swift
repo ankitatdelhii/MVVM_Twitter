@@ -13,6 +13,15 @@ class MainTabBarController: UITabBarController {
     
     //MARK: PROPERTIES
     
+    var user: User? {
+        didSet {
+            print("Got User in Main Tab")
+            guard let nav = viewControllers?.first as? UINavigationController else { return }
+            guard let feedVC = nav.viewControllers.first as? FeedController else { return }
+            feedVC.user = user
+        }
+    }
+    
     let actionButton: UIButton =  {
         let button = UIButton()
         button.setImage(UIImage(named: "new_tweet"), for: .normal)
@@ -48,6 +57,13 @@ class MainTabBarController: UITabBarController {
             print("USER LOGGED IN")
             configureViewControllers()
             configureUI()
+            fetchUser()
+        }
+    }
+    
+    fileprivate func fetchUser() {
+        UserService.shared.fetchUser {[weak self] (user) in
+            self?.user = user
         }
     }
     

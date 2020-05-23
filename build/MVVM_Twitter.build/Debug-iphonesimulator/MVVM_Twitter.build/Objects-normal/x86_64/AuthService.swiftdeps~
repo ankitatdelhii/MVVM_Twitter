@@ -12,6 +12,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "Auth"
 - "AuthCredectials"
+- "AuthDataResultCallback"
 - "AuthService"
 - "DatabaseReference"
 - "Error"
@@ -28,6 +29,7 @@ depends-top-level:
 depends-member:
 - !private ["So7FIRAuthC", "auth"]
 - !private ["So7FIRAuthC", "createUser"]
+- !private ["So7FIRAuthC", "signIn"]
 - ["12MVVM_Twitter15AuthCredectialsV", "String"]
 - ["12MVVM_Twitter15AuthCredectialsV", "UIImage"]
 - ["12MVVM_Twitter15AuthCredectialsV", "email"]
@@ -39,14 +41,17 @@ depends-member:
 - !private ["So17FIRAuthDataResultC", "user"]
 - !private ["12MVVM_Twitter11AuthServiceV", "Auth"]
 - ["12MVVM_Twitter11AuthServiceV", "AuthCredectials"]
+- ["12MVVM_Twitter11AuthServiceV", "AuthDataResultCallback"]
 - ["12MVVM_Twitter11AuthServiceV", "AuthService"]
 - ["12MVVM_Twitter11AuthServiceV", "DatabaseReference"]
 - ["12MVVM_Twitter11AuthServiceV", "Error"]
 - !private ["12MVVM_Twitter11AuthServiceV", "NSUUID"]
 - !private ["12MVVM_Twitter11AuthServiceV", "REF_USERS"]
 - !private ["12MVVM_Twitter11AuthServiceV", "STORAGE_PROFILE_IMAGES"]
+- ["12MVVM_Twitter11AuthServiceV", "String"]
 - ["12MVVM_Twitter11AuthServiceV", "Void"]
 - ["12MVVM_Twitter11AuthServiceV", "init"]
+- ["12MVVM_Twitter11AuthServiceV", "loginUser"]
 - !private ["12MVVM_Twitter11AuthServiceV", "print"]
 - ["12MVVM_Twitter11AuthServiceV", "registerUser"]
 - ["12MVVM_Twitter11AuthServiceV", "shared"]
@@ -57,6 +62,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "jpegData"]
 - !private ["s7CVarArgP", "putData"]
+- !private ["s7CVarArgP", "signIn"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "updateChildValues"]
 - !private ["s7CVarArgP", "user"]
@@ -69,6 +75,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "jpegData"]
 - !private ["s28CustomDebugStringConvertibleP", "putData"]
+- !private ["s28CustomDebugStringConvertibleP", "signIn"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
 - !private ["s28CustomDebugStringConvertibleP", "user"]
@@ -83,6 +90,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "jpegData"]
 - !private ["s23CustomStringConvertibleP", "putData"]
+- !private ["s23CustomStringConvertibleP", "signIn"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "updateChildValues"]
 - !private ["s23CustomStringConvertibleP", "user"]
@@ -103,6 +111,7 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "jpegData"]
 - !private ["SQ", "putData"]
+- !private ["SQ", "signIn"]
 - !private ["SQ", "uid"]
 - !private ["SQ", "updateChildValues"]
 - !private ["SQ", "user"]
@@ -116,6 +125,7 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "jpegData"]
 - !private ["SH", "putData"]
+- !private ["SH", "signIn"]
 - !private ["SH", "uid"]
 - !private ["SH", "updateChildValues"]
 - !private ["SH", "user"]
@@ -134,6 +144,7 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "jpegData"]
 - !private ["So8NSObjectC", "putData"]
+- !private ["So8NSObjectC", "signIn"]
 - !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "updateChildValues"]
 - !private ["So8NSObjectC", "user"]
@@ -145,6 +156,7 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "jpegData"]
 - !private ["So8NSObjectP", "putData"]
+- !private ["So8NSObjectP", "signIn"]
 - !private ["So8NSObjectP", "uid"]
 - !private ["So8NSObjectP", "updateChildValues"]
 - !private ["So8NSObjectP", "user"]
@@ -180,6 +192,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "jpegData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "putData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
@@ -191,6 +204,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "jpegData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "putData"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "signIn"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "updateChildValues"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "user"]
@@ -350,4 +364,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5763de2a859d4d0f081120426bd73548"
+interface-hash: "7ece2aa8ecea811ba59e9651bf2af6a6"
