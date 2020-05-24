@@ -16,9 +16,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "LoginController"
+- !private "MainTabBarController"
 - "SceneDelegate"
-- !private "UINavigationController"
 - "UIResponder"
 - "UIScene"
 - "UISceneSession"
@@ -30,8 +29,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - ["s7CVarArgP", "ConnectionOptions"]
-- !private ["s7CVarArgP", "LoginController"]
-- !private ["s7CVarArgP", "UINavigationController"]
+- !private ["s7CVarArgP", "MainTabBarController"]
 - !private ["s7CVarArgP", "UIWindow"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "init"]
@@ -48,8 +46,7 @@ depends-member:
 - ["s7CVarArgP", "window"]
 - ["s7CVarArgP", "windowScene"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
-- !private ["s28CustomDebugStringConvertibleP", "LoginController"]
-- !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "MainTabBarController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -66,8 +63,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
-- !private ["s23CustomStringConvertibleP", "LoginController"]
-- !private ["s23CustomStringConvertibleP", "UINavigationController"]
+- !private ["s23CustomStringConvertibleP", "MainTabBarController"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -84,8 +80,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "windowScene"]
 - ["SQ", "ConnectionOptions"]
-- !private ["SQ", "LoginController"]
-- !private ["SQ", "UINavigationController"]
+- !private ["SQ", "MainTabBarController"]
 - !private ["SQ", "UIWindow"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
@@ -102,8 +97,7 @@ depends-member:
 - ["SQ", "window"]
 - ["SQ", "windowScene"]
 - ["SH", "ConnectionOptions"]
-- !private ["SH", "LoginController"]
-- !private ["SH", "UINavigationController"]
+- !private ["SH", "MainTabBarController"]
 - !private ["SH", "UIWindow"]
 - ["SH", ""]
 - !private ["SH", "init"]
@@ -119,15 +113,14 @@ depends-member:
 - ["SH", "stateRestorationActivityForScene"]
 - ["SH", "window"]
 - ["SH", "windowScene"]
-- !private ["12MVVM_Twitter15LoginControllerC", "deinit"]
-- !private ["12MVVM_Twitter15LoginControllerC", "init"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "deinit"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeKeyAndVisible"]
 - !private ["So8NSCodingP", "rootViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - ["So8NSObjectC", "ConnectionOptions"]
-- !private ["So8NSObjectC", "LoginController"]
-- !private ["So8NSObjectC", "UINavigationController"]
+- !private ["So8NSObjectC", "MainTabBarController"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
@@ -146,8 +139,7 @@ depends-member:
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectC", "windowScene"]
 - ["So8NSObjectP", "ConnectionOptions"]
-- !private ["So8NSObjectP", "LoginController"]
-- !private ["So8NSObjectP", "UINavigationController"]
+- !private ["So8NSObjectP", "MainTabBarController"]
 - !private ["So8NSObjectP", "UIWindow"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "init"]
@@ -163,8 +155,7 @@ depends-member:
 - ["So8NSObjectP", "stateRestorationActivityForScene"]
 - ["So8NSObjectP", "window"]
 - ["So8NSObjectP", "windowScene"]
-- !private ["12MVVM_Twitter13SceneDelegateC", "LoginController"]
-- !private ["12MVVM_Twitter13SceneDelegateC", "UINavigationController"]
+- !private ["12MVVM_Twitter13SceneDelegateC", "MainTabBarController"]
 - ["12MVVM_Twitter13SceneDelegateC", "UIScene"]
 - ["12MVVM_Twitter13SceneDelegateC", "UISceneSession"]
 - ["12MVVM_Twitter13SceneDelegateC", "UIWindow"]
@@ -209,10 +200,8 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
-- !private ["So22UINavigationControllerC", "init"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
-- !private ["So30UIPasteConfigurationSupportingP", "LoginController"]
-- !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "MainTabBarController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -229,8 +218,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
 - ["So11UIResponderC", "ConnectionOptions"]
-- !private ["So11UIResponderC", "LoginController"]
-- !private ["So11UIResponderC", "UINavigationController"]
+- !private ["So11UIResponderC", "MainTabBarController"]
 - ["So11UIResponderC", "UIScene"]
 - ["So11UIResponderC", "UISceneSession"]
 - ["So11UIResponderC", "UIWindow"]
@@ -250,8 +238,7 @@ depends-member:
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", "windowScene"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
-- !private ["So30UIResponderStandardEditActionsP", "LoginController"]
-- !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "MainTabBarController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -268,8 +255,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So30UIResponderStandardEditActionsP", "windowScene"]
 - ["So7UISceneC", "ConnectionOptions"]
-- !private ["So15UISceneDelegateP", "LoginController"]
-- !private ["So15UISceneDelegateP", "UINavigationController"]
+- !private ["So15UISceneDelegateP", "MainTabBarController"]
 - !private ["So15UISceneDelegateP", "UIWindow"]
 - ["So15UISceneDelegateP", ""]
 - ["So15UISceneDelegateP", "scene"]
@@ -283,12 +269,13 @@ depends-member:
 - ["So15UISceneDelegateP", "window"]
 - ["So15UISceneDelegateP", "windowScene"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So18UITabBarControllerC", "init"]
+- !private ["So16UITabBarDelegateP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
-- !private ["So23UIUserActivityRestoringP", "LoginController"]
-- !private ["So23UIUserActivityRestoringP", "UINavigationController"]
+- !private ["So23UIUserActivityRestoringP", "MainTabBarController"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -311,8 +298,7 @@ depends-member:
 - !private ["So8UIWindowC", "init"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
-- !private ["So21UIWindowSceneDelegateP", "LoginController"]
-- !private ["So21UIWindowSceneDelegateP", "UINavigationController"]
+- !private ["So21UIWindowSceneDelegateP", "MainTabBarController"]
 - !private ["So21UIWindowSceneDelegateP", "UIWindow"]
 - ["So21UIWindowSceneDelegateP", ""]
 - ["So21UIWindowSceneDelegateP", "scene"]
@@ -326,8 +312,7 @@ depends-member:
 - ["So21UIWindowSceneDelegateP", "window"]
 - ["So21UIWindowSceneDelegateP", "windowScene"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MainTabBarController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -344,8 +329,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LoginController"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UINavigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MainTabBarController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
@@ -371,7 +355,7 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - "SQ"
 - "SH"
-- !private "12MVVM_Twitter15LoginControllerC"
+- !private "12MVVM_Twitter20MainTabBarControllerC"
 - !private "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
@@ -387,13 +371,14 @@ depends-nominal:
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So24UILargeContentViewerItemP"
-- !private "So22UINavigationControllerC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So7UISceneC"
 - "So15UISceneDelegateP"
 - !private "So16UIStateRestoringP"
+- !private "So18UITabBarControllerC"
+- !private "So16UITabBarDelegateP"
 - !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
@@ -496,7 +481,6 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/ankitatdelhii/Downloads/MVVM_Twitter-master/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"

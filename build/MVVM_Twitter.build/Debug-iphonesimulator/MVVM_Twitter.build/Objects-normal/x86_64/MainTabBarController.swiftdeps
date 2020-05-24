@@ -15,7 +15,7 @@ depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
 - !private "Auth"
-- "BooleanLiteralType"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "ConversationsController"
 - !private "DispatchQueue"
@@ -33,6 +33,7 @@ depends-top-level:
 - "UITabBarController"
 - "UIView"
 - "UIViewController"
+- !private "UploadTweetController"
 - "User"
 - !private "UserService"
 - "Void"
@@ -69,6 +70,7 @@ depends-member:
 - ["s7CVarArgP", "UIButton"]
 - ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UINavigationController"]
+- !private ["s7CVarArgP", "UploadTweetController"]
 - !private ["s7CVarArgP", "UserService"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "actionButton"]
@@ -129,6 +131,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
 - ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "UploadTweetController"]
 - !private ["s28CustomDebugStringConvertibleP", "UserService"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "actionButton"]
@@ -191,6 +194,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "UIButton"]
 - ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UINavigationController"]
+- !private ["s23CustomStringConvertibleP", "UploadTweetController"]
 - !private ["s23CustomStringConvertibleP", "UserService"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "actionButton"]
@@ -271,6 +275,7 @@ depends-member:
 - ["SQ", "UIButton"]
 - ["SQ", "UIImage"]
 - !private ["SQ", "UINavigationController"]
+- !private ["SQ", "UploadTweetController"]
 - !private ["SQ", "UserService"]
 - ["SQ", ""]
 - !private ["SQ", "actionButton"]
@@ -345,6 +350,7 @@ depends-member:
 - ["SH", "UIButton"]
 - ["SH", "UIImage"]
 - !private ["SH", "UINavigationController"]
+- !private ["SH", "UploadTweetController"]
 - !private ["SH", "UserService"]
 - ["SH", ""]
 - !private ["SH", "actionButton"]
@@ -403,6 +409,7 @@ depends-member:
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIImage"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UINavigationController"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIViewController"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "UploadTweetController"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "User"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "UserService"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "actionButton"]
@@ -436,6 +443,7 @@ depends-member:
 - ["So8NSCodingP", "UIButton"]
 - ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UINavigationController"]
+- !private ["So8NSCodingP", "UploadTweetController"]
 - !private ["So8NSCodingP", "UserService"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "actionButton"]
@@ -485,6 +493,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UINavigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "UploadTweetController"]
 - !private ["So26NSExtensionRequestHandlingP", "UserService"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "actionButton"]
@@ -523,6 +532,7 @@ depends-member:
 - ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "UIViewController"]
+- !private ["So8NSObjectC", "UploadTweetController"]
 - ["So8NSObjectC", "User"]
 - !private ["So8NSObjectC", "UserService"]
 - ["So8NSObjectC", "Void"]
@@ -577,6 +587,7 @@ depends-member:
 - ["So8NSObjectP", "UIButton"]
 - ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UINavigationController"]
+- !private ["So8NSObjectP", "UploadTweetController"]
 - !private ["So8NSObjectP", "UserService"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "actionButton"]
@@ -696,6 +707,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "UIButton"]
 - ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UINavigationController"]
+- !private ["So21UIAppearanceContainerP", "UploadTweetController"]
 - !private ["So21UIAppearanceContainerP", "UserService"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "actionButton"]
@@ -748,6 +760,7 @@ depends-member:
 - ["So18UIContentContainerP", "UIButton"]
 - ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UINavigationController"]
+- !private ["So18UIContentContainerP", "UploadTweetController"]
 - !private ["So18UIContentContainerP", "UserService"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "actionButton"]
@@ -809,6 +822,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UINavigationController"]
+- !private ["So18UIFocusEnvironmentP", "UploadTweetController"]
 - !private ["So18UIFocusEnvironmentP", "UserService"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "actionButton"]
@@ -897,6 +911,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UploadTweetController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UserService"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "actionButton"]
@@ -940,6 +955,7 @@ depends-member:
 - ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UIView"]
 - ["So11UIResponderC", "UIViewController"]
+- !private ["So11UIResponderC", "UploadTweetController"]
 - ["So11UIResponderC", "User"]
 - !private ["So11UIResponderC", "UserService"]
 - ["So11UIResponderC", "Void"]
@@ -983,6 +999,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "UploadTweetController"]
 - !private ["So30UIResponderStandardEditActionsP", "UserService"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "actionButton"]
@@ -1032,6 +1049,7 @@ depends-member:
 - ["So16UIStateRestoringP", "UIButton"]
 - ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UINavigationController"]
+- !private ["So16UIStateRestoringP", "UploadTweetController"]
 - !private ["So16UIStateRestoringP", "UserService"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "actionButton"]
@@ -1063,6 +1081,7 @@ depends-member:
 - ["So18UITabBarControllerC", "UIImage"]
 - ["So18UITabBarControllerC", "UINavigationController"]
 - ["So18UITabBarControllerC", "UIViewController"]
+- !private ["So18UITabBarControllerC", "UploadTweetController"]
 - ["So18UITabBarControllerC", "User"]
 - !private ["So18UITabBarControllerC", "UserService"]
 - ["So18UITabBarControllerC", ""]
@@ -1092,6 +1111,7 @@ depends-member:
 - ["So16UITabBarDelegateP", "UIButton"]
 - ["So16UITabBarDelegateP", "UIImage"]
 - !private ["So16UITabBarDelegateP", "UINavigationController"]
+- !private ["So16UITabBarDelegateP", "UploadTweetController"]
 - !private ["So16UITabBarDelegateP", "UserService"]
 - ["So16UITabBarDelegateP", ""]
 - !private ["So16UITabBarDelegateP", "actionButton"]
@@ -1120,6 +1140,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "UIButton"]
 - ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UINavigationController"]
+- !private ["So18UITraitEnvironmentP", "UploadTweetController"]
 - !private ["So18UITraitEnvironmentP", "UserService"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "actionButton"]
@@ -1161,6 +1182,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "UIButton"]
 - ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UINavigationController"]
+- !private ["So23UIUserActivityRestoringP", "UploadTweetController"]
 - !private ["So23UIUserActivityRestoringP", "UserService"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "actionButton"]
@@ -1217,6 +1239,7 @@ depends-member:
 - ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UIViewController"]
+- !private ["So16UIViewControllerC", "UploadTweetController"]
 - ["So16UIViewControllerC", "User"]
 - !private ["So16UIViewControllerC", "UserService"]
 - ["So16UIViewControllerC", "actionButton"]
@@ -1238,6 +1261,8 @@ depends-member:
 - !private ["So16UIViewControllerC", "view"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["12MVVM_Twitter21UploadTweetControllerC", "deinit"]
+- !private ["12MVVM_Twitter21UploadTweetControllerC", "init"]
 - !private ["12MVVM_Twitter11UserServiceV", "fetchUser"]
 - !private ["12MVVM_Twitter11UserServiceV", "shared"]
 - !private ["s14_ArrayProtocolP", "first"]
@@ -1261,6 +1286,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UploadTweetController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserService"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "actionButton"]
@@ -1313,6 +1339,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UINavigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UploadTweetController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserService"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "actionButton"]
@@ -1462,6 +1489,7 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "12MVVM_Twitter21UploadTweetControllerC"
 - !private "12MVVM_Twitter11UserServiceV"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"

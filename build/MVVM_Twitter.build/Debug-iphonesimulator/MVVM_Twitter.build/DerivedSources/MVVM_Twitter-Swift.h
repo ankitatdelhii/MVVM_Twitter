@@ -181,6 +181,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import UIKit;
 #endif
 
@@ -212,8 +213,17 @@ SWIFT_CLASS("_TtC12MVVM_Twitter11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+@class NSTextContainer;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC12MVVM_Twitter15CaptionTextView")
+@interface CaptionTextView : UITextView
+- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)handleTextInputChange;
+@end
+
+@class NSBundle;
 
 SWIFT_CLASS("_TtC12MVVM_Twitter23ConversationsController")
 @interface ConversationsController : UIViewController
@@ -302,6 +312,16 @@ SWIFT_CLASS("_TtC12MVVM_Twitter13SceneDelegate")
 
 
 
+
+
+SWIFT_CLASS("_TtC12MVVM_Twitter21UploadTweetController")
+@interface UploadTweetController : UIViewController
+- (void)viewDidLoad;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)handleCancel;
+- (void)handleUploadTweet;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

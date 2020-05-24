@@ -1,7 +1,8 @@
 version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
 options: "a12bcd9fc2ae321aefa2dfe81973d6ab"
-build_time: [1590241756, 674554000]
+build_time: [1590242192, 404143000]
 inputs:
+  "/Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/API/UserService.swift": [9223372036, 854775807]
   "/Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/NotificationsController.swift": [1590172941, 713009612]
   "/Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/ConversationsController.swift": [1590172941, 710794717]
   "/Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Utils/Utilities.swift": [1590172941, 716721138]

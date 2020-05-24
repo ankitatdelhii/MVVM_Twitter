@@ -531,7 +531,6 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/ankitatdelhii/Downloads/MVVM_Twitter-master/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
