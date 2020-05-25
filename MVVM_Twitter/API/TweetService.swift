@@ -27,4 +27,25 @@ struct TweetService {
         
     }
     
+    func fetchTweets(completion: @escaping ([Tweet]) -> Void) {
+        
+        var tweets = [Tweet]()
+        
+        REF_TWEETS.observe(.childAdded) { (snapshot) in
+            let tweetId = snapshot.key
+            
+            guard let dataDict = snapshot.value as? [String: Any] else { return }
+            guard let uid = dataDict["uid"] as? String else { return }
+            
+            UserService.shared.fetchUser(uid: uid) { (user) in
+                let tweet = Tweet(user: user, tweetId: tweetId, dictData: dataDict)
+                tweets.append(tweet)
+                completion(tweets)
+            }
+            
+            
+        }
+        
+    }
+    
 }

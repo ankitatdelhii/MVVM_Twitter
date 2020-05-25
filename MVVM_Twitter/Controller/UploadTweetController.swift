@@ -15,7 +15,7 @@ class UploadTweetController: UIViewController {
     private let user: User
     
     private lazy var actionButton: UIButton = {
-       let button = UIButton()
+       let button = UIButton(type: .system)
         button.backgroundColor = .twitterBlue
         button.setTitle("Tweet", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)

@@ -28,6 +28,7 @@ depends-top-level:
 - !private "NotificationsController"
 - "StringLiteralType"
 - "UIButton"
+- !private "UICollectionViewFlowLayout"
 - "UIImage"
 - "UINavigationController"
 - "UITabBarController"
@@ -46,6 +47,7 @@ depends-member:
 - !private ["So7FIRAuthC", "signOut"]
 - !private ["SK", "first"]
 - !private ["SK", "forEach"]
+- ["So12UIButtonTypeV", "system"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - ["So15CALayerDelegateP", "addTarget"]
@@ -68,6 +70,7 @@ depends-member:
 - !private ["s7CVarArgP", "LoginController"]
 - !private ["s7CVarArgP", "NotificationsController"]
 - ["s7CVarArgP", "UIButton"]
+- !private ["s7CVarArgP", "UICollectionViewFlowLayout"]
 - ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UINavigationController"]
 - !private ["s7CVarArgP", "UploadTweetController"]
@@ -129,6 +132,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "LoginController"]
 - !private ["s28CustomDebugStringConvertibleP", "NotificationsController"]
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
+- !private ["s28CustomDebugStringConvertibleP", "UICollectionViewFlowLayout"]
 - ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "UploadTweetController"]
@@ -192,6 +196,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "LoginController"]
 - !private ["s23CustomStringConvertibleP", "NotificationsController"]
 - ["s23CustomStringConvertibleP", "UIButton"]
+- !private ["s23CustomStringConvertibleP", "UICollectionViewFlowLayout"]
 - ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UINavigationController"]
 - !private ["s23CustomStringConvertibleP", "UploadTweetController"]
@@ -273,6 +278,7 @@ depends-member:
 - !private ["SQ", "LoginController"]
 - !private ["SQ", "NotificationsController"]
 - ["SQ", "UIButton"]
+- !private ["SQ", "UICollectionViewFlowLayout"]
 - ["SQ", "UIImage"]
 - !private ["SQ", "UINavigationController"]
 - !private ["SQ", "UploadTweetController"]
@@ -313,6 +319,7 @@ depends-member:
 - ["SQ", "setImage"]
 - !private ["SQ", "signOut"]
 - !private ["SQ", "subviews"]
+- ["SQ", "system"]
 - !private ["SQ", "tabBarItem"]
 - !private ["SQ", "templateNavigationController"]
 - ["SQ", "tintColor"]
@@ -348,6 +355,7 @@ depends-member:
 - !private ["SH", "LoginController"]
 - !private ["SH", "NotificationsController"]
 - ["SH", "UIButton"]
+- !private ["SH", "UICollectionViewFlowLayout"]
 - ["SH", "UIImage"]
 - !private ["SH", "UINavigationController"]
 - !private ["SH", "UploadTweetController"]
@@ -387,6 +395,7 @@ depends-member:
 - ["SH", "setImage"]
 - !private ["SH", "signOut"]
 - !private ["SH", "subviews"]
+- ["SH", "system"]
 - !private ["SH", "tabBarItem"]
 - !private ["SH", "templateNavigationController"]
 - ["SH", "tintColor"]
@@ -406,6 +415,7 @@ depends-member:
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "LoginController"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "NotificationsController"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIButton"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "UICollectionViewFlowLayout"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIImage"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UINavigationController"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIViewController"]
@@ -441,6 +451,7 @@ depends-member:
 - !private ["So8NSCodingP", "LoginController"]
 - !private ["So8NSCodingP", "NotificationsController"]
 - ["So8NSCodingP", "UIButton"]
+- !private ["So8NSCodingP", "UICollectionViewFlowLayout"]
 - ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UINavigationController"]
 - !private ["So8NSCodingP", "UploadTweetController"]
@@ -491,6 +502,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "LoginController"]
 - !private ["So26NSExtensionRequestHandlingP", "NotificationsController"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
+- !private ["So26NSExtensionRequestHandlingP", "UICollectionViewFlowLayout"]
 - ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UINavigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "UploadTweetController"]
@@ -528,6 +540,7 @@ depends-member:
 - !private ["So8NSObjectC", "LoginController"]
 - !private ["So8NSObjectC", "NotificationsController"]
 - ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UICollectionViewFlowLayout"]
 - ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UIView"]
@@ -585,6 +598,7 @@ depends-member:
 - !private ["So8NSObjectP", "LoginController"]
 - !private ["So8NSObjectP", "NotificationsController"]
 - ["So8NSObjectP", "UIButton"]
+- !private ["So8NSObjectP", "UICollectionViewFlowLayout"]
 - ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UINavigationController"]
 - !private ["So8NSObjectP", "UploadTweetController"]
@@ -652,6 +666,7 @@ depends-member:
 - !private ["Sm", "forEach"]
 - !private ["SY", "fullScreen"]
 - ["SY", "normal"]
+- ["SY", "system"]
 - ["SY", "touchUpInside"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
@@ -705,6 +720,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "LoginController"]
 - !private ["So21UIAppearanceContainerP", "NotificationsController"]
 - ["So21UIAppearanceContainerP", "UIButton"]
+- !private ["So21UIAppearanceContainerP", "UICollectionViewFlowLayout"]
 - ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UINavigationController"]
 - !private ["So21UIAppearanceContainerP", "UploadTweetController"]
@@ -748,6 +764,16 @@ depends-member:
 - !private ["So8UIButtonC", "layer"]
 - ["So8UIButtonC", "setImage"]
 - ["So8UIButtonC", "tintColor"]
+- !private ["So26UICollectionViewControllerC", "init"]
+- !private ["So26UICollectionViewControllerC", "user"]
+- !private ["So26UICollectionViewDataSourceP", "init"]
+- !private ["So26UICollectionViewDataSourceP", "user"]
+- !private ["So24UICollectionViewDelegateP", "init"]
+- !private ["So24UICollectionViewDelegateP", "user"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "init"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "user"]
+- !private ["So26UICollectionViewFlowLayoutC", "init"]
+- !private ["So22UICollectionViewLayoutC", "init"]
 - ["So7UIColorC", "twitterBlue"]
 - ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "Auth"]
@@ -758,6 +784,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "LoginController"]
 - !private ["So18UIContentContainerP", "NotificationsController"]
 - ["So18UIContentContainerP", "UIButton"]
+- !private ["So18UIContentContainerP", "UICollectionViewFlowLayout"]
 - ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UINavigationController"]
 - !private ["So18UIContentContainerP", "UploadTweetController"]
@@ -820,6 +847,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "LoginController"]
 - !private ["So18UIFocusEnvironmentP", "NotificationsController"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
+- !private ["So18UIFocusEnvironmentP", "UICollectionViewFlowLayout"]
 - ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UINavigationController"]
 - !private ["So18UIFocusEnvironmentP", "UploadTweetController"]
@@ -909,6 +937,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "LoginController"]
 - !private ["So30UIPasteConfigurationSupportingP", "NotificationsController"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "UICollectionViewFlowLayout"]
 - ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UploadTweetController"]
@@ -951,6 +980,7 @@ depends-member:
 - !private ["So11UIResponderC", "LoginController"]
 - !private ["So11UIResponderC", "NotificationsController"]
 - ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UICollectionViewFlowLayout"]
 - ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UIView"]
@@ -997,6 +1027,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "LoginController"]
 - !private ["So30UIResponderStandardEditActionsP", "NotificationsController"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
+- !private ["So30UIResponderStandardEditActionsP", "UICollectionViewFlowLayout"]
 - ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "UploadTweetController"]
@@ -1031,6 +1062,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "user"]
 - ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "anchor"]
 - ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
@@ -1047,6 +1080,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "LoginController"]
 - !private ["So16UIStateRestoringP", "NotificationsController"]
 - ["So16UIStateRestoringP", "UIButton"]
+- !private ["So16UIStateRestoringP", "UICollectionViewFlowLayout"]
 - ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UINavigationController"]
 - !private ["So16UIStateRestoringP", "UploadTweetController"]
@@ -1078,6 +1112,7 @@ depends-member:
 - !private ["So18UITabBarControllerC", "LoginController"]
 - !private ["So18UITabBarControllerC", "NotificationsController"]
 - ["So18UITabBarControllerC", "UIButton"]
+- !private ["So18UITabBarControllerC", "UICollectionViewFlowLayout"]
 - ["So18UITabBarControllerC", "UIImage"]
 - ["So18UITabBarControllerC", "UINavigationController"]
 - ["So18UITabBarControllerC", "UIViewController"]
@@ -1109,6 +1144,7 @@ depends-member:
 - !private ["So16UITabBarDelegateP", "LoginController"]
 - !private ["So16UITabBarDelegateP", "NotificationsController"]
 - ["So16UITabBarDelegateP", "UIButton"]
+- !private ["So16UITabBarDelegateP", "UICollectionViewFlowLayout"]
 - ["So16UITabBarDelegateP", "UIImage"]
 - !private ["So16UITabBarDelegateP", "UINavigationController"]
 - !private ["So16UITabBarDelegateP", "UploadTweetController"]
@@ -1138,6 +1174,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "LoginController"]
 - !private ["So18UITraitEnvironmentP", "NotificationsController"]
 - ["So18UITraitEnvironmentP", "UIButton"]
+- !private ["So18UITraitEnvironmentP", "UICollectionViewFlowLayout"]
 - ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UINavigationController"]
 - !private ["So18UITraitEnvironmentP", "UploadTweetController"]
@@ -1180,6 +1217,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "LoginController"]
 - !private ["So23UIUserActivityRestoringP", "NotificationsController"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
+- !private ["So23UIUserActivityRestoringP", "UICollectionViewFlowLayout"]
 - ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UINavigationController"]
 - !private ["So23UIUserActivityRestoringP", "UploadTweetController"]
@@ -1236,6 +1274,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "LoginController"]
 - !private ["So16UIViewControllerC", "NotificationsController"]
 - ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UICollectionViewFlowLayout"]
 - ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UIViewController"]
@@ -1284,6 +1323,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationsController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UICollectionViewFlowLayout"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UploadTweetController"]
@@ -1337,6 +1377,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LoginController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NotificationsController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UICollectionViewFlowLayout"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UINavigationController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UploadTweetController"]
@@ -1406,6 +1447,7 @@ depends-nominal:
 - !private "Sa"
 - !private "So7FIRAuthC"
 - !private "SK"
+- "So12UIButtonTypeV"
 - !private "So7CALayerC"
 - "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
@@ -1462,6 +1504,12 @@ depends-nominal:
 - !private "So9UIBarItemC"
 - !private "So16UIBarPositioningP"
 - "So8UIButtonC"
+- !private "So26UICollectionViewControllerC"
+- !private "So26UICollectionViewDataSourceP"
+- !private "So24UICollectionViewDelegateP"
+- !private "So34UICollectionViewDelegateFlowLayoutP"
+- !private "So26UICollectionViewFlowLayoutC"
+- !private "So22UICollectionViewLayoutC"
 - "So7UIColorC"
 - "So18UIContentContainerP"
 - "So9UIControlC"
@@ -1480,6 +1528,7 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - "So18UITabBarControllerC"
@@ -1672,4 +1721,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8958f2f98b61882007c385a1cb90d81d"
+interface-hash: "2400678f2a5bdf5b81e7bfa68b1e55ea"

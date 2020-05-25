@@ -23,7 +23,7 @@ class RegistrationController: UIViewController {
     }()
     
     private lazy var uploadImageBtn: UIButton = {
-       let button = UIButton()
+       let button = UIButton(type: .system)
         button.setImage(UIImage(named: "plus_photo"), for: .normal)
         button.tintColor = .white
         button.addTarget(self, action: #selector(profilePicTapped), for: .touchUpInside)
@@ -73,7 +73,7 @@ class RegistrationController: UIViewController {
     }()
     
     private let signUpBtn: UIButton = {
-       let button = UIButton()
+       let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.twitterBlue, for: .normal)
         button.backgroundColor = .white

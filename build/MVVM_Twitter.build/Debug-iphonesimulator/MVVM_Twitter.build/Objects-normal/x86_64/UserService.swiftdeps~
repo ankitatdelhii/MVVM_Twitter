@@ -8,39 +8,27 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "AnyObject"
-- !private "Auth"
 - !private "CastingPrecedence"
 - "FloatLiteralType"
 - "IntegerLiteralType"
 - !private "REF_USERS"
-- !private "String"
+- "String"
 - "StringLiteralType"
 - "User"
 - "UserService"
 - "Void"
 - !private "print"
 depends-member:
-- !private ["So7FIRAuthC", "auth"]
-- !private ["So7FIRAuthC", "currentUser"]
-- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "child"]
-- !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
-- !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "value"]
-- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
-- !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
-- !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
-- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "child"]
-- !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
-- !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["So16FIRDataEventTypeV", "value"]
 - !private ["So15FIRDataSnapshotC", "value"]
@@ -50,29 +38,17 @@ depends-member:
 - !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
-- !private ["SQ", "auth"]
 - !private ["SQ", "child"]
-- !private ["SQ", "currentUser"]
 - !private ["SQ", "observeSingleEvent"]
-- !private ["SQ", "uid"]
 - !private ["SQ", "value"]
-- !private ["SH", "auth"]
 - !private ["SH", "child"]
-- !private ["SH", "currentUser"]
 - !private ["SH", "observeSingleEvent"]
-- !private ["SH", "uid"]
 - !private ["SH", "value"]
-- !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "child"]
-- !private ["So8NSObjectC", "currentUser"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
-- !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "value"]
-- !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "child"]
-- !private ["So8NSObjectP", "currentUser"]
 - !private ["So8NSObjectP", "observeSingleEvent"]
-- !private ["So8NSObjectP", "uid"]
 - !private ["So8NSObjectP", "value"]
 - !private ["SY", "value"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
@@ -81,12 +57,9 @@ depends-member:
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["12MVVM_Twitter4UserV", "fullname"]
 - !private ["12MVVM_Twitter4UserV", "init"]
-- !private ["So7FIRUserC", "uid"]
-- !private ["So11FIRUserInfoP", "uid"]
 - !private ["12MVVM_Twitter11UserServiceV", "AnyObject"]
-- !private ["12MVVM_Twitter11UserServiceV", "Auth"]
 - !private ["12MVVM_Twitter11UserServiceV", "REF_USERS"]
-- !private ["12MVVM_Twitter11UserServiceV", "String"]
+- ["12MVVM_Twitter11UserServiceV", "String"]
 - ["12MVVM_Twitter11UserServiceV", "User"]
 - ["12MVVM_Twitter11UserServiceV", "UserService"]
 - ["12MVVM_Twitter11UserServiceV", "Void"]
@@ -94,20 +67,13 @@ depends-member:
 - ["12MVVM_Twitter11UserServiceV", "init"]
 - !private ["12MVVM_Twitter11UserServiceV", "print"]
 - ["12MVVM_Twitter11UserServiceV", "shared"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 depends-nominal:
-- !private "So7FIRAuthC"
 - !private "s7CVarArgP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s23CustomStringConvertibleP"
@@ -124,8 +90,6 @@ depends-nominal:
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "12MVVM_Twitter4UserV"
-- !private "So7FIRUserC"
-- !private "So11FIRUserInfoP"
 - "12MVVM_Twitter11UserServiceV"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -300,4 +264,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "880b03851fc6eb3a57492a531231359e"
+interface-hash: "a9823b652464e9015cdb39b1bcd37bab"

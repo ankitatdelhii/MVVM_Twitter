@@ -23,7 +23,7 @@ class MainTabBarController: UITabBarController {
     }
     
     let actionButton: UIButton =  {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setImage(UIImage(named: "new_tweet"), for: .normal)
         button.backgroundColor = .twitterBlue
         button.tintColor = .white
@@ -67,7 +67,8 @@ class MainTabBarController: UITabBarController {
     }
     
     fileprivate func fetchUser() {
-        UserService.shared.fetchUser {[weak self] (user) in
+        guard let currentUserId = Auth.auth().currentUser?.uid else { return }
+        UserService.shared.fetchUser(uid: currentUserId) {[weak self] (user) in
             self?.user = user
         }
     }
@@ -93,7 +94,7 @@ class MainTabBarController: UITabBarController {
     
     
     fileprivate func configureViewControllers() {
-        let feed = templateNavigationController(image: UIImage(named: "home_unselected"), controller: FeedController())
+        let feed = templateNavigationController(image: UIImage(named: "home_unselected"), controller: FeedController(collectionViewLayout: UICollectionViewFlowLayout()))
         let explore = templateNavigationController(image: UIImage(named: "search_unselected"), controller: ExploreController())
         let notifications = templateNavigationController(image: UIImage(named: "like_unselected"), controller: NotificationsController())
         let conversations = templateNavigationController(image: UIImage(named: "mail"), controller: ConversationsController())

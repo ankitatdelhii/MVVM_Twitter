@@ -31,6 +31,7 @@ depends-top-level:
 - !private "print"
 depends-member:
 - !private ["So22UILayoutConstraintAxisV", "horizontal"]
+- ["So12UIButtonTypeV", "system"]
 - ["So7CALayerC", "cornerRadius"]
 - ["So7CALayerC", "masksToBounds"]
 - !private ["So15CALayerDelegateP", "addSubview"]
@@ -274,6 +275,7 @@ depends-member:
 - ["SQ", "setTitle"]
 - ["SQ", "setTitleColor"]
 - !private ["SQ", "spacing"]
+- ["SQ", "system"]
 - !private ["SQ", "text"]
 - ["SQ", "titleLabel"]
 - !private ["SQ", "topAnchor"]
@@ -337,6 +339,7 @@ depends-member:
 - ["SH", "setTitle"]
 - ["SH", "setTitleColor"]
 - !private ["SH", "spacing"]
+- ["SH", "system"]
 - !private ["SH", "text"]
 - ["SH", "titleLabel"]
 - !private ["SH", "topAnchor"]
@@ -545,6 +548,7 @@ depends-member:
 - !private ["SY", "cancel"]
 - !private ["SY", "horizontal"]
 - ["SY", "normal"]
+- ["SY", "system"]
 - ["SY", "touchUpInside"]
 - ["s10SetAlgebraP", "normal"]
 - ["s10SetAlgebraP", "touchUpInside"]
@@ -1302,6 +1306,7 @@ depends-member:
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
 depends-nominal:
 - !private "So22UILayoutConstraintAxisV"
+- "So12UIButtonTypeV"
 - "So7CALayerC"
 - "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
@@ -1558,4 +1563,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d5f5014710899f448abfad8df9ab76a7"
+interface-hash: "03254054e33ee6cb790cc72233662fba"

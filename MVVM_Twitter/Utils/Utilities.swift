@@ -44,7 +44,7 @@ class Utilities {
     }
     
     func buttonAttributes(textOne: String, textTwo: String) -> UIButton {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         let attributedString1 = NSMutableAttributedString(string: textOne, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.white])
         attributedString1.append(NSAttributedString(string: textTwo, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.white]))
         button.setAttributedTitle(attributedString1, for: .normal)
