@@ -1,11 +1,98 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "UserService"
 provides-nominal:
+- "12MVVM_Twitter11UserServiceV"
 provides-member:
+- ["12MVVM_Twitter11UserServiceV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "AnyObject"
+- !private "CastingPrecedence"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- !private "REF_USERS"
+- "String"
+- "StringLiteralType"
+- "User"
+- "UserService"
+- "Void"
+- !private "print"
 depends-member:
+- !private ["s7CVarArgP", "child"]
+- !private ["s7CVarArgP", "observeSingleEvent"]
+- !private ["s7CVarArgP", "value"]
+- !private ["s28CustomDebugStringConvertibleP", "child"]
+- !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "child"]
+- !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["So16FIRDataEventTypeV", "value"]
+- !private ["So15FIRDataSnapshotC", "value"]
+- !private ["So16FIRDatabaseQueryC", "child"]
+- !private ["So16FIRDatabaseQueryC", "observeSingleEvent"]
+- !private ["So20FIRDatabaseReferenceC", "child"]
+- !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SQ", "child"]
+- !private ["SQ", "observeSingleEvent"]
+- !private ["SQ", "value"]
+- !private ["SH", "child"]
+- !private ["SH", "observeSingleEvent"]
+- !private ["SH", "value"]
+- !private ["So8NSObjectC", "child"]
+- !private ["So8NSObjectC", "observeSingleEvent"]
+- !private ["So8NSObjectC", "value"]
+- !private ["So8NSObjectP", "child"]
+- !private ["So8NSObjectP", "observeSingleEvent"]
+- !private ["So8NSObjectP", "value"]
+- !private ["SY", "value"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["12MVVM_Twitter4UserV", "fullname"]
+- !private ["12MVVM_Twitter4UserV", "init"]
+- !private ["12MVVM_Twitter11UserServiceV", "AnyObject"]
+- !private ["12MVVM_Twitter11UserServiceV", "REF_USERS"]
+- ["12MVVM_Twitter11UserServiceV", "String"]
+- ["12MVVM_Twitter11UserServiceV", "User"]
+- ["12MVVM_Twitter11UserServiceV", "UserService"]
+- ["12MVVM_Twitter11UserServiceV", "Void"]
+- ["12MVVM_Twitter11UserServiceV", "fetchUser"]
+- ["12MVVM_Twitter11UserServiceV", "init"]
+- !private ["12MVVM_Twitter11UserServiceV", "print"]
+- ["12MVVM_Twitter11UserServiceV", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "So16FIRDataEventTypeV"
+- !private "So15FIRDataSnapshotC"
+- !private "So16FIRDatabaseQueryC"
+- !private "So20FIRDatabaseReferenceC"
+- !private "s26DefaultStringInterpolationV"
+- !private "SQ"
+- !private "SH"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "SY"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "12MVVM_Twitter4UserV"
+- "12MVVM_Twitter11UserServiceV"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/arm64.swiftinterface"
@@ -36,19 +123,38 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
@@ -57,6 +163,8 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
@@ -67,11 +175,19 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
@@ -81,7 +197,30 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageHEICCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOAnimatedCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderResponseModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImagePlayer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOptionsProcessor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderDecryptor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
@@ -92,15 +231,21 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
@@ -119,4 +264,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "a9823b652464e9015cdb39b1bcd37bab"

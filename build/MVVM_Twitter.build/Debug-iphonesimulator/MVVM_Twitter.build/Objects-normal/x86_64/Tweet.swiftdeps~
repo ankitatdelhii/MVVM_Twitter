@@ -19,6 +19,7 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "TimeInterval"
 - "Tweet"
+- "User"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["SB", "init"]
@@ -60,6 +61,7 @@ depends-member:
 - ["12MVVM_Twitter5TweetV", "Int"]
 - ["12MVVM_Twitter5TweetV", "String"]
 - !private ["12MVVM_Twitter5TweetV", "TimeInterval"]
+- ["12MVVM_Twitter5TweetV", "User"]
 - ["12MVVM_Twitter5TweetV", "caption"]
 - ["12MVVM_Twitter5TweetV", "init"]
 - ["12MVVM_Twitter5TweetV", "likes"]
@@ -67,6 +69,7 @@ depends-member:
 - ["12MVVM_Twitter5TweetV", "timestamp"]
 - ["12MVVM_Twitter5TweetV", "tweetId"]
 - ["12MVVM_Twitter5TweetV", "uid"]
+- ["12MVVM_Twitter5TweetV", "user"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
@@ -283,4 +286,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "56966e7884a69512792e872b2249c2f5"
+interface-hash: "3ec49ad99de373e88cebae8474ec5acd"

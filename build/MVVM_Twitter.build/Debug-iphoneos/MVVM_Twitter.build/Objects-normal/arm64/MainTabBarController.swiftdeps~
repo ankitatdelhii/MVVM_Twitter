@@ -15,7 +15,8 @@ depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
 - !private "Auth"
-- "BooleanLiteralType"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
 - !private "ConversationsController"
 - !private "DispatchQueue"
 - !private "ExploreController"
@@ -27,19 +28,26 @@ depends-top-level:
 - !private "NotificationsController"
 - "StringLiteralType"
 - "UIButton"
+- !private "UICollectionViewFlowLayout"
 - "UIImage"
 - "UINavigationController"
 - "UITabBarController"
 - "UIView"
 - "UIViewController"
+- !private "UploadTweetController"
+- "User"
+- !private "UserService"
 - "Void"
 - !private "print"
 depends-member:
+- !private ["Sa", "first"]
 - !private ["Sa", "forEach"]
 - !private ["So7FIRAuthC", "auth"]
 - !private ["So7FIRAuthC", "currentUser"]
 - !private ["So7FIRAuthC", "signOut"]
+- !private ["SK", "first"]
 - !private ["SK", "forEach"]
+- ["So12UIButtonTypeV", "system"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - ["So15CALayerDelegateP", "addTarget"]
@@ -62,8 +70,11 @@ depends-member:
 - !private ["s7CVarArgP", "LoginController"]
 - !private ["s7CVarArgP", "NotificationsController"]
 - ["s7CVarArgP", "UIButton"]
+- !private ["s7CVarArgP", "UICollectionViewFlowLayout"]
 - ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UINavigationController"]
+- !private ["s7CVarArgP", "UploadTweetController"]
+- !private ["s7CVarArgP", "UserService"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "actionButton"]
 - ["s7CVarArgP", "actionButtonTapped"]
@@ -81,6 +92,8 @@ depends-member:
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "depthFirstSearch"]
+- !private ["s7CVarArgP", "fetchUser"]
+- !private ["s7CVarArgP", "first"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "image"]
 - ["s7CVarArgP", "init"]
@@ -100,11 +113,15 @@ depends-member:
 - !private ["s7CVarArgP", "templateNavigationController"]
 - ["s7CVarArgP", "tintColor"]
 - ["s7CVarArgP", "twitterBlue"]
+- !private ["s7CVarArgP", "uid"]
+- !private ["s7CVarArgP", "user"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "white"]
+- !private ["Sl", "first"]
 - !private ["Sl", "forEach"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
 - !private ["10Foundation15ContiguousBytesP", "forEach"]
 - !private ["12MVVM_Twitter23ConversationsControllerC", "deinit"]
 - !private ["12MVVM_Twitter23ConversationsControllerC", "init"]
@@ -116,8 +133,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "LoginController"]
 - !private ["s28CustomDebugStringConvertibleP", "NotificationsController"]
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
+- !private ["s28CustomDebugStringConvertibleP", "UICollectionViewFlowLayout"]
 - ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "UploadTweetController"]
+- !private ["s28CustomDebugStringConvertibleP", "UserService"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "actionButton"]
 - ["s28CustomDebugStringConvertibleP", "actionButtonTapped"]
@@ -135,6 +155,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "depthFirstSearch"]
+- !private ["s28CustomDebugStringConvertibleP", "fetchUser"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -154,12 +176,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "templateNavigationController"]
 - ["s28CustomDebugStringConvertibleP", "tintColor"]
 - ["s28CustomDebugStringConvertibleP", "twitterBlue"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
+- !private ["s28CustomDebugStringConvertibleP", "user"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s17CustomReflectableP", "addSubview"]
 - !private ["s17CustomReflectableP", "backgroundColor"]
+- !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "forEach"]
 - !private ["s17CustomReflectableP", "image"]
 - !private ["s17CustomReflectableP", "safeAreaLayoutGuide"]
@@ -173,8 +198,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "LoginController"]
 - !private ["s23CustomStringConvertibleP", "NotificationsController"]
 - ["s23CustomStringConvertibleP", "UIButton"]
+- !private ["s23CustomStringConvertibleP", "UICollectionViewFlowLayout"]
 - ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UINavigationController"]
+- !private ["s23CustomStringConvertibleP", "UploadTweetController"]
+- !private ["s23CustomStringConvertibleP", "UserService"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "actionButton"]
 - ["s23CustomStringConvertibleP", "actionButtonTapped"]
@@ -194,6 +222,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "depthFirstSearch"]
+- !private ["s23CustomStringConvertibleP", "fetchUser"]
+- !private ["s23CustomStringConvertibleP", "first"]
 - !private ["s23CustomStringConvertibleP", "forEach"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - ["s23CustomStringConvertibleP", "init"]
@@ -213,13 +243,17 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "templateNavigationController"]
 - ["s23CustomStringConvertibleP", "tintColor"]
 - ["s23CustomStringConvertibleP", "twitterBlue"]
+- !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["s23CustomStringConvertibleP", "user"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "white"]
+- !private ["10Foundation12DataProtocolP", "first"]
 - !private ["10Foundation12DataProtocolP", "forEach"]
 - !private ["Se", "addSubview"]
 - !private ["Se", "backgroundColor"]
+- !private ["Se", "first"]
 - !private ["Se", "forEach"]
 - !private ["Se", "image"]
 - !private ["Se", "safeAreaLayoutGuide"]
@@ -233,6 +267,7 @@ depends-member:
 - !private ["So17OS_dispatch_queueC", "main"]
 - !private ["SE", "addSubview"]
 - !private ["SE", "backgroundColor"]
+- !private ["SE", "first"]
 - !private ["SE", "forEach"]
 - !private ["SE", "image"]
 - !private ["SE", "safeAreaLayoutGuide"]
@@ -246,8 +281,11 @@ depends-member:
 - !private ["SQ", "LoginController"]
 - !private ["SQ", "NotificationsController"]
 - ["SQ", "UIButton"]
+- !private ["SQ", "UICollectionViewFlowLayout"]
 - ["SQ", "UIImage"]
 - !private ["SQ", "UINavigationController"]
+- !private ["SQ", "UploadTweetController"]
+- !private ["SQ", "UserService"]
 - ["SQ", ""]
 - !private ["SQ", "actionButton"]
 - ["SQ", "actionButtonTapped"]
@@ -265,6 +303,8 @@ depends-member:
 - !private ["SQ", "cornerRadius"]
 - !private ["SQ", "currentUser"]
 - !private ["SQ", "depthFirstSearch"]
+- !private ["SQ", "fetchUser"]
+- !private ["SQ", "first"]
 - !private ["SQ", "forEach"]
 - !private ["SQ", "fullScreen"]
 - !private ["SQ", "image"]
@@ -282,11 +322,14 @@ depends-member:
 - ["SQ", "setImage"]
 - !private ["SQ", "signOut"]
 - !private ["SQ", "subviews"]
+- ["SQ", "system"]
 - !private ["SQ", "tabBarItem"]
 - !private ["SQ", "templateNavigationController"]
 - ["SQ", "tintColor"]
 - ["SQ", "touchUpInside"]
 - ["SQ", "twitterBlue"]
+- !private ["SQ", "uid"]
+- !private ["SQ", "user"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewControllers"]
 - !private ["SQ", "viewDidLoad"]
@@ -295,6 +338,7 @@ depends-member:
 - ["So15UIControlEventsV", "touchUpInside"]
 - !private ["12MVVM_Twitter17ExploreControllerC", "deinit"]
 - !private ["12MVVM_Twitter17ExploreControllerC", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - ["s25ExpressibleByArrayLiteralP", "normal"]
 - ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
@@ -306,6 +350,7 @@ depends-member:
 - ["s23ExpressibleByNilLiteralP", "white"]
 - !private ["12MVVM_Twitter14FeedControllerC", "deinit"]
 - !private ["12MVVM_Twitter14FeedControllerC", "init"]
+- !private ["12MVVM_Twitter14FeedControllerC", "user"]
 - !private ["SH", "Auth"]
 - !private ["SH", "ConversationsController"]
 - !private ["SH", "DispatchQueue"]
@@ -314,8 +359,11 @@ depends-member:
 - !private ["SH", "LoginController"]
 - !private ["SH", "NotificationsController"]
 - ["SH", "UIButton"]
+- !private ["SH", "UICollectionViewFlowLayout"]
 - ["SH", "UIImage"]
 - !private ["SH", "UINavigationController"]
+- !private ["SH", "UploadTweetController"]
+- !private ["SH", "UserService"]
 - ["SH", ""]
 - !private ["SH", "actionButton"]
 - ["SH", "actionButtonTapped"]
@@ -333,6 +381,8 @@ depends-member:
 - !private ["SH", "cornerRadius"]
 - !private ["SH", "currentUser"]
 - !private ["SH", "depthFirstSearch"]
+- !private ["SH", "fetchUser"]
+- !private ["SH", "first"]
 - !private ["SH", "forEach"]
 - !private ["SH", "fullScreen"]
 - !private ["SH", "image"]
@@ -349,10 +399,13 @@ depends-member:
 - ["SH", "setImage"]
 - !private ["SH", "signOut"]
 - !private ["SH", "subviews"]
+- ["SH", "system"]
 - !private ["SH", "tabBarItem"]
 - !private ["SH", "templateNavigationController"]
 - ["SH", "tintColor"]
 - ["SH", "twitterBlue"]
+- !private ["SH", "uid"]
+- !private ["SH", "user"]
 - !private ["SH", "view"]
 - !private ["SH", "viewControllers"]
 - !private ["SH", "viewDidLoad"]
@@ -367,25 +420,33 @@ depends-member:
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "LoginController"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "NotificationsController"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIButton"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "UICollectionViewFlowLayout"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIImage"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UINavigationController"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "UIViewController"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "UploadTweetController"]
+- ["12MVVM_Twitter20MainTabBarControllerC", "User"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "UserService"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "actionButton"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "actionButtonTapped"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "authenticateUserAndConfigureUI"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "configureUI"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "configureViewControllers"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "deinit"]
+- !private ["12MVVM_Twitter20MainTabBarControllerC", "fetchUser"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "init"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "logout"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "present"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "print"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "self"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "templateNavigationController"]
+- ["12MVVM_Twitter20MainTabBarControllerC", "user"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "view"]
 - !private ["12MVVM_Twitter20MainTabBarControllerC", "viewControllers"]
 - ["12MVVM_Twitter20MainTabBarControllerC", "viewDidLoad"]
+- !private ["SM", "first"]
 - !private ["SM", "forEach"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
 - !private ["10Foundation19MutableDataProtocolP", "forEach"]
 - !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "ConversationsController"]
@@ -395,8 +456,11 @@ depends-member:
 - !private ["So8NSCodingP", "LoginController"]
 - !private ["So8NSCodingP", "NotificationsController"]
 - ["So8NSCodingP", "UIButton"]
+- !private ["So8NSCodingP", "UICollectionViewFlowLayout"]
 - ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UINavigationController"]
+- !private ["So8NSCodingP", "UploadTweetController"]
+- !private ["So8NSCodingP", "UserService"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "actionButton"]
 - ["So8NSCodingP", "actionButtonTapped"]
@@ -411,6 +475,7 @@ depends-member:
 - !private ["So8NSCodingP", "configureViewControllers"]
 - !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "depthFirstSearch"]
+- !private ["So8NSCodingP", "fetchUser"]
 - !private ["So8NSCodingP", "image"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
@@ -427,6 +492,7 @@ depends-member:
 - !private ["So8NSCodingP", "templateNavigationController"]
 - ["So8NSCodingP", "tintColor"]
 - ["So8NSCodingP", "twitterBlue"]
+- !private ["So8NSCodingP", "user"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewControllers"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -441,14 +507,18 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "LoginController"]
 - !private ["So26NSExtensionRequestHandlingP", "NotificationsController"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
+- !private ["So26NSExtensionRequestHandlingP", "UICollectionViewFlowLayout"]
 - ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UINavigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "UploadTweetController"]
+- !private ["So26NSExtensionRequestHandlingP", "UserService"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "actionButton"]
 - ["So26NSExtensionRequestHandlingP", "actionButtonTapped"]
 - !private ["So26NSExtensionRequestHandlingP", "authenticateUserAndConfigureUI"]
 - !private ["So26NSExtensionRequestHandlingP", "configureUI"]
 - !private ["So26NSExtensionRequestHandlingP", "configureViewControllers"]
+- !private ["So26NSExtensionRequestHandlingP", "fetchUser"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "modalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
@@ -457,6 +527,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "self"]
 - !private ["So26NSExtensionRequestHandlingP", "tabBarItem"]
 - !private ["So26NSExtensionRequestHandlingP", "templateNavigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "user"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -474,10 +545,14 @@ depends-member:
 - !private ["So8NSObjectC", "LoginController"]
 - !private ["So8NSObjectC", "NotificationsController"]
 - ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UICollectionViewFlowLayout"]
 - ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "UIViewController"]
+- !private ["So8NSObjectC", "UploadTweetController"]
+- ["So8NSObjectC", "User"]
+- !private ["So8NSObjectC", "UserService"]
 - ["So8NSObjectC", "Void"]
 - ["So8NSObjectC", "actionButton"]
 - ["So8NSObjectC", "actionButtonTapped"]
@@ -495,6 +570,7 @@ depends-member:
 - !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "currentUser"]
 - ["So8NSObjectC", "depthFirstSearch"]
+- ["So8NSObjectC", "fetchUser"]
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
@@ -514,6 +590,8 @@ depends-member:
 - ["So8NSObjectC", "templateNavigationController"]
 - ["So8NSObjectC", "tintColor"]
 - ["So8NSObjectC", "twitterBlue"]
+- !private ["So8NSObjectC", "uid"]
+- ["So8NSObjectC", "user"]
 - !private ["So8NSObjectC", "view"]
 - !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectC", "viewDidLoad"]
@@ -526,8 +604,11 @@ depends-member:
 - !private ["So8NSObjectP", "LoginController"]
 - !private ["So8NSObjectP", "NotificationsController"]
 - ["So8NSObjectP", "UIButton"]
+- !private ["So8NSObjectP", "UICollectionViewFlowLayout"]
 - ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UINavigationController"]
+- !private ["So8NSObjectP", "UploadTweetController"]
+- !private ["So8NSObjectP", "UserService"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "actionButton"]
 - ["So8NSObjectP", "actionButtonTapped"]
@@ -545,6 +626,7 @@ depends-member:
 - !private ["So8NSObjectP", "cornerRadius"]
 - !private ["So8NSObjectP", "currentUser"]
 - !private ["So8NSObjectP", "depthFirstSearch"]
+- !private ["So8NSObjectP", "fetchUser"]
 - !private ["So8NSObjectP", "image"]
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "layer"]
@@ -563,6 +645,8 @@ depends-member:
 - !private ["So8NSObjectP", "templateNavigationController"]
 - ["So8NSObjectP", "tintColor"]
 - ["So8NSObjectP", "twitterBlue"]
+- !private ["So8NSObjectP", "uid"]
+- !private ["So8NSObjectP", "user"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewControllers"]
 - !private ["So8NSObjectP", "viewDidLoad"]
@@ -583,13 +667,17 @@ depends-member:
 - !private ["Sq", "safeAreaLayoutGuide"]
 - ["Sq", "twitterBlue"]
 - ["Sq", "white"]
+- !private ["Sk", "first"]
 - !private ["Sk", "forEach"]
+- !private ["Sm", "first"]
 - !private ["Sm", "forEach"]
 - !private ["SY", "fullScreen"]
 - ["SY", "normal"]
+- ["SY", "system"]
 - ["SY", "touchUpInside"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "first"]
 - !private ["ST", "forEach"]
 - ["s10SetAlgebraP", "normal"]
 - ["s10SetAlgebraP", "touchUpInside"]
@@ -639,8 +727,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "LoginController"]
 - !private ["So21UIAppearanceContainerP", "NotificationsController"]
 - ["So21UIAppearanceContainerP", "UIButton"]
+- !private ["So21UIAppearanceContainerP", "UICollectionViewFlowLayout"]
 - ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UINavigationController"]
+- !private ["So21UIAppearanceContainerP", "UploadTweetController"]
+- !private ["So21UIAppearanceContainerP", "UserService"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "actionButton"]
 - ["So21UIAppearanceContainerP", "actionButtonTapped"]
@@ -653,6 +744,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "configureUI"]
 - !private ["So21UIAppearanceContainerP", "configureViewControllers"]
 - !private ["So21UIAppearanceContainerP", "depthFirstSearch"]
+- !private ["So21UIAppearanceContainerP", "fetchUser"]
 - ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "modalPresentationStyle"]
@@ -666,6 +758,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "tabBarItem"]
 - !private ["So21UIAppearanceContainerP", "templateNavigationController"]
 - ["So21UIAppearanceContainerP", "tintColor"]
+- !private ["So21UIAppearanceContainerP", "user"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewControllers"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
@@ -678,6 +771,16 @@ depends-member:
 - !private ["So8UIButtonC", "layer"]
 - ["So8UIButtonC", "setImage"]
 - ["So8UIButtonC", "tintColor"]
+- !private ["So26UICollectionViewControllerC", "init"]
+- !private ["So26UICollectionViewControllerC", "user"]
+- !private ["So26UICollectionViewDataSourceP", "init"]
+- !private ["So26UICollectionViewDataSourceP", "user"]
+- !private ["So24UICollectionViewDelegateP", "init"]
+- !private ["So24UICollectionViewDelegateP", "user"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "init"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "user"]
+- !private ["So26UICollectionViewFlowLayoutC", "init"]
+- !private ["So22UICollectionViewLayoutC", "init"]
 - ["So7UIColorC", "twitterBlue"]
 - ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "Auth"]
@@ -688,14 +791,18 @@ depends-member:
 - !private ["So18UIContentContainerP", "LoginController"]
 - !private ["So18UIContentContainerP", "NotificationsController"]
 - ["So18UIContentContainerP", "UIButton"]
+- !private ["So18UIContentContainerP", "UICollectionViewFlowLayout"]
 - ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UINavigationController"]
+- !private ["So18UIContentContainerP", "UploadTweetController"]
+- !private ["So18UIContentContainerP", "UserService"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "actionButton"]
 - ["So18UIContentContainerP", "actionButtonTapped"]
 - !private ["So18UIContentContainerP", "authenticateUserAndConfigureUI"]
 - !private ["So18UIContentContainerP", "configureUI"]
 - !private ["So18UIContentContainerP", "configureViewControllers"]
+- !private ["So18UIContentContainerP", "fetchUser"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "modalPresentationStyle"]
 - !private ["So18UIContentContainerP", "navigationBar"]
@@ -704,6 +811,7 @@ depends-member:
 - ["So18UIContentContainerP", "self"]
 - !private ["So18UIContentContainerP", "tabBarItem"]
 - !private ["So18UIContentContainerP", "templateNavigationController"]
+- !private ["So18UIContentContainerP", "user"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewControllers"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -746,8 +854,11 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "LoginController"]
 - !private ["So18UIFocusEnvironmentP", "NotificationsController"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
+- !private ["So18UIFocusEnvironmentP", "UICollectionViewFlowLayout"]
 - ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UINavigationController"]
+- !private ["So18UIFocusEnvironmentP", "UploadTweetController"]
+- !private ["So18UIFocusEnvironmentP", "UserService"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "actionButton"]
 - ["So18UIFocusEnvironmentP", "actionButtonTapped"]
@@ -760,6 +871,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "configureUI"]
 - !private ["So18UIFocusEnvironmentP", "configureViewControllers"]
 - !private ["So18UIFocusEnvironmentP", "depthFirstSearch"]
+- !private ["So18UIFocusEnvironmentP", "fetchUser"]
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "modalPresentationStyle"]
@@ -773,6 +885,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "tabBarItem"]
 - !private ["So18UIFocusEnvironmentP", "templateNavigationController"]
 - ["So18UIFocusEnvironmentP", "tintColor"]
+- !private ["So18UIFocusEnvironmentP", "user"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewControllers"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
@@ -822,6 +935,7 @@ depends-member:
 - !private ["So22UINavigationControllerC", "modalPresentationStyle"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
 - !private ["So22UINavigationControllerC", "tabBarItem"]
+- !private ["So22UINavigationControllerC", "viewControllers"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "ConversationsController"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
@@ -830,8 +944,11 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "LoginController"]
 - !private ["So30UIPasteConfigurationSupportingP", "NotificationsController"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "UICollectionViewFlowLayout"]
 - ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UploadTweetController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserService"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "actionButton"]
 - ["So30UIPasteConfigurationSupportingP", "actionButtonTapped"]
@@ -844,6 +961,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "configureUI"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureViewControllers"]
 - !private ["So30UIPasteConfigurationSupportingP", "depthFirstSearch"]
+- !private ["So30UIPasteConfigurationSupportingP", "fetchUser"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "modalPresentationStyle"]
@@ -857,6 +975,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "tabBarItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "templateNavigationController"]
 - ["So30UIPasteConfigurationSupportingP", "tintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "user"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
@@ -868,10 +987,14 @@ depends-member:
 - !private ["So11UIResponderC", "LoginController"]
 - !private ["So11UIResponderC", "NotificationsController"]
 - ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UICollectionViewFlowLayout"]
 - ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UIView"]
 - ["So11UIResponderC", "UIViewController"]
+- !private ["So11UIResponderC", "UploadTweetController"]
+- ["So11UIResponderC", "User"]
+- !private ["So11UIResponderC", "UserService"]
 - ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", "actionButton"]
 - ["So11UIResponderC", "actionButtonTapped"]
@@ -884,6 +1007,7 @@ depends-member:
 - ["So11UIResponderC", "configureUI"]
 - ["So11UIResponderC", "configureViewControllers"]
 - ["So11UIResponderC", "depthFirstSearch"]
+- ["So11UIResponderC", "fetchUser"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "logout"]
@@ -898,6 +1022,7 @@ depends-member:
 - !private ["So11UIResponderC", "tabBarItem"]
 - ["So11UIResponderC", "templateNavigationController"]
 - ["So11UIResponderC", "tintColor"]
+- ["So11UIResponderC", "user"]
 - !private ["So11UIResponderC", "view"]
 - !private ["So11UIResponderC", "viewControllers"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -909,8 +1034,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "LoginController"]
 - !private ["So30UIResponderStandardEditActionsP", "NotificationsController"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
+- !private ["So30UIResponderStandardEditActionsP", "UICollectionViewFlowLayout"]
 - ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "UploadTweetController"]
+- !private ["So30UIResponderStandardEditActionsP", "UserService"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "actionButton"]
 - ["So30UIResponderStandardEditActionsP", "actionButtonTapped"]
@@ -923,6 +1051,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "configureUI"]
 - !private ["So30UIResponderStandardEditActionsP", "configureViewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "depthFirstSearch"]
+- !private ["So30UIResponderStandardEditActionsP", "fetchUser"]
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "modalPresentationStyle"]
@@ -936,9 +1065,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "tabBarItem"]
 - !private ["So30UIResponderStandardEditActionsP", "templateNavigationController"]
 - ["So30UIResponderStandardEditActionsP", "tintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "user"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "user"]
 - ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "anchor"]
 - ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
@@ -955,14 +1087,18 @@ depends-member:
 - !private ["So16UIStateRestoringP", "LoginController"]
 - !private ["So16UIStateRestoringP", "NotificationsController"]
 - ["So16UIStateRestoringP", "UIButton"]
+- !private ["So16UIStateRestoringP", "UICollectionViewFlowLayout"]
 - ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UINavigationController"]
+- !private ["So16UIStateRestoringP", "UploadTweetController"]
+- !private ["So16UIStateRestoringP", "UserService"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "actionButton"]
 - ["So16UIStateRestoringP", "actionButtonTapped"]
 - !private ["So16UIStateRestoringP", "authenticateUserAndConfigureUI"]
 - !private ["So16UIStateRestoringP", "configureUI"]
 - !private ["So16UIStateRestoringP", "configureViewControllers"]
+- !private ["So16UIStateRestoringP", "fetchUser"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "modalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "navigationBar"]
@@ -971,6 +1107,7 @@ depends-member:
 - ["So16UIStateRestoringP", "self"]
 - !private ["So16UIStateRestoringP", "tabBarItem"]
 - !private ["So16UIStateRestoringP", "templateNavigationController"]
+- !private ["So16UIStateRestoringP", "user"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewControllers"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -982,21 +1119,27 @@ depends-member:
 - !private ["So18UITabBarControllerC", "LoginController"]
 - !private ["So18UITabBarControllerC", "NotificationsController"]
 - ["So18UITabBarControllerC", "UIButton"]
+- !private ["So18UITabBarControllerC", "UICollectionViewFlowLayout"]
 - ["So18UITabBarControllerC", "UIImage"]
 - ["So18UITabBarControllerC", "UINavigationController"]
 - ["So18UITabBarControllerC", "UIViewController"]
+- !private ["So18UITabBarControllerC", "UploadTweetController"]
+- ["So18UITabBarControllerC", "User"]
+- !private ["So18UITabBarControllerC", "UserService"]
 - ["So18UITabBarControllerC", ""]
 - ["So18UITabBarControllerC", "actionButton"]
 - ["So18UITabBarControllerC", "actionButtonTapped"]
 - ["So18UITabBarControllerC", "authenticateUserAndConfigureUI"]
 - ["So18UITabBarControllerC", "configureUI"]
 - ["So18UITabBarControllerC", "configureViewControllers"]
+- ["So18UITabBarControllerC", "fetchUser"]
 - ["So18UITabBarControllerC", "init"]
 - ["So18UITabBarControllerC", "logout"]
 - !private ["So18UITabBarControllerC", "present"]
 - !private ["So18UITabBarControllerC", "print"]
 - ["So18UITabBarControllerC", "self"]
 - ["So18UITabBarControllerC", "templateNavigationController"]
+- ["So18UITabBarControllerC", "user"]
 - !private ["So18UITabBarControllerC", "view"]
 - !private ["So18UITabBarControllerC", "viewControllers"]
 - ["So18UITabBarControllerC", "viewDidLoad"]
@@ -1008,19 +1151,24 @@ depends-member:
 - !private ["So16UITabBarDelegateP", "LoginController"]
 - !private ["So16UITabBarDelegateP", "NotificationsController"]
 - ["So16UITabBarDelegateP", "UIButton"]
+- !private ["So16UITabBarDelegateP", "UICollectionViewFlowLayout"]
 - ["So16UITabBarDelegateP", "UIImage"]
 - !private ["So16UITabBarDelegateP", "UINavigationController"]
+- !private ["So16UITabBarDelegateP", "UploadTweetController"]
+- !private ["So16UITabBarDelegateP", "UserService"]
 - ["So16UITabBarDelegateP", ""]
 - !private ["So16UITabBarDelegateP", "actionButton"]
 - ["So16UITabBarDelegateP", "actionButtonTapped"]
 - !private ["So16UITabBarDelegateP", "authenticateUserAndConfigureUI"]
 - !private ["So16UITabBarDelegateP", "configureUI"]
 - !private ["So16UITabBarDelegateP", "configureViewControllers"]
+- !private ["So16UITabBarDelegateP", "fetchUser"]
 - !private ["So16UITabBarDelegateP", "init"]
 - !private ["So16UITabBarDelegateP", "present"]
 - !private ["So16UITabBarDelegateP", "print"]
 - ["So16UITabBarDelegateP", "self"]
 - !private ["So16UITabBarDelegateP", "templateNavigationController"]
+- !private ["So16UITabBarDelegateP", "user"]
 - !private ["So16UITabBarDelegateP", "view"]
 - !private ["So16UITabBarDelegateP", "viewControllers"]
 - !private ["So16UITabBarDelegateP", "viewDidLoad"]
@@ -1033,8 +1181,11 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "LoginController"]
 - !private ["So18UITraitEnvironmentP", "NotificationsController"]
 - ["So18UITraitEnvironmentP", "UIButton"]
+- !private ["So18UITraitEnvironmentP", "UICollectionViewFlowLayout"]
 - ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UINavigationController"]
+- !private ["So18UITraitEnvironmentP", "UploadTweetController"]
+- !private ["So18UITraitEnvironmentP", "UserService"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "actionButton"]
 - ["So18UITraitEnvironmentP", "actionButtonTapped"]
@@ -1047,6 +1198,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "configureUI"]
 - !private ["So18UITraitEnvironmentP", "configureViewControllers"]
 - !private ["So18UITraitEnvironmentP", "depthFirstSearch"]
+- !private ["So18UITraitEnvironmentP", "fetchUser"]
 - ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "modalPresentationStyle"]
@@ -1060,6 +1212,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "tabBarItem"]
 - !private ["So18UITraitEnvironmentP", "templateNavigationController"]
 - ["So18UITraitEnvironmentP", "tintColor"]
+- !private ["So18UITraitEnvironmentP", "user"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewControllers"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
@@ -1071,8 +1224,11 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "LoginController"]
 - !private ["So23UIUserActivityRestoringP", "NotificationsController"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
+- !private ["So23UIUserActivityRestoringP", "UICollectionViewFlowLayout"]
 - ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UINavigationController"]
+- !private ["So23UIUserActivityRestoringP", "UploadTweetController"]
+- !private ["So23UIUserActivityRestoringP", "UserService"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "actionButton"]
 - ["So23UIUserActivityRestoringP", "actionButtonTapped"]
@@ -1085,6 +1241,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "configureUI"]
 - !private ["So23UIUserActivityRestoringP", "configureViewControllers"]
 - !private ["So23UIUserActivityRestoringP", "depthFirstSearch"]
+- !private ["So23UIUserActivityRestoringP", "fetchUser"]
 - ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "modalPresentationStyle"]
@@ -1098,6 +1255,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "tabBarItem"]
 - !private ["So23UIUserActivityRestoringP", "templateNavigationController"]
 - ["So23UIUserActivityRestoringP", "tintColor"]
+- !private ["So23UIUserActivityRestoringP", "user"]
 - !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So23UIUserActivityRestoringP", "viewControllers"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
@@ -1123,14 +1281,19 @@ depends-member:
 - !private ["So16UIViewControllerC", "LoginController"]
 - !private ["So16UIViewControllerC", "NotificationsController"]
 - ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UICollectionViewFlowLayout"]
 - ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UIViewController"]
+- !private ["So16UIViewControllerC", "UploadTweetController"]
+- ["So16UIViewControllerC", "User"]
+- !private ["So16UIViewControllerC", "UserService"]
 - ["So16UIViewControllerC", "actionButton"]
 - ["So16UIViewControllerC", "actionButtonTapped"]
 - ["So16UIViewControllerC", "authenticateUserAndConfigureUI"]
 - ["So16UIViewControllerC", "configureUI"]
 - ["So16UIViewControllerC", "configureViewControllers"]
+- ["So16UIViewControllerC", "fetchUser"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "logout"]
 - !private ["So16UIViewControllerC", "modalPresentationStyle"]
@@ -1140,15 +1303,26 @@ depends-member:
 - ["So16UIViewControllerC", "self"]
 - !private ["So16UIViewControllerC", "tabBarItem"]
 - ["So16UIViewControllerC", "templateNavigationController"]
+- ["So16UIViewControllerC", "user"]
 - !private ["So16UIViewControllerC", "view"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["12MVVM_Twitter21UploadTweetControllerC", "deinit"]
+- !private ["12MVVM_Twitter21UploadTweetControllerC", "init"]
+- !private ["So7FIRUserC", "uid"]
+- !private ["So11FIRUserInfoP", "uid"]
+- !private ["12MVVM_Twitter11UserServiceV", "fetchUser"]
+- !private ["12MVVM_Twitter11UserServiceV", "shared"]
+- !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "forEach"]
+- !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "forEach"]
 - ["s26_ExpressibleByColorLiteralP", "twitterBlue"]
 - ["s26_ExpressibleByColorLiteralP", "white"]
 - ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "first"]
 - !private ["s19_HasContiguousBytesP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ConversationsController"]
@@ -1158,8 +1332,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationsController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UICollectionViewFlowLayout"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UploadTweetController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserService"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "actionButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "actionButtonTapped"]
@@ -1177,6 +1354,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "depthFirstSearch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
@@ -1195,6 +1373,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "templateNavigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "twitterBlue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
@@ -1207,8 +1387,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LoginController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NotificationsController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UICollectionViewFlowLayout"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UINavigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UploadTweetController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserService"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "actionButton"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "actionButtonTapped"]
@@ -1226,6 +1409,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "depthFirstSearch"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fetchUser"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
@@ -1244,12 +1428,15 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "templateNavigationController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "twitterBlue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "user"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewControllers"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "addSubview"]
 - !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "image"]
 - !private ["s21_ObjectiveCBridgeableP", "safeAreaLayoutGuide"]
@@ -1271,6 +1458,7 @@ depends-nominal:
 - !private "Sa"
 - !private "So7FIRAuthC"
 - !private "SK"
+- "So12UIButtonTypeV"
 - !private "So7CALayerC"
 - "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
@@ -1327,6 +1515,12 @@ depends-nominal:
 - !private "So9UIBarItemC"
 - !private "So16UIBarPositioningP"
 - "So8UIButtonC"
+- !private "So26UICollectionViewControllerC"
+- !private "So26UICollectionViewDataSourceP"
+- !private "So24UICollectionViewDelegateP"
+- !private "So34UICollectionViewDelegateFlowLayoutP"
+- !private "So26UICollectionViewFlowLayoutC"
+- !private "So22UICollectionViewLayoutC"
 - "So7UIColorC"
 - "So18UIContentContainerP"
 - "So9UIControlC"
@@ -1345,6 +1539,7 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - "So18UITabBarControllerC"
@@ -1354,6 +1549,10 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "12MVVM_Twitter21UploadTweetControllerC"
+- !private "So7FIRUserC"
+- !private "So11FIRUserInfoP"
+- !private "12MVVM_Twitter11UserServiceV"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
 - "s26_ExpressibleByColorLiteralP"
@@ -1394,19 +1593,38 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
@@ -1415,6 +1633,8 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
@@ -1425,11 +1645,19 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
@@ -1439,7 +1667,30 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageHEICCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOAnimatedCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderResponseModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImagePlayer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOptionsProcessor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderDecryptor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
@@ -1450,15 +1701,21 @@ depends-external:
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
@@ -1477,4 +1734,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "305a65b4311c22e439aa837c8942659a"
+interface-hash: "2400678f2a5bdf5b81e7bfa68b1e55ea"

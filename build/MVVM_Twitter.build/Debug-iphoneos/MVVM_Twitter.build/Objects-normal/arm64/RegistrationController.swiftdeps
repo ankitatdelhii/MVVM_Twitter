@@ -45,6 +45,7 @@ depends-member:
 - !private ["So22UILayoutConstraintAxisV", "vertical"]
 - !private ["SK", "editedImage"]
 - !private ["SK", "first"]
+- ["So12UIButtonTypeV", "system"]
 - !private ["So7CALayerC", "borderColor"]
 - !private ["So7CALayerC", "borderWidth"]
 - ["So7CALayerC", "cornerRadius"]
@@ -478,6 +479,7 @@ depends-member:
 - !private ["SQ", "signUpBtn"]
 - !private ["SQ", "spacing"]
 - !private ["SQ", "subscript"]
+- ["SQ", "system"]
 - !private ["SQ", "text"]
 - ["SQ", "tintColor"]
 - ["SQ", "titleLabel"]
@@ -587,6 +589,7 @@ depends-member:
 - !private ["SH", "signUpBtn"]
 - !private ["SH", "spacing"]
 - !private ["SH", "subscript"]
+- ["SH", "system"]
 - !private ["SH", "text"]
 - ["SH", "tintColor"]
 - ["SH", "titleLabel"]
@@ -963,6 +966,7 @@ depends-member:
 - !private ["SY", "fillEqually"]
 - ["SY", "normal"]
 - !private ["SY", "scaleAspectFit"]
+- ["SY", "system"]
 - ["SY", "touchUpInside"]
 - !private ["SY", "vertical"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "$__lazy_storage_$_emailContainerView"]
@@ -2356,6 +2360,7 @@ depends-nominal:
 - !private "12MVVM_Twitter11AuthServiceV"
 - !private "So22UILayoutConstraintAxisV"
 - !private "SK"
+- "So12UIButtonTypeV"
 - "So7CALayerC"
 - "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
@@ -2639,4 +2644,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "15d6fff8e60cfbc5e25ffeff9178ca70"
+interface-hash: "0e3b82763fd53bca4c721da2754a7873"

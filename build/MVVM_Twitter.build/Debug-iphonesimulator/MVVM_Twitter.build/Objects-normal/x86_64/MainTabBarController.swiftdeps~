@@ -113,6 +113,7 @@ depends-member:
 - !private ["s7CVarArgP", "templateNavigationController"]
 - ["s7CVarArgP", "tintColor"]
 - ["s7CVarArgP", "twitterBlue"]
+- !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "user"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewControllers"]
@@ -175,6 +176,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "templateNavigationController"]
 - ["s28CustomDebugStringConvertibleP", "tintColor"]
 - ["s28CustomDebugStringConvertibleP", "twitterBlue"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "user"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
@@ -241,6 +243,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "templateNavigationController"]
 - ["s23CustomStringConvertibleP", "tintColor"]
 - ["s23CustomStringConvertibleP", "twitterBlue"]
+- !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "user"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
@@ -325,6 +328,7 @@ depends-member:
 - ["SQ", "tintColor"]
 - ["SQ", "touchUpInside"]
 - ["SQ", "twitterBlue"]
+- !private ["SQ", "uid"]
 - !private ["SQ", "user"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewControllers"]
@@ -400,6 +404,7 @@ depends-member:
 - !private ["SH", "templateNavigationController"]
 - ["SH", "tintColor"]
 - ["SH", "twitterBlue"]
+- !private ["SH", "uid"]
 - !private ["SH", "user"]
 - !private ["SH", "view"]
 - !private ["SH", "viewControllers"]
@@ -585,6 +590,7 @@ depends-member:
 - ["So8NSObjectC", "templateNavigationController"]
 - ["So8NSObjectC", "tintColor"]
 - ["So8NSObjectC", "twitterBlue"]
+- !private ["So8NSObjectC", "uid"]
 - ["So8NSObjectC", "user"]
 - !private ["So8NSObjectC", "view"]
 - !private ["So8NSObjectC", "viewControllers"]
@@ -639,6 +645,7 @@ depends-member:
 - !private ["So8NSObjectP", "templateNavigationController"]
 - ["So8NSObjectP", "tintColor"]
 - ["So8NSObjectP", "twitterBlue"]
+- !private ["So8NSObjectP", "uid"]
 - !private ["So8NSObjectP", "user"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewControllers"]
@@ -1302,6 +1309,8 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["12MVVM_Twitter21UploadTweetControllerC", "deinit"]
 - !private ["12MVVM_Twitter21UploadTweetControllerC", "init"]
+- !private ["So7FIRUserC", "uid"]
+- !private ["So11FIRUserInfoP", "uid"]
 - !private ["12MVVM_Twitter11UserServiceV", "fetchUser"]
 - !private ["12MVVM_Twitter11UserServiceV", "shared"]
 - !private ["s14_ArrayProtocolP", "first"]
@@ -1364,6 +1373,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "templateNavigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "twitterBlue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
@@ -1418,6 +1428,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "templateNavigationController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "twitterBlue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "user"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewControllers"]
@@ -1539,6 +1550,8 @@ depends-nominal:
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "12MVVM_Twitter21UploadTweetControllerC"
+- !private "So7FIRUserC"
+- !private "So11FIRUserInfoP"
 - !private "12MVVM_Twitter11UserServiceV"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"

@@ -38,6 +38,7 @@ depends-member:
 - !private ["12MVVM_Twitter11AuthServiceV", "shared"]
 - !private ["So22UILayoutConstraintAxisV", "vertical"]
 - !private ["SK", "first"]
+- ["So12UIButtonTypeV", "system"]
 - ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - ["So15CALayerDelegateP", "addTarget"]
@@ -368,6 +369,7 @@ depends-member:
 - !private ["SQ", "shared"]
 - !private ["SQ", "signUpBtn"]
 - !private ["SQ", "spacing"]
+- ["SQ", "system"]
 - !private ["SQ", "text"]
 - ["SQ", "titleLabel"]
 - !private ["SQ", "topAnchor"]
@@ -453,6 +455,7 @@ depends-member:
 - !private ["SH", "shared"]
 - !private ["SH", "signUpBtn"]
 - !private ["SH", "spacing"]
+- ["SH", "system"]
 - !private ["SH", "text"]
 - ["SH", "titleLabel"]
 - !private ["SH", "topAnchor"]
@@ -760,6 +763,7 @@ depends-member:
 - !private ["SY", "fillEqually"]
 - ["SY", "normal"]
 - ["SY", "scaleAspectFit"]
+- ["SY", "system"]
 - ["SY", "touchUpInside"]
 - !private ["SY", "vertical"]
 - !private ["12MVVM_Twitter22RegistrationControllerC", "deinit"]
@@ -1785,6 +1789,7 @@ depends-nominal:
 - !private "12MVVM_Twitter11AuthServiceV"
 - !private "So22UILayoutConstraintAxisV"
 - !private "SK"
+- "So12UIButtonTypeV"
 - "So7CALayerC"
 - "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
@@ -2062,4 +2067,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9307331886241e5d710c7cdd71e34780"
+interface-hash: "b3da11c2977277210eeebb4fcb418229"

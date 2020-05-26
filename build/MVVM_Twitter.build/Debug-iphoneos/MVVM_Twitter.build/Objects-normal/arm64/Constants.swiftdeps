@@ -4,12 +4,14 @@ provides-top-level:
 - "STORAGE_PROFILE_IMAGES"
 - "DB_REF"
 - "REF_USERS"
+- "REF_TWEETS"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "DB_REF"
 - "Database"
+- "REF_TWEETS"
 - "REF_USERS"
 - "STORAGE_PROFILE_IMAGES"
 - "STORAGE_REF"
@@ -245,4 +247,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "18855020905641a0c6056d5fbc755c21"
+interface-hash: "6e570b03db7f5c38457947479c98c36a"

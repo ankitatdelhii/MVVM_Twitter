@@ -686,6 +686,8 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["12MVVM_Twitter17TweetCellDelegateP", "init"]
+- !private ["12MVVM_Twitter17TweetCellDelegateP", "user"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "anchor"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
@@ -1508,6 +1510,7 @@ depends-nominal:
 - "So14UIControlStateV"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
+- !private "12MVVM_Twitter17TweetCellDelegateP"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"

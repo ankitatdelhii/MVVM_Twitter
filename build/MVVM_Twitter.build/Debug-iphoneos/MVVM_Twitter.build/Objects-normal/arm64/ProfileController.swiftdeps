@@ -1,0 +1,1015 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ProfileController"
+provides-nominal:
+- "12MVVM_Twitter17ProfileControllerC"
+provides-member:
+- ["12MVVM_Twitter17ProfileControllerC", ""]
+- ["12MVVM_Twitter17ProfileControllerC", "collectionView"]
+- ["12MVVM_Twitter17ProfileControllerC", "collectionView"]
+- ["12MVVM_Twitter17ProfileControllerC", "collectionView"]
+- ["12MVVM_Twitter17ProfileControllerC", "collectionView"]
+provides-dynamic-lookup:
+- "collectionView"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGSize"
+- "CastingPrecedence"
+- !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- "ProfileController"
+- !private "ProfileHeader"
+- "String"
+- "StringLiteralType"
+- !private "TweetCell"
+- "UICollectionReusableView"
+- "UICollectionView"
+- "UICollectionViewCell"
+- "UICollectionViewController"
+- "UICollectionViewDelegateFlowLayout"
+- "UICollectionViewLayout"
+- !private "profileHeaderCell"
+- !private "profileTweetCell"
+depends-member:
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "contentInsetAdjustmentBehavior"]
+- !private ["So15CALayerDelegateP", "dequeueReusableCell"]
+- !private ["So15CALayerDelegateP", "dequeueReusableSupplementaryView"]
+- !private ["So15CALayerDelegateP", "elementKindSectionHeader"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "isHidden"]
+- !private ["So15CALayerDelegateP", "register"]
+- !private ["So6CGRectV", "width"]
+- !private ["So6CGSizeV", "init"]
+- !private ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "ProfileHeader"]
+- !private ["s7CVarArgP", "TweetCell"]
+- !private ["s7CVarArgP", "UICollectionView"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "backgroundColor"]
+- ["s7CVarArgP", "collectionView"]
+- !private ["s7CVarArgP", "configureUI"]
+- !private ["s7CVarArgP", "contentInsetAdjustmentBehavior"]
+- !private ["s7CVarArgP", "dequeueReusableCell"]
+- !private ["s7CVarArgP", "dequeueReusableSupplementaryView"]
+- !private ["s7CVarArgP", "elementKindSectionHeader"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isHidden"]
+- !private ["s7CVarArgP", "navigationBar"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "profileHeaderCell"]
+- !private ["s7CVarArgP", "profileTweetCell"]
+- !private ["s7CVarArgP", "register"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "viewWillAppear"]
+- !private ["s7CVarArgP", "white"]
+- !private ["So42UIScrollViewContentInsetAdjustmentBehaviorV", "never"]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "ProfileHeader"]
+- !private ["s28CustomDebugStringConvertibleP", "TweetCell"]
+- !private ["s28CustomDebugStringConvertibleP", "UICollectionView"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- ["s28CustomDebugStringConvertibleP", "collectionView"]
+- !private ["s28CustomDebugStringConvertibleP", "configureUI"]
+- !private ["s28CustomDebugStringConvertibleP", "contentInsetAdjustmentBehavior"]
+- !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "dequeueReusableSupplementaryView"]
+- !private ["s28CustomDebugStringConvertibleP", "elementKindSectionHeader"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "profileHeaderCell"]
+- !private ["s28CustomDebugStringConvertibleP", "profileTweetCell"]
+- !private ["s28CustomDebugStringConvertibleP", "register"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s17CustomReflectableP", "backgroundColor"]
+- !private ["s17CustomReflectableP", "contentInsetAdjustmentBehavior"]
+- !private ["s17CustomReflectableP", "frame"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "register"]
+- !private ["s17CustomReflectableP", "white"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "ProfileHeader"]
+- !private ["s23CustomStringConvertibleP", "TweetCell"]
+- !private ["s23CustomStringConvertibleP", "UICollectionView"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- ["s23CustomStringConvertibleP", "collectionView"]
+- !private ["s23CustomStringConvertibleP", "configureUI"]
+- !private ["s23CustomStringConvertibleP", "contentInsetAdjustmentBehavior"]
+- !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- !private ["s23CustomStringConvertibleP", "dequeueReusableSupplementaryView"]
+- !private ["s23CustomStringConvertibleP", "elementKindSectionHeader"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isHidden"]
+- !private ["s23CustomStringConvertibleP", "navigationBar"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "profileHeaderCell"]
+- !private ["s23CustomStringConvertibleP", "profileTweetCell"]
+- !private ["s23CustomStringConvertibleP", "register"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "viewWillAppear"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- !private ["Se", "backgroundColor"]
+- !private ["Se", "contentInsetAdjustmentBehavior"]
+- !private ["Se", "frame"]
+- !private ["Se", "init"]
+- !private ["Se", "register"]
+- !private ["Se", "white"]
+- !private ["Se", "width"]
+- !private ["SE", "backgroundColor"]
+- !private ["SE", "contentInsetAdjustmentBehavior"]
+- !private ["SE", "frame"]
+- !private ["SE", "init"]
+- !private ["SE", "register"]
+- !private ["SE", "white"]
+- !private ["SE", "width"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "ProfileHeader"]
+- !private ["SQ", "TweetCell"]
+- !private ["SQ", "UICollectionView"]
+- ["SQ", ""]
+- !private ["SQ", "backgroundColor"]
+- ["SQ", "collectionView"]
+- !private ["SQ", "configureUI"]
+- !private ["SQ", "contentInsetAdjustmentBehavior"]
+- !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "dequeueReusableSupplementaryView"]
+- !private ["SQ", "elementKindSectionHeader"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isHidden"]
+- !private ["SQ", "navigationBar"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "never"]
+- !private ["SQ", "profileHeaderCell"]
+- !private ["SQ", "profileTweetCell"]
+- !private ["SQ", "register"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "viewWillAppear"]
+- !private ["SQ", "white"]
+- !private ["SQ", "width"]
+- !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
+- !private ["s23ExpressibleByNilLiteralP", "contentInsetAdjustmentBehavior"]
+- !private ["s23ExpressibleByNilLiteralP", "frame"]
+- !private ["s23ExpressibleByNilLiteralP", "register"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "ProfileHeader"]
+- !private ["SH", "TweetCell"]
+- !private ["SH", "UICollectionView"]
+- ["SH", ""]
+- !private ["SH", "backgroundColor"]
+- ["SH", "collectionView"]
+- !private ["SH", "configureUI"]
+- !private ["SH", "contentInsetAdjustmentBehavior"]
+- !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "dequeueReusableSupplementaryView"]
+- !private ["SH", "elementKindSectionHeader"]
+- !private ["SH", "frame"]
+- !private ["SH", "init"]
+- !private ["SH", "isHidden"]
+- !private ["SH", "navigationBar"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "never"]
+- !private ["SH", "profileHeaderCell"]
+- !private ["SH", "profileTweetCell"]
+- !private ["SH", "register"]
+- !private ["SH", "view"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "viewWillAppear"]
+- !private ["SH", "white"]
+- !private ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "ProfileHeader"]
+- !private ["So8NSCodingP", "TweetCell"]
+- !private ["So8NSCodingP", "UICollectionView"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "backgroundColor"]
+- ["So8NSCodingP", "collectionView"]
+- !private ["So8NSCodingP", "configureUI"]
+- !private ["So8NSCodingP", "contentInsetAdjustmentBehavior"]
+- !private ["So8NSCodingP", "dequeueReusableCell"]
+- !private ["So8NSCodingP", "dequeueReusableSupplementaryView"]
+- !private ["So8NSCodingP", "elementKindSectionHeader"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "navigationBar"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "profileHeaderCell"]
+- !private ["So8NSCodingP", "profileTweetCell"]
+- !private ["So8NSCodingP", "register"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "viewWillAppear"]
+- !private ["So8NSCodingP", "white"]
+- !private ["So9NSCopyingP", "white"]
+- !private ["So26NSExtensionRequestHandlingP", "CGSize"]
+- !private ["So26NSExtensionRequestHandlingP", "ProfileHeader"]
+- !private ["So26NSExtensionRequestHandlingP", "TweetCell"]
+- !private ["So26NSExtensionRequestHandlingP", "UICollectionView"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So26NSExtensionRequestHandlingP", "collectionView"]
+- !private ["So26NSExtensionRequestHandlingP", "configureUI"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "profileHeaderCell"]
+- !private ["So26NSExtensionRequestHandlingP", "profileTweetCell"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
+- !private ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "white"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "ProfileHeader"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "TweetCell"]
+- ["So8NSObjectC", "UICollectionReusableView"]
+- ["So8NSObjectC", "UICollectionView"]
+- ["So8NSObjectC", "UICollectionViewCell"]
+- ["So8NSObjectC", "UICollectionViewLayout"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- ["So8NSObjectC", "collectionView"]
+- ["So8NSObjectC", "configureUI"]
+- !private ["So8NSObjectC", "contentInsetAdjustmentBehavior"]
+- !private ["So8NSObjectC", "dequeueReusableCell"]
+- !private ["So8NSObjectC", "dequeueReusableSupplementaryView"]
+- !private ["So8NSObjectC", "elementKindSectionHeader"]
+- !private ["So8NSObjectC", "frame"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isHidden"]
+- !private ["So8NSObjectC", "navigationBar"]
+- !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "profileHeaderCell"]
+- !private ["So8NSObjectC", "profileTweetCell"]
+- !private ["So8NSObjectC", "register"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillAppear"]
+- !private ["So8NSObjectC", "white"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "ProfileHeader"]
+- !private ["So8NSObjectP", "TweetCell"]
+- !private ["So8NSObjectP", "UICollectionView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "backgroundColor"]
+- ["So8NSObjectP", "collectionView"]
+- !private ["So8NSObjectP", "configureUI"]
+- !private ["So8NSObjectP", "contentInsetAdjustmentBehavior"]
+- !private ["So8NSObjectP", "dequeueReusableCell"]
+- !private ["So8NSObjectP", "dequeueReusableSupplementaryView"]
+- !private ["So8NSObjectP", "elementKindSectionHeader"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isHidden"]
+- !private ["So8NSObjectP", "navigationBar"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "profileHeaderCell"]
+- !private ["So8NSObjectP", "profileTweetCell"]
+- !private ["So8NSObjectP", "register"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "viewWillAppear"]
+- !private ["So8NSObjectP", "white"]
+- !private ["So14NSSecureCodingP", "white"]
+- !private ["Sq", "backgroundColor"]
+- !private ["Sq", "contentInsetAdjustmentBehavior"]
+- !private ["Sq", "frame"]
+- !private ["Sq", "register"]
+- !private ["Sq", "white"]
+- ["12MVVM_Twitter17ProfileControllerC", "Bool"]
+- ["12MVVM_Twitter17ProfileControllerC", "CGSize"]
+- ["12MVVM_Twitter17ProfileControllerC", "IndexPath"]
+- ["12MVVM_Twitter17ProfileControllerC", "Int"]
+- !private ["12MVVM_Twitter17ProfileControllerC", "ProfileHeader"]
+- ["12MVVM_Twitter17ProfileControllerC", "String"]
+- !private ["12MVVM_Twitter17ProfileControllerC", "TweetCell"]
+- ["12MVVM_Twitter17ProfileControllerC", "UICollectionReusableView"]
+- ["12MVVM_Twitter17ProfileControllerC", "UICollectionView"]
+- ["12MVVM_Twitter17ProfileControllerC", "UICollectionViewCell"]
+- ["12MVVM_Twitter17ProfileControllerC", "UICollectionViewLayout"]
+- ["12MVVM_Twitter17ProfileControllerC", "collectionView"]
+- !private ["12MVVM_Twitter17ProfileControllerC", "configureUI"]
+- ["12MVVM_Twitter17ProfileControllerC", "deinit"]
+- ["12MVVM_Twitter17ProfileControllerC", "init"]
+- !private ["12MVVM_Twitter17ProfileControllerC", "navigationController"]
+- !private ["12MVVM_Twitter17ProfileControllerC", "profileHeaderCell"]
+- !private ["12MVVM_Twitter17ProfileControllerC", "profileTweetCell"]
+- !private ["12MVVM_Twitter17ProfileControllerC", "view"]
+- ["12MVVM_Twitter17ProfileControllerC", "viewDidLoad"]
+- ["12MVVM_Twitter17ProfileControllerC", "viewWillAppear"]
+- !private ["SY", "never"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "contentInsetAdjustmentBehavior"]
+- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableSupplementaryView"]
+- !private ["So29UIAccessibilityIdentificationP", "elementKindSectionHeader"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "isHidden"]
+- !private ["So29UIAccessibilityIdentificationP", "register"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "contentInsetAdjustmentBehavior"]
+- !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "dequeueReusableSupplementaryView"]
+- !private ["So12UIAppearanceP", "elementKindSectionHeader"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "isHidden"]
+- !private ["So12UIAppearanceP", "register"]
+- !private ["So21UIAppearanceContainerP", "CGSize"]
+- !private ["So21UIAppearanceContainerP", "ProfileHeader"]
+- !private ["So21UIAppearanceContainerP", "TweetCell"]
+- !private ["So21UIAppearanceContainerP", "UICollectionView"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- ["So21UIAppearanceContainerP", "collectionView"]
+- !private ["So21UIAppearanceContainerP", "configureUI"]
+- !private ["So21UIAppearanceContainerP", "contentInsetAdjustmentBehavior"]
+- !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
+- !private ["So21UIAppearanceContainerP", "dequeueReusableSupplementaryView"]
+- !private ["So21UIAppearanceContainerP", "elementKindSectionHeader"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "navigationBar"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "profileHeaderCell"]
+- !private ["So21UIAppearanceContainerP", "profileTweetCell"]
+- !private ["So21UIAppearanceContainerP", "register"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "viewWillAppear"]
+- !private ["So16UIBarPositioningP", "isHidden"]
+- !private ["So16UICollectionViewC", "backgroundColor"]
+- !private ["So16UICollectionViewC", "contentInsetAdjustmentBehavior"]
+- !private ["So16UICollectionViewC", "dequeueReusableCell"]
+- !private ["So16UICollectionViewC", "dequeueReusableSupplementaryView"]
+- !private ["So16UICollectionViewC", "elementKindSectionHeader"]
+- !private ["So16UICollectionViewC", "register"]
+- ["So26UICollectionViewControllerC", "Bool"]
+- ["So26UICollectionViewControllerC", "CGSize"]
+- ["So26UICollectionViewControllerC", "IndexPath"]
+- ["So26UICollectionViewControllerC", "Int"]
+- !private ["So26UICollectionViewControllerC", "ProfileHeader"]
+- ["So26UICollectionViewControllerC", "String"]
+- !private ["So26UICollectionViewControllerC", "TweetCell"]
+- ["So26UICollectionViewControllerC", "UICollectionReusableView"]
+- ["So26UICollectionViewControllerC", "UICollectionView"]
+- ["So26UICollectionViewControllerC", "UICollectionViewCell"]
+- ["So26UICollectionViewControllerC", "UICollectionViewLayout"]
+- ["So26UICollectionViewControllerC", ""]
+- ["So26UICollectionViewControllerC", "collectionView"]
+- ["So26UICollectionViewControllerC", "configureUI"]
+- ["So26UICollectionViewControllerC", "init"]
+- !private ["So26UICollectionViewControllerC", "navigationController"]
+- !private ["So26UICollectionViewControllerC", "profileHeaderCell"]
+- !private ["So26UICollectionViewControllerC", "profileTweetCell"]
+- !private ["So26UICollectionViewControllerC", "view"]
+- ["So26UICollectionViewControllerC", "viewDidLoad"]
+- ["So26UICollectionViewControllerC", "viewWillAppear"]
+- !private ["So26UICollectionViewDataSourceP", "CGSize"]
+- !private ["So26UICollectionViewDataSourceP", "ProfileHeader"]
+- !private ["So26UICollectionViewDataSourceP", "TweetCell"]
+- !private ["So26UICollectionViewDataSourceP", "UICollectionView"]
+- ["So26UICollectionViewDataSourceP", ""]
+- ["So26UICollectionViewDataSourceP", "collectionView"]
+- !private ["So26UICollectionViewDataSourceP", "configureUI"]
+- !private ["So26UICollectionViewDataSourceP", "init"]
+- !private ["So26UICollectionViewDataSourceP", "navigationController"]
+- !private ["So26UICollectionViewDataSourceP", "profileHeaderCell"]
+- !private ["So26UICollectionViewDataSourceP", "profileTweetCell"]
+- !private ["So26UICollectionViewDataSourceP", "view"]
+- !private ["So26UICollectionViewDataSourceP", "viewDidLoad"]
+- !private ["So26UICollectionViewDataSourceP", "viewWillAppear"]
+- !private ["So24UICollectionViewDelegateP", "CGSize"]
+- !private ["So24UICollectionViewDelegateP", "ProfileHeader"]
+- !private ["So24UICollectionViewDelegateP", "TweetCell"]
+- !private ["So24UICollectionViewDelegateP", "UICollectionView"]
+- ["So24UICollectionViewDelegateP", ""]
+- ["So24UICollectionViewDelegateP", "collectionView"]
+- !private ["So24UICollectionViewDelegateP", "configureUI"]
+- !private ["So24UICollectionViewDelegateP", "init"]
+- !private ["So24UICollectionViewDelegateP", "navigationController"]
+- !private ["So24UICollectionViewDelegateP", "profileHeaderCell"]
+- !private ["So24UICollectionViewDelegateP", "profileTweetCell"]
+- !private ["So24UICollectionViewDelegateP", "view"]
+- !private ["So24UICollectionViewDelegateP", "viewDidLoad"]
+- !private ["So24UICollectionViewDelegateP", "viewWillAppear"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "CGSize"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "ProfileHeader"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "TweetCell"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "UICollectionView"]
+- ["So34UICollectionViewDelegateFlowLayoutP", ""]
+- ["So34UICollectionViewDelegateFlowLayoutP", "collectionView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "configureUI"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "profileHeaderCell"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "profileTweetCell"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "view"]
+- !private ["So7UIColorC", "white"]
+- !private ["So18UIContentContainerP", "CGSize"]
+- !private ["So18UIContentContainerP", "ProfileHeader"]
+- !private ["So18UIContentContainerP", "TweetCell"]
+- !private ["So18UIContentContainerP", "UICollectionView"]
+- ["So18UIContentContainerP", ""]
+- ["So18UIContentContainerP", "collectionView"]
+- !private ["So18UIContentContainerP", "configureUI"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationBar"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "profileHeaderCell"]
+- !private ["So18UIContentContainerP", "profileTweetCell"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "viewWillAppear"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "contentInsetAdjustmentBehavior"]
+- !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
+- !private ["So17UICoordinateSpaceP", "dequeueReusableSupplementaryView"]
+- !private ["So17UICoordinateSpaceP", "elementKindSectionHeader"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "register"]
+- !private ["So23UIDataSourceTranslatingP", "backgroundColor"]
+- !private ["So23UIDataSourceTranslatingP", "contentInsetAdjustmentBehavior"]
+- !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So23UIDataSourceTranslatingP", "dequeueReusableSupplementaryView"]
+- !private ["So23UIDataSourceTranslatingP", "elementKindSectionHeader"]
+- !private ["So23UIDataSourceTranslatingP", "register"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "contentInsetAdjustmentBehavior"]
+- !private ["So13UIDynamicItemP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "dequeueReusableSupplementaryView"]
+- !private ["So13UIDynamicItemP", "elementKindSectionHeader"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "isHidden"]
+- !private ["So13UIDynamicItemP", "register"]
+- !private ["So18UIFocusEnvironmentP", "CGSize"]
+- !private ["So18UIFocusEnvironmentP", "ProfileHeader"]
+- !private ["So18UIFocusEnvironmentP", "TweetCell"]
+- !private ["So18UIFocusEnvironmentP", "UICollectionView"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- ["So18UIFocusEnvironmentP", "collectionView"]
+- !private ["So18UIFocusEnvironmentP", "configureUI"]
+- !private ["So18UIFocusEnvironmentP", "contentInsetAdjustmentBehavior"]
+- !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UIFocusEnvironmentP", "dequeueReusableSupplementaryView"]
+- !private ["So18UIFocusEnvironmentP", "elementKindSectionHeader"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "navigationBar"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "profileHeaderCell"]
+- !private ["So18UIFocusEnvironmentP", "profileTweetCell"]
+- !private ["So18UIFocusEnvironmentP", "register"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "contentInsetAdjustmentBehavior"]
+- !private ["So11UIFocusItemP", "dequeueReusableCell"]
+- !private ["So11UIFocusItemP", "dequeueReusableSupplementaryView"]
+- !private ["So11UIFocusItemP", "elementKindSectionHeader"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "isHidden"]
+- !private ["So11UIFocusItemP", "register"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "contentInsetAdjustmentBehavior"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableSupplementaryView"]
+- !private ["So20UIFocusItemContainerP", "elementKindSectionHeader"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "isHidden"]
+- !private ["So20UIFocusItemContainerP", "register"]
+- !private ["So30UIFocusItemScrollableContainerP", "backgroundColor"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentInsetAdjustmentBehavior"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableSupplementaryView"]
+- !private ["So30UIFocusItemScrollableContainerP", "elementKindSectionHeader"]
+- !private ["So30UIFocusItemScrollableContainerP", "register"]
+- !private ["So24UILargeContentViewerItemP", "backgroundColor"]
+- !private ["So24UILargeContentViewerItemP", "contentInsetAdjustmentBehavior"]
+- !private ["So24UILargeContentViewerItemP", "dequeueReusableCell"]
+- !private ["So24UILargeContentViewerItemP", "dequeueReusableSupplementaryView"]
+- !private ["So24UILargeContentViewerItemP", "elementKindSectionHeader"]
+- !private ["So24UILargeContentViewerItemP", "frame"]
+- !private ["So24UILargeContentViewerItemP", "isHidden"]
+- !private ["So24UILargeContentViewerItemP", "register"]
+- !private ["So15UINavigationBarC", "isHidden"]
+- !private ["So22UINavigationControllerC", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- !private ["So30UIPasteConfigurationSupportingP", "ProfileHeader"]
+- !private ["So30UIPasteConfigurationSupportingP", "TweetCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "UICollectionView"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- ["So30UIPasteConfigurationSupportingP", "collectionView"]
+- !private ["So30UIPasteConfigurationSupportingP", "configureUI"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentInsetAdjustmentBehavior"]
+- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableSupplementaryView"]
+- !private ["So30UIPasteConfigurationSupportingP", "elementKindSectionHeader"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "profileHeaderCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "profileTweetCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "register"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "IndexPath"]
+- ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "ProfileHeader"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "TweetCell"]
+- ["So11UIResponderC", "UICollectionReusableView"]
+- ["So11UIResponderC", "UICollectionView"]
+- ["So11UIResponderC", "UICollectionViewCell"]
+- ["So11UIResponderC", "UICollectionViewLayout"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "collectionView"]
+- ["So11UIResponderC", "configureUI"]
+- !private ["So11UIResponderC", "contentInsetAdjustmentBehavior"]
+- !private ["So11UIResponderC", "dequeueReusableCell"]
+- !private ["So11UIResponderC", "dequeueReusableSupplementaryView"]
+- !private ["So11UIResponderC", "elementKindSectionHeader"]
+- !private ["So11UIResponderC", "frame"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isHidden"]
+- !private ["So11UIResponderC", "navigationBar"]
+- !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "profileHeaderCell"]
+- !private ["So11UIResponderC", "profileTweetCell"]
+- !private ["So11UIResponderC", "register"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- !private ["So30UIResponderStandardEditActionsP", "ProfileHeader"]
+- !private ["So30UIResponderStandardEditActionsP", "TweetCell"]
+- !private ["So30UIResponderStandardEditActionsP", "UICollectionView"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- ["So30UIResponderStandardEditActionsP", "collectionView"]
+- !private ["So30UIResponderStandardEditActionsP", "configureUI"]
+- !private ["So30UIResponderStandardEditActionsP", "contentInsetAdjustmentBehavior"]
+- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
+- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableSupplementaryView"]
+- !private ["So30UIResponderStandardEditActionsP", "elementKindSectionHeader"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "profileHeaderCell"]
+- !private ["So30UIResponderStandardEditActionsP", "profileTweetCell"]
+- !private ["So30UIResponderStandardEditActionsP", "register"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
+- !private ["So12UIScrollViewC", "backgroundColor"]
+- !private ["So12UIScrollViewC", "contentInsetAdjustmentBehavior"]
+- !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So12UIScrollViewC", "dequeueReusableSupplementaryView"]
+- !private ["So12UIScrollViewC", "elementKindSectionHeader"]
+- !private ["So12UIScrollViewC", "register"]
+- !private ["So20UIScrollViewDelegateP", "CGSize"]
+- !private ["So20UIScrollViewDelegateP", "ProfileHeader"]
+- !private ["So20UIScrollViewDelegateP", "TweetCell"]
+- !private ["So20UIScrollViewDelegateP", "UICollectionView"]
+- ["So20UIScrollViewDelegateP", ""]
+- ["So20UIScrollViewDelegateP", "collectionView"]
+- !private ["So20UIScrollViewDelegateP", "configureUI"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "navigationController"]
+- !private ["So20UIScrollViewDelegateP", "profileHeaderCell"]
+- !private ["So20UIScrollViewDelegateP", "profileTweetCell"]
+- !private ["So20UIScrollViewDelegateP", "view"]
+- !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "viewWillAppear"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "contentInsetAdjustmentBehavior"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableSupplementaryView"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "elementKindSectionHeader"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "register"]
+- !private ["So16UIStateRestoringP", "CGSize"]
+- !private ["So16UIStateRestoringP", "ProfileHeader"]
+- !private ["So16UIStateRestoringP", "TweetCell"]
+- !private ["So16UIStateRestoringP", "UICollectionView"]
+- ["So16UIStateRestoringP", ""]
+- ["So16UIStateRestoringP", "collectionView"]
+- !private ["So16UIStateRestoringP", "configureUI"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationBar"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "profileHeaderCell"]
+- !private ["So16UIStateRestoringP", "profileTweetCell"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "viewWillAppear"]
+- !private ["So18UITraitEnvironmentP", "CGSize"]
+- !private ["So18UITraitEnvironmentP", "ProfileHeader"]
+- !private ["So18UITraitEnvironmentP", "TweetCell"]
+- !private ["So18UITraitEnvironmentP", "UICollectionView"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- ["So18UITraitEnvironmentP", "collectionView"]
+- !private ["So18UITraitEnvironmentP", "configureUI"]
+- !private ["So18UITraitEnvironmentP", "contentInsetAdjustmentBehavior"]
+- !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UITraitEnvironmentP", "dequeueReusableSupplementaryView"]
+- !private ["So18UITraitEnvironmentP", "elementKindSectionHeader"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "navigationBar"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "profileHeaderCell"]
+- !private ["So18UITraitEnvironmentP", "profileTweetCell"]
+- !private ["So18UITraitEnvironmentP", "register"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "viewWillAppear"]
+- !private ["So23UIUserActivityRestoringP", "CGSize"]
+- !private ["So23UIUserActivityRestoringP", "ProfileHeader"]
+- !private ["So23UIUserActivityRestoringP", "TweetCell"]
+- !private ["So23UIUserActivityRestoringP", "UICollectionView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- ["So23UIUserActivityRestoringP", "collectionView"]
+- !private ["So23UIUserActivityRestoringP", "configureUI"]
+- !private ["So23UIUserActivityRestoringP", "contentInsetAdjustmentBehavior"]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableSupplementaryView"]
+- !private ["So23UIUserActivityRestoringP", "elementKindSectionHeader"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isHidden"]
+- !private ["So23UIUserActivityRestoringP", "navigationBar"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "profileHeaderCell"]
+- !private ["So23UIUserActivityRestoringP", "profileTweetCell"]
+- !private ["So23UIUserActivityRestoringP", "register"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
+- !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "contentInsetAdjustmentBehavior"]
+- !private ["So6UIViewC", "dequeueReusableCell"]
+- !private ["So6UIViewC", "dequeueReusableSupplementaryView"]
+- !private ["So6UIViewC", "elementKindSectionHeader"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "isHidden"]
+- !private ["So6UIViewC", "register"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "CGSize"]
+- ["So16UIViewControllerC", "IndexPath"]
+- ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "ProfileHeader"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "TweetCell"]
+- ["So16UIViewControllerC", "UICollectionReusableView"]
+- ["So16UIViewControllerC", "UICollectionView"]
+- ["So16UIViewControllerC", "UICollectionViewCell"]
+- ["So16UIViewControllerC", "UICollectionViewLayout"]
+- ["So16UIViewControllerC", "collectionView"]
+- ["So16UIViewControllerC", "configureUI"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationBar"]
+- !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "profileHeaderCell"]
+- !private ["So16UIViewControllerC", "profileTweetCell"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillAppear"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ProfileHeader"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TweetCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UICollectionView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configureUI"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentInsetAdjustmentBehavior"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableSupplementaryView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "elementKindSectionHeader"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "profileHeaderCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "profileTweetCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGSize"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ProfileHeader"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TweetCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UICollectionView"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "collectionView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureUI"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentInsetAdjustmentBehavior"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableSupplementaryView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "elementKindSectionHeader"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isHidden"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationBar"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "profileHeaderCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "profileTweetCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "register"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillAppear"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
+- !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "contentInsetAdjustmentBehavior"]
+- !private ["s21_ObjectiveCBridgeableP", "frame"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "register"]
+- !private ["s21_ObjectiveCBridgeableP", "white"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentInsetAdjustmentBehavior"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableSupplementaryView"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "elementKindSectionHeader"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "isHidden"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "register"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
+- "s7CVarArgP"
+- !private "So42UIScrollViewContentInsetAdjustmentBehaviorV"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- "12MVVM_Twitter17ProfileControllerC"
+- !private "SY"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So16UIBarPositioningP"
+- !private "So16UICollectionViewC"
+- "So26UICollectionViewControllerC"
+- "So26UICollectionViewDataSourceP"
+- "So24UICollectionViewDelegateP"
+- "So34UICollectionViewDelegateFlowLayoutP"
+- !private "So7UIColorC"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So15UINavigationBarC"
+- !private "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/CoreImage.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/QuartzCore.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/Dispatch.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/Metal.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/Darwin.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/Foundation.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/CoreFoundation.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/CoreGraphics.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/Swift.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/UIKit.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/arm64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/arm64-apple-ios.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageHEICCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageIOAnimatedCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderResponseModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImagePlayer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOptionsProcessor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderDecryptor.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/ankitatdelhii/Downloads/MVVM_Twitter/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1d6ac79b34cc420a1969ea95336a3c66"

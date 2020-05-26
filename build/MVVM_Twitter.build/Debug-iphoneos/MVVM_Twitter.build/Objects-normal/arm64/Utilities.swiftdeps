@@ -23,6 +23,7 @@ depends-top-level:
 - "UIView"
 - "Utilities"
 depends-member:
+- !private ["So12UIButtonTypeV", "system"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "anchor"]
 - !private ["So15CALayerDelegateP", "attributedPlaceholder"]
@@ -136,6 +137,7 @@ depends-member:
 - !private ["SQ", "scaleAspectFit"]
 - !private ["SQ", "setAttributedTitle"]
 - !private ["SQ", "setDimensions"]
+- !private ["SQ", "system"]
 - !private ["SQ", "systemFont"]
 - !private ["SQ", "textColor"]
 - !private ["SQ", "white"]
@@ -164,6 +166,7 @@ depends-member:
 - !private ["SH", "scaleAspectFit"]
 - !private ["SH", "setAttributedTitle"]
 - !private ["SH", "setDimensions"]
+- !private ["SH", "system"]
 - !private ["SH", "systemFont"]
 - !private ["SH", "textColor"]
 - !private ["SH", "white"]
@@ -272,6 +275,7 @@ depends-member:
 - !private ["SY", "no"]
 - !private ["SY", "normal"]
 - !private ["SY", "scaleAspectFit"]
+- !private ["SY", "system"]
 - !private ["s10SetAlgebraP", "normal"]
 - !private ["So14UIControlStateV", "normal"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "anchor"]
@@ -675,6 +679,7 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setDimensions"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textColor"]
 depends-nominal:
+- !private "So12UIButtonTypeV"
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
 - !private "So17UIViewContentModeV"

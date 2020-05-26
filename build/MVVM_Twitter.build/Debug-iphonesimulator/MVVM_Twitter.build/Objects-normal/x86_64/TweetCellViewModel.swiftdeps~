@@ -7,7 +7,10 @@ provides-member:
 - ["12MVVM_Twitter18TweetCellViewModelV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "??"
 - "AssignmentPrecedence"
+- !private "Date"
+- !private "DateComponentsFormatter"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "NSAttributedString"
@@ -21,45 +24,100 @@ depends-top-level:
 - "URL"
 - "User"
 depends-member:
+- !private ["s7CVarArgP", "allowedUnits"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "lightGray"]
+- !private ["s7CVarArgP", "maximumUnitCount"]
+- !private ["s7CVarArgP", "string"]
 - !private ["s7CVarArgP", "systemFont"]
+- !private ["s7CVarArgP", "unitsStyle"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "allowedUnits"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "lightGray"]
+- !private ["s28CustomDebugStringConvertibleP", "maximumUnitCount"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
 - !private ["s28CustomDebugStringConvertibleP", "systemFont"]
+- !private ["s28CustomDebugStringConvertibleP", "unitsStyle"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "allowedUnits"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "lightGray"]
+- !private ["s23CustomStringConvertibleP", "maximumUnitCount"]
+- !private ["s23CustomStringConvertibleP", "string"]
 - !private ["s23CustomStringConvertibleP", "systemFont"]
+- !private ["s23CustomStringConvertibleP", "unitsStyle"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["So25NSDateComponentsFormatterC", "allowedUnits"]
+- !private ["So25NSDateComponentsFormatterC", "init"]
+- !private ["So25NSDateComponentsFormatterC", "maximumUnitCount"]
+- !private ["So25NSDateComponentsFormatterC", "string"]
+- !private ["So25NSDateComponentsFormatterC", "unitsStyle"]
+- !private ["Se", "init"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "init"]
+- !private ["SQ", "abbreviated"]
+- !private ["SQ", "allowedUnits"]
 - !private ["SQ", "append"]
+- !private ["SQ", "day"]
 - !private ["SQ", "font"]
 - !private ["SQ", "foregroundColor"]
+- !private ["SQ", "hour"]
 - !private ["SQ", "init"]
 - !private ["SQ", "lightGray"]
+- !private ["SQ", "maximumUnitCount"]
+- !private ["SQ", "minute"]
+- !private ["SQ", "second"]
+- !private ["SQ", "string"]
 - !private ["SQ", "systemFont"]
+- !private ["SQ", "unitsStyle"]
+- !private ["SQ", "weekOfMonth"]
+- !private ["s25ExpressibleByArrayLiteralP", "day"]
+- !private ["s25ExpressibleByArrayLiteralP", "hour"]
+- !private ["s25ExpressibleByArrayLiteralP", "minute"]
+- !private ["s25ExpressibleByArrayLiteralP", "second"]
+- !private ["s25ExpressibleByArrayLiteralP", "weekOfMonth"]
+- !private ["So11NSFormatterC", "allowedUnits"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "maximumUnitCount"]
+- !private ["So11NSFormatterC", "string"]
+- !private ["So11NSFormatterC", "unitsStyle"]
+- !private ["SH", "abbreviated"]
+- !private ["SH", "allowedUnits"]
 - !private ["SH", "append"]
 - !private ["SH", "font"]
 - !private ["SH", "foregroundColor"]
 - !private ["SH", "init"]
 - !private ["SH", "lightGray"]
+- !private ["SH", "maximumUnitCount"]
+- !private ["SH", "string"]
 - !private ["SH", "systemFont"]
+- !private ["SH", "unitsStyle"]
 - !private ["So21NSAttributedStringKeya", "font"]
 - !private ["So21NSAttributedStringKeya", "foregroundColor"]
 - !private ["So18NSAttributedStringC", "append"]
 - !private ["So18NSAttributedStringC", "init"]
+- !private ["So8NSCodingP", "allowedUnits"]
 - !private ["So8NSCodingP", "append"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "lightGray"]
+- !private ["So8NSCodingP", "maximumUnitCount"]
+- !private ["So8NSCodingP", "string"]
+- !private ["So8NSCodingP", "unitsStyle"]
+- !private ["So9NSCopyingP", "allowedUnits"]
 - !private ["So9NSCopyingP", "append"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "lightGray"]
+- !private ["So9NSCopyingP", "maximumUnitCount"]
+- !private ["So9NSCopyingP", "string"]
 - !private ["So9NSCopyingP", "systemFont"]
+- !private ["So9NSCopyingP", "unitsStyle"]
 - !private ["So21NSItemProviderReadingP", "append"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "lightGray"]
@@ -70,25 +128,53 @@ depends-member:
 - !private ["So25NSMutableAttributedStringC", "init"]
 - !private ["So16NSMutableCopyingP", "append"]
 - !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "allowedUnits"]
 - !private ["So8NSObjectC", "append"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "lightGray"]
+- !private ["So8NSObjectC", "maximumUnitCount"]
+- !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectC", "systemFont"]
+- !private ["So8NSObjectC", "unitsStyle"]
+- !private ["So8NSObjectP", "allowedUnits"]
 - !private ["So8NSObjectP", "append"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "lightGray"]
+- !private ["So8NSObjectP", "maximumUnitCount"]
+- !private ["So8NSObjectP", "string"]
 - !private ["So8NSObjectP", "systemFont"]
+- !private ["So8NSObjectP", "unitsStyle"]
 - !private ["So14NSSecureCodingP", "append"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "lightGray"]
+- !private ["s9OptionSetP", "day"]
+- !private ["s9OptionSetP", "hour"]
+- !private ["s9OptionSetP", "minute"]
+- !private ["s9OptionSetP", "second"]
+- !private ["s9OptionSetP", "weekOfMonth"]
+- !private ["SY", "abbreviated"]
+- !private ["SY", "day"]
 - !private ["SY", "font"]
 - !private ["SY", "foregroundColor"]
+- !private ["SY", "hour"]
+- !private ["SY", "minute"]
+- !private ["SY", "second"]
+- !private ["SY", "weekOfMonth"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s10SetAlgebraP", "day"]
+- !private ["s10SetAlgebraP", "hour"]
+- !private ["s10SetAlgebraP", "minute"]
+- !private ["s10SetAlgebraP", "second"]
+- !private ["s10SetAlgebraP", "weekOfMonth"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["12MVVM_Twitter5TweetV", "caption"]
+- !private ["12MVVM_Twitter5TweetV", "timestamp"]
 - !private ["12MVVM_Twitter5TweetV", "user"]
+- !private ["12MVVM_Twitter18TweetCellViewModelV", "Date"]
+- !private ["12MVVM_Twitter18TweetCellViewModelV", "DateComponentsFormatter"]
 - ["12MVVM_Twitter18TweetCellViewModelV", "NSAttributedString"]
 - !private ["12MVVM_Twitter18TweetCellViewModelV", "NSMutableAttributedString"]
 - ["12MVVM_Twitter18TweetCellViewModelV", "String"]
@@ -100,35 +186,60 @@ depends-member:
 - ["12MVVM_Twitter18TweetCellViewModelV", "captionText"]
 - ["12MVVM_Twitter18TweetCellViewModelV", "init"]
 - ["12MVVM_Twitter18TweetCellViewModelV", "profileImageUrl"]
+- ["12MVVM_Twitter18TweetCellViewModelV", "timeStamp"]
 - ["12MVVM_Twitter18TweetCellViewModelV", "tweet"]
 - ["12MVVM_Twitter18TweetCellViewModelV", "user"]
 - ["12MVVM_Twitter18TweetCellViewModelV", "userInfo"]
 - !private ["So7UIColorC", "lightGray"]
 - !private ["So6UIFontC", "systemFont"]
+- !private ["So14NSCalendarUnitV", "day"]
+- !private ["So14NSCalendarUnitV", "hour"]
+- !private ["So14NSCalendarUnitV", "minute"]
+- !private ["So14NSCalendarUnitV", "second"]
+- !private ["So14NSCalendarUnitV", "weekOfMonth"]
+- !private ["So35NSDateComponentsFormatterUnitsStyleV", "abbreviated"]
 - !private ["12MVVM_Twitter4UserV", "fullname"]
 - !private ["12MVVM_Twitter4UserV", "profileImageUrl"]
 - !private ["12MVVM_Twitter4UserV", "username"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "font"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "allowedUnits"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "append"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lightGray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "maximumUnitCount"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unitsStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "allowedUnits"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "append"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lightGray"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "maximumUnitCount"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "string"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemFont"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "unitsStyle"]
 - !private ["s21_ObjectiveCBridgeableP", "font"]
 - !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s20_SwiftNewtypeWrapperP", "font"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 depends-nominal:
 - !private "s7CVarArgP"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- !private "So25NSDateComponentsFormatterC"
+- !private "Se"
 - !private "s26DefaultStringInterpolationV"
+- !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "So11NSFormatterC"
 - !private "SH"
 - !private "So21NSAttributedStringKeya"
 - !private "So18NSAttributedStringC"
@@ -141,14 +252,20 @@ depends-nominal:
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
 - !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s10SetAlgebraP"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "12MVVM_Twitter5TweetV"
 - "12MVVM_Twitter18TweetCellViewModelV"
 - !private "So7UIColorC"
 - !private "So6UIFontC"
+- !private "So14NSCalendarUnitV"
+- !private "So35NSDateComponentsFormatterUnitsStyleV"
 - !private "12MVVM_Twitter4UserV"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -326,4 +443,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "39500c9b03d2cabed9d9d80744bae4a3"
+interface-hash: "418ec8cc483adac789c1bd94836a2c9c"

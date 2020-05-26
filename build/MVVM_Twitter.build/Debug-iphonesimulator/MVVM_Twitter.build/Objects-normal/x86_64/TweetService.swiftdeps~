@@ -20,7 +20,6 @@ depends-top-level:
 - !private "StringLiteralType"
 - "Tweet"
 - "TweetService"
-- !private "User"
 - !private "UserService"
 - "Void"
 depends-member:
@@ -184,7 +183,6 @@ depends-member:
 - ["12MVVM_Twitter12TweetServiceV", "String"]
 - ["12MVVM_Twitter12TweetServiceV", "Tweet"]
 - ["12MVVM_Twitter12TweetServiceV", "TweetService"]
-- !private ["12MVVM_Twitter12TweetServiceV", "User"]
 - !private ["12MVVM_Twitter12TweetServiceV", "UserService"]
 - ["12MVVM_Twitter12TweetServiceV", "Void"]
 - ["12MVVM_Twitter12TweetServiceV", "fetchTweets"]

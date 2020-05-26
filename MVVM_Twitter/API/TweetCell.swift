@@ -9,9 +9,15 @@
 import UIKit
 import SDWebImage
 
+protocol TweetCellDelegate: class {
+    func handleProfileImageTapped()
+}
+
 class TweetCell: UICollectionViewCell {
     
     //MARK: Properties
+    
+    weak var delegate: TweetCellDelegate?
     
     var tweet: Tweet? {
         didSet {
@@ -25,6 +31,9 @@ class TweetCell: UICollectionViewCell {
         iv.layer.cornerRadius = 48/2
         iv.layer.masksToBounds = true
         iv.backgroundColor = .twitterBlue
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleProfileImageTapped))
+        iv.addGestureRecognizer(tap)
+        iv.isUserInteractionEnabled = true
         return iv
     }()
     
@@ -97,6 +106,11 @@ class TweetCell: UICollectionViewCell {
 
     
     //MARK: Selectors
+    
+    @objc func handleProfileImageTapped() {
+        print("Profile Image Tapped!")
+        delegate?.handleProfileImageTapped()
+    }
     
     @objc func handleCommentTapped() {
         
