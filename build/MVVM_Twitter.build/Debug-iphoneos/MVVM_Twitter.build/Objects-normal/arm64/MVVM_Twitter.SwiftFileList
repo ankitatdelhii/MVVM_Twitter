@@ -2,6 +2,7 @@
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/API/UserService.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/NotificationsController.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/CaptionTextView.swift
+/Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/FilterCell.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/ConversationsController.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Utils/Utilities.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/AppDelegate.swift
@@ -18,6 +19,7 @@
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/MainTabBarController.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/Authentication/RegistrationController.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/FeedController.swift
+/Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Controller/ProfileFilterView.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/Utils/Constants.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/API/Tweet.swift
 /Users/ankitatdelhii/Downloads/MVVM_Twitter/MVVM_Twitter/API/TweetService.swift

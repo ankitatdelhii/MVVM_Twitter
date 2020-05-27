@@ -14,8 +14,19 @@ private let profileHeaderCell = "profileHeaderCell"
 class ProfileController: UICollectionViewController {
     
     //MARK: Properties
+    var user: User
     
     //MARK: LifeCylcle
+    
+    init(user: User) {
+        self.user = user
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +76,8 @@ extension ProfileController {
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: profileHeaderCell, for: indexPath) as! ProfileHeader
+        header.user = user
+        header.delegate = self
         return header
     }
         
@@ -80,6 +93,16 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 120)
+    }
+    
+}
+
+//MARK: Profile Dismiss Delegate
+
+extension ProfileController: ProfileHeaderDelegate {
+    
+    func handleDismissal() {
+        navigationController?.popViewController(animated: true)
     }
     
 }

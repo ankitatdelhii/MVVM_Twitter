@@ -15,10 +15,7 @@ class FilterCell: UICollectionViewCell {
     
     private let titleLabel: UILabel =  {
        let label = UILabel()
-//        label.textAlignment = .center
-        label.backgroundColor = .darkGray
         label.font = UIFont.systemFont(ofSize: 14)
-        label.text = "Test Filter"
         label.textColor = .lightGray
         return label
     }()
@@ -53,10 +50,13 @@ class FilterCell: UICollectionViewCell {
     //MARK: Helper
     
     private func configureUI() {
-        backgroundColor = .cyan
+        backgroundColor = .white
         addSubview(titleLabel)
-//        titleLabel.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor)
         titleLabel.center(inView: self)
+    }
+    
+    func bindLabel(labelText: String) {
+        titleLabel.text = labelText
     }
     
 }

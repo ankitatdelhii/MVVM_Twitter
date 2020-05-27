@@ -13,6 +13,7 @@ let tweetCell = "tweetCell"
 
 class FeedController: UICollectionViewController {
     
+    //MARK: Properties
     private var tweets = [Tweet]() {
         didSet {
             collectionView.reloadData()
@@ -27,12 +28,20 @@ class FeedController: UICollectionViewController {
     }
     
     
+    //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
         fetchTweets()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    
+    //MARK: Helper
     private func fetchTweets() {
         TweetService.shared.fetchTweets { [weak self] (tweets) in
             print("Got tweets \(tweets)")
@@ -94,10 +103,11 @@ extension FeedController: UICollectionViewDelegateFlowLayout {
 //MARK: Tweet Cell Delegate
 
 extension FeedController: TweetCellDelegate {
-    
-    func handleProfileImageTapped() {
+        
+    func handleProfileImageTapped(_ cell: TweetCell) {
         print("Profile Tap Handle in Feed")
-        navigationController?.pushViewController(ProfileController(collectionViewLayout: UICollectionViewFlowLayout()), animated: true)
+        guard let user = cell.tweet?.user else { return }
+        navigationController?.pushViewController(ProfileController(user: user), animated: true)
     }
     
 }

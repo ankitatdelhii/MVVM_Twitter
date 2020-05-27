@@ -30,6 +30,7 @@
 		9D8AAA70247D4E7400974FC9 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AAA6F247D4E7400974FC9 /* ProfileController.swift */; };
 		9D8AAA72247D538500974FC9 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AAA71247D538500974FC9 /* ProfileHeader.swift */; };
 		9D9489B2247A5B92007EB385 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9489B1247A5B92007EB385 /* UploadTweetController.swift */; };
+		9D98BEC2247EA5EC00495A8C /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98BEC1247EA5EC00495A8C /* ProfileHeaderViewModel.swift */; };
 		9DA4526A247A8DBB00349294 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA45269247A8DBB00349294 /* CaptionTextView.swift */; };
 		9DA4526C247AB29C00349294 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4526B247AB29C00349294 /* TweetService.swift */; };
 		9DB960C224766DAD00C1F4A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB960C124766DAD00C1F4A2 /* GoogleService-Info.plist */; };
@@ -68,6 +69,7 @@
 		9D8AAA6F247D4E7400974FC9 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		9D8AAA71247D538500974FC9 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeader.swift; path = MVVM_Twitter/Controller/ProfileHeader.swift; sourceTree = SOURCE_ROOT; };
 		9D9489B1247A5B92007EB385 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
+		9D98BEC1247EA5EC00495A8C /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeaderViewModel.swift; path = MVVM_Twitter/Controller/ProfileHeaderViewModel.swift; sourceTree = SOURCE_ROOT; };
 		9DA45269247A8DBB00349294 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CaptionTextView.swift; path = MVVM_Twitter/Controller/CaptionTextView.swift; sourceTree = SOURCE_ROOT; };
 		9DA4526B247AB29C00349294 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 		9DB960C124766DAD00C1F4A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				9DF58F27247C5B3600260688 /* TweetCellViewModel.swift */,
+				9D98BEC1247EA5EC00495A8C /* ProfileHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				9D20B985246B1C3300891224 /* Extensions.swift in Sources */,
 				9DF58F26247C063E00260688 /* TweetCell.swift in Sources */,
 				9D186E46247077F200E55D4E /* LoginController.swift in Sources */,
+				9D98BEC2247EA5EC00495A8C /* ProfileHeaderViewModel.swift in Sources */,
 				9D3222AA2477161300B187D5 /* AuthService.swift in Sources */,
 				9D9489B2247A5B92007EB385 /* UploadTweetController.swift in Sources */,
 				9D045FA92479AB6C00313C80 /* User.swift in Sources */,
