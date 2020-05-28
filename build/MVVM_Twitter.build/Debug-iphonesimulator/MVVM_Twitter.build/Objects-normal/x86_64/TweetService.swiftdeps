@@ -16,12 +16,15 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - !private "NSDate"
 - !private "REF_TWEETS"
+- !private "REF_USER_TWEETS"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "Tweet"
 - "TweetService"
+- "User"
 - !private "UserService"
 - "Void"
+- !private "print"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
@@ -33,11 +36,13 @@ depends-member:
 - !private ["Sz", "init"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "childByAutoId"]
 - !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "key"]
 - !private ["s7CVarArgP", "observe"]
+- !private ["s7CVarArgP", "observeSingleEvent"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "timeIntervalSince1970"]
 - !private ["s7CVarArgP", "uid"]
@@ -51,11 +56,13 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "childByAutoId"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "key"]
 - !private ["s28CustomDebugStringConvertibleP", "observe"]
+- !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "timeIntervalSince1970"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
@@ -65,48 +72,64 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "childByAutoId"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "key"]
 - !private ["s23CustomStringConvertibleP", "observe"]
+- !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "timeIntervalSince1970"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "updateChildValues"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["So16FIRDataEventTypeV", "childAdded"]
+- !private ["So16FIRDataEventTypeV", "value"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "init"]
 - !private ["So15FIRDataSnapshotC", "key"]
 - !private ["So15FIRDataSnapshotC", "value"]
+- !private ["So16FIRDatabaseQueryC", "child"]
 - !private ["So16FIRDatabaseQueryC", "childByAutoId"]
+- !private ["So16FIRDatabaseQueryC", "key"]
 - !private ["So16FIRDatabaseQueryC", "observe"]
+- !private ["So16FIRDatabaseQueryC", "observeSingleEvent"]
 - !private ["So16FIRDatabaseQueryC", "updateChildValues"]
+- !private ["So20FIRDatabaseReferenceC", "child"]
 - !private ["So20FIRDatabaseReferenceC", "childByAutoId"]
+- !private ["So20FIRDatabaseReferenceC", "key"]
 - !private ["So20FIRDatabaseReferenceC", "observe"]
+- !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
 - !private ["So20FIRDatabaseReferenceC", "updateChildValues"]
 - !private ["Se", "append"]
 - !private ["Se", "init"]
 - !private ["Se", "subscript"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SD", "subscript"]
 - !private ["SE", "append"]
 - !private ["SE", "init"]
 - !private ["SE", "subscript"]
 - !private ["SQ", "append"]
 - !private ["SQ", "auth"]
+- !private ["SQ", "child"]
 - !private ["SQ", "childAdded"]
 - !private ["SQ", "childByAutoId"]
 - !private ["SQ", "currentUser"]
 - !private ["SQ", "init"]
 - !private ["SQ", "key"]
 - !private ["SQ", "observe"]
+- !private ["SQ", "observeSingleEvent"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "timeIntervalSince1970"]
 - !private ["SQ", "uid"]
 - !private ["SQ", "updateChildValues"]
 - !private ["SQ", "value"]
+- !private ["s5ErrorP", "localizedDescription"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
@@ -114,12 +137,14 @@ depends-member:
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SH", "append"]
 - !private ["SH", "auth"]
+- !private ["SH", "child"]
 - !private ["SH", "childAdded"]
 - !private ["SH", "childByAutoId"]
 - !private ["SH", "currentUser"]
 - !private ["SH", "init"]
 - !private ["SH", "key"]
 - !private ["SH", "observe"]
+- !private ["SH", "observeSingleEvent"]
 - !private ["SH", "subscript"]
 - !private ["SH", "timeIntervalSince1970"]
 - !private ["SH", "uid"]
@@ -139,21 +164,25 @@ depends-member:
 - !private ["So6NSDateC", "init"]
 - !private ["So6NSDateC", "timeIntervalSince1970"]
 - !private ["So8NSObjectC", "auth"]
+- !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "childByAutoId"]
 - !private ["So8NSObjectC", "currentUser"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "key"]
 - !private ["So8NSObjectC", "observe"]
+- !private ["So8NSObjectC", "observeSingleEvent"]
 - !private ["So8NSObjectC", "timeIntervalSince1970"]
 - !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "updateChildValues"]
 - !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectP", "auth"]
+- !private ["So8NSObjectP", "child"]
 - !private ["So8NSObjectP", "childByAutoId"]
 - !private ["So8NSObjectP", "currentUser"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "key"]
 - !private ["So8NSObjectP", "observe"]
+- !private ["So8NSObjectP", "observeSingleEvent"]
 - !private ["So8NSObjectP", "timeIntervalSince1970"]
 - !private ["So8NSObjectP", "uid"]
 - !private ["So8NSObjectP", "updateChildValues"]
@@ -166,6 +195,7 @@ depends-member:
 - !private ["Sm", "append"]
 - !private ["Sm", "init"]
 - !private ["SY", "childAdded"]
+- !private ["SY", "value"]
 - !private ["s10SIMDScalarP", "init"]
 - !private ["ST", "append"]
 - !private ["ST", "init"]
@@ -173,6 +203,10 @@ depends-member:
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["12MVVM_Twitter5TweetV", "init"]
 - !private ["12MVVM_Twitter12TweetServiceV", "Auth"]
 - ["12MVVM_Twitter12TweetServiceV", "DatabaseReference"]
@@ -180,15 +214,19 @@ depends-member:
 - !private ["12MVVM_Twitter12TweetServiceV", "Int"]
 - !private ["12MVVM_Twitter12TweetServiceV", "NSDate"]
 - !private ["12MVVM_Twitter12TweetServiceV", "REF_TWEETS"]
+- !private ["12MVVM_Twitter12TweetServiceV", "REF_USER_TWEETS"]
 - ["12MVVM_Twitter12TweetServiceV", "String"]
 - ["12MVVM_Twitter12TweetServiceV", "Tweet"]
 - ["12MVVM_Twitter12TweetServiceV", "TweetService"]
+- ["12MVVM_Twitter12TweetServiceV", "User"]
 - !private ["12MVVM_Twitter12TweetServiceV", "UserService"]
 - ["12MVVM_Twitter12TweetServiceV", "Void"]
 - ["12MVVM_Twitter12TweetServiceV", "fetchTweets"]
 - ["12MVVM_Twitter12TweetServiceV", "init"]
+- !private ["12MVVM_Twitter12TweetServiceV", "print"]
 - ["12MVVM_Twitter12TweetServiceV", "shared"]
 - ["12MVVM_Twitter12TweetServiceV", "uploadTweet"]
+- !private ["12MVVM_Twitter4UserV", "uid"]
 - !private ["So7FIRUserC", "uid"]
 - !private ["So11FIRUserInfoP", "uid"]
 - !private ["12MVVM_Twitter11UserServiceV", "fetchUser"]
@@ -207,21 +245,25 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "timeIntervalSince1970"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "childByAutoId"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeIntervalSince1970"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "childByAutoId"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "key"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observe"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timeIntervalSince1970"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "updateChildValues"]
@@ -248,9 +290,11 @@ depends-nominal:
 - !private "So16FIRDatabaseQueryC"
 - !private "So20FIRDatabaseReferenceC"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SD"
 - !private "SE"
 - !private "SQ"
+- !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
@@ -276,8 +320,11 @@ depends-nominal:
 - !private "SZ"
 - !private "s13SignedNumericP"
 - !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
 - !private "12MVVM_Twitter5TweetV"
 - "12MVVM_Twitter12TweetServiceV"
+- !private "12MVVM_Twitter4UserV"
 - !private "So7FIRUserC"
 - !private "So11FIRUserInfoP"
 - !private "12MVVM_Twitter11UserServiceV"
@@ -461,4 +508,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "58280c6f850ada2f58cb85364bc16ccc"
+interface-hash: "5d1a5ca61828255ed6248dbb23a599cd"

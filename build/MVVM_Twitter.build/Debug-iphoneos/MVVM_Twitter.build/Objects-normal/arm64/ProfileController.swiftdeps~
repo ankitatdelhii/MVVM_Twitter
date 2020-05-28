@@ -11,6 +11,7 @@ provides-member:
 - ["12MVVM_Twitter17ProfileControllerC", "collectionView"]
 provides-dynamic-lookup:
 - "collectionView"
+- "preferredStatusBarStyle"
 - "viewDidLoad"
 - "viewWillAppear"
 depends-top-level:
@@ -34,10 +35,12 @@ depends-top-level:
 - "UICollectionViewController"
 - "UICollectionViewDelegateFlowLayout"
 - "UICollectionViewLayout"
+- "UIStatusBarStyle"
 - !private "profileHeaderCell"
 - !private "profileTweetCell"
 depends-member:
 - !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "barStyle"]
 - !private ["So15CALayerDelegateP", "contentInsetAdjustmentBehavior"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "dequeueReusableSupplementaryView"]
@@ -53,6 +56,7 @@ depends-member:
 - !private ["s7CVarArgP", "UICollectionView"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "barStyle"]
 - ["s7CVarArgP", "collectionView"]
 - !private ["s7CVarArgP", "configureUI"]
 - !private ["s7CVarArgP", "contentInsetAdjustmentBehavior"]
@@ -78,6 +82,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UICollectionView"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "barStyle"]
 - ["s28CustomDebugStringConvertibleP", "collectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "configureUI"]
 - !private ["s28CustomDebugStringConvertibleP", "contentInsetAdjustmentBehavior"]
@@ -110,6 +115,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UICollectionView"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "barStyle"]
 - ["s23CustomStringConvertibleP", "collectionView"]
 - !private ["s23CustomStringConvertibleP", "configureUI"]
 - !private ["s23CustomStringConvertibleP", "contentInsetAdjustmentBehavior"]
@@ -148,6 +154,8 @@ depends-member:
 - !private ["SQ", "UICollectionView"]
 - ["SQ", ""]
 - !private ["SQ", "backgroundColor"]
+- !private ["SQ", "barStyle"]
+- !private ["SQ", "black"]
 - ["SQ", "collectionView"]
 - !private ["SQ", "configureUI"]
 - !private ["SQ", "contentInsetAdjustmentBehavior"]
@@ -157,6 +165,7 @@ depends-member:
 - !private ["SQ", "frame"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isHidden"]
+- !private ["SQ", "lightContent"]
 - !private ["SQ", "navigationBar"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "never"]
@@ -179,6 +188,8 @@ depends-member:
 - !private ["SH", "UICollectionView"]
 - ["SH", ""]
 - !private ["SH", "backgroundColor"]
+- !private ["SH", "barStyle"]
+- !private ["SH", "black"]
 - ["SH", "collectionView"]
 - !private ["SH", "configureUI"]
 - !private ["SH", "contentInsetAdjustmentBehavior"]
@@ -188,6 +199,7 @@ depends-member:
 - !private ["SH", "frame"]
 - !private ["SH", "init"]
 - !private ["SH", "isHidden"]
+- !private ["SH", "lightContent"]
 - !private ["SH", "navigationBar"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "never"]
@@ -204,6 +216,7 @@ depends-member:
 - !private ["So8NSCodingP", "UICollectionView"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "barStyle"]
 - ["So8NSCodingP", "collectionView"]
 - !private ["So8NSCodingP", "configureUI"]
 - !private ["So8NSCodingP", "contentInsetAdjustmentBehavior"]
@@ -251,7 +264,9 @@ depends-member:
 - ["So8NSObjectC", "UICollectionView"]
 - ["So8NSObjectC", "UICollectionViewCell"]
 - ["So8NSObjectC", "UICollectionViewLayout"]
+- ["So8NSObjectC", "UIStatusBarStyle"]
 - !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "barStyle"]
 - ["So8NSObjectC", "collectionView"]
 - ["So8NSObjectC", "configureUI"]
 - !private ["So8NSObjectC", "contentInsetAdjustmentBehavior"]
@@ -263,6 +278,7 @@ depends-member:
 - !private ["So8NSObjectC", "isHidden"]
 - !private ["So8NSObjectC", "navigationBar"]
 - !private ["So8NSObjectC", "navigationController"]
+- ["So8NSObjectC", "preferredStatusBarStyle"]
 - !private ["So8NSObjectC", "profileHeaderCell"]
 - !private ["So8NSObjectC", "profileTweetCell"]
 - !private ["So8NSObjectC", "register"]
@@ -276,6 +292,7 @@ depends-member:
 - !private ["So8NSObjectP", "UICollectionView"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "barStyle"]
 - ["So8NSObjectP", "collectionView"]
 - !private ["So8NSObjectP", "configureUI"]
 - !private ["So8NSObjectP", "contentInsetAdjustmentBehavior"]
@@ -311,18 +328,23 @@ depends-member:
 - ["12MVVM_Twitter17ProfileControllerC", "UICollectionView"]
 - ["12MVVM_Twitter17ProfileControllerC", "UICollectionViewCell"]
 - ["12MVVM_Twitter17ProfileControllerC", "UICollectionViewLayout"]
+- ["12MVVM_Twitter17ProfileControllerC", "UIStatusBarStyle"]
 - ["12MVVM_Twitter17ProfileControllerC", "collectionView"]
 - !private ["12MVVM_Twitter17ProfileControllerC", "configureUI"]
 - ["12MVVM_Twitter17ProfileControllerC", "deinit"]
 - ["12MVVM_Twitter17ProfileControllerC", "init"]
 - !private ["12MVVM_Twitter17ProfileControllerC", "navigationController"]
+- ["12MVVM_Twitter17ProfileControllerC", "preferredStatusBarStyle"]
 - !private ["12MVVM_Twitter17ProfileControllerC", "profileHeaderCell"]
 - !private ["12MVVM_Twitter17ProfileControllerC", "profileTweetCell"]
 - !private ["12MVVM_Twitter17ProfileControllerC", "view"]
 - ["12MVVM_Twitter17ProfileControllerC", "viewDidLoad"]
 - ["12MVVM_Twitter17ProfileControllerC", "viewWillAppear"]
+- !private ["SY", "black"]
+- !private ["SY", "lightContent"]
 - !private ["SY", "never"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "barStyle"]
 - !private ["So29UIAccessibilityIdentificationP", "contentInsetAdjustmentBehavior"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableSupplementaryView"]
@@ -331,6 +353,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "isHidden"]
 - !private ["So29UIAccessibilityIdentificationP", "register"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "barStyle"]
 - !private ["So12UIAppearanceP", "contentInsetAdjustmentBehavior"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "dequeueReusableSupplementaryView"]
@@ -344,6 +367,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UICollectionView"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "barStyle"]
 - ["So21UIAppearanceContainerP", "collectionView"]
 - !private ["So21UIAppearanceContainerP", "configureUI"]
 - !private ["So21UIAppearanceContainerP", "contentInsetAdjustmentBehavior"]
@@ -361,7 +385,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
+- !private ["So16UIBarPositioningP", "barStyle"]
 - !private ["So16UIBarPositioningP", "isHidden"]
+- !private ["So10UIBarStyleV", "black"]
 - !private ["So16UICollectionViewC", "backgroundColor"]
 - !private ["So16UICollectionViewC", "contentInsetAdjustmentBehavior"]
 - !private ["So16UICollectionViewC", "dequeueReusableCell"]
@@ -379,11 +405,13 @@ depends-member:
 - ["So26UICollectionViewControllerC", "UICollectionView"]
 - ["So26UICollectionViewControllerC", "UICollectionViewCell"]
 - ["So26UICollectionViewControllerC", "UICollectionViewLayout"]
+- ["So26UICollectionViewControllerC", "UIStatusBarStyle"]
 - ["So26UICollectionViewControllerC", ""]
 - ["So26UICollectionViewControllerC", "collectionView"]
 - ["So26UICollectionViewControllerC", "configureUI"]
 - ["So26UICollectionViewControllerC", "init"]
 - !private ["So26UICollectionViewControllerC", "navigationController"]
+- ["So26UICollectionViewControllerC", "preferredStatusBarStyle"]
 - !private ["So26UICollectionViewControllerC", "profileHeaderCell"]
 - !private ["So26UICollectionViewControllerC", "profileTweetCell"]
 - !private ["So26UICollectionViewControllerC", "view"]
@@ -445,6 +473,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "barStyle"]
 - !private ["So17UICoordinateSpaceP", "contentInsetAdjustmentBehavior"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableSupplementaryView"]
@@ -459,6 +488,7 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "elementKindSectionHeader"]
 - !private ["So23UIDataSourceTranslatingP", "register"]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "barStyle"]
 - !private ["So13UIDynamicItemP", "contentInsetAdjustmentBehavior"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "dequeueReusableSupplementaryView"]
@@ -472,6 +502,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UICollectionView"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "barStyle"]
 - ["So18UIFocusEnvironmentP", "collectionView"]
 - !private ["So18UIFocusEnvironmentP", "configureUI"]
 - !private ["So18UIFocusEnvironmentP", "contentInsetAdjustmentBehavior"]
@@ -490,6 +521,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "barStyle"]
 - !private ["So11UIFocusItemP", "contentInsetAdjustmentBehavior"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "dequeueReusableSupplementaryView"]
@@ -498,6 +530,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "isHidden"]
 - !private ["So11UIFocusItemP", "register"]
 - !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "barStyle"]
 - !private ["So20UIFocusItemContainerP", "contentInsetAdjustmentBehavior"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableSupplementaryView"]
@@ -512,6 +545,7 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "elementKindSectionHeader"]
 - !private ["So30UIFocusItemScrollableContainerP", "register"]
 - !private ["So24UILargeContentViewerItemP", "backgroundColor"]
+- !private ["So24UILargeContentViewerItemP", "barStyle"]
 - !private ["So24UILargeContentViewerItemP", "contentInsetAdjustmentBehavior"]
 - !private ["So24UILargeContentViewerItemP", "dequeueReusableCell"]
 - !private ["So24UILargeContentViewerItemP", "dequeueReusableSupplementaryView"]
@@ -519,6 +553,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "frame"]
 - !private ["So24UILargeContentViewerItemP", "isHidden"]
 - !private ["So24UILargeContentViewerItemP", "register"]
+- !private ["So15UINavigationBarC", "barStyle"]
 - !private ["So15UINavigationBarC", "isHidden"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
@@ -527,6 +562,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UICollectionView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "barStyle"]
 - ["So30UIPasteConfigurationSupportingP", "collectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureUI"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentInsetAdjustmentBehavior"]
@@ -555,7 +591,9 @@ depends-member:
 - ["So11UIResponderC", "UICollectionView"]
 - ["So11UIResponderC", "UICollectionViewCell"]
 - ["So11UIResponderC", "UICollectionViewLayout"]
+- ["So11UIResponderC", "UIStatusBarStyle"]
 - !private ["So11UIResponderC", "backgroundColor"]
+- !private ["So11UIResponderC", "barStyle"]
 - ["So11UIResponderC", "collectionView"]
 - ["So11UIResponderC", "configureUI"]
 - !private ["So11UIResponderC", "contentInsetAdjustmentBehavior"]
@@ -567,6 +605,7 @@ depends-member:
 - !private ["So11UIResponderC", "isHidden"]
 - !private ["So11UIResponderC", "navigationBar"]
 - !private ["So11UIResponderC", "navigationController"]
+- ["So11UIResponderC", "preferredStatusBarStyle"]
 - !private ["So11UIResponderC", "profileHeaderCell"]
 - !private ["So11UIResponderC", "profileTweetCell"]
 - !private ["So11UIResponderC", "register"]
@@ -579,6 +618,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UICollectionView"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "barStyle"]
 - ["So30UIResponderStandardEditActionsP", "collectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "configureUI"]
 - !private ["So30UIResponderStandardEditActionsP", "contentInsetAdjustmentBehavior"]
@@ -637,12 +677,14 @@ depends-member:
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
+- !private ["So16UIStatusBarStyleV", "lightContent"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "ProfileHeader"]
 - !private ["So18UITraitEnvironmentP", "TweetCell"]
 - !private ["So18UITraitEnvironmentP", "UICollectionView"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "barStyle"]
 - ["So18UITraitEnvironmentP", "collectionView"]
 - !private ["So18UITraitEnvironmentP", "configureUI"]
 - !private ["So18UITraitEnvironmentP", "contentInsetAdjustmentBehavior"]
@@ -666,6 +708,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UICollectionView"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "barStyle"]
 - ["So23UIUserActivityRestoringP", "collectionView"]
 - !private ["So23UIUserActivityRestoringP", "configureUI"]
 - !private ["So23UIUserActivityRestoringP", "contentInsetAdjustmentBehavior"]
@@ -684,6 +727,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
 - !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "barStyle"]
 - !private ["So6UIViewC", "contentInsetAdjustmentBehavior"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "dequeueReusableSupplementaryView"]
@@ -702,11 +746,13 @@ depends-member:
 - ["So16UIViewControllerC", "UICollectionView"]
 - ["So16UIViewControllerC", "UICollectionViewCell"]
 - ["So16UIViewControllerC", "UICollectionViewLayout"]
+- ["So16UIViewControllerC", "UIStatusBarStyle"]
 - ["So16UIViewControllerC", "collectionView"]
 - ["So16UIViewControllerC", "configureUI"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "navigationBar"]
 - !private ["So16UIViewControllerC", "navigationController"]
+- ["So16UIViewControllerC", "preferredStatusBarStyle"]
 - !private ["So16UIViewControllerC", "profileHeaderCell"]
 - !private ["So16UIViewControllerC", "profileTweetCell"]
 - !private ["So16UIViewControllerC", "view"]
@@ -721,6 +767,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UICollectionView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "barStyle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configureUI"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentInsetAdjustmentBehavior"]
@@ -745,6 +792,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UICollectionView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "barStyle"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "collectionView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureUI"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentInsetAdjustmentBehavior"]
@@ -771,6 +819,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "barStyle"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentInsetAdjustmentBehavior"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableSupplementaryView"]
@@ -807,6 +856,7 @@ depends-nominal:
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - !private "So16UIBarPositioningP"
+- !private "So10UIBarStyleV"
 - !private "So16UICollectionViewC"
 - "So26UICollectionViewControllerC"
 - "So26UICollectionViewDataSourceP"
@@ -831,6 +881,7 @@ depends-nominal:
 - "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
+- !private "So16UIStatusBarStyleV"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
@@ -1012,4 +1063,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1d6ac79b34cc420a1969ea95336a3c66"
+interface-hash: "65aeff83beb5c6259daa9d892646d27f"

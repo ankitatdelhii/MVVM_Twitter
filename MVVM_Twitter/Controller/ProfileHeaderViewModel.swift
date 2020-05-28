@@ -45,6 +45,14 @@ struct ProfileHeaderViewModel {
         return user.profileImageUrl
     }
     
+    var fullName: String {
+        return user.fullname
+    }
+    
+    var username: String {
+        return "@ \(user.username)"
+    }
+    
     var actionButtonTitle: String {
         // If user is current user then show edit profile else following or follow
         if user.isCurrentUser {

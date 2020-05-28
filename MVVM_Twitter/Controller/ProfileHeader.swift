@@ -200,6 +200,9 @@ class ProfileHeader: UICollectionReusableView {
         followingLabel.attributedText = viewModel.followingString
         profileImageView.sd_setImage(with: viewModel.profileImageUrl, completed: nil)
         editProfileFollowButton.setTitle(viewModel.actionButtonTitle, for: .normal)
+        
+        fullNameLabel.text = viewModel.fullName
+        usernameLabel.text = viewModel.username
     }
     
 

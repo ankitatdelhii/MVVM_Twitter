@@ -1,9 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ProfileHeaderDelegate"
 - "ProfileHeader"
 provides-nominal:
+- "12MVVM_Twitter21ProfileHeaderDelegateP"
 - "12MVVM_Twitter13ProfileHeaderC"
 provides-member:
+- ["12MVVM_Twitter21ProfileHeaderDelegateP", ""]
 - ["12MVVM_Twitter13ProfileHeaderC", ""]
 provides-dynamic-lookup:
 - "handleDismissal"
@@ -12,6 +15,7 @@ provides-dynamic-lookup:
 - "handleFollowingLabel"
 depends-top-level:
 - "/"
+- "AnyObject"
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
 - "CGRect"
@@ -22,6 +26,7 @@ depends-top-level:
 - "ProfileFilterView"
 - "ProfileFilterViewDelegate"
 - "ProfileHeader"
+- "ProfileHeaderDelegate"
 - !private "ProfileHeaderViewModel"
 - "StringLiteralType"
 - "UIButton"
@@ -638,6 +643,7 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "NSCoder"]
 - ["So8NSObjectC", "ProfileFilterView"]
+- ["So8NSObjectC", "ProfileHeaderDelegate"]
 - !private ["So8NSObjectC", "ProfileHeaderViewModel"]
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UIColor"]
@@ -827,6 +833,7 @@ depends-member:
 - !private ["12MVVM_Twitter25ProfileFilterViewDelegateP", "configure"]
 - !private ["12MVVM_Twitter25ProfileFilterViewDelegateP", "configureUI"]
 - !private ["12MVVM_Twitter25ProfileFilterViewDelegateP", "containerView"]
+- !private ["12MVVM_Twitter25ProfileFilterViewDelegateP", "delegate"]
 - !private ["12MVVM_Twitter25ProfileFilterViewDelegateP", "editProfileFollowButton"]
 - !private ["12MVVM_Twitter25ProfileFilterViewDelegateP", "filterBar"]
 - ["12MVVM_Twitter25ProfileFilterViewDelegateP", "filterView"]
@@ -854,6 +861,7 @@ depends-member:
 - ["12MVVM_Twitter13ProfileHeaderC", "IndexPath"]
 - ["12MVVM_Twitter13ProfileHeaderC", "NSCoder"]
 - ["12MVVM_Twitter13ProfileHeaderC", "ProfileFilterView"]
+- ["12MVVM_Twitter13ProfileHeaderC", "ProfileHeaderDelegate"]
 - !private ["12MVVM_Twitter13ProfileHeaderC", "ProfileHeaderViewModel"]
 - ["12MVVM_Twitter13ProfileHeaderC", "UIButton"]
 - ["12MVVM_Twitter13ProfileHeaderC", "UIColor"]
@@ -874,6 +882,7 @@ depends-member:
 - !private ["12MVVM_Twitter13ProfileHeaderC", "configureUI"]
 - !private ["12MVVM_Twitter13ProfileHeaderC", "containerView"]
 - ["12MVVM_Twitter13ProfileHeaderC", "deinit"]
+- ["12MVVM_Twitter13ProfileHeaderC", "delegate"]
 - !private ["12MVVM_Twitter13ProfileHeaderC", "editProfileFollowButton"]
 - !private ["12MVVM_Twitter13ProfileHeaderC", "filterBar"]
 - ["12MVVM_Twitter13ProfileHeaderC", "filterView"]
@@ -894,6 +903,7 @@ depends-member:
 - !private ["12MVVM_Twitter13ProfileHeaderC", "underlineView"]
 - ["12MVVM_Twitter13ProfileHeaderC", "user"]
 - !private ["12MVVM_Twitter13ProfileHeaderC", "usernameLabel"]
+- ["12MVVM_Twitter21ProfileHeaderDelegateP", "handleDismissal"]
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "actionButtonTitle"]
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "followersString"]
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "followingString"]
@@ -1140,6 +1150,7 @@ depends-member:
 - ["So24UICollectionReusableViewC", "IndexPath"]
 - ["So24UICollectionReusableViewC", "NSCoder"]
 - ["So24UICollectionReusableViewC", "ProfileFilterView"]
+- ["So24UICollectionReusableViewC", "ProfileHeaderDelegate"]
 - !private ["So24UICollectionReusableViewC", "ProfileHeaderViewModel"]
 - ["So24UICollectionReusableViewC", "UIButton"]
 - ["So24UICollectionReusableViewC", "UIColor"]
@@ -1160,6 +1171,7 @@ depends-member:
 - ["So24UICollectionReusableViewC", "configure"]
 - ["So24UICollectionReusableViewC", "configureUI"]
 - ["So24UICollectionReusableViewC", "containerView"]
+- ["So24UICollectionReusableViewC", "delegate"]
 - ["So24UICollectionReusableViewC", "editProfileFollowButton"]
 - ["So24UICollectionReusableViewC", "filterBar"]
 - ["So24UICollectionReusableViewC", "filterView"]
@@ -1706,6 +1718,7 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "NSCoder"]
 - ["So11UIResponderC", "ProfileFilterView"]
+- ["So11UIResponderC", "ProfileHeaderDelegate"]
 - !private ["So11UIResponderC", "ProfileHeaderViewModel"]
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UIColor"]
@@ -1996,6 +2009,7 @@ depends-member:
 - ["So6UIViewC", "IndexPath"]
 - ["So6UIViewC", "NSCoder"]
 - ["So6UIViewC", "ProfileFilterView"]
+- ["So6UIViewC", "ProfileHeaderDelegate"]
 - !private ["So6UIViewC", "ProfileHeaderViewModel"]
 - ["So6UIViewC", "UIButton"]
 - ["So6UIViewC", "UIColor"]
@@ -2323,6 +2337,7 @@ depends-nominal:
 - "12MVVM_Twitter17ProfileFilterViewC"
 - "12MVVM_Twitter25ProfileFilterViewDelegateP"
 - "12MVVM_Twitter13ProfileHeaderC"
+- "12MVVM_Twitter21ProfileHeaderDelegateP"
 - !private "12MVVM_Twitter22ProfileHeaderViewModelV"
 - "SY"
 - "So20UIImageRenderingModeV"
@@ -2545,4 +2560,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f2994e4e1ae40d72ee723178682e5ecc"
+interface-hash: "3e744b903779c645a91c7e95fea8d766"

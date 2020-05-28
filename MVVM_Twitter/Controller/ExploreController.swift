@@ -8,6 +8,8 @@
 
 import UIKit
 
+let reuseCell = "userCell"
+
 class ExploreController: UIViewController {
     
         
@@ -23,3 +25,18 @@ class ExploreController: UIViewController {
 
     
 }
+
+//MARK: Table View Delegate
+
+//extension ExploreController {
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 10
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: reuseCell, for: indexPath)
+//        return cell
+//    }
+//
+//}

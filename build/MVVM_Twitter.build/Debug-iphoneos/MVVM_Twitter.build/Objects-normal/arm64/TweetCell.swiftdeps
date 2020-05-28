@@ -704,6 +704,7 @@ depends-member:
 - !private ["12MVVM_Twitter9TweetCellC", "shareButton"]
 - !private ["12MVVM_Twitter9TweetCellC", "topAnchor"]
 - ["12MVVM_Twitter9TweetCellC", "tweet"]
+- ["12MVVM_Twitter17TweetCellDelegateP", "TweetCell"]
 - ["12MVVM_Twitter17TweetCellDelegateP", "handleProfileImageTapped"]
 - !private ["12MVVM_Twitter18TweetCellViewModelV", "captionText"]
 - !private ["12MVVM_Twitter18TweetCellViewModelV", "init"]
@@ -2082,4 +2083,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f39fbb556227337c994afc768968b92d"
+interface-hash: "8f3668e927565acb361eadd2cde95a01"
