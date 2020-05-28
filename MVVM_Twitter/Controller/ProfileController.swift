@@ -117,6 +117,32 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
 //MARK: Profile Dismiss Delegate
 
 extension ProfileController: ProfileHeaderDelegate {
+    func handleEditProfileFollow(_ header: ProfileHeader) {
+        let currentTwitterUserID = user.uid
+        if user.isFollowed {
+            UserService.shared.unfollowUser(uid: currentTwitterUserID) { (error, result) in
+                if let error = error {
+                    print("error in follow \(error.localizedDescription)")
+                } else {
+                    self.user.isFollowed = false
+                    print("Successfully Unfollowed")
+                }
+
+            }
+        } else {
+            UserService.shared.followUser(uid: currentTwitterUserID) { (error, result) in
+                if let error = error {
+                    print("error in follow \(error.localizedDescription)")
+                } else {
+                    self.user.isFollowed = true
+                    print("Successfully Followed")
+                }
+            }
+        }
+        
+        
+    }
+    
     
     func handleDismissal() {
         navigationController?.popViewController(animated: true)

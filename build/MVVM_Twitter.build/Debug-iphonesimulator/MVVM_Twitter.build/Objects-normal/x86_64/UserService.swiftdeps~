@@ -8,10 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "AnyObject"
+- !private "Auth"
 - !private "CastingPrecedence"
+- "DatabaseReference"
+- "Error"
 - "FloatLiteralType"
 - "IntegerLiteralType"
 - !private "REF_USERS"
+- !private "REF_USER_FOLLOWERS"
+- !private "REF_USER_FOLLOWING"
 - "String"
 - "StringLiteralType"
 - "User"
@@ -19,80 +24,224 @@ depends-top-level:
 - "Void"
 - !private "print"
 depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["So7FIRAuthC", "auth"]
+- !private ["So7FIRAuthC", "currentUser"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "child"]
+- !private ["s7CVarArgP", "currentUser"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "key"]
+- !private ["s7CVarArgP", "observe"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
+- !private ["s7CVarArgP", "uid"]
+- !private ["s7CVarArgP", "updateChildValues"]
 - !private ["s7CVarArgP", "value"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
+- !private ["s28CustomDebugStringConvertibleP", "currentUser"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "key"]
+- !private ["s28CustomDebugStringConvertibleP", "observe"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
+- !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "child"]
+- !private ["s23CustomStringConvertibleP", "currentUser"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "key"]
+- !private ["s23CustomStringConvertibleP", "observe"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
+- !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["s23CustomStringConvertibleP", "updateChildValues"]
 - !private ["s23CustomStringConvertibleP", "value"]
+- !private ["So16FIRDataEventTypeV", "childAdded"]
 - !private ["So16FIRDataEventTypeV", "value"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["So15FIRDataSnapshotC", "key"]
 - !private ["So15FIRDataSnapshotC", "value"]
 - !private ["So16FIRDatabaseQueryC", "child"]
+- !private ["So16FIRDatabaseQueryC", "observe"]
 - !private ["So16FIRDatabaseQueryC", "observeSingleEvent"]
+- !private ["So16FIRDatabaseQueryC", "updateChildValues"]
 - !private ["So20FIRDatabaseReferenceC", "child"]
+- !private ["So20FIRDatabaseReferenceC", "observe"]
 - !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
+- !private ["So20FIRDatabaseReferenceC", "updateChildValues"]
+- !private ["Se", "append"]
+- !private ["Se", "init"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "append"]
+- !private ["SE", "init"]
+- !private ["SQ", "append"]
+- !private ["SQ", "auth"]
 - !private ["SQ", "child"]
+- !private ["SQ", "childAdded"]
+- !private ["SQ", "currentUser"]
+- !private ["SQ", "init"]
+- !private ["SQ", "key"]
+- !private ["SQ", "observe"]
 - !private ["SQ", "observeSingleEvent"]
+- !private ["SQ", "uid"]
+- !private ["SQ", "updateChildValues"]
 - !private ["SQ", "value"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["SH", "append"]
+- !private ["SH", "auth"]
 - !private ["SH", "child"]
+- !private ["SH", "childAdded"]
+- !private ["SH", "currentUser"]
+- !private ["SH", "init"]
+- !private ["SH", "key"]
+- !private ["SH", "observe"]
 - !private ["SH", "observeSingleEvent"]
+- !private ["SH", "uid"]
+- !private ["SH", "updateChildValues"]
 - !private ["SH", "value"]
+- !private ["SM", "append"]
+- !private ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "child"]
+- !private ["So8NSObjectC", "currentUser"]
+- !private ["So8NSObjectC", "key"]
+- !private ["So8NSObjectC", "observe"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
+- !private ["So8NSObjectC", "uid"]
+- !private ["So8NSObjectC", "updateChildValues"]
 - !private ["So8NSObjectC", "value"]
+- !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "child"]
+- !private ["So8NSObjectP", "currentUser"]
+- !private ["So8NSObjectP", "key"]
+- !private ["So8NSObjectP", "observe"]
 - !private ["So8NSObjectP", "observeSingleEvent"]
+- !private ["So8NSObjectP", "uid"]
+- !private ["So8NSObjectP", "updateChildValues"]
 - !private ["So8NSObjectP", "value"]
+- !private ["Sk", "append"]
+- !private ["Sk", "init"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
+- !private ["SY", "childAdded"]
 - !private ["SY", "value"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["12MVVM_Twitter4UserV", "fullname"]
 - !private ["12MVVM_Twitter4UserV", "init"]
+- !private ["So7FIRUserC", "uid"]
+- !private ["So11FIRUserInfoP", "uid"]
 - !private ["12MVVM_Twitter11UserServiceV", "AnyObject"]
+- !private ["12MVVM_Twitter11UserServiceV", "Auth"]
+- ["12MVVM_Twitter11UserServiceV", "DatabaseReference"]
+- ["12MVVM_Twitter11UserServiceV", "Error"]
 - !private ["12MVVM_Twitter11UserServiceV", "REF_USERS"]
+- !private ["12MVVM_Twitter11UserServiceV", "REF_USER_FOLLOWERS"]
+- !private ["12MVVM_Twitter11UserServiceV", "REF_USER_FOLLOWING"]
 - ["12MVVM_Twitter11UserServiceV", "String"]
 - ["12MVVM_Twitter11UserServiceV", "User"]
 - ["12MVVM_Twitter11UserServiceV", "UserService"]
 - ["12MVVM_Twitter11UserServiceV", "Void"]
 - ["12MVVM_Twitter11UserServiceV", "fetchUser"]
+- ["12MVVM_Twitter11UserServiceV", "fetchUsers"]
+- ["12MVVM_Twitter11UserServiceV", "followUser"]
 - ["12MVVM_Twitter11UserServiceV", "init"]
 - !private ["12MVVM_Twitter11UserServiceV", "print"]
 - ["12MVVM_Twitter11UserServiceV", "shared"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "key"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observe"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "updateChildValues"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
+- !private "Sa"
+- !private "So7FIRAuthC"
+- !private "SK"
 - !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "So16FIRDataEventTypeV"
+- !private "10Foundation12DataProtocolP"
 - !private "So15FIRDataSnapshotC"
 - !private "So16FIRDatabaseQueryC"
 - !private "So20FIRDatabaseReferenceC"
+- !private "Se"
 - !private "s26DefaultStringInterpolationV"
+- !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
+- !private "Sk"
+- !private "Sm"
 - !private "SY"
+- !private "ST"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "12MVVM_Twitter4UserV"
+- !private "So7FIRUserC"
+- !private "So11FIRUserInfoP"
 - "12MVVM_Twitter11UserServiceV"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -264,4 +413,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a9823b652464e9015cdb39b1bcd37bab"
+interface-hash: "990f710732e07ee8cc15664d183e3197"

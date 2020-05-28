@@ -1073,6 +1073,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So20UIScrollViewDelegateP", "user"]
+- !private ["So23UISearchResultsUpdatingP", "init"]
 - ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "anchor"]
 - ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
@@ -1175,6 +1176,9 @@ depends-member:
 - !private ["So16UITabBarDelegateP", "viewControllers"]
 - !private ["So16UITabBarDelegateP", "viewDidLoad"]
 - !private ["So12UITabBarItemC", "image"]
+- !private ["So21UITableViewControllerC", "init"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So19UITableViewDelegateP", "init"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "ConversationsController"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
@@ -1543,11 +1547,15 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So20UIScrollViewDelegateP"
+- !private "So23UISearchResultsUpdatingP"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - "So18UITabBarControllerC"
 - "So16UITabBarDelegateP"
 - !private "So12UITabBarItemC"
+- !private "So21UITableViewControllerC"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"

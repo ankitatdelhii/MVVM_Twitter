@@ -13,6 +13,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "Auth"
 - "Bool"
+- "BooleanLiteralType"
 - "CastingPrecedence"
 - "String"
 - !private "StringLiteralType"
@@ -71,6 +72,7 @@ depends-member:
 - ["12MVVM_Twitter4UserV", "fullname"]
 - ["12MVVM_Twitter4UserV", "init"]
 - ["12MVVM_Twitter4UserV", "isCurrentUser"]
+- ["12MVVM_Twitter4UserV", "isFollowed"]
 - ["12MVVM_Twitter4UserV", "profileImageUrl"]
 - ["12MVVM_Twitter4UserV", "uid"]
 - !private ["So7FIRUserC", "uid"]
@@ -286,4 +288,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ce9b4bdb31c67695fe838be6f1f4ec78"
+interface-hash: "8fa94602dd0cf0632d3ba041da3eacf3"

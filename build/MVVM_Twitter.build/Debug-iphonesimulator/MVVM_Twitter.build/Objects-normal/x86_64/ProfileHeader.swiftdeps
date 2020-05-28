@@ -903,7 +903,9 @@ depends-member:
 - !private ["12MVVM_Twitter13ProfileHeaderC", "underlineView"]
 - ["12MVVM_Twitter13ProfileHeaderC", "user"]
 - !private ["12MVVM_Twitter13ProfileHeaderC", "usernameLabel"]
+- ["12MVVM_Twitter21ProfileHeaderDelegateP", "ProfileHeader"]
 - ["12MVVM_Twitter21ProfileHeaderDelegateP", "handleDismissal"]
+- ["12MVVM_Twitter21ProfileHeaderDelegateP", "handleEditProfileFollow"]
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "actionButtonTitle"]
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "followersString"]
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "followingString"]
@@ -2562,4 +2564,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3e744b903779c645a91c7e95fea8d766"
+interface-hash: "1d9352fd1c4d610f867c5a035f1955d1"

@@ -168,9 +168,11 @@ depends-member:
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "attributedText"]
 - ["12MVVM_Twitter22ProfileHeaderViewModelV", "followersString"]
 - ["12MVVM_Twitter22ProfileHeaderViewModelV", "followingString"]
+- ["12MVVM_Twitter22ProfileHeaderViewModelV", "fullName"]
 - ["12MVVM_Twitter22ProfileHeaderViewModelV", "init"]
 - ["12MVVM_Twitter22ProfileHeaderViewModelV", "profileImageUrl"]
 - !private ["12MVVM_Twitter22ProfileHeaderViewModelV", "user"]
+- ["12MVVM_Twitter22ProfileHeaderViewModelV", "username"]
 - ["SY", "=="]
 - ["SY", "AllCases"]
 - ["SY", "RawValue"]
@@ -195,8 +197,10 @@ depends-member:
 - !private ["So7UIColorC", "lightGray"]
 - !private ["So6UIFontC", "boldSystemFont"]
 - !private ["So6UIFontC", "systemFont"]
+- !private ["12MVVM_Twitter4UserV", "fullname"]
 - !private ["12MVVM_Twitter4UserV", "isCurrentUser"]
 - !private ["12MVVM_Twitter4UserV", "profileImageUrl"]
+- !private ["12MVVM_Twitter4UserV", "username"]
 - !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "font"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
@@ -418,4 +422,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5c0cb16fd1b795d70d5260873e670fdc"
+interface-hash: "2e97aedba33173e96014ae3387e3af88"
