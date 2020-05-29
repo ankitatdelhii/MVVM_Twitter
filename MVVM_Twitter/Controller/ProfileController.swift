@@ -38,6 +38,9 @@ class ProfileController: UICollectionViewController {
         super.viewDidLoad()
         configureUI()
         fetchTweets()
+        checkIfUserIsFollowed()
+        fetchUserStats()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,6 +61,20 @@ class ProfileController: UICollectionViewController {
         TweetService.shared.fetchTweets(user: user) {[weak self] (tweets) in
             print("Tweets are \(tweets)")
             self?.tweets = tweets
+        }
+    }
+    
+    private func checkIfUserIsFollowed() {
+        UserService.shared.checkIfUserIsFollowed(uid: user.uid) {[weak self] (result) in
+            self?.user.isFollowed = result
+            self?.collectionView.reloadData()
+        }
+    }
+    
+    private func fetchUserStats() {
+        UserService.shared.fetchUserStats(uid: user.uid) {[weak self] (userStats) in
+            self?.user.stats = userStats
+            self?.collectionView.reloadData()
         }
     }
     
@@ -119,22 +136,30 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
 extension ProfileController: ProfileHeaderDelegate {
     func handleEditProfileFollow(_ header: ProfileHeader) {
         let currentTwitterUserID = user.uid
+        
+        if user.isCurrentUser {
+            print("Move to Edit Profile")
+            return
+        }
+        
         if user.isFollowed {
-            UserService.shared.unfollowUser(uid: currentTwitterUserID) { (error, result) in
+            UserService.shared.unfollowUser(uid: currentTwitterUserID) {[weak self] (error, result) in
                 if let error = error {
                     print("error in follow \(error.localizedDescription)")
                 } else {
-                    self.user.isFollowed = false
+                    self?.user.isFollowed = false
+                    self?.collectionView.reloadData()
                     print("Successfully Unfollowed")
                 }
 
             }
         } else {
-            UserService.shared.followUser(uid: currentTwitterUserID) { (error, result) in
+            UserService.shared.followUser(uid: currentTwitterUserID) {[weak self] (error, result) in
                 if let error = error {
                     print("error in follow \(error.localizedDescription)")
                 } else {
-                    self.user.isFollowed = true
+                    self?.user.isFollowed = true
+                    self?.collectionView.reloadData()
                     print("Successfully Followed")
                 }
             }

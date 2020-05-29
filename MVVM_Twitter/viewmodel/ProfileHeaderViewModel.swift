@@ -34,11 +34,11 @@ struct ProfileHeaderViewModel {
     private let user: User
     
     var followersString: NSAttributedString? {
-        return attributedText(withValue: "1", text: "followers")
+        return attributedText(withValue: "\(user.stats?.followers ?? 0)", text: "followers")
     }
     
     var followingString: NSAttributedString? {
-        return attributedText(withValue: "3", text: "following")
+        return attributedText(withValue: "\(user.stats?.following ?? 0)", text: "following")
     }
     
     var profileImageUrl: URL? {
@@ -57,6 +57,8 @@ struct ProfileHeaderViewModel {
         // If user is current user then show edit profile else following or follow
         if user.isCurrentUser {
             return "Edit Profile"
+        } else if user.isFollowed{
+            return "Following"
         } else {
             return "Follow"
         }

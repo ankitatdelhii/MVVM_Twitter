@@ -11,6 +11,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- !private "??"
 - "AssignmentPrecedence"
 - "CaseIterable"
 - "FloatLiteralType"
@@ -199,8 +200,12 @@ depends-member:
 - !private ["So6UIFontC", "systemFont"]
 - !private ["12MVVM_Twitter4UserV", "fullname"]
 - !private ["12MVVM_Twitter4UserV", "isCurrentUser"]
+- !private ["12MVVM_Twitter4UserV", "isFollowed"]
 - !private ["12MVVM_Twitter4UserV", "profileImageUrl"]
+- !private ["12MVVM_Twitter4UserV", "stats"]
 - !private ["12MVVM_Twitter4UserV", "username"]
+- !private ["12MVVM_Twitter17UserRelationStatsV", "followers"]
+- !private ["12MVVM_Twitter17UserRelationStatsV", "following"]
 - !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "font"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
@@ -245,6 +250,7 @@ depends-nominal:
 - !private "So7UIColorC"
 - !private "So6UIFontC"
 - !private "12MVVM_Twitter4UserV"
+- !private "12MVVM_Twitter17UserRelationStatsV"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"

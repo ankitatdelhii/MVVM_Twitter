@@ -54,18 +54,35 @@ struct UserService {
     }
     
     func unfollowUser(uid: String, completion: @escaping (Error?, DatabaseReference) -> Void) {
-        
         guard let currentUserID = Auth.auth().currentUser?.uid else { return }
-        
         REF_USER_FOLLOWING.child(currentUserID).child(uid).removeValue { (error, unfollowResult) in
             if let error = error {
                 print("Error in unfollow \(error.localizedDescription)")
             } else {
                 REF_USER_FOLLOWERS.child(uid).child(currentUserID).removeValue(completionBlock: completion)
-                
             }
         }
+    }
+    
+    func checkIfUserIsFollowed(uid: String, completion: @escaping (Bool) -> Void) {
+        guard let currentUserID = Auth.auth().currentUser?.uid else { return }
         
+        REF_USER_FOLLOWING.child(currentUserID).child(uid).observeSingleEvent(of: .value) { (result) in
+            completion(result.exists())
+        }
+    }
+    
+    func fetchUserStats(uid: String, completion: @escaping (UserRelationStats) -> Void) {
+        REF_USER_FOLLOWING.child(uid).observeSingleEvent(of: .value) { (allFollowingUsers) in
+            let followingUsersCount = allFollowingUsers.children.allObjects.count
+            
+            REF_USER_FOLLOWERS.child(uid).observeSingleEvent(of: .value, with: { (allFollowers) in
+                let followersCount = allFollowers.children.allObjects.count
+                
+                let stats = UserRelationStats(followers: followersCount, following: followingUsersCount)
+                completion(stats)
+            })
+        }
     }
     
 }

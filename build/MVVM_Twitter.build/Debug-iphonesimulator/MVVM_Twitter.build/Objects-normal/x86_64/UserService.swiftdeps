@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "AnyObject"
 - !private "Auth"
+- "Bool"
 - !private "CastingPrecedence"
 - "DatabaseReference"
 - "Error"
@@ -20,20 +21,27 @@ depends-top-level:
 - "String"
 - "StringLiteralType"
 - "User"
+- "UserRelationStats"
 - "UserService"
 - "Void"
 - !private "print"
 depends-member:
 - !private ["Sa", "append"]
+- !private ["Sa", "count"]
 - !private ["Sa", "init"]
 - !private ["So7FIRAuthC", "auth"]
 - !private ["So7FIRAuthC", "currentUser"]
 - !private ["SK", "append"]
+- !private ["SK", "count"]
 - !private ["SK", "init"]
+- !private ["s7CVarArgP", "allObjects"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "child"]
+- !private ["s7CVarArgP", "children"]
+- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "currentUser"]
+- !private ["s7CVarArgP", "exists"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "key"]
 - !private ["s7CVarArgP", "observe"]
@@ -43,13 +51,19 @@ depends-member:
 - !private ["s7CVarArgP", "updateChildValues"]
 - !private ["s7CVarArgP", "value"]
 - !private ["Sl", "append"]
+- !private ["Sl", "count"]
 - !private ["Sl", "init"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "allObjects"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
+- !private ["s28CustomDebugStringConvertibleP", "children"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
+- !private ["s28CustomDebugStringConvertibleP", "exists"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "key"]
 - !private ["s28CustomDebugStringConvertibleP", "observe"]
@@ -59,13 +73,18 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "allObjects"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "child"]
+- !private ["s23CustomStringConvertibleP", "children"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
+- !private ["s23CustomStringConvertibleP", "exists"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "key"]
 - !private ["s23CustomStringConvertibleP", "observe"]
@@ -77,7 +96,10 @@ depends-member:
 - !private ["So16FIRDataEventTypeV", "childAdded"]
 - !private ["So16FIRDataEventTypeV", "value"]
 - !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "init"]
+- !private ["So15FIRDataSnapshotC", "children"]
+- !private ["So15FIRDataSnapshotC", "exists"]
 - !private ["So15FIRDataSnapshotC", "key"]
 - !private ["So15FIRDataSnapshotC", "value"]
 - !private ["So16FIRDatabaseQueryC", "child"]
@@ -91,16 +113,22 @@ depends-member:
 - !private ["So20FIRDatabaseReferenceC", "removeValue"]
 - !private ["So20FIRDatabaseReferenceC", "updateChildValues"]
 - !private ["Se", "append"]
+- !private ["Se", "count"]
 - !private ["Se", "init"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "append"]
+- !private ["SE", "count"]
 - !private ["SE", "init"]
+- !private ["SQ", "allObjects"]
 - !private ["SQ", "append"]
 - !private ["SQ", "auth"]
 - !private ["SQ", "child"]
 - !private ["SQ", "childAdded"]
+- !private ["SQ", "children"]
+- !private ["SQ", "count"]
 - !private ["SQ", "currentUser"]
+- !private ["SQ", "exists"]
 - !private ["SQ", "init"]
 - !private ["SQ", "key"]
 - !private ["SQ", "observe"]
@@ -111,12 +139,17 @@ depends-member:
 - !private ["SQ", "value"]
 - !private ["s5ErrorP", "localizedDescription"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["SH", "allObjects"]
 - !private ["SH", "append"]
 - !private ["SH", "auth"]
 - !private ["SH", "child"]
 - !private ["SH", "childAdded"]
+- !private ["SH", "children"]
+- !private ["SH", "count"]
 - !private ["SH", "currentUser"]
+- !private ["SH", "exists"]
 - !private ["SH", "init"]
 - !private ["SH", "key"]
 - !private ["SH", "observe"]
@@ -126,12 +159,19 @@ depends-member:
 - !private ["SH", "updateChildValues"]
 - !private ["SH", "value"]
 - !private ["SM", "append"]
+- !private ["SM", "count"]
 - !private ["SM", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
 - !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["So12NSEnumeratorC", "allObjects"]
+- !private ["So17NSFastEnumerationP", "allObjects"]
+- !private ["So8NSObjectC", "allObjects"]
 - !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "child"]
+- !private ["So8NSObjectC", "children"]
 - !private ["So8NSObjectC", "currentUser"]
+- !private ["So8NSObjectC", "exists"]
 - !private ["So8NSObjectC", "key"]
 - !private ["So8NSObjectC", "observe"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
@@ -139,9 +179,12 @@ depends-member:
 - !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "updateChildValues"]
 - !private ["So8NSObjectC", "value"]
+- !private ["So8NSObjectP", "allObjects"]
 - !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "child"]
+- !private ["So8NSObjectP", "children"]
 - !private ["So8NSObjectP", "currentUser"]
+- !private ["So8NSObjectP", "exists"]
 - !private ["So8NSObjectP", "key"]
 - !private ["So8NSObjectP", "observe"]
 - !private ["So8NSObjectP", "observeSingleEvent"]
@@ -150,12 +193,16 @@ depends-member:
 - !private ["So8NSObjectP", "updateChildValues"]
 - !private ["So8NSObjectP", "value"]
 - !private ["Sk", "append"]
+- !private ["Sk", "count"]
 - !private ["Sk", "init"]
 - !private ["Sm", "append"]
+- !private ["Sm", "count"]
 - !private ["Sm", "init"]
 - !private ["SY", "childAdded"]
 - !private ["SY", "value"]
+- !private ["ST", "allObjects"]
 - !private ["ST", "append"]
+- !private ["ST", "count"]
 - !private ["ST", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
@@ -165,8 +212,10 @@ depends-member:
 - !private ["12MVVM_Twitter4UserV", "init"]
 - !private ["So7FIRUserC", "uid"]
 - !private ["So11FIRUserInfoP", "uid"]
+- !private ["12MVVM_Twitter17UserRelationStatsV", "init"]
 - !private ["12MVVM_Twitter11UserServiceV", "AnyObject"]
 - !private ["12MVVM_Twitter11UserServiceV", "Auth"]
+- ["12MVVM_Twitter11UserServiceV", "Bool"]
 - ["12MVVM_Twitter11UserServiceV", "DatabaseReference"]
 - ["12MVVM_Twitter11UserServiceV", "Error"]
 - !private ["12MVVM_Twitter11UserServiceV", "REF_USERS"]
@@ -174,9 +223,12 @@ depends-member:
 - !private ["12MVVM_Twitter11UserServiceV", "REF_USER_FOLLOWING"]
 - ["12MVVM_Twitter11UserServiceV", "String"]
 - ["12MVVM_Twitter11UserServiceV", "User"]
+- ["12MVVM_Twitter11UserServiceV", "UserRelationStats"]
 - ["12MVVM_Twitter11UserServiceV", "UserService"]
 - ["12MVVM_Twitter11UserServiceV", "Void"]
+- ["12MVVM_Twitter11UserServiceV", "checkIfUserIsFollowed"]
 - ["12MVVM_Twitter11UserServiceV", "fetchUser"]
+- ["12MVVM_Twitter11UserServiceV", "fetchUserStats"]
 - ["12MVVM_Twitter11UserServiceV", "fetchUsers"]
 - ["12MVVM_Twitter11UserServiceV", "followUser"]
 - ["12MVVM_Twitter11UserServiceV", "init"]
@@ -184,16 +236,23 @@ depends-member:
 - ["12MVVM_Twitter11UserServiceV", "shared"]
 - ["12MVVM_Twitter11UserServiceV", "unfollowUser"]
 - !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "allObjects"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "children"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exists"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
@@ -201,9 +260,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "allObjects"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "child"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "children"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "exists"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "key"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observe"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
@@ -212,6 +274,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "updateChildValues"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
 - !private "Sa"
@@ -237,6 +300,8 @@ depends-nominal:
 - !private "SH"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
+- !private "So12NSEnumeratorC"
+- !private "So17NSFastEnumerationP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "Sk"
@@ -248,6 +313,7 @@ depends-nominal:
 - !private "12MVVM_Twitter4UserV"
 - !private "So7FIRUserC"
 - !private "So11FIRUserInfoP"
+- !private "12MVVM_Twitter17UserRelationStatsV"
 - "12MVVM_Twitter11UserServiceV"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
@@ -427,4 +493,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f8caec9d5a31d2460ad27fc90aa7d714"
+interface-hash: "0849f7c743c77dcfcaf40536df8c67da"
