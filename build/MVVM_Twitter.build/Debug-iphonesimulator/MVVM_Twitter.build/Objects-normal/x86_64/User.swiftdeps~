@@ -1,10 +1,13 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "User"
+- "UserRelationStats"
 provides-nominal:
 - "12MVVM_Twitter4UserV"
+- "12MVVM_Twitter17UserRelationStatsV"
 provides-member:
 - ["12MVVM_Twitter4UserV", ""]
+- ["12MVVM_Twitter17UserRelationStatsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "=="
@@ -15,10 +18,12 @@ depends-top-level:
 - "Bool"
 - "BooleanLiteralType"
 - "CastingPrecedence"
+- "Int"
 - "String"
 - !private "StringLiteralType"
 - "URL"
 - "User"
+- "UserRelationStats"
 depends-member:
 - !private ["So7FIRAuthC", "auth"]
 - !private ["So7FIRAuthC", "currentUser"]
@@ -68,16 +73,22 @@ depends-member:
 - ["12MVVM_Twitter4UserV", "Bool"]
 - ["12MVVM_Twitter4UserV", "String"]
 - ["12MVVM_Twitter4UserV", "URL"]
+- ["12MVVM_Twitter4UserV", "UserRelationStats"]
 - ["12MVVM_Twitter4UserV", "email"]
 - ["12MVVM_Twitter4UserV", "fullname"]
 - ["12MVVM_Twitter4UserV", "init"]
 - ["12MVVM_Twitter4UserV", "isCurrentUser"]
 - ["12MVVM_Twitter4UserV", "isFollowed"]
 - ["12MVVM_Twitter4UserV", "profileImageUrl"]
+- ["12MVVM_Twitter4UserV", "stats"]
 - ["12MVVM_Twitter4UserV", "uid"]
 - !private ["So7FIRUserC", "uid"]
 - ["12MVVM_Twitter4UserV", "username"]
 - !private ["So11FIRUserInfoP", "uid"]
+- ["12MVVM_Twitter17UserRelationStatsV", "Int"]
+- ["12MVVM_Twitter17UserRelationStatsV", "followers"]
+- ["12MVVM_Twitter17UserRelationStatsV", "following"]
+- ["12MVVM_Twitter17UserRelationStatsV", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
@@ -111,6 +122,7 @@ depends-nominal:
 - !private "So7FIRUserC"
 - "12MVVM_Twitter4UserV"
 - !private "So11FIRUserInfoP"
+- "12MVVM_Twitter17UserRelationStatsV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
@@ -288,4 +300,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8fa94602dd0cf0632d3ba041da3eacf3"
+interface-hash: "2b9c492b642839d28246f8feee8738b1"

@@ -27,6 +27,7 @@ depends-top-level:
 - "Tweet"
 - "TweetCell"
 - "TweetCellDelegate"
+- !private "TweetController"
 - !private "TweetService"
 - !private "UIBarButtonItem"
 - "UICollectionView"
@@ -71,6 +72,7 @@ depends-member:
 - !private ["s7CVarArgP", "ProfileController"]
 - ["s7CVarArgP", "Tweet"]
 - !private ["s7CVarArgP", "TweetCell"]
+- !private ["s7CVarArgP", "TweetController"]
 - !private ["s7CVarArgP", "TweetService"]
 - !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIImage"]
@@ -127,6 +129,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "ProfileController"]
 - ["s28CustomDebugStringConvertibleP", "Tweet"]
 - !private ["s28CustomDebugStringConvertibleP", "TweetCell"]
+- !private ["s28CustomDebugStringConvertibleP", "TweetController"]
 - !private ["s28CustomDebugStringConvertibleP", "TweetService"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
@@ -187,6 +190,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "ProfileController"]
 - ["s23CustomStringConvertibleP", "Tweet"]
 - !private ["s23CustomStringConvertibleP", "TweetCell"]
+- !private ["s23CustomStringConvertibleP", "TweetController"]
 - !private ["s23CustomStringConvertibleP", "TweetService"]
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
@@ -264,6 +268,7 @@ depends-member:
 - !private ["SQ", "ProfileController"]
 - ["SQ", "Tweet"]
 - !private ["SQ", "TweetCell"]
+- !private ["SQ", "TweetController"]
 - !private ["SQ", "TweetService"]
 - !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UIImage"]
@@ -328,6 +333,7 @@ depends-member:
 - !private ["12MVVM_Twitter14FeedControllerC", "ProfileController"]
 - ["12MVVM_Twitter14FeedControllerC", "Tweet"]
 - ["12MVVM_Twitter14FeedControllerC", "TweetCell"]
+- !private ["12MVVM_Twitter14FeedControllerC", "TweetController"]
 - !private ["12MVVM_Twitter14FeedControllerC", "TweetService"]
 - !private ["12MVVM_Twitter14FeedControllerC", "UIBarButtonItem"]
 - ["12MVVM_Twitter14FeedControllerC", "UICollectionView"]
@@ -356,6 +362,7 @@ depends-member:
 - !private ["SH", "ProfileController"]
 - ["SH", "Tweet"]
 - !private ["SH", "TweetCell"]
+- !private ["SH", "TweetController"]
 - !private ["SH", "TweetService"]
 - !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UIImage"]
@@ -414,6 +421,7 @@ depends-member:
 - !private ["So8NSCodingP", "ProfileController"]
 - ["So8NSCodingP", "Tweet"]
 - !private ["So8NSCodingP", "TweetCell"]
+- !private ["So8NSCodingP", "TweetController"]
 - !private ["So8NSCodingP", "TweetService"]
 - !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIImage"]
@@ -461,6 +469,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "ProfileController"]
 - ["So26NSExtensionRequestHandlingP", "Tweet"]
 - !private ["So26NSExtensionRequestHandlingP", "TweetCell"]
+- !private ["So26NSExtensionRequestHandlingP", "TweetController"]
 - !private ["So26NSExtensionRequestHandlingP", "TweetService"]
 - !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
@@ -496,6 +505,7 @@ depends-member:
 - !private ["So8NSObjectC", "ProfileController"]
 - ["So8NSObjectC", "Tweet"]
 - ["So8NSObjectC", "TweetCell"]
+- !private ["So8NSObjectC", "TweetController"]
 - !private ["So8NSObjectC", "TweetService"]
 - !private ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UICollectionView"]
@@ -544,6 +554,7 @@ depends-member:
 - !private ["So8NSObjectP", "ProfileController"]
 - ["So8NSObjectP", "Tweet"]
 - !private ["So8NSObjectP", "TweetCell"]
+- !private ["So8NSObjectP", "TweetController"]
 - !private ["So8NSObjectP", "TweetService"]
 - !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UIImage"]
@@ -624,6 +635,7 @@ depends-member:
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "ProfileController"]
 - ["12MVVM_Twitter17TweetCellDelegateP", "Tweet"]
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "TweetCell"]
+- !private ["12MVVM_Twitter17TweetCellDelegateP", "TweetController"]
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "TweetService"]
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "UIBarButtonItem"]
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "UIImage"]
@@ -641,6 +653,8 @@ depends-member:
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "tweets"]
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "user"]
 - !private ["12MVVM_Twitter17TweetCellDelegateP", "view"]
+- !private ["12MVVM_Twitter15TweetControllerC", "deinit"]
+- !private ["12MVVM_Twitter15TweetControllerC", "init"]
 - !private ["12MVVM_Twitter12TweetServiceV", "fetchTweets"]
 - !private ["12MVVM_Twitter12TweetServiceV", "shared"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
@@ -681,6 +695,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "ProfileController"]
 - ["So21UIAppearanceContainerP", "Tweet"]
 - !private ["So21UIAppearanceContainerP", "TweetCell"]
+- !private ["So21UIAppearanceContainerP", "TweetController"]
 - !private ["So21UIAppearanceContainerP", "TweetService"]
 - !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
@@ -736,6 +751,7 @@ depends-member:
 - !private ["So26UICollectionViewControllerC", "ProfileController"]
 - ["So26UICollectionViewControllerC", "Tweet"]
 - ["So26UICollectionViewControllerC", "TweetCell"]
+- !private ["So26UICollectionViewControllerC", "TweetController"]
 - !private ["So26UICollectionViewControllerC", "TweetService"]
 - !private ["So26UICollectionViewControllerC", "UIBarButtonItem"]
 - ["So26UICollectionViewControllerC", "UICollectionView"]
@@ -764,6 +780,7 @@ depends-member:
 - !private ["So26UICollectionViewDataSourceP", "ProfileController"]
 - ["So26UICollectionViewDataSourceP", "Tweet"]
 - !private ["So26UICollectionViewDataSourceP", "TweetCell"]
+- !private ["So26UICollectionViewDataSourceP", "TweetController"]
 - !private ["So26UICollectionViewDataSourceP", "TweetService"]
 - !private ["So26UICollectionViewDataSourceP", "UIBarButtonItem"]
 - !private ["So26UICollectionViewDataSourceP", "UIImage"]
@@ -788,6 +805,7 @@ depends-member:
 - !private ["So24UICollectionViewDelegateP", "ProfileController"]
 - ["So24UICollectionViewDelegateP", "Tweet"]
 - !private ["So24UICollectionViewDelegateP", "TweetCell"]
+- !private ["So24UICollectionViewDelegateP", "TweetController"]
 - !private ["So24UICollectionViewDelegateP", "TweetService"]
 - !private ["So24UICollectionViewDelegateP", "UIBarButtonItem"]
 - !private ["So24UICollectionViewDelegateP", "UIImage"]
@@ -812,6 +830,7 @@ depends-member:
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "ProfileController"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "Tweet"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "TweetCell"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "TweetController"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "TweetService"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "UIBarButtonItem"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "UIImage"]
@@ -836,6 +855,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "ProfileController"]
 - ["So18UIContentContainerP", "Tweet"]
 - !private ["So18UIContentContainerP", "TweetCell"]
+- !private ["So18UIContentContainerP", "TweetController"]
 - !private ["So18UIContentContainerP", "TweetService"]
 - !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIImage"]
@@ -894,6 +914,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "ProfileController"]
 - ["So18UIFocusEnvironmentP", "Tweet"]
 - !private ["So18UIFocusEnvironmentP", "TweetCell"]
+- !private ["So18UIFocusEnvironmentP", "TweetController"]
 - !private ["So18UIFocusEnvironmentP", "TweetService"]
 - !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
@@ -993,6 +1014,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "ProfileController"]
 - ["So30UIPasteConfigurationSupportingP", "Tweet"]
 - !private ["So30UIPasteConfigurationSupportingP", "TweetCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "TweetController"]
 - !private ["So30UIPasteConfigurationSupportingP", "TweetService"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
@@ -1035,6 +1057,7 @@ depends-member:
 - !private ["So11UIResponderC", "ProfileController"]
 - ["So11UIResponderC", "Tweet"]
 - ["So11UIResponderC", "TweetCell"]
+- !private ["So11UIResponderC", "TweetController"]
 - !private ["So11UIResponderC", "TweetService"]
 - !private ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UICollectionView"]
@@ -1077,6 +1100,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "ProfileController"]
 - ["So30UIResponderStandardEditActionsP", "Tweet"]
 - !private ["So30UIResponderStandardEditActionsP", "TweetCell"]
+- !private ["So30UIResponderStandardEditActionsP", "TweetController"]
 - !private ["So30UIResponderStandardEditActionsP", "TweetService"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
@@ -1120,6 +1144,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "ProfileController"]
 - ["So20UIScrollViewDelegateP", "Tweet"]
 - !private ["So20UIScrollViewDelegateP", "TweetCell"]
+- !private ["So20UIScrollViewDelegateP", "TweetController"]
 - !private ["So20UIScrollViewDelegateP", "TweetService"]
 - !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
@@ -1149,6 +1174,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "ProfileController"]
 - ["So16UIStateRestoringP", "Tweet"]
 - !private ["So16UIStateRestoringP", "TweetCell"]
+- !private ["So16UIStateRestoringP", "TweetController"]
 - !private ["So16UIStateRestoringP", "TweetService"]
 - !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIImage"]
@@ -1175,6 +1201,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "ProfileController"]
 - ["So18UITraitEnvironmentP", "Tweet"]
 - !private ["So18UITraitEnvironmentP", "TweetCell"]
+- !private ["So18UITraitEnvironmentP", "TweetController"]
 - !private ["So18UITraitEnvironmentP", "TweetService"]
 - !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
@@ -1214,6 +1241,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "ProfileController"]
 - ["So23UIUserActivityRestoringP", "Tweet"]
 - !private ["So23UIUserActivityRestoringP", "TweetCell"]
+- !private ["So23UIUserActivityRestoringP", "TweetController"]
 - !private ["So23UIUserActivityRestoringP", "TweetService"]
 - !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
@@ -1270,6 +1298,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "ProfileController"]
 - ["So16UIViewControllerC", "Tweet"]
 - ["So16UIViewControllerC", "TweetCell"]
+- !private ["So16UIViewControllerC", "TweetController"]
 - !private ["So16UIViewControllerC", "TweetService"]
 - !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UICollectionView"]
@@ -1317,6 +1346,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ProfileController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Tweet"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TweetCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TweetController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TweetService"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
@@ -1362,6 +1392,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ProfileController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Tweet"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TweetCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TweetController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TweetService"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIBarButtonItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
@@ -1477,6 +1508,7 @@ depends-nominal:
 - !private "12MVVM_Twitter5TweetV"
 - !private "12MVVM_Twitter9TweetCellC"
 - "12MVVM_Twitter17TweetCellDelegateP"
+- !private "12MVVM_Twitter15TweetControllerC"
 - !private "12MVVM_Twitter12TweetServiceV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -1703,4 +1735,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "91a7b6becfc18d8bb83ff9a33f283ecd"
+interface-hash: "9bbc9fb287cffe6428841df15b1eeabc"
