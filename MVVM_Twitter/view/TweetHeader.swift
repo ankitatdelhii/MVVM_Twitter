@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import SDWebImage
 
 
 class TweetHeader: UICollectionReusableView {
     
     
     //MARK: Properties
+    
+    var tweet: Tweet? {
+        didSet {
+            configureCell()
+        }
+    }
     
     private lazy var profileImageView: UIImageView = {
        let iv = UIImageView()
@@ -113,6 +120,42 @@ class TweetHeader: UICollectionReusableView {
         
         return view
     }()
+    
+    private lazy var commentButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "comment"), for: .normal)
+        button.tintColor = .darkGray
+        button.setDimensions(width: 20, height: 20)
+        button.addTarget(self, action: #selector(handleCommentTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var retweetButton: UIButton = {
+       let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "retweet"), for: .normal)
+        button.tintColor = .darkGray
+        button.setDimensions(width: 20, height: 20)
+        button.addTarget(self, action: #selector(handleRetweetTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var likeButton: UIButton = {
+       let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "like"), for: .normal)
+        button.tintColor = .darkGray
+        button.setDimensions(width: 20, height: 20)
+        button.addTarget(self, action: #selector(handleLikeTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var shareButton: UIButton = {
+       let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "share"), for: .normal)
+        button.tintColor = .darkGray
+        button.setDimensions(width: 20, height: 20)
+        button.addTarget(self, action: #selector(handleShareTapped), for: .touchUpInside)
+        return button
+    }()
 
     
     //MARK: LifeCylcle
@@ -134,6 +177,22 @@ class TweetHeader: UICollectionReusableView {
     
     @objc func showActionSheet() {
         print("Show Action Sheet")
+    }
+    
+    @objc func handleCommentTapped() {
+        
+    }
+    
+    @objc func handleRetweetTapped() {
+        
+    }
+    
+    @objc func handleLikeTapped() {
+        
+    }
+    
+    @objc func handleShareTapped() {
+        
     }
     
     //MARK: Helper
@@ -163,6 +222,27 @@ class TweetHeader: UICollectionReusableView {
         
         addSubview(statsView)
         statsView.anchor(top: dateLabel.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 20, height: 40)
+        
+        let buttonStackView = UIStackView(arrangedSubviews: [commentButton, retweetButton, likeButton, shareButton])
+        buttonStackView.axis = .horizontal
+        buttonStackView.distribution = .fillProportionally
+        buttonStackView.spacing = 72
+        
+        addSubview(buttonStackView)
+        buttonStackView.anchor(bottom: bottomAnchor, paddingBottom: 8)
+        buttonStackView.centerX(inView: self)
+    }
+    
+    private func configureCell() {
+        guard let tweet = tweet else { return }
+        let viewModel = TweetCellViewModel(tweet: tweet)
+        profileImageView.sd_setImage(with: viewModel.profileImageUrl)
+        fullNameLabel.text = viewModel.fullName
+        usernameLabel.text = viewModel.username
+        captionLabel.text = viewModel.captionText
+        dateLabel.text = viewModel.headerTimeStamp
+        likesLabel.attributedText = viewModel.likesString
+        retweetsLabel.attributedText = viewModel.retweetString
     }
     
 }
