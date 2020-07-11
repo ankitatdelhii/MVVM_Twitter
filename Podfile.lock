@@ -100,7 +100,7 @@ DEPENDENCIES:
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -142,4 +142,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 394b8f76b19c71a06bbc047628146186e1e8a131
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.9.3
