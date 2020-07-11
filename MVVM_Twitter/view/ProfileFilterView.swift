@@ -38,6 +38,7 @@ class ProfileFilterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        print("Testing")
         configureUI()
     }
     
