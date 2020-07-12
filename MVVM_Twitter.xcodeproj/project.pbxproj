@@ -16,7 +16,6 @@
 		9D3BFE45247DAE7A000007D1 /* ProfileFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BFE44247DAE7A000007D1 /* ProfileFilterView.swift */; };
 		9D3BFE47247DB165000007D1 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BFE46247DB165000007D1 /* FilterCell.swift */; };
 		9D6139E22471B791004A5823 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6139E12471B791004A5823 /* Utilities.swift */; };
-		9D61776D2478115A000B9CE3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9D61776C2478115A000B9CE3 /* .gitignore */; };
 		9D6A67DE2476A332009864A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A67DD2476A332009864A3 /* Constants.swift */; };
 		9D790C24246AB134007DEB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790C23246AB134007DEB9C /* AppDelegate.swift */; };
 		9D790C26246AB134007DEB9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790C25246AB134007DEB9C /* SceneDelegate.swift */; };
@@ -54,7 +53,6 @@
 		9D3BFE44247DAE7A000007D1 /* ProfileFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileFilterView.swift; path = MVVM_Twitter/view/ProfileFilterView.swift; sourceTree = SOURCE_ROOT; };
 		9D3BFE46247DB165000007D1 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilterCell.swift; path = MVVM_Twitter/view/FilterCell.swift; sourceTree = SOURCE_ROOT; };
 		9D6139E12471B791004A5823 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		9D61776C2478115A000B9CE3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9D6A67DD2476A332009864A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9D790C20246AB134007DEB9C /* MVVM_Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D790C23246AB134007DEB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				9D790C2E246AB136007DEB9C /* LaunchScreen.storyboard */,
 				9D790C31246AB136007DEB9C /* Info.plist */,
 				9DB960C124766DAD00C1F4A2 /* GoogleService-Info.plist */,
-				9D61776C2478115A000B9CE3 /* .gitignore */,
 			);
 			path = MVVM_Twitter;
 			sourceTree = "<group>";
@@ -282,7 +279,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D61776D2478115A000B9CE3 /* .gitignore in Resources */,
 				9D790C30246AB136007DEB9C /* LaunchScreen.storyboard in Resources */,
 				9D790C2D246AB136007DEB9C /* Assets.xcassets in Resources */,
 				9DB960C224766DAD00C1F4A2 /* GoogleService-Info.plist in Resources */,
