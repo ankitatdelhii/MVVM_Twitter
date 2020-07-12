@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9D045FA92479AB6C00313C80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D045FA82479AB6C00313C80 /* User.swift */; };
 		9D13C99F2479630A00115F2A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13C99E2479630A00115F2A /* UserService.swift */; };
+		9D171C702480FDD5003B4178 /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D171C6F2480FDD4003B4178 /* TweetController.swift */; };
+		9D171C722480FF3D003B4178 /* TweetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D171C712480FF3D003B4178 /* TweetHeader.swift */; };
 		9D186E46247077F200E55D4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D186E45247077F200E55D4E /* LoginController.swift */; };
 		9D186E482470780700E55D4E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D186E472470780700E55D4E /* RegistrationController.swift */; };
 		9D20B985246B1C3300891224 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20B984246B1C3300891224 /* Extensions.swift */; };
@@ -46,6 +48,8 @@
 		7E852AF6A5E23FF4C9C330FC /* Pods-MVVM_Twitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Twitter.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_Twitter/Pods-MVVM_Twitter.debug.xcconfig"; sourceTree = "<group>"; };
 		9D045FA82479AB6C00313C80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = MVVM_Twitter/model/User.swift; sourceTree = SOURCE_ROOT; };
 		9D13C99E2479630A00115F2A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9D171C6F2480FDD4003B4178 /* TweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
+		9D171C712480FF3D003B4178 /* TweetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetHeader.swift; sourceTree = "<group>"; };
 		9D186E45247077F200E55D4E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9D186E472470780700E55D4E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		9D20B984246B1C3300891224 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				9D790C45246ABAA6007DEB9C /* ConversationsController.swift */,
 				9D9489B1247A5B92007EB385 /* UploadTweetController.swift */,
 				9D8AAA6F247D4E7400974FC9 /* ProfileController.swift */,
+				9D171C6F2480FDD4003B4178 /* TweetController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				9D3BFE44247DAE7A000007D1 /* ProfileFilterView.swift */,
 				9D3BFE46247DB165000007D1 /* FilterCell.swift */,
 				9D894180247FD9A200D83B84 /* UserCell.swift */,
+				9D171C712480FF3D003B4178 /* TweetHeader.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				9D790C46246ABAA6007DEB9C /* ConversationsController.swift in Sources */,
 				9D6139E22471B791004A5823 /* Utilities.swift in Sources */,
 				9D790C24246AB134007DEB9C /* AppDelegate.swift in Sources */,
+				9D171C702480FDD5003B4178 /* TweetController.swift in Sources */,
 				9D8AAA70247D4E7400974FC9 /* ProfileController.swift in Sources */,
 				9D8AAA72247D538500974FC9 /* ProfileHeader.swift in Sources */,
 				9D20B985246B1C3300891224 /* Extensions.swift in Sources */,
@@ -354,6 +361,7 @@
 				9D045FA92479AB6C00313C80 /* User.swift in Sources */,
 				9D790C42246ABA8F007DEB9C /* ExploreController.swift in Sources */,
 				9D790C26246AB134007DEB9C /* SceneDelegate.swift in Sources */,
+				9D171C722480FF3D003B4178 /* TweetHeader.swift in Sources */,
 				9D790C3E246AB1BC007DEB9C /* MainTabBarController.swift in Sources */,
 				9D186E482470780700E55D4E /* RegistrationController.swift in Sources */,
 				9D790C40246ABA83007DEB9C /* FeedController.swift in Sources */,

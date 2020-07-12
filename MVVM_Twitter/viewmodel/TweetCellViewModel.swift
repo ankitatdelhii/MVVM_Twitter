@@ -31,6 +31,12 @@ struct TweetCellViewModel {
         return formatter.string(from: tweet.timestamp, to: Date()) ?? "2m"
     }
     
+    var headerTimeStamp: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm: a · MM/dd/yyyy"
+        return formatter.string(from: tweet.timestamp)
+    }
+    
     var userInfo: NSAttributedString {
         
         let title = NSMutableAttributedString(string: tweet.user.fullname, attributes: [.font: UIFont.systemFont(ofSize: 14)])
@@ -39,8 +45,46 @@ struct TweetCellViewModel {
         return title
     }
     
+    var retweetString: NSAttributedString {
+        return attributedText(withValue: "\(tweet.retweetCount )", text: "retweets")
+    }
+    
+    var likesString: NSAttributedString {
+        return attributedText(withValue: "\(tweet.likes)", text: "likes")
+    }
+    
+    
+    
+    var fullName: String {
+        return tweet.user.fullname
+    }
+    
+    var username: String {
+        return "@ \(tweet.user.username)"
+    }
+    
     init(tweet: Tweet) {
         self.tweet = tweet
         self.user = tweet.user
     }
+    
+    //MARK: HELPER
+    
+    private func attributedText(withValue value: String, text: String) -> NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: "\(value) ", attributes: [.font: UIFont.boldSystemFont(ofSize: 14)])
+        attributedString.append(NSAttributedString(string: "\(text)", attributes: [.font: UIFont.systemFont(ofSize: 14), .foregroundColor: UIColor.lightGray]))
+        return attributedString
+    }
+    
+    func size(forWidth width: CGFloat) -> CGSize {
+        let measurementLabel = UILabel()
+        measurementLabel.text = tweet.caption
+        measurementLabel.numberOfLines = 0
+        measurementLabel.lineBreakMode = .byWordWrapping
+        measurementLabel.translatesAutoresizingMaskIntoConstraints = false
+        measurementLabel.widthAnchor.constraint(equalToConstant: width).isActive = true
+        let size = measurementLabel.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+        return size
+    }
+    
 }
