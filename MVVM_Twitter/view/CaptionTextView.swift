@@ -26,9 +26,11 @@ class CaptionTextView: UITextView {
         super.init(frame: frame, textContainer: textContainer)
         addSubview(placeHolderLabel)
         placeHolderLabel.anchor(top: topAnchor, left: leftAnchor, paddingTop: 8, paddingLeft: 4)
+        
         backgroundColor = .white
         font = UIFont.systemFont(ofSize: 16)
         isScrollEnabled = false
+        heightAnchor.constraint(equalToConstant: 100).isActive = true
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleTextInputChange), name: UITextView.textDidChangeNotification, object: nil)
     }
