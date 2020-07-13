@@ -81,6 +81,7 @@ class UploadTweetController: UIViewController {
     
     @objc func handleUploadTweet() {
         print("Upload tweet now!")
+        print("Tweet Config Added!")
         guard let caption = captionTextView.text else { return }
         TweetService.shared.uploadTweet(caption: caption, config: config) { (error, result) in
             if let error = error {
