@@ -39,6 +39,7 @@
 		9DD00080247BDA270009901B /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD0007F247BDA270009901B /* Tweet.swift */; };
 		9DF58F26247C063E00260688 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF58F25247C063E00260688 /* TweetCell.swift */; };
 		9DF58F28247C5B3600260688 /* TweetCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF58F27247C5B3600260688 /* TweetCellViewModel.swift */; };
+		9DF5EA0F24BCE0A60040BB71 /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5EA0E24BCE0A60040BB71 /* UploadTweetViewModel.swift */; };
 		A1144D84870673706A8D9B1F /* Pods_MVVM_Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56491DA00665B3B32F701A4C /* Pods_MVVM_Twitter.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		9DD0007F247BDA270009901B /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = MVVM_Twitter/model/Tweet.swift; sourceTree = SOURCE_ROOT; };
 		9DF58F25247C063E00260688 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TweetCell.swift; path = MVVM_Twitter/view/TweetCell.swift; sourceTree = SOURCE_ROOT; };
 		9DF58F27247C5B3600260688 /* TweetCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TweetCellViewModel.swift; path = MVVM_Twitter/viewmodel/TweetCellViewModel.swift; sourceTree = SOURCE_ROOT; };
+		9DF5EA0E24BCE0A60040BB71 /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			children = (
 				9DF58F27247C5B3600260688 /* TweetCellViewModel.swift */,
 				9D98BEC1247EA5EC00495A8C /* ProfileHeaderViewModel.swift */,
+				9DF5EA0E24BCE0A60040BB71 /* UploadTweetViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				9D790C24246AB134007DEB9C /* AppDelegate.swift in Sources */,
 				9D171C702480FDD5003B4178 /* TweetController.swift in Sources */,
 				9D8AAA70247D4E7400974FC9 /* ProfileController.swift in Sources */,
+				9DF5EA0F24BCE0A60040BB71 /* UploadTweetViewModel.swift in Sources */,
 				9D8AAA72247D538500974FC9 /* ProfileHeader.swift in Sources */,
 				9D20B985246B1C3300891224 /* Extensions.swift in Sources */,
 				9DF58F26247C063E00260688 /* TweetCell.swift in Sources */,

@@ -13,6 +13,7 @@ class UploadTweetController: UIViewController {
     
     //MARK: Properties
     private let user: User
+    private let config: UploadTweetConfigruation
     
     private lazy var actionButton: UIButton = {
        let button = UIButton(type: .system)
@@ -35,23 +36,42 @@ class UploadTweetController: UIViewController {
         return iv
     }()
     
+    private lazy var replyLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Replying to @shdh"
+        label.textColor = .lightGray
+        label.widthAnchor.constraint(equalToConstant: view.frame.width - 32).isActive = true
+        return label
+    }()
+    
     private let captionTextView = CaptionTextView()
+    private lazy var viewModel = UploadTweetViewModel(config: config)
     
     //MARK: LifeCylcle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        
+        switch config {
+        case .tweet:
+            print("Tweet Initialized")
+        case .reply(let tweet):
+            print("Reply Iniialized")
+        }
     }
     
-    init(user: User) {
+    init(user: User, config: UploadTweetConfigruation) {
         self.user = user
+        self.config = config
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
 
     
     //MARK: Selectors
@@ -62,7 +82,7 @@ class UploadTweetController: UIViewController {
     @objc func handleUploadTweet() {
         print("Upload tweet now!")
         guard let caption = captionTextView.text else { return }
-        TweetService.shared.uploadTweet(caption: caption) { (error, result) in
+        TweetService.shared.uploadTweet(caption: caption, config: config) { (error, result) in
             if let error = error {
                 print("Error Uploading Tweet \(error.localizedDescription)")
             } else {
@@ -87,14 +107,36 @@ class UploadTweetController: UIViewController {
         // Profile Image
         profileImageView.sd_setImage(with: user.profileImageUrl, completed: nil)
         
-        // Stack View
-        let stack = UIStackView(arrangedSubviews: [profileImageView, captionTextView])
-        stack.axis = .horizontal
-        stack.spacing = 12
-        stack.alignment = .leading
-        view.addSubview(stack)
+        // Horizontal Stack View
+        let horizontalStack = UIStackView(arrangedSubviews: [profileImageView, captionTextView])
+        horizontalStack.axis = .horizontal
+        horizontalStack.spacing = 12
+        horizontalStack.alignment = .leading
+//        view.addSubview(horizontalStack)
         
-        stack.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.safeAreaLayoutGuide.leftAnchor, right: view.safeAreaLayoutGuide.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16)
+        //Vertical Stack
+        let verticalStack = UIStackView(arrangedSubviews: [replyLabel, horizontalStack])
+        verticalStack.axis = .vertical
+        verticalStack.spacing = 12
+        
+        view.addSubview(verticalStack)
+        
+        verticalStack.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.safeAreaLayoutGuide.leftAnchor, right: view.safeAreaLayoutGuide.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16)
+        
+        //Configuring UI
+        actionButton.setTitle(viewModel.actionButtonTitle, for: .normal)
+        captionTextView.placeHolderLabel.text = viewModel.placeholderText
+        
+        replyLabel.isHidden = !viewModel.shouldShowReplyLabel
+        guard let replyText = viewModel.replyText else { return }
+        replyLabel.text = replyText
     }
     
+}
+
+
+//MARK: Model Helper
+enum UploadTweetConfigruation {
+    case tweet
+    case reply(Tweet)
 }

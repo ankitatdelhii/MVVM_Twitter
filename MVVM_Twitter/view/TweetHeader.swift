@@ -229,7 +229,7 @@ class TweetHeader: UICollectionReusableView {
         buttonStackView.spacing = 72
         
         addSubview(buttonStackView)
-        buttonStackView.anchor(bottom: bottomAnchor, paddingBottom: 8)
+        buttonStackView.anchor(top: statsView.bottomAnchor, paddingTop: 16)
         buttonStackView.centerX(inView: self)
     }
     

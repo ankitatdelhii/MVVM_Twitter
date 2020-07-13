@@ -16,7 +16,11 @@ class TweetController: UICollectionViewController {
     
     //MARK: Properties
     private let tweet: Tweet
-    
+    private var replies = [Tweet]() {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     //MARK: LifeCylcle
     
     init(tweet: Tweet) {
@@ -24,10 +28,19 @@ class TweetController: UICollectionViewController {
         let flowLayout = UICollectionViewFlowLayout()
         super.init(collectionViewLayout: flowLayout)
         configureUI()
+        fetchReplies()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: API
+    
+    func fetchReplies() {
+        TweetService.shared.fetchReplies(forTweet: tweet) { (replies) in
+            self.replies = replies
+        }
     }
     
     //MARK: Selectors
@@ -50,11 +63,12 @@ extension TweetController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reusetweeCell, for: indexPath) as! TweetCell
+        cell.tweet = replies[indexPath.row]
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return replies.count
     }
 }
 

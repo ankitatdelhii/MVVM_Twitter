@@ -11,7 +11,7 @@ import UIKit
 class CaptionTextView: UITextView {
     
     //MARK: Properties
-    private let placeHolderLabel: UILabel = {
+    let placeHolderLabel: UILabel = {
         let placeHolder = UILabel()
         placeHolder.backgroundColor = .white
         placeHolder.text = "What's happening?"
