@@ -9,6 +9,10 @@
 import UIKit
 import SDWebImage
 
+protocol TweetHeaderDelegate: class {
+    func showActionSheet()
+}
+
 
 class TweetHeader: UICollectionReusableView {
     
@@ -156,6 +160,8 @@ class TweetHeader: UICollectionReusableView {
         button.addTarget(self, action: #selector(handleShareTapped), for: .touchUpInside)
         return button
     }()
+    
+    var delegate: TweetHeaderDelegate?
 
     
     //MARK: LifeCylcle
@@ -177,6 +183,7 @@ class TweetHeader: UICollectionReusableView {
     
     @objc func showActionSheet() {
         print("Show Action Sheet")
+        delegate?.showActionSheet()
     }
     
     @objc func handleCommentTapped() {
