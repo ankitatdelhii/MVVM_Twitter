@@ -14,6 +14,8 @@
 		9D186E46247077F200E55D4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D186E45247077F200E55D4E /* LoginController.swift */; };
 		9D186E482470780700E55D4E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D186E472470780700E55D4E /* RegistrationController.swift */; };
 		9D20B985246B1C3300891224 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20B984246B1C3300891224 /* Extensions.swift */; };
+		9D300E9424CB6C3300657B4C /* ActionSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D300E9324CB6C3300657B4C /* ActionSheetCell.swift */; };
+		9D300E9624CB727600657B4C /* ActionSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D300E9524CB727600657B4C /* ActionSheetViewModel.swift */; };
 		9D3222AA2477161300B187D5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3222A92477161300B187D5 /* AuthService.swift */; };
 		9D3BFE45247DAE7A000007D1 /* ProfileFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BFE44247DAE7A000007D1 /* ProfileFilterView.swift */; };
 		9D3BFE47247DB165000007D1 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BFE46247DB165000007D1 /* FilterCell.swift */; };
@@ -55,6 +57,8 @@
 		9D186E45247077F200E55D4E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9D186E472470780700E55D4E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		9D20B984246B1C3300891224 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9D300E9324CB6C3300657B4C /* ActionSheetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetCell.swift; sourceTree = "<group>"; };
+		9D300E9524CB727600657B4C /* ActionSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewModel.swift; sourceTree = "<group>"; };
 		9D3222A92477161300B187D5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9D3BFE44247DAE7A000007D1 /* ProfileFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileFilterView.swift; path = MVVM_Twitter/view/ProfileFilterView.swift; sourceTree = SOURCE_ROOT; };
 		9D3BFE46247DB165000007D1 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilterCell.swift; path = MVVM_Twitter/view/FilterCell.swift; sourceTree = SOURCE_ROOT; };
@@ -208,6 +212,7 @@
 				9D3BFE46247DB165000007D1 /* FilterCell.swift */,
 				9D894180247FD9A200D83B84 /* UserCell.swift */,
 				9D171C712480FF3D003B4178 /* TweetHeader.swift */,
+				9D300E9324CB6C3300657B4C /* ActionSheetCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				9DF58F27247C5B3600260688 /* TweetCellViewModel.swift */,
 				9D98BEC1247EA5EC00495A8C /* ProfileHeaderViewModel.swift */,
 				9DF5EA0E24BCE0A60040BB71 /* UploadTweetViewModel.swift */,
+				9D300E9524CB727600657B4C /* ActionSheetViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 				9D3BFE47247DB165000007D1 /* FilterCell.swift in Sources */,
 				9D894181247FD9A200D83B84 /* UserCell.swift in Sources */,
 				9D790C46246ABAA6007DEB9C /* ConversationsController.swift in Sources */,
+				9D300E9424CB6C3300657B4C /* ActionSheetCell.swift in Sources */,
 				9D6139E22471B791004A5823 /* Utilities.swift in Sources */,
 				9D790C24246AB134007DEB9C /* AppDelegate.swift in Sources */,
 				9D171C702480FDD5003B4178 /* TweetController.swift in Sources */,
@@ -370,6 +377,7 @@
 				9D790C26246AB134007DEB9C /* SceneDelegate.swift in Sources */,
 				9D171C722480FF3D003B4178 /* TweetHeader.swift in Sources */,
 				9D790C3E246AB1BC007DEB9C /* MainTabBarController.swift in Sources */,
+				9D300E9624CB727600657B4C /* ActionSheetViewModel.swift in Sources */,
 				9D186E482470780700E55D4E /* RegistrationController.swift in Sources */,
 				9D790C40246ABA83007DEB9C /* FeedController.swift in Sources */,
 				9D3BFE45247DAE7A000007D1 /* ProfileFilterView.swift in Sources */,
