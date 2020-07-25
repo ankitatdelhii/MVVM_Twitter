@@ -10,6 +10,10 @@ import UIKit
 
 private let reuseIdentifier = "actionSheetCell"
 
+protocol ActionSheetLauncherDelegate: class {
+    func didSelect(option: ActionSheetOptions)
+}
+
 class ActionSheetLauncher: NSObject {
     
     
@@ -17,6 +21,8 @@ class ActionSheetLauncher: NSObject {
     private let user: User
     private let tableView = UITableView()
     private var window: UIWindow?
+    private var tableViewHeight: CGFloat?
+    weak var delegate: ActionSheetLauncherDelegate?
     
     private lazy var viewModel = ActionSheetViewModel(user: user)
     
@@ -67,6 +73,13 @@ class ActionSheetLauncher: NSObject {
     
     //MARK: Helper
     
+    func showTableView(shouldShow: Bool) {
+        guard let window = window else { return }
+        guard let height = tableViewHeight else { return }
+        let y = shouldShow ? window.frame.height - height : window.frame.height
+        tableView.frame.origin.y = y
+    }
+    
     func show() {
         print("Action Sheet in show!")
         let height: CGFloat = (60.0 * CGFloat(viewModel.options.count)) + 100
@@ -78,11 +91,13 @@ class ActionSheetLauncher: NSObject {
         blackView.frame = window.frame
         
         self.window?.addSubview(tableView)
+        self.tableViewHeight = height
         tableView.frame = CGRect(x: 0, y: window.frame.height, width: window.frame.width, height: height)
+        
         
         UIView.animate(withDuration: 0.5) {
             self.blackView .alpha = 1
-            self.tableView.frame.origin.y = self.tableView.frame.origin.y - height
+            self.showTableView(shouldShow: true)
         }
     }
     
@@ -122,6 +137,18 @@ extension ActionSheetLauncher: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let option = viewModel.options[indexPath.row]
+        
+        UIView.animate(withDuration: 0.5
+            , animations: {
+                self.blackView.alpha = 0
+                self.showTableView(shouldShow: false)
+        }) { (_) in
+            self.delegate?.didSelect(option: option)
+        }
     }
     
 }

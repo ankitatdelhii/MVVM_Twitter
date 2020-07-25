@@ -22,13 +22,12 @@ class TweetController: UICollectionViewController {
         }
     }
     
-    private let actionSheetLauncher: ActionSheetLauncher
+    private var actionSheetLauncher: ActionSheetLauncher!
     
     //MARK: LifeCylcle
     
     init(tweet: Tweet) {
         self.tweet = tweet
-        self.actionSheetLauncher = ActionSheetLauncher(user: tweet.user)
         let flowLayout = UICollectionViewFlowLayout()
         super.init(collectionViewLayout: flowLayout)
         configureUI()
@@ -50,6 +49,12 @@ class TweetController: UICollectionViewController {
     //MARK: Selectors
     
     //MARK: Helper
+    
+    private func showActionSheet(forUser user: User) {
+        actionSheetLauncher = ActionSheetLauncher(user: user)
+        actionSheetLauncher.delegate = self
+        actionSheetLauncher.show()
+    }
     
     private func configureUI() {
         collectionView.backgroundColor = .white
@@ -110,8 +115,44 @@ extension TweetController: UICollectionViewDelegateFlowLayout {
 
 extension TweetController: TweetHeaderDelegate {
     
+    
+    
     func showActionSheet() {
-        actionSheetLauncher.show()
+        
+        if tweet.user.isCurrentUser {
+            showActionSheet(forUser: tweet.user)
+        } else {
+            UserService.shared.checkIfUserIsFollowed(uid: tweet.user.uid) { (isFollowed) in
+                var user = self.tweet.user
+                user.isFollowed = isFollowed
+                self.showActionSheet(forUser:  user)
+            }
+        }
+    }
+    
+}
+
+//MARK: ActionSheetLauncher Delegate
+
+extension TweetController: ActionSheetLauncherDelegate {
+    
+    func didSelect(option: ActionSheetOptions) {
+        print("Selected! \(option)")
+        
+        switch option {
+        case .follow(let user):
+            UserService.shared.followUser(uid: user.uid) { (error, ref) in
+                print("Followed \(user.username)")
+            }
+        case .unFollow(let user):
+            UserService.shared.unfollowUser(uid: user.uid) { (error, ref) in
+                print("Unfollowed \(user.username)")
+            }
+        case .report:
+            print("Reported User")
+        case .delete:
+            print("Deleted Tweet!")
+        }
     }
     
 }
