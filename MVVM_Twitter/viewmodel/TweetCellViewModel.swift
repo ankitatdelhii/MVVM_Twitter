@@ -45,6 +45,15 @@ struct TweetCellViewModel {
         return title
     }
     
+    var likeButtonTintColor: UIColor {
+        return tweet.didLike ? .red : .lightGray
+    }
+    
+    var likeButtonImage: UIImage {
+        let imageName = tweet.didLike ? "like_filled" : "like"
+        return UIImage(named: imageName)!
+    }
+    
     var retweetString: NSAttributedString {
         return attributedText(withValue: "\(tweet.retweetCount )", text: "retweets")
     }
