@@ -12,7 +12,6 @@ struct Tweet {
     
     let caption: String
     let tweetId: String
-    let uid: String
     var likes: Int
     let timestamp: Date!
     let retweetCount: Int
@@ -23,7 +22,6 @@ struct Tweet {
         self.tweetId = tweetId
         self.user = user
         self.caption = dictData["caption"] as? String ?? ""
-        self.uid = dictData["uid" ] as? String ?? ""
         self.likes = dictData["likes"] as? Int ?? 0
         self.retweetCount = dictData["retweets"] as? Int ?? 0
         
