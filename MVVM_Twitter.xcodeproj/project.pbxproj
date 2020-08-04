@@ -22,6 +22,8 @@
 		9D42D93124CA16FD00021644 /* ActionSheetLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42D93024CA16FD00021644 /* ActionSheetLauncher.swift */; };
 		9D6139E22471B791004A5823 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6139E12471B791004A5823 /* Utilities.swift */; };
 		9D6A67DE2476A332009864A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A67DD2476A332009864A3 /* Constants.swift */; };
+		9D72B9D424D9F98100F51FD1 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72B9D324D9F98100F51FD1 /* NotificationCell.swift */; };
+		9D72B9D624D9FF5800F51FD1 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72B9D524D9FF5800F51FD1 /* NotificationViewModel.swift */; };
 		9D790C24246AB134007DEB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790C23246AB134007DEB9C /* AppDelegate.swift */; };
 		9D790C26246AB134007DEB9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790C25246AB134007DEB9C /* SceneDelegate.swift */; };
 		9D790C2D246AB136007DEB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D790C2C246AB136007DEB9C /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		9D42D93024CA16FD00021644 /* ActionSheetLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetLauncher.swift; sourceTree = "<group>"; };
 		9D6139E12471B791004A5823 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		9D6A67DD2476A332009864A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9D72B9D324D9F98100F51FD1 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		9D72B9D524D9FF5800F51FD1 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		9D790C20246AB134007DEB9C /* MVVM_Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D790C23246AB134007DEB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D790C25246AB134007DEB9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 				9D894180247FD9A200D83B84 /* UserCell.swift */,
 				9D171C712480FF3D003B4178 /* TweetHeader.swift */,
 				9D300E9324CB6C3300657B4C /* ActionSheetCell.swift */,
+				9D72B9D324D9F98100F51FD1 /* NotificationCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				9D98BEC1247EA5EC00495A8C /* ProfileHeaderViewModel.swift */,
 				9DF5EA0E24BCE0A60040BB71 /* UploadTweetViewModel.swift */,
 				9D300E9524CB727600657B4C /* ActionSheetViewModel.swift */,
+				9D72B9D524D9FF5800F51FD1 /* NotificationViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				9D790C46246ABAA6007DEB9C /* ConversationsController.swift in Sources */,
 				9D300E9424CB6C3300657B4C /* ActionSheetCell.swift in Sources */,
 				9D6139E22471B791004A5823 /* Utilities.swift in Sources */,
+				9D72B9D624D9FF5800F51FD1 /* NotificationViewModel.swift in Sources */,
 				9D790C24246AB134007DEB9C /* AppDelegate.swift in Sources */,
 				9D171C702480FDD5003B4178 /* TweetController.swift in Sources */,
 				9D8AAA70247D4E7400974FC9 /* ProfileController.swift in Sources */,
@@ -386,6 +393,7 @@
 				9D171C722480FF3D003B4178 /* TweetHeader.swift in Sources */,
 				9D790C3E246AB1BC007DEB9C /* MainTabBarController.swift in Sources */,
 				9D300E9624CB727600657B4C /* ActionSheetViewModel.swift in Sources */,
+				9D72B9D424D9F98100F51FD1 /* NotificationCell.swift in Sources */,
 				9D186E482470780700E55D4E /* RegistrationController.swift in Sources */,
 				9D790C40246ABA83007DEB9C /* FeedController.swift in Sources */,
 				9D3BFE45247DAE7A000007D1 /* ProfileFilterView.swift in Sources */,
