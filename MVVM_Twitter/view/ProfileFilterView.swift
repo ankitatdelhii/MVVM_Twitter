@@ -11,13 +11,19 @@ import UIKit
 private let filterCell = "filterCell"
 
 protocol ProfileFilterViewDelegate: class {
-    func filterView(_ view: ProfileFilterView, didselect indexPath: IndexPath)
+    func filterView(_ view: ProfileFilterView, didselect index: Int)
 }
 
 class ProfileFilterView: UIView {
     
     
     //MARK: Properties
+    
+    private let underlineView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .twitterBlue
+        return view
+    }()
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -40,6 +46,11 @@ class ProfileFilterView: UIView {
         super.init(frame: frame)
         print("Testing")
         configureUI()
+    }
+    
+    override func layoutSubviews() {
+        addSubview(underlineView)
+        underlineView.anchor(left: leftAnchor, bottom: bottomAnchor, width: frame.width/3, height: 2)
     }
     
     required init?(coder: NSCoder) {
@@ -77,7 +88,15 @@ extension ProfileFilterView: UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.filterView(self, didselect: indexPath)
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        let xPosition = cell.frame.origin.x
+        
+        UIView.animate(withDuration: 0.3) {
+            self.underlineView.frame.origin.x = xPosition
+        }
+        
+        delegate?.filterView(self, didselect: indexPath.row)
     }
     
 }

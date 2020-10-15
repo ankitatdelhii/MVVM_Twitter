@@ -54,6 +54,14 @@ struct TweetCellViewModel {
         return UIImage(named: imageName)!
     }
     
+    var shouldHideReplyLabel: Bool {
+        return !tweet.isReply
+    }
+    
+    var replyText: String {
+        return "→ replying to @\(tweet.replyingTo ?? "")"
+    }
+    
     var retweetString: NSAttributedString {
         return attributedText(withValue: "\(tweet.retweetCount )", text: "retweets")
     }

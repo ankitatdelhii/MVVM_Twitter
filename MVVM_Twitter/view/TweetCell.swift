@@ -39,6 +39,14 @@ class TweetCell: UICollectionViewCell {
         return iv
     }()
     
+    private lazy var replyLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .lightGray
+        label.font = .systemFont(ofSize: 12)
+        label.text = "→ replying to @nooneyeah"
+        return label
+    }()
+    
     private let captionLabel: UILabel = {
        let label = UILabel()
         label.backgroundColor = .white
@@ -134,15 +142,27 @@ class TweetCell: UICollectionViewCell {
     //MARK: Helper
     
     private func configureUI() {
-        addSubview(profileImageView)
-        profileImageView.anchor(top: topAnchor, left: leftAnchor, paddingTop: 8, paddingLeft: 8)
+//        addSubview(profileImageView)
+//        profileImageView.anchor(top: topAnchor, left: leftAnchor, paddingTop: 8, paddingLeft: 8)
         
-        let infoStackView = UIStackView(arrangedSubviews: [infoLabel, captionLabel])
-        infoStackView.axis = .vertical
-        infoStackView.spacing = 4
-        infoStackView.distribution = .fillProportionally
-        addSubview(infoStackView)
-        infoStackView.anchor(top: profileImageView.topAnchor, left: profileImageView.rightAnchor, right: rightAnchor, paddingLeft: 12, paddingRight: 12)
+        let captionStack = UIStackView(arrangedSubviews: [infoLabel, captionLabel])
+        captionStack.axis = .vertical
+        captionStack.spacing = 4
+        captionStack.distribution = .fillProportionally
+        
+        let imageCapionStack = UIStackView(arrangedSubviews: [profileImageView, captionStack])
+        imageCapionStack.distribution = .fillProportionally
+        imageCapionStack.spacing = 12
+        imageCapionStack.alignment = .leading
+        
+        let replyStack = UIStackView(arrangedSubviews: [replyLabel, imageCapionStack])
+        replyStack.distribution = .fillProportionally
+        replyStack.spacing = 8
+        replyStack.axis = .vertical
+        
+        addSubview(replyStack)
+        replyStack.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 4, paddingLeft: 12, paddingRight: 12)
+        replyLabel.isHidden = true
         
         let underlineView = UIView()
         underlineView.backgroundColor = .systemGroupedBackground
@@ -172,6 +192,8 @@ class TweetCell: UICollectionViewCell {
         
         likeButton.tintColor = viewModel.likeButtonTintColor
         likeButton.setImage(viewModel.likeButtonImage, for: .normal)
+        replyLabel.isHidden = viewModel.shouldHideReplyLabel
+        replyLabel.text = viewModel.replyText
     }
     
         
