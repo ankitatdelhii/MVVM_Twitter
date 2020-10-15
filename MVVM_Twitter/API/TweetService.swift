@@ -88,6 +88,20 @@ struct TweetService {
         }
     }
     
+    func fetchTweet(withTweetId tweetId: String, completion: @escaping(Tweet) -> Void) {
+        REF_TWEETS.child(tweetId).observeSingleEvent(of: .value) { (tweetData) in
+            let tweetId = tweetData.key
+            
+            guard let dataDict = tweetData.value as? [String: Any] else { return }
+            guard let uid = dataDict["uid"] as? String else { return }
+            
+            UserService.shared.fetchUser(uid: uid) { (user) in
+                let tweet = Tweet(user: user, tweetId: tweetId, dictData: dataDict)
+                completion(tweet)
+            }
+        }
+    }
+    
     
     func fetchReplies(forTweet tweet: Tweet, completion: @escaping([Tweet]) -> Void) {
         var tweets = [Tweet]()
