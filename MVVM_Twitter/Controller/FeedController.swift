@@ -44,18 +44,26 @@ class FeedController: UICollectionViewController {
     
     //MARK: Helper
     private func fetchTweets() {
+        collectionView.refreshControl?.beginRefreshing()
         TweetService.shared.fetchTweets { [weak self] (tweets) in
-            print("Got tweets \(tweets)")
-            self?.tweets = tweets
-            self?.checkIfUserLikedTweets(tweets)
+            guard let self = self else { return }
+            
+            self.tweets = tweets.sorted(by: { $0.timestamp > $1.timestamp })
+            self.checkIfUserLikedTweets()
+            
+            self.collectionView.refreshControl?.endRefreshing()
         }
     }
     
-    func checkIfUserLikedTweets(_ tweets: [Tweet]) {
-        for (index, tweet) in tweets.enumerated() {
+    func checkIfUserLikedTweets() {
+        self.tweets.forEach { (tweet) in
             TweetService.shared.checkIfUserLikedTweet(tweet: tweet) { (didLike) in
                 guard didLike == true else { return }
-                self.tweets[index].didLike = true
+                if let index = self.tweets.firstIndex(where: { $0.tweetId == tweet.tweetId }) {
+                    
+                    self.tweets[index].didLike = true
+                }
+                
             }
         }
     }
@@ -69,7 +77,9 @@ class FeedController: UICollectionViewController {
         image.setDimensions(width: 32, height: 32)
         navigationItem.titleView = image
         
-        
+        let refreshControl = UIRefreshControl()
+        collectionView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
     }
     
     fileprivate func configureLeftBarButton() {
@@ -84,6 +94,12 @@ class FeedController: UICollectionViewController {
         profileImageView.sd_setImage(with: user.profileImageUrl, completed: nil)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: profileImageView)
+    }
+    
+    //MARK: Selectors
+    @objc func handleRefresh() {
+        print("Wants to refresh")
+        fetchTweets()
     }
     
     
