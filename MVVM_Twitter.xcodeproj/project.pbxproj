@@ -33,6 +33,10 @@
 		9D790C42246ABA8F007DEB9C /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790C41246ABA8F007DEB9C /* ExploreController.swift */; };
 		9D790C44246ABA9B007DEB9C /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790C43246ABA9B007DEB9C /* NotificationsController.swift */; };
 		9D790C46246ABAA6007DEB9C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790C45246ABAA6007DEB9C /* ConversationsController.swift */; };
+		9D80687C253C75CF00B91CF0 /* ss4.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9D806878253C75CE00B91CF0 /* ss4.PNG */; };
+		9D80687D253C75CF00B91CF0 /* ss3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9D806879253C75CF00B91CF0 /* ss3.PNG */; };
+		9D80687E253C75CF00B91CF0 /* ss2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9D80687A253C75CF00B91CF0 /* ss2.PNG */; };
+		9D80687F253C75CF00B91CF0 /* ss1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9D80687B253C75CF00B91CF0 /* ss1.PNG */; };
 		9D894181247FD9A200D83B84 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D894180247FD9A200D83B84 /* UserCell.swift */; };
 		9D8AAA70247D4E7400974FC9 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AAA6F247D4E7400974FC9 /* ProfileController.swift */; };
 		9D8AAA72247D538500974FC9 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AAA71247D538500974FC9 /* ProfileHeader.swift */; };
@@ -87,6 +91,10 @@
 		9D790C41246ABA8F007DEB9C /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		9D790C43246ABA9B007DEB9C /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		9D790C45246ABAA6007DEB9C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		9D806878253C75CE00B91CF0 /* ss4.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ss4.PNG; sourceTree = "<group>"; };
+		9D806879253C75CF00B91CF0 /* ss3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ss3.PNG; sourceTree = "<group>"; };
+		9D80687A253C75CF00B91CF0 /* ss2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ss2.PNG; sourceTree = "<group>"; };
+		9D80687B253C75CF00B91CF0 /* ss1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ss1.PNG; sourceTree = "<group>"; };
 		9D894180247FD9A200D83B84 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9D8AAA6F247D4E7400974FC9 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		9D8AAA71247D538500974FC9 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeader.swift; path = MVVM_Twitter/view/Profile/ProfileHeader.swift; sourceTree = SOURCE_ROOT; };
@@ -167,6 +175,7 @@
 		9D790C22246AB134007DEB9C /* MVVM_Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				9D806877253C759000B91CF0 /* Screenshots */,
 				9D89417F247FD8B200D83B84 /* model */,
 				9D89417E247FD88200D83B84 /* viewmodel */,
 				9D89417D247FD80400D83B84 /* view */,
@@ -220,6 +229,17 @@
 				9D42D93024CA16FD00021644 /* ActionSheetLauncher.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9D806877253C759000B91CF0 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				9D80687B253C75CF00B91CF0 /* ss1.PNG */,
+				9D80687A253C75CF00B91CF0 /* ss2.PNG */,
+				9D806879253C75CF00B91CF0 /* ss3.PNG */,
+				9D806878253C75CE00B91CF0 /* ss4.PNG */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		9D89417D247FD80400D83B84 /* view */ = {
@@ -332,9 +352,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D80687E253C75CF00B91CF0 /* ss2.PNG in Resources */,
+				9D80687F253C75CF00B91CF0 /* ss1.PNG in Resources */,
+				9D80687C253C75CF00B91CF0 /* ss4.PNG in Resources */,
 				9D790C30246AB136007DEB9C /* LaunchScreen.storyboard in Resources */,
 				9D790C2D246AB136007DEB9C /* Assets.xcassets in Resources */,
 				9DB960C224766DAD00C1F4A2 /* GoogleService-Info.plist in Resources */,
+				9D80687D253C75CF00B91CF0 /* ss3.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
