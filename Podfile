@@ -12,6 +12,7 @@ target 'MVVM_Twitter' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'SDWebImage', '~> 5.0'
+  pod 'ActiveLabel'
   
 
 end

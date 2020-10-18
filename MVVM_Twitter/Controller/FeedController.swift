@@ -165,4 +165,12 @@ extension FeedController: TweetCellDelegate {
         navigationController?.pushViewController(ProfileController(user: user), animated: true)
     }
     
+    func handleFetchUser(withUsername username: String) {
+        UserService.shared.fetchUser(withUsername: username) { (user) in
+            print("User is \(user)")
+            let controller = ProfileController(user: user)
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
 }

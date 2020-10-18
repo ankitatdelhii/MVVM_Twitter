@@ -8,11 +8,13 @@
 
 import UIKit
 import SDWebImage
+import ActiveLabel
 
 protocol TweetCellDelegate: class {
     func handleProfileImageTapped(_ cell: TweetCell)
     func handleReplyTapped(_ cell: TweetCell)
     func handleLikeTapped(_ cell: TweetCell)
+    func handleFetchUser(withUsername username: String)
 }
 
 class TweetCell: UICollectionViewCell {
@@ -39,20 +41,23 @@ class TweetCell: UICollectionViewCell {
         return iv
     }()
     
-    private lazy var replyLabel: UILabel = {
-        let label = UILabel()
+    private lazy var replyLabel: ActiveLabel = {
+        let label = ActiveLabel()
         label.textColor = .lightGray
         label.font = .systemFont(ofSize: 12)
         label.text = "→ replying to @nooneyeah"
+        label.mentionColor = .twitterBlue
         return label
     }()
     
-    private let captionLabel: UILabel = {
-       let label = UILabel()
+    private let captionLabel: ActiveLabel = {
+       let label = ActiveLabel()
         label.backgroundColor = .white
         label.text = "What's happening?"
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 14)
+        label.mentionColor = .twitterBlue
+        label.hashtagColor = .twitterBlue
         return label
     }()
     
@@ -107,6 +112,7 @@ class TweetCell: UICollectionViewCell {
         super.init(frame: frame)
         backgroundColor = .white
         configureUI()
+        configureMentionHandler()
     }
     
     required init?(coder: NSCoder) {
@@ -196,5 +202,11 @@ class TweetCell: UICollectionViewCell {
         replyLabel.text = viewModel.replyText
     }
     
-        
+       
+    private func configureMentionHandler() {
+        captionLabel.handleMentionTap { (username) in
+            print("Goto user Profile for \(username)")
+            self.delegate?.handleFetchUser(withUsername: username)
+        }
+    }
 }
